@@ -11,21 +11,37 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * Default implementation of IBot interface
+ */
 public class DefaultBotImpl implements IBot {
 
     List<ISkill> skillList = new ArrayList<>();
 
-
+    /**
+     * Add an ISkill to this IBot
+     * @param skill the ISkill to be added
+     * @return this object
+     */
     public DefaultBotImpl addSkill(ISkill skill) {
         skillList.add(skill);
         return this;
     }
 
+    /**
+     * Removes an ISkill from this IBot
+     * @param skill the ISkill to be removed
+     * @return this object
+     */
     public DefaultBotImpl removeSkill(ISkill skill) {
         skillList.remove(skill);
         return this;
     }
 
+    /**
+     * Get all the ISkills registered for this IBot
+     * @return a collection of ISkill objects registered to this IBot
+     */
     public Collection<ISkill> getSkills() {
         return skillList;
     }
@@ -41,10 +57,13 @@ public class DefaultBotImpl implements IBot {
         return response == null ? Optional.empty() : Optional.ofNullable(response);
     }
 
-    /*
-     * recursive algorithm ahead
+    /**
+     * Recursive method that iteratively looks through the graph of all applicable reductions
+     * @param stk the stack of reductions so far
+     * @param userID the userID that invoked the response
+     * @param maxDepth the maximal depth to look for through the graph
+     * @return
      */
-
     private IHandlerResponse respond(List<ResponseStackElement> stk, String userID, int maxDepth) {
         // response is taking too long to build
         if (stk.size() >= maxDepth) {

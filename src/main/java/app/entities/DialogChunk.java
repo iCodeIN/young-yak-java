@@ -2,6 +2,10 @@ package app.entities;
 
 import javax.persistence.*;
 
+/**
+ * Entity used for logging
+ * Logging enables ISkill implementations to correct spelling mistakes
+ */
 @Entity
 public class DialogChunk {
 
