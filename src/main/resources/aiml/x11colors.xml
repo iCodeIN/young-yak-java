@@ -1,0 +1,1616 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>WHAT SHADE IS (.*)</pattern>
+        <template>
+            <redirect>WHAT COLOR IS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOUR IS (.*)</pattern>
+        <template>
+            <redirect>WHAT COLOR IS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HUE IS (.*)</pattern>
+        <template>
+            <redirect>WHAT COLOR IS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS ALICE BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #F0F8FF.</li>
+                <li>It's #F0F8FF.</li>
+                <li>#F0F8FF</li>
+                <li>94% red, 97% green and 100% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS ANTIQUE WHITE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FAEBD7.</li>
+                <li>It's #FAEBD7.</li>
+                <li>#FAEBD7</li>
+                <li>98% red, 92% green and 84% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS AQUA</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #00FFFF.</li>
+                <li>It's #00FFFF.</li>
+                <li>#00FFFF</li>
+                <li>0% red, 100% green and 100% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS AQUAMARINE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #7FFFD4.</li>
+                <li>It's #7FFFD4.</li>
+                <li>#7FFFD4</li>
+                <li>50% red, 100% green and 83% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS AZURE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #F0FFFF.</li>
+                <li>It's #F0FFFF.</li>
+                <li>#F0FFFF</li>
+                <li>94% red, 100% green and 100% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS BEIGE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #F5F5DC.</li>
+                <li>It's #F5F5DC.</li>
+                <li>#F5F5DC</li>
+                <li>96% red, 96% green and 86% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS BISQUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFE4C4.</li>
+                <li>It's #FFE4C4.</li>
+                <li>#FFE4C4</li>
+                <li>100% red, 89% green and 77% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS BLACK</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #000000.</li>
+                <li>It's #000000.</li>
+                <li>#000000</li>
+                <li>0% red, 0% green and 0% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS BLANCHED ALMOND</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFEBCD.</li>
+                <li>It's #FFEBCD.</li>
+                <li>#FFEBCD</li>
+                <li>100% red, 92% green and 80% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #0000FF.</li>
+                <li>It's #0000FF.</li>
+                <li>#0000FF</li>
+                <li>0% red, 0% green and 100% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS BLUE VIOLET</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #8A2BE2.</li>
+                <li>It's #8A2BE2.</li>
+                <li>#8A2BE2</li>
+                <li>54% red, 17% green and 89% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS BROWN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #A52A2A.</li>
+                <li>It's #A52A2A.</li>
+                <li>#A52A2A</li>
+                <li>65% red, 16% green and 16% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS BURLYWOOD</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #DEB887.</li>
+                <li>It's #DEB887.</li>
+                <li>#DEB887</li>
+                <li>87% red, 72% green and 53% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS CADET BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #5F9EA0.</li>
+                <li>It's #5F9EA0.</li>
+                <li>#5F9EA0</li>
+                <li>37% red, 62% green and 63% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS CHARTREUSE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #7FFF00.</li>
+                <li>It's #7FFF00.</li>
+                <li>#7FFF00</li>
+                <li>50% red, 100% green and 0% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS CHOCOLATE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #D2691E.</li>
+                <li>It's #D2691E.</li>
+                <li>#D2691E</li>
+                <li>82% red, 41% green and 12% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS CORAL</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FF7F50.</li>
+                <li>It's #FF7F50.</li>
+                <li>#FF7F50</li>
+                <li>100% red, 50% green and 31% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS CORNFLOWER</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #6495ED.</li>
+                <li>It's #6495ED.</li>
+                <li>#6495ED</li>
+                <li>39% red, 58% green and 93% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS CORNSILK</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFF8DC.</li>
+                <li>It's #FFF8DC.</li>
+                <li>#FFF8DC</li>
+                <li>100% red, 97% green and 86% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS CRIMSON</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #DC143C.</li>
+                <li>It's #DC143C.</li>
+                <li>#DC143C</li>
+                <li>86% red, 8% green and 24% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS CYAN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #00FFFF.</li>
+                <li>It's #00FFFF.</li>
+                <li>#00FFFF</li>
+                <li>0% red, 100% green and 100% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #00008B.</li>
+                <li>It's #00008B.</li>
+                <li>#00008B</li>
+                <li>0% red, 0% green and 55% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK CYAN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #008B8B.</li>
+                <li>It's #008B8B.</li>
+                <li>#008B8B</li>
+                <li>0% red, 55% green and 55% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK GOLDENROD</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #B8860B.</li>
+                <li>It's #B8860B.</li>
+                <li>#B8860B</li>
+                <li>72% red, 53% green and 4% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK GRAY</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #A9A9A9.</li>
+                <li>It's #A9A9A9.</li>
+                <li>#A9A9A9</li>
+                <li>66% red, 66% green and 66% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK GREEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #006400.</li>
+                <li>It's #006400.</li>
+                <li>#006400</li>
+                <li>0% red, 39% green and 0% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK KHAKI</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #BDB76B.</li>
+                <li>It's #BDB76B.</li>
+                <li>#BDB76B</li>
+                <li>74% red, 72% green and 42% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK MAGENTA</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #8B008B.</li>
+                <li>It's #8B008B.</li>
+                <li>#8B008B</li>
+                <li>55% red, 0% green and 55% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK OLIVE GREEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #556B2F.</li>
+                <li>It's #556B2F.</li>
+                <li>#556B2F</li>
+                <li>33% red, 42% green and 18% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK ORANGE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FF8C00.</li>
+                <li>It's #FF8C00.</li>
+                <li>#FF8C00</li>
+                <li>100% red, 55% green and 0% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK ORCHID</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #9932CC.</li>
+                <li>It's #9932CC.</li>
+                <li>#9932CC</li>
+                <li>60% red, 20% green and 80% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK RED</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #8B0000.</li>
+                <li>It's #8B0000.</li>
+                <li>#8B0000</li>
+                <li>55% red, 0% green and 0% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK SALMON</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #E9967A.</li>
+                <li>It's #E9967A.</li>
+                <li>#E9967A</li>
+                <li>91% red, 59% green and 48% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK SEA GREEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #8FBC8F.</li>
+                <li>It's #8FBC8F.</li>
+                <li>#8FBC8F</li>
+                <li>56% red, 74% green and 56% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK SLATE BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #483D8B.</li>
+                <li>It's #483D8B.</li>
+                <li>#483D8B</li>
+                <li>28% red, 24% green and 55% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK SLATE GRAY</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #2F4F4F.</li>
+                <li>It's #2F4F4F.</li>
+                <li>#2F4F4F</li>
+                <li>18% red, 31% green and 31% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK TURQUOISE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #00CED1.</li>
+                <li>It's #00CED1.</li>
+                <li>#00CED1</li>
+                <li>0% red, 81% green and 82% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DARK VIOLET</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #9400D3.</li>
+                <li>It's #9400D3.</li>
+                <li>#9400D3</li>
+                <li>58% red, 0% green and 83% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DEEP PINK</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FF1493.</li>
+                <li>It's #FF1493.</li>
+                <li>#FF1493</li>
+                <li>100% red, 8% green and 58% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DEEP SKY BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #00BFFF.</li>
+                <li>It's #00BFFF.</li>
+                <li>#00BFFF</li>
+                <li>0% red, 75% green and 100% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DIM GRAY</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #696969.</li>
+                <li>It's #696969.</li>
+                <li>#696969</li>
+                <li>41% red, 41% green and 41% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS DODGER BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #1E90FF.</li>
+                <li>It's #1E90FF.</li>
+                <li>#1E90FF</li>
+                <li>12% red, 56% green and 100% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS FIREBRICK</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #B22222.</li>
+                <li>It's #B22222.</li>
+                <li>#B22222</li>
+                <li>70% red, 13% green and 13% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS FLORAL WHITE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFFAF0.</li>
+                <li>It's #FFFAF0.</li>
+                <li>#FFFAF0</li>
+                <li>100% red, 98% green and 94% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS FOREST GREEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #228B22.</li>
+                <li>It's #228B22.</li>
+                <li>#228B22</li>
+                <li>13% red, 55% green and 13% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS FUCHSIA</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FF00FF.</li>
+                <li>It's #FF00FF.</li>
+                <li>#FF00FF</li>
+                <li>100% red, 0% green and 100% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS GAINSBORO</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #DCDCDC.</li>
+                <li>It's #DCDCDC.</li>
+                <li>#DCDCDC</li>
+                <li>86% red, 86% green and 86% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS GHOST WHITE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #F8F8FF.</li>
+                <li>It's #F8F8FF.</li>
+                <li>#F8F8FF</li>
+                <li>97% red, 97% green and 100% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS GOLD</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFD700.</li>
+                <li>It's #FFD700.</li>
+                <li>#FFD700</li>
+                <li>100% red, 84% green and 0% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS GOLDENROD</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #DAA520.</li>
+                <li>It's #DAA520.</li>
+                <li>#DAA520</li>
+                <li>85% red, 65% green and 13% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS GRAY</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #BEBEBE.</li>
+                <li>It's #BEBEBE.</li>
+                <li>#BEBEBE</li>
+                <li>75% red, 75% green and 75% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS WEB GRAY</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #808080.</li>
+                <li>It's #808080.</li>
+                <li>#808080</li>
+                <li>50% red, 50% green and 50% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS GREEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #00FF00.</li>
+                <li>It's #00FF00.</li>
+                <li>#00FF00</li>
+                <li>0% red, 100% green and 0% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS WEB GREEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #008000.</li>
+                <li>It's #008000.</li>
+                <li>#008000</li>
+                <li>0% red, 50% green and 0% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS GREEN YELLOW</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #ADFF2F.</li>
+                <li>It's #ADFF2F.</li>
+                <li>#ADFF2F</li>
+                <li>68% red, 100% green and 18% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS HONEYDEW</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #F0FFF0.</li>
+                <li>It's #F0FFF0.</li>
+                <li>#F0FFF0</li>
+                <li>94% red, 100% green and 94% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS HOT PINK</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FF69B4.</li>
+                <li>It's #FF69B4.</li>
+                <li>#FF69B4</li>
+                <li>100% red, 41% green and 71% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS INDIAN RED</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #CD5C5C.</li>
+                <li>It's #CD5C5C.</li>
+                <li>#CD5C5C</li>
+                <li>80% red, 36% green and 36% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS INDIGO</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #4B0082.</li>
+                <li>It's #4B0082.</li>
+                <li>#4B0082</li>
+                <li>29% red, 0% green and 51% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS IVORY</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFFFF0.</li>
+                <li>It's #FFFFF0.</li>
+                <li>#FFFFF0</li>
+                <li>100% red, 100% green and 94% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS KHAKI</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #F0E68C.</li>
+                <li>It's #F0E68C.</li>
+                <li>#F0E68C</li>
+                <li>94% red, 90% green and 55% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LAVENDER</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #E6E6FA.</li>
+                <li>It's #E6E6FA.</li>
+                <li>#E6E6FA</li>
+                <li>90% red, 90% green and 98% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LAVENDER BLUSH</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFF0F5.</li>
+                <li>It's #FFF0F5.</li>
+                <li>#FFF0F5</li>
+                <li>100% red, 94% green and 96% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LAWN GREEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #7CFC00.</li>
+                <li>It's #7CFC00.</li>
+                <li>#7CFC00</li>
+                <li>49% red, 99% green and 0% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LEMON CHIFFON</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFFACD.</li>
+                <li>It's #FFFACD.</li>
+                <li>#FFFACD</li>
+                <li>100% red, 98% green and 80% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LIGHT BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #ADD8E6.</li>
+                <li>It's #ADD8E6.</li>
+                <li>#ADD8E6</li>
+                <li>68% red, 85% green and 90% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LIGHT CORAL</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #F08080.</li>
+                <li>It's #F08080.</li>
+                <li>#F08080</li>
+                <li>94% red, 50% green and 50% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LIGHT CYAN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #E0FFFF.</li>
+                <li>It's #E0FFFF.</li>
+                <li>#E0FFFF</li>
+                <li>88% red, 100% green and 100% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LIGHT GOLDENROD</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FAFAD2.</li>
+                <li>It's #FAFAD2.</li>
+                <li>#FAFAD2</li>
+                <li>98% red, 98% green and 82% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LIGHT GRAY</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #D3D3D3.</li>
+                <li>It's #D3D3D3.</li>
+                <li>#D3D3D3</li>
+                <li>83% red, 83% green and 83% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LIGHT GREEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #90EE90.</li>
+                <li>It's #90EE90.</li>
+                <li>#90EE90</li>
+                <li>56% red, 93% green and 56% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LIGHT PINK</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFB6C1.</li>
+                <li>It's #FFB6C1.</li>
+                <li>#FFB6C1</li>
+                <li>100% red, 71% green and 76% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LIGHT SALMON</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFA07A.</li>
+                <li>It's #FFA07A.</li>
+                <li>#FFA07A</li>
+                <li>100% red, 63% green and 48% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LIGHT SEA GREEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #20B2AA.</li>
+                <li>It's #20B2AA.</li>
+                <li>#20B2AA</li>
+                <li>13% red, 70% green and 67% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LIGHT SKY BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #87CEFA.</li>
+                <li>It's #87CEFA.</li>
+                <li>#87CEFA</li>
+                <li>53% red, 81% green and 98% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LIGHT SLATE GRAY</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #778899.</li>
+                <li>It's #778899.</li>
+                <li>#778899</li>
+                <li>47% red, 53% green and 60% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LIGHT STEEL BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #B0C4DE.</li>
+                <li>It's #B0C4DE.</li>
+                <li>#B0C4DE</li>
+                <li>69% red, 77% green and 87% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LIGHT YELLOW</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFFFE0.</li>
+                <li>It's #FFFFE0.</li>
+                <li>#FFFFE0</li>
+                <li>100% red, 100% green and 88% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LIME</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #00FF00.</li>
+                <li>It's #00FF00.</li>
+                <li>#00FF00</li>
+                <li>0% red, 100% green and 0% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LIME GREEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #32CD32.</li>
+                <li>It's #32CD32.</li>
+                <li>#32CD32</li>
+                <li>20% red, 80% green and 20% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS LINEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FAF0E6.</li>
+                <li>It's #FAF0E6.</li>
+                <li>#FAF0E6</li>
+                <li>98% red, 94% green and 90% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS MAGENTA</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FF00FF.</li>
+                <li>It's #FF00FF.</li>
+                <li>#FF00FF</li>
+                <li>100% red, 0% green and 100% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS MAROON</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #B03060.</li>
+                <li>It's #B03060.</li>
+                <li>#B03060</li>
+                <li>69% red, 19% green and 38% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS WEB MAROON</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #7F0000.</li>
+                <li>It's #7F0000.</li>
+                <li>#7F0000</li>
+                <li>50% red, 0% green and 0% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS MEDIUM AQUAMARINE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #66CDAA.</li>
+                <li>It's #66CDAA.</li>
+                <li>#66CDAA</li>
+                <li>40% red, 80% green and 67% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS MEDIUM BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #0000CD.</li>
+                <li>It's #0000CD.</li>
+                <li>#0000CD</li>
+                <li>0% red, 0% green and 80% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS MEDIUM ORCHID</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #BA55D3.</li>
+                <li>It's #BA55D3.</li>
+                <li>#BA55D3</li>
+                <li>73% red, 33% green and 83% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS MEDIUM PURPLE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #9370DB.</li>
+                <li>It's #9370DB.</li>
+                <li>#9370DB</li>
+                <li>58% red, 44% green and 86% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS MEDIUM SEA GREEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #3CB371.</li>
+                <li>It's #3CB371.</li>
+                <li>#3CB371</li>
+                <li>24% red, 70% green and 44% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS MEDIUM SLATE BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #7B68EE.</li>
+                <li>It's #7B68EE.</li>
+                <li>#7B68EE</li>
+                <li>48% red, 41% green and 93% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS MEDIUM SPRING GREEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #00FA9A.</li>
+                <li>It's #00FA9A.</li>
+                <li>#00FA9A</li>
+                <li>0% red, 98% green and 60% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS MEDIUM TURQUOISE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #48D1CC.</li>
+                <li>It's #48D1CC.</li>
+                <li>#48D1CC</li>
+                <li>28% red, 82% green and 80% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS MEDIUM VIOLET RED</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #C71585.</li>
+                <li>It's #C71585.</li>
+                <li>#C71585</li>
+                <li>78% red, 8% green and 52% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS MIDNIGHT BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #191970.</li>
+                <li>It's #191970.</li>
+                <li>#191970</li>
+                <li>10% red, 10% green and 44% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS MINT CREAM</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #F5FFFA.</li>
+                <li>It's #F5FFFA.</li>
+                <li>#F5FFFA</li>
+                <li>96% red, 100% green and 98% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS MISTY ROSE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFE4E1.</li>
+                <li>It's #FFE4E1.</li>
+                <li>#FFE4E1</li>
+                <li>100% red, 89% green and 88% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS MOCCASIN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFE4B5.</li>
+                <li>It's #FFE4B5.</li>
+                <li>#FFE4B5</li>
+                <li>100% red, 89% green and 71% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS NAVAJO WHITE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFDEAD.</li>
+                <li>It's #FFDEAD.</li>
+                <li>#FFDEAD</li>
+                <li>100% red, 87% green and 68% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS NAVY BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #000080.</li>
+                <li>It's #000080.</li>
+                <li>#000080</li>
+                <li>0% red, 0% green and 50% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS OLD LACE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FDF5E6.</li>
+                <li>It's #FDF5E6.</li>
+                <li>#FDF5E6</li>
+                <li>99% red, 96% green and 90% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS OLIVE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #808000.</li>
+                <li>It's #808000.</li>
+                <li>#808000</li>
+                <li>50% red, 50% green and 0% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS OLIVE DRAB</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #6B8E23.</li>
+                <li>It's #6B8E23.</li>
+                <li>#6B8E23</li>
+                <li>42% red, 56% green and 14% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS ORANGE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFA500.</li>
+                <li>It's #FFA500.</li>
+                <li>#FFA500</li>
+                <li>100% red, 65% green and 0% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS ORANGE RED</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FF4500.</li>
+                <li>It's #FF4500.</li>
+                <li>#FF4500</li>
+                <li>100% red, 27% green and 0% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS ORCHID</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #DA70D6.</li>
+                <li>It's #DA70D6.</li>
+                <li>#DA70D6</li>
+                <li>85% red, 44% green and 84% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS PALE GOLDENROD</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #EEE8AA.</li>
+                <li>It's #EEE8AA.</li>
+                <li>#EEE8AA</li>
+                <li>93% red, 91% green and 67% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS PALE GREEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #98FB98.</li>
+                <li>It's #98FB98.</li>
+                <li>#98FB98</li>
+                <li>60% red, 98% green and 60% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS PALE TURQUOISE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #AFEEEE.</li>
+                <li>It's #AFEEEE.</li>
+                <li>#AFEEEE</li>
+                <li>69% red, 93% green and 93% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS PALE VIOLET RED</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #DB7093.</li>
+                <li>It's #DB7093.</li>
+                <li>#DB7093</li>
+                <li>86% red, 44% green and 58% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS PAPAYA WHIP</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFEFD5.</li>
+                <li>It's #FFEFD5.</li>
+                <li>#FFEFD5</li>
+                <li>100% red, 94% green and 84% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS PEACH PUFF</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFDAB9.</li>
+                <li>It's #FFDAB9.</li>
+                <li>#FFDAB9</li>
+                <li>100% red, 85% green and 73% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS PERU</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #CD853F.</li>
+                <li>It's #CD853F.</li>
+                <li>#CD853F</li>
+                <li>80% red, 52% green and 25% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS PINK</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFC0CB.</li>
+                <li>It's #FFC0CB.</li>
+                <li>#FFC0CB</li>
+                <li>100% red, 75% green and 80% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS PLUM</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #DDA0DD.</li>
+                <li>It's #DDA0DD.</li>
+                <li>#DDA0DD</li>
+                <li>87% red, 63% green and 87% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS POWDER BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #B0E0E6.</li>
+                <li>It's #B0E0E6.</li>
+                <li>#B0E0E6</li>
+                <li>69% red, 88% green and 90% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS PURPLE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #A020F0.</li>
+                <li>It's #A020F0.</li>
+                <li>#A020F0</li>
+                <li>63% red, 13% green and 94% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS WEB PURPLE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #7F007F.</li>
+                <li>It's #7F007F.</li>
+                <li>#7F007F</li>
+                <li>50% red, 0% green and 50% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS REBECCA PURPLE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #663399.</li>
+                <li>It's #663399.</li>
+                <li>#663399</li>
+                <li>40% red, 20% green and 60% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS RED</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FF0000.</li>
+                <li>It's #FF0000.</li>
+                <li>#FF0000</li>
+                <li>100% red, 0% green and 0% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS ROSY BROWN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #BC8F8F.</li>
+                <li>It's #BC8F8F.</li>
+                <li>#BC8F8F</li>
+                <li>74% red, 56% green and 56% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS ROYAL BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #4169E1.</li>
+                <li>It's #4169E1.</li>
+                <li>#4169E1</li>
+                <li>25% red, 41% green and 88% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS SADDLE BROWN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #8B4513.</li>
+                <li>It's #8B4513.</li>
+                <li>#8B4513</li>
+                <li>55% red, 27% green and 7% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS SALMON</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FA8072.</li>
+                <li>It's #FA8072.</li>
+                <li>#FA8072</li>
+                <li>98% red, 50% green and 45% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS SANDY BROWN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #F4A460.</li>
+                <li>It's #F4A460.</li>
+                <li>#F4A460</li>
+                <li>96% red, 64% green and 38% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS SEA GREEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #2E8B57.</li>
+                <li>It's #2E8B57.</li>
+                <li>#2E8B57</li>
+                <li>18% red, 55% green and 34% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS SEASHELL</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFF5EE.</li>
+                <li>It's #FFF5EE.</li>
+                <li>#FFF5EE</li>
+                <li>100% red, 96% green and 93% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS SIENNA</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #A0522D.</li>
+                <li>It's #A0522D.</li>
+                <li>#A0522D</li>
+                <li>63% red, 32% green and 18% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS SILVER</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #C0C0C0.</li>
+                <li>It's #C0C0C0.</li>
+                <li>#C0C0C0</li>
+                <li>75% red, 75% green and 75% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS SKY BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #87CEEB.</li>
+                <li>It's #87CEEB.</li>
+                <li>#87CEEB</li>
+                <li>53% red, 81% green and 92% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS SLATE BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #6A5ACD.</li>
+                <li>It's #6A5ACD.</li>
+                <li>#6A5ACD</li>
+                <li>42% red, 35% green and 80% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS SLATE GRAY</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #708090.</li>
+                <li>It's #708090.</li>
+                <li>#708090</li>
+                <li>44% red, 50% green and 56% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS SNOW</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFFAFA.</li>
+                <li>It's #FFFAFA.</li>
+                <li>#FFFAFA</li>
+                <li>100% red, 98% green and 98% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS SPRING GREEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #00FF7F.</li>
+                <li>It's #00FF7F.</li>
+                <li>#00FF7F</li>
+                <li>0% red, 100% green and 50% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS STEEL BLUE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #4682B4.</li>
+                <li>It's #4682B4.</li>
+                <li>#4682B4</li>
+                <li>27% red, 51% green and 71% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS TAN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #D2B48C.</li>
+                <li>It's #D2B48C.</li>
+                <li>#D2B48C</li>
+                <li>82% red, 71% green and 55% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS TEAL</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #008080.</li>
+                <li>It's #008080.</li>
+                <li>#008080</li>
+                <li>0% red, 50% green and 50% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS THISTLE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #D8BFD8.</li>
+                <li>It's #D8BFD8.</li>
+                <li>#D8BFD8</li>
+                <li>85% red, 75% green and 85% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS TOMATO</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FF6347.</li>
+                <li>It's #FF6347.</li>
+                <li>#FF6347</li>
+                <li>100% red, 39% green and 28% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS TURQUOISE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #40E0D0.</li>
+                <li>It's #40E0D0.</li>
+                <li>#40E0D0</li>
+                <li>25% red, 88% green and 82% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS VIOLET</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #EE82EE.</li>
+                <li>It's #EE82EE.</li>
+                <li>#EE82EE</li>
+                <li>93% red, 51% green and 93% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS WHEAT</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #F5DEB3.</li>
+                <li>It's #F5DEB3.</li>
+                <li>#F5DEB3</li>
+                <li>96% red, 87% green and 70% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS WHITE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFFFFF.</li>
+                <li>It's #FFFFFF.</li>
+                <li>#FFFFFF</li>
+                <li>100% red, 100% green and 100% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS WHITE SMOKE</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #F5F5F5.</li>
+                <li>It's #F5F5F5.</li>
+                <li>#F5F5F5</li>
+                <li>96% red, 96% green and 96% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS YELLOW</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #FFFF00.</li>
+                <li>It's #FFFF00.</li>
+                <li>#FFFF00</li>
+                <li>100% red, 100% green and 0% blue.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT COLOR IS YELLOW GREEN</pattern>
+        <template>
+            <random>
+                <li>In HTML notation, it's #9ACD32.</li>
+                <li>It's #9ACD32.</li>
+                <li>#9ACD32</li>
+                <li>60% red, 80% green and 20% blue.</li>
+            </random>
+        </template>
+    </category>
+</aiml>

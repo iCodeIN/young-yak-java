@@ -1,0 +1,5763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <category>
+        <pattern>(.*) ACCOMMODATION (.*)</pattern>
+        <template>
+            <redirect>\1 ACCOMMODATIONS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ACCOMMODATION (.*)</pattern>
+        <template>
+            <redirect>ACCOMMODATIONS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ACCOMMODATION</pattern>
+        <template>
+            <redirect>\1 ACCOMMODATIONS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ACCOMMODATION</pattern>
+        <template>
+            <redirect>ACCOMMODATIONS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ACTION REPLAY (.*)</pattern>
+        <template>
+            <redirect>\1 INSTANT REPLAY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ACTION REPLAY (.*)</pattern>
+        <template>
+            <redirect>INSTANT REPLAY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ACTION REPLAY</pattern>
+        <template>
+            <redirect>\1 INSTANT REPLAY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ACTION REPLAY</pattern>
+        <template>
+            <redirect>INSTANT REPLAY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) AEROFOIL (.*)</pattern>
+        <template>
+            <redirect>\1 AIRFOIL \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>AEROFOIL (.*)</pattern>
+        <template>
+            <redirect>AIRFOIL \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) AEROFOIL</pattern>
+        <template>
+            <redirect>\1 AIRFOIL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>AEROFOIL</pattern>
+        <template>
+            <redirect>AIRFOIL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) AEROPLANE (.*)</pattern>
+        <template>
+            <redirect>\1 AIRPLANE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>AEROPLANE (.*)</pattern>
+        <template>
+            <redirect>AIRPLANE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) AEROPLANE</pattern>
+        <template>
+            <redirect>\1 AIRPLANE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>AEROPLANE</pattern>
+        <template>
+            <redirect>AIRPLANE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) AGONY AUNT (.*)</pattern>
+        <template>
+            <redirect>\1 ADVICE COLUMNIST \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>AGONY AUNT (.*)</pattern>
+        <template>
+            <redirect>ADVICE COLUMNIST \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) AGONY AUNT</pattern>
+        <template>
+            <redirect>\1 ADVICE COLUMNIST</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>AGONY AUNT</pattern>
+        <template>
+            <redirect>ADVICE COLUMNIST</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ALLEN KEY (.*)</pattern>
+        <template>
+            <redirect>\1 ALLEN WRENCH \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ALLEN KEY (.*)</pattern>
+        <template>
+            <redirect>ALLEN WRENCH \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ALLEN KEY</pattern>
+        <template>
+            <redirect>\1 ALLEN WRENCH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ALLEN KEY</pattern>
+        <template>
+            <redirect>ALLEN WRENCH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ALUMINIUM (.*)</pattern>
+        <template>
+            <redirect>\1 ALUMINUM \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ALUMINIUM (.*)</pattern>
+        <template>
+            <redirect>ALUMINUM \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ALUMINIUM</pattern>
+        <template>
+            <redirect>\1 ALUMINUM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ALUMINIUM</pattern>
+        <template>
+            <redirect>ALUMINUM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ANISEED (.*)</pattern>
+        <template>
+            <redirect>\1 ANISE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ANISEED (.*)</pattern>
+        <template>
+            <redirect>ANISE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ANISEED</pattern>
+        <template>
+            <redirect>\1 ANISE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ANISEED</pattern>
+        <template>
+            <redirect>ANISE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ANTICLOCKWISE (.*)</pattern>
+        <template>
+            <redirect>\1 COUNTERCLOCKWISE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ANTICLOCKWISE (.*)</pattern>
+        <template>
+            <redirect>COUNTERCLOCKWISE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ANTICLOCKWISE</pattern>
+        <template>
+            <redirect>\1 COUNTERCLOCKWISE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ANTICLOCKWISE</pattern>
+        <template>
+            <redirect>COUNTERCLOCKWISE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ARTICULATED LORRY (.*)</pattern>
+        <template>
+            <redirect>\1 TRACTOR-TRAILER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ARTICULATED LORRY (.*)</pattern>
+        <template>
+            <redirect>TRACTOR-TRAILER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ARTICULATED LORRY</pattern>
+        <template>
+            <redirect>\1 TRACTOR-TRAILER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ARTICULATED LORRY</pattern>
+        <template>
+            <redirect>TRACTOR-TRAILER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ASYMMETRIC BARS (.*)</pattern>
+        <template>
+            <redirect>\1 UNEVEN BARS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ASYMMETRIC BARS (.*)</pattern>
+        <template>
+            <redirect>UNEVEN BARS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ASYMMETRIC BARS</pattern>
+        <template>
+            <redirect>\1 UNEVEN BARS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ASYMMETRIC BARS</pattern>
+        <template>
+            <redirect>UNEVEN BARS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) AUBERGINE (.*)</pattern>
+        <template>
+            <redirect>\1 EGGPLANT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>AUBERGINE (.*)</pattern>
+        <template>
+            <redirect>EGGPLANT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) AUBERGINE</pattern>
+        <template>
+            <redirect>\1 EGGPLANT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>AUBERGINE</pattern>
+        <template>
+            <redirect>EGGPLANT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BAKING TRAY (.*)</pattern>
+        <template>
+            <redirect>\1 COOKIE SHEET \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BAKING TRAY (.*)</pattern>
+        <template>
+            <redirect>COOKIE SHEET \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BAKING TRAY</pattern>
+        <template>
+            <redirect>\1 COOKIE SHEET</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BAKING TRAY</pattern>
+        <template>
+            <redirect>COOKIE SHEET</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BANK HOLIDAY (.*)</pattern>
+        <template>
+            <redirect>\1 LEGAL HOLIDAY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BANK HOLIDAY (.*)</pattern>
+        <template>
+            <redirect>LEGAL HOLIDAY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BANK HOLIDAY</pattern>
+        <template>
+            <redirect>\1 LEGAL HOLIDAY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BANK HOLIDAY</pattern>
+        <template>
+            <redirect>LEGAL HOLIDAY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BISCUIT (.*)</pattern>
+        <template>
+            <redirect>\1 COOKIE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BISCUIT (.*)</pattern>
+        <template>
+            <redirect>COOKIE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BISCUIT</pattern>
+        <template>
+            <redirect>\1 COOKIE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BISCUIT</pattern>
+        <template>
+            <redirect>COOKIE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BLACK ECONOMY (.*)</pattern>
+        <template>
+            <redirect>\1 UNDERGROUND ECONOMY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BLACK ECONOMY (.*)</pattern>
+        <template>
+            <redirect>UNDERGROUND ECONOMY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BLACK ECONOMY</pattern>
+        <template>
+            <redirect>\1 UNDERGROUND ECONOMY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BLACK ECONOMY</pattern>
+        <template>
+            <redirect>UNDERGROUND ECONOMY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BLANKET BATH (.*)</pattern>
+        <template>
+            <redirect>\1 SPONGE BATH \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BLANKET BATH (.*)</pattern>
+        <template>
+            <redirect>SPONGE BATH \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BLANKET BATH</pattern>
+        <template>
+            <redirect>\1 SPONGE BATH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BLANKET BATH</pattern>
+        <template>
+            <redirect>SPONGE BATH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BLOCK OF FLATS (.*)</pattern>
+        <template>
+            <redirect>\1 APARTMENT BUILDING \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BLOCK OF FLATS (.*)</pattern>
+        <template>
+            <redirect>APARTMENT BUILDING \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BLOCK OF FLATS</pattern>
+        <template>
+            <redirect>\1 APARTMENT BUILDING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BLOCK OF FLATS</pattern>
+        <template>
+            <redirect>APARTMENT BUILDING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BOILER SUIT (.*)</pattern>
+        <template>
+            <redirect>\1 COVERALLS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BOILER SUIT (.*)</pattern>
+        <template>
+            <redirect>COVERALLS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BOILER SUIT</pattern>
+        <template>
+            <redirect>\1 COVERALLS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BOILER SUIT</pattern>
+        <template>
+            <redirect>COVERALLS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BOOB TUBE (.*)</pattern>
+        <template>
+            <redirect>\1 TUBE TOP \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BOOB TUBE (.*)</pattern>
+        <template>
+            <redirect>TUBE TOP \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BOOB TUBE</pattern>
+        <template>
+            <redirect>\1 TUBE TOP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BOOB TUBE</pattern>
+        <template>
+            <redirect>TUBE TOP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BOTTOM DRAWER (.*)</pattern>
+        <template>
+            <redirect>\1 HOPE CHEST \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BOTTOM DRAWER (.*)</pattern>
+        <template>
+            <redirect>HOPE CHEST \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BOTTOM DRAWER</pattern>
+        <template>
+            <redirect>\1 HOPE CHEST</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BOTTOM DRAWER</pattern>
+        <template>
+            <redirect>HOPE CHEST</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BOWLS (.*)</pattern>
+        <template>
+            <redirect>\1 LAWN BOWLING \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BOWLS (.*)</pattern>
+        <template>
+            <redirect>LAWN BOWLING \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BOWLS</pattern>
+        <template>
+            <redirect>\1 LAWN BOWLING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BOWLS</pattern>
+        <template>
+            <redirect>LAWN BOWLING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BRACES (.*)</pattern>
+        <template>
+            <redirect>\1 SUSPENDERS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BRACES (.*)</pattern>
+        <template>
+            <redirect>SUSPENDERS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BRACES</pattern>
+        <template>
+            <redirect>\1 SUSPENDERS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BRACES</pattern>
+        <template>
+            <redirect>SUSPENDERS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BREAKDOWN VAN (.*)</pattern>
+        <template>
+            <redirect>\1 TOW TRUCK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BREAKDOWN VAN (.*)</pattern>
+        <template>
+            <redirect>TOW TRUCK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BREAKDOWN VAN</pattern>
+        <template>
+            <redirect>\1 TOW TRUCK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BREAKDOWN VAN</pattern>
+        <template>
+            <redirect>TOW TRUCK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BREEZE BLOCK (.*)</pattern>
+        <template>
+            <redirect>\1 CINDER BLOCK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BREEZE BLOCK (.*)</pattern>
+        <template>
+            <redirect>CINDER BLOCK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BREEZE BLOCK</pattern>
+        <template>
+            <redirect>\1 CINDER BLOCK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BREEZE BLOCK</pattern>
+        <template>
+            <redirect>CINDER BLOCK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BRIDGING LOAN (.*)</pattern>
+        <template>
+            <redirect>\1 BRIDGE LOAN \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BRIDGING LOAN (.*)</pattern>
+        <template>
+            <redirect>BRIDGE LOAN \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BRIDGING LOAN</pattern>
+        <template>
+            <redirect>\1 BRIDGE LOAN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BRIDGING LOAN</pattern>
+        <template>
+            <redirect>BRIDGE LOAN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BUMBAG (.*)</pattern>
+        <template>
+            <redirect>\1 FANNY PACK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BUMBAG (.*)</pattern>
+        <template>
+            <redirect>FANNY PACK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BUMBAG</pattern>
+        <template>
+            <redirect>\1 FANNY PACK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BUMBAG</pattern>
+        <template>
+            <redirect>FANNY PACK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CANDYFLOSS (.*)</pattern>
+        <template>
+            <redirect>\1 COTTON CANDY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CANDYFLOSS (.*)</pattern>
+        <template>
+            <redirect>COTTON CANDY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CANDYFLOSS</pattern>
+        <template>
+            <redirect>\1 COTTON CANDY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CANDYFLOSS</pattern>
+        <template>
+            <redirect>COTTON CANDY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CAR PARK (.*)</pattern>
+        <template>
+            <redirect>\1 PARKING LOT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CAR PARK (.*)</pattern>
+        <template>
+            <redirect>PARKING LOT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CAR PARK</pattern>
+        <template>
+            <redirect>\1 PARKING LOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CAR PARK</pattern>
+        <template>
+            <redirect>PARKING LOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CASUALTY (.*)</pattern>
+        <template>
+            <redirect>\1 EMERGENCY ROOM \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CASUALTY (.*)</pattern>
+        <template>
+            <redirect>EMERGENCY ROOM \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CASUALTY</pattern>
+        <template>
+            <redirect>\1 EMERGENCY ROOM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CASUALTY</pattern>
+        <template>
+            <redirect>EMERGENCY ROOM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CATAPULT (.*)</pattern>
+        <template>
+            <redirect>\1 SLINGSHOT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CATAPULT (.*)</pattern>
+        <template>
+            <redirect>SLINGSHOT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CATAPULT</pattern>
+        <template>
+            <redirect>\1 SLINGSHOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CATAPULT</pattern>
+        <template>
+            <redirect>SLINGSHOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CENTRAL RESERVATION (.*)</pattern>
+        <template>
+            <redirect>\1 MEDIAN STRIP \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CENTRAL RESERVATION (.*)</pattern>
+        <template>
+            <redirect>MEDIAN STRIP \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CENTRAL RESERVATION</pattern>
+        <template>
+            <redirect>\1 MEDIAN STRIP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CENTRAL RESERVATION</pattern>
+        <template>
+            <redirect>MEDIAN STRIP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CHEMIST (.*)</pattern>
+        <template>
+            <redirect>\1 DRUGSTORE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CHEMIST (.*)</pattern>
+        <template>
+            <redirect>DRUGSTORE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CHEMIST</pattern>
+        <template>
+            <redirect>\1 DRUGSTORE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CHEMIST</pattern>
+        <template>
+            <redirect>DRUGSTORE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CHIPS (.*)</pattern>
+        <template>
+            <redirect>\1 FRENCH FRIES \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CHIPS (.*)</pattern>
+        <template>
+            <redirect>FRENCH FRIES \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CHIPS</pattern>
+        <template>
+            <redirect>\1 FRENCH FRIES</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CHIPS</pattern>
+        <template>
+            <redirect>FRENCH FRIES</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CINEMA (.*)</pattern>
+        <template>
+            <redirect>\1 MOVIE THEATER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CINEMA (.*)</pattern>
+        <template>
+            <redirect>MOVIE THEATER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CINEMA</pattern>
+        <template>
+            <redirect>\1 MOVIE THEATER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CINEMA</pattern>
+        <template>
+            <redirect>MOVIE THEATER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CLING FILM (.*)</pattern>
+        <template>
+            <redirect>\1 PLASTIC WRAP \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CLING FILM (.*)</pattern>
+        <template>
+            <redirect>PLASTIC WRAP \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CLING FILM</pattern>
+        <template>
+            <redirect>\1 PLASTIC WRAP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CLING FILM</pattern>
+        <template>
+            <redirect>PLASTIC WRAP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) COMMON SEAL (.*)</pattern>
+        <template>
+            <redirect>\1 HARBOR SEAL \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>COMMON SEAL (.*)</pattern>
+        <template>
+            <redirect>HARBOR SEAL \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) COMMON SEAL</pattern>
+        <template>
+            <redirect>\1 HARBOR SEAL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>COMMON SEAL</pattern>
+        <template>
+            <redirect>HARBOR SEAL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CONSUMER DURABLES (.*)</pattern>
+        <template>
+            <redirect>\1 DURABLE GOODS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CONSUMER DURABLES (.*)</pattern>
+        <template>
+            <redirect>DURABLE GOODS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CONSUMER DURABLES</pattern>
+        <template>
+            <redirect>\1 DURABLE GOODS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CONSUMER DURABLES</pattern>
+        <template>
+            <redirect>DURABLE GOODS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CORNFLOUR (.*)</pattern>
+        <template>
+            <redirect>\1 CORNSTARCH \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CORNFLOUR (.*)</pattern>
+        <template>
+            <redirect>CORNSTARCH \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CORNFLOUR</pattern>
+        <template>
+            <redirect>\1 CORNSTARCH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CORNFLOUR</pattern>
+        <template>
+            <redirect>CORNSTARCH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) COT (.*)</pattern>
+        <template>
+            <redirect>\1 CRIB \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>COT (.*)</pattern>
+        <template>
+            <redirect>CRIB \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) COT</pattern>
+        <template>
+            <redirect>\1 CRIB</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>COT</pattern>
+        <template>
+            <redirect>CRIB</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) COT DEATH (.*)</pattern>
+        <template>
+            <redirect>\1 CRIB DEATH \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>COT DEATH (.*)</pattern>
+        <template>
+            <redirect>CRIB DEATH \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) COT DEATH</pattern>
+        <template>
+            <redirect>\1 CRIB DEATH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>COT DEATH</pattern>
+        <template>
+            <redirect>CRIB DEATH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) COTTON BUD (.*)</pattern>
+        <template>
+            <redirect>\1 COTTON SWAB \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>COTTON BUD (.*)</pattern>
+        <template>
+            <redirect>COTTON SWAB \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) COTTON BUD</pattern>
+        <template>
+            <redirect>\1 COTTON SWAB</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>COTTON BUD</pattern>
+        <template>
+            <redirect>COTTON SWAB</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) COTTON WOOL (.*)</pattern>
+        <template>
+            <redirect>\1 ABSORBENT COTTON \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>COTTON WOOL (.*)</pattern>
+        <template>
+            <redirect>ABSORBENT COTTON \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) COTTON WOOL</pattern>
+        <template>
+            <redirect>\1 ABSORBENT COTTON</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>COTTON WOOL</pattern>
+        <template>
+            <redirect>ABSORBENT COTTON</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) COURGETTE (.*)</pattern>
+        <template>
+            <redirect>\1 ZUCCHINI \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>COURGETTE (.*)</pattern>
+        <template>
+            <redirect>ZUCCHINI \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) COURGETTE</pattern>
+        <template>
+            <redirect>\1 ZUCCHINI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>COURGETTE</pattern>
+        <template>
+            <redirect>ZUCCHINI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) COURT CARD (.*)</pattern>
+        <template>
+            <redirect>\1 FACE CARD \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>COURT CARD (.*)</pattern>
+        <template>
+            <redirect>FACE CARD \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) COURT CARD</pattern>
+        <template>
+            <redirect>\1 FACE CARD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>COURT CARD</pattern>
+        <template>
+            <redirect>FACE CARD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CRASH BARRIER (.*)</pattern>
+        <template>
+            <redirect>\1 GUARDRAIL \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CRASH BARRIER (.*)</pattern>
+        <template>
+            <redirect>GUARDRAIL \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CRASH BARRIER</pattern>
+        <template>
+            <redirect>\1 GUARDRAIL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CRASH BARRIER</pattern>
+        <template>
+            <redirect>GUARDRAIL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CRISPS (.*)</pattern>
+        <template>
+            <redirect>\1 POTATO CHIPS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CRISPS (.*)</pattern>
+        <template>
+            <redirect>POTATO CHIPS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CRISPS</pattern>
+        <template>
+            <redirect>\1 POTATO CHIPS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CRISPS</pattern>
+        <template>
+            <redirect>POTATO CHIPS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CROCODILE CLIP (.*)</pattern>
+        <template>
+            <redirect>\1 ALLIGATOR CLIP \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CROCODILE CLIP (.*)</pattern>
+        <template>
+            <redirect>ALLIGATOR CLIP \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CROCODILE CLIP</pattern>
+        <template>
+            <redirect>\1 ALLIGATOR CLIP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CROCODILE CLIP</pattern>
+        <template>
+            <redirect>ALLIGATOR CLIP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CROSS-PLY (.*)</pattern>
+        <template>
+            <redirect>\1 BIAS-PLY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CROSS-PLY (.*)</pattern>
+        <template>
+            <redirect>BIAS-PLY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CROSS-PLY</pattern>
+        <template>
+            <redirect>\1 BIAS-PLY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CROSS-PLY</pattern>
+        <template>
+            <redirect>BIAS-PLY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CURRENT ACCOUNT (.*)</pattern>
+        <template>
+            <redirect>\1 CHECKING ACCOUNT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CURRENT ACCOUNT (.*)</pattern>
+        <template>
+            <redirect>CHECKING ACCOUNT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) CURRENT ACCOUNT</pattern>
+        <template>
+            <redirect>\1 CHECKING ACCOUNT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CURRENT ACCOUNT</pattern>
+        <template>
+            <redirect>CHECKING ACCOUNT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DANGER MONEY (.*)</pattern>
+        <template>
+            <redirect>\1 HAZARD PAY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DANGER MONEY (.*)</pattern>
+        <template>
+            <redirect>HAZARD PAY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DANGER MONEY</pattern>
+        <template>
+            <redirect>\1 HAZARD PAY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DANGER MONEY</pattern>
+        <template>
+            <redirect>HAZARD PAY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DIALLING TONE (.*)</pattern>
+        <template>
+            <redirect>\1 DIAL TONE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DIALLING TONE (.*)</pattern>
+        <template>
+            <redirect>DIAL TONE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DIALLING TONE</pattern>
+        <template>
+            <redirect>\1 DIAL TONE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DIALLING TONE</pattern>
+        <template>
+            <redirect>DIAL TONE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DIAMANTE (.*)</pattern>
+        <template>
+            <redirect>\1 RHINESTONE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DIAMANTE (.*)</pattern>
+        <template>
+            <redirect>RHINESTONE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DIAMANTE</pattern>
+        <template>
+            <redirect>\1 RHINESTONE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DIAMANTE</pattern>
+        <template>
+            <redirect>RHINESTONE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DOUBLE CREAM (.*)</pattern>
+        <template>
+            <redirect>\1 HEAVY CREAM \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DOUBLE CREAM (.*)</pattern>
+        <template>
+            <redirect>HEAVY CREAM \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DOUBLE CREAM</pattern>
+        <template>
+            <redirect>\1 HEAVY CREAM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DOUBLE CREAM</pattern>
+        <template>
+            <redirect>HEAVY CREAM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DRAWING PIN (.*)</pattern>
+        <template>
+            <redirect>\1 THUMBTACK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DRAWING PIN (.*)</pattern>
+        <template>
+            <redirect>THUMBTACK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DRAWING PIN</pattern>
+        <template>
+            <redirect>\1 THUMBTACK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DRAWING PIN</pattern>
+        <template>
+            <redirect>THUMBTACK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DRESSING GOWN (.*)</pattern>
+        <template>
+            <redirect>\1 BATHROBE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DRESSING GOWN (.*)</pattern>
+        <template>
+            <redirect>BATHROBE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DRESSING GOWN</pattern>
+        <template>
+            <redirect>\1 BATHROBE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DRESSING GOWN</pattern>
+        <template>
+            <redirect>BATHROBE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DRINK-DRIVING (.*)</pattern>
+        <template>
+            <redirect>\1 DRUNK DRIVING \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DRINK-DRIVING (.*)</pattern>
+        <template>
+            <redirect>DRUNK DRIVING \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DRINK-DRIVING</pattern>
+        <template>
+            <redirect>\1 DRUNK DRIVING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DRINK-DRIVING</pattern>
+        <template>
+            <redirect>DRUNK DRIVING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DRINKS CUPBOARD (.*)</pattern>
+        <template>
+            <redirect>\1 LIQUOR CABINET \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DRINKS CUPBOARD (.*)</pattern>
+        <template>
+            <redirect>LIQUOR CABINET \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DRINKS CUPBOARD</pattern>
+        <template>
+            <redirect>\1 LIQUOR CABINET</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DRINKS CUPBOARD</pattern>
+        <template>
+            <redirect>LIQUOR CABINET</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DRINKS PARTY (.*)</pattern>
+        <template>
+            <redirect>\1 COCKTAIL PARTY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DRINKS PARTY (.*)</pattern>
+        <template>
+            <redirect>COCKTAIL PARTY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DRINKS PARTY</pattern>
+        <template>
+            <redirect>\1 COCKTAIL PARTY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DRINKS PARTY</pattern>
+        <template>
+            <redirect>COCKTAIL PARTY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DRIVING LICENCE (.*)</pattern>
+        <template>
+            <redirect>\1 DRIVER’S LICENSE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DRIVING LICENCE (.*)</pattern>
+        <template>
+            <redirect>DRIVER’S LICENSE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DRIVING LICENCE</pattern>
+        <template>
+            <redirect>\1 DRIVER’S LICENSE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DRIVING LICENCE</pattern>
+        <template>
+            <redirect>DRIVER’S LICENSE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DUAL CARRIAGEWAY (.*)</pattern>
+        <template>
+            <redirect>\1 DIVIDED HIGHWAY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DUAL CARRIAGEWAY (.*)</pattern>
+        <template>
+            <redirect>DIVIDED HIGHWAY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DUAL CARRIAGEWAY</pattern>
+        <template>
+            <redirect>\1 DIVIDED HIGHWAY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DUAL CARRIAGEWAY</pattern>
+        <template>
+            <redirect>DIVIDED HIGHWAY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DUST SHEET (.*)</pattern>
+        <template>
+            <redirect>\1 DROP CLOTH \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DUST SHEET (.*)</pattern>
+        <template>
+            <redirect>DROP CLOTH \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DUST SHEET</pattern>
+        <template>
+            <redirect>\1 DROP CLOTH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DUST SHEET</pattern>
+        <template>
+            <redirect>DROP CLOTH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DUSTBIN (.*)</pattern>
+        <template>
+            <redirect>\1 GARBAGE CAN \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DUSTBIN (.*)</pattern>
+        <template>
+            <redirect>GARBAGE CAN \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DUSTBIN</pattern>
+        <template>
+            <redirect>\1 GARBAGE CAN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DUSTBIN</pattern>
+        <template>
+            <redirect>GARBAGE CAN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ESTATE CAR (.*)</pattern>
+        <template>
+            <redirect>\1 STATION WAGON \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ESTATE CAR (.*)</pattern>
+        <template>
+            <redirect>STATION WAGON \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ESTATE CAR</pattern>
+        <template>
+            <redirect>\1 STATION WAGON</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ESTATE CAR</pattern>
+        <template>
+            <redirect>STATION WAGON</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EX-DIRECTORY (.*)</pattern>
+        <template>
+            <redirect>\1 UNLISTED \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EX-DIRECTORY (.*)</pattern>
+        <template>
+            <redirect>UNLISTED \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EX-DIRECTORY</pattern>
+        <template>
+            <redirect>\1 UNLISTED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EX-DIRECTORY</pattern>
+        <template>
+            <redirect>UNLISTED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FAITH SCHOOL (.*)</pattern>
+        <template>
+            <redirect>\1 PAROCHIAL SCHOOL \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FAITH SCHOOL (.*)</pattern>
+        <template>
+            <redirect>PAROCHIAL SCHOOL \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FAITH SCHOOL</pattern>
+        <template>
+            <redirect>\1 PAROCHIAL SCHOOL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FAITH SCHOOL</pattern>
+        <template>
+            <redirect>PAROCHIAL SCHOOL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FINANCIAL YEAR (.*)</pattern>
+        <template>
+            <redirect>\1 FISCAL YEAR \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FINANCIAL YEAR (.*)</pattern>
+        <template>
+            <redirect>FISCAL YEAR \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FINANCIAL YEAR</pattern>
+        <template>
+            <redirect>\1 FISCAL YEAR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FINANCIAL YEAR</pattern>
+        <template>
+            <redirect>FISCAL YEAR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIRE BRIGADE (.*)</pattern>
+        <template>
+            <redirect>\1 FIRE DEPARTMENT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIRE BRIGADE (.*)</pattern>
+        <template>
+            <redirect>FIRE DEPARTMENT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIRE BRIGADE</pattern>
+        <template>
+            <redirect>\1 FIRE DEPARTMENT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIRE BRIGADE</pattern>
+        <template>
+            <redirect>FIRE DEPARTMENT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIRST FLOOR (.*)</pattern>
+        <template>
+            <redirect>\1 SECOND FLOOR \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIRST FLOOR (.*)</pattern>
+        <template>
+            <redirect>SECOND FLOOR \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIRST FLOOR</pattern>
+        <template>
+            <redirect>\1 SECOND FLOOR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIRST FLOOR</pattern>
+        <template>
+            <redirect>SECOND FLOOR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FISH FINGER (.*)</pattern>
+        <template>
+            <redirect>\1 FISH STICK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FISH FINGER (.*)</pattern>
+        <template>
+            <redirect>FISH STICK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FISH FINGER</pattern>
+        <template>
+            <redirect>\1 FISH STICK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FISH FINGER</pattern>
+        <template>
+            <redirect>FISH STICK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FITTED CARPET (.*)</pattern>
+        <template>
+            <redirect>\1 WALL-TO-WALL CARPETING \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FITTED CARPET (.*)</pattern>
+        <template>
+            <redirect>WALL-TO-WALL CARPETING \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FITTED CARPET</pattern>
+        <template>
+            <redirect>\1 WALL-TO-WALL CARPETING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FITTED CARPET</pattern>
+        <template>
+            <redirect>WALL-TO-WALL CARPETING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FLANNEL (.*)</pattern>
+        <template>
+            <redirect>\1 WASHCLOTH \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FLANNEL (.*)</pattern>
+        <template>
+            <redirect>WASHCLOTH \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FLANNEL</pattern>
+        <template>
+            <redirect>\1 WASHCLOTH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FLANNEL</pattern>
+        <template>
+            <redirect>WASHCLOTH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FLAT (.*)</pattern>
+        <template>
+            <redirect>\1 APARTMENT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FLAT (.*)</pattern>
+        <template>
+            <redirect>APARTMENT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FLAT</pattern>
+        <template>
+            <redirect>\1 APARTMENT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FLAT</pattern>
+        <template>
+            <redirect>APARTMENT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FLEXITIME (.*)</pattern>
+        <template>
+            <redirect>\1 FLEXTIME \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FLEXITIME (.*)</pattern>
+        <template>
+            <redirect>FLEXTIME \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FLEXITIME</pattern>
+        <template>
+            <redirect>\1 FLEXTIME</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FLEXITIME</pattern>
+        <template>
+            <redirect>FLEXTIME</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FLICK KNIFE (.*)</pattern>
+        <template>
+            <redirect>\1 SWITCHBLADE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FLICK KNIFE (.*)</pattern>
+        <template>
+            <redirect>SWITCHBLADE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FLICK KNIFE</pattern>
+        <template>
+            <redirect>\1 SWITCHBLADE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FLICK KNIFE</pattern>
+        <template>
+            <redirect>SWITCHBLADE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FLYOVER (.*)</pattern>
+        <template>
+            <redirect>\1 OVERPASS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FLYOVER (.*)</pattern>
+        <template>
+            <redirect>OVERPASS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FLYOVER</pattern>
+        <template>
+            <redirect>\1 OVERPASS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FLYOVER</pattern>
+        <template>
+            <redirect>OVERPASS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FOOTBALL (.*)</pattern>
+        <template>
+            <redirect>\1 SOCCER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FOOTBALL (.*)</pattern>
+        <template>
+            <redirect>SOCCER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FOOTBALL</pattern>
+        <template>
+            <redirect>\1 SOCCER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FOOTBALL</pattern>
+        <template>
+            <redirect>SOCCER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FOOTWAY (.*)</pattern>
+        <template>
+            <redirect>\1 SIDEWALK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FOOTWAY (.*)</pattern>
+        <template>
+            <redirect>SIDEWALK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FOOTWAY</pattern>
+        <template>
+            <redirect>\1 SIDEWALK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FOOTWAY</pattern>
+        <template>
+            <redirect>SIDEWALK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) GARDEN (.*)</pattern>
+        <template>
+            <redirect>\1 YARD \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GARDEN (.*)</pattern>
+        <template>
+            <redirect>YARD \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) GARDEN</pattern>
+        <template>
+            <redirect>\1 YARD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GARDEN</pattern>
+        <template>
+            <redirect>YARD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) GEAR LEVER (.*)</pattern>
+        <template>
+            <redirect>\1 GEARSHIFT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GEAR LEVER (.*)</pattern>
+        <template>
+            <redirect>GEARSHIFT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) GEAR LEVER</pattern>
+        <template>
+            <redirect>\1 GEARSHIFT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GEAR LEVER</pattern>
+        <template>
+            <redirect>GEARSHIFT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) GOODS TRAIN (.*)</pattern>
+        <template>
+            <redirect>\1 FREIGHT TRAIN \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GOODS TRAIN (.*)</pattern>
+        <template>
+            <redirect>FREIGHT TRAIN \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) GOODS TRAIN</pattern>
+        <template>
+            <redirect>\1 FREIGHT TRAIN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GOODS TRAIN</pattern>
+        <template>
+            <redirect>FREIGHT TRAIN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) GREASEPROOF PAPER (.*)</pattern>
+        <template>
+            <redirect>\1 WAX PAPER/WAXED PAPER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GREASEPROOF PAPER (.*)</pattern>
+        <template>
+            <redirect>WAX PAPER/WAXED PAPER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) GREASEPROOF PAPER</pattern>
+        <template>
+            <redirect>\1 WAX PAPER/WAXED PAPER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GREASEPROOF PAPER</pattern>
+        <template>
+            <redirect>WAX PAPER/WAXED PAPER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) GREEN FINGERS (.*)</pattern>
+        <template>
+            <redirect>\1 GREEN THUMB \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GREEN FINGERS (.*)</pattern>
+        <template>
+            <redirect>GREEN THUMB \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) GREEN FINGERS</pattern>
+        <template>
+            <redirect>\1 GREEN THUMB</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GREEN FINGERS</pattern>
+        <template>
+            <redirect>GREEN THUMB</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) GROUND FLOOR (.*)</pattern>
+        <template>
+            <redirect>\1 FIRST FLOOR \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GROUND FLOOR (.*)</pattern>
+        <template>
+            <redirect>FIRST FLOOR \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) GROUND FLOOR</pattern>
+        <template>
+            <redirect>\1 FIRST FLOOR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GROUND FLOOR</pattern>
+        <template>
+            <redirect>FIRST FLOOR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) GROUNDSMAN (.*)</pattern>
+        <template>
+            <redirect>\1 GROUNDSKEEPER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GROUNDSMAN (.*)</pattern>
+        <template>
+            <redirect>GROUNDSKEEPER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) GROUNDSMAN</pattern>
+        <template>
+            <redirect>\1 GROUNDSKEEPER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GROUNDSMAN</pattern>
+        <template>
+            <redirect>GROUNDSKEEPER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HAIRSLIDE (.*)</pattern>
+        <template>
+            <redirect>\1 BARRETTE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HAIRSLIDE (.*)</pattern>
+        <template>
+            <redirect>BARRETTE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HAIRSLIDE</pattern>
+        <template>
+            <redirect>\1 BARRETTE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HAIRSLIDE</pattern>
+        <template>
+            <redirect>BARRETTE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HATSTAND (.*)</pattern>
+        <template>
+            <redirect>\1 HATRACK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HATSTAND (.*)</pattern>
+        <template>
+            <redirect>HATRACK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HATSTAND</pattern>
+        <template>
+            <redirect>\1 HATRACK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HATSTAND</pattern>
+        <template>
+            <redirect>HATRACK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HEN NIGHT (.*)</pattern>
+        <template>
+            <redirect>\1 BACHELORETTE PARTY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HEN NIGHT (.*)</pattern>
+        <template>
+            <redirect>BACHELORETTE PARTY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HEN NIGHT</pattern>
+        <template>
+            <redirect>\1 BACHELORETTE PARTY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HEN NIGHT</pattern>
+        <template>
+            <redirect>BACHELORETTE PARTY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HIRE PURCHASE (.*)</pattern>
+        <template>
+            <redirect>\1 INSTALLMENT PLAN \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HIRE PURCHASE (.*)</pattern>
+        <template>
+            <redirect>INSTALLMENT PLAN \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HIRE PURCHASE</pattern>
+        <template>
+            <redirect>\1 INSTALLMENT PLAN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HIRE PURCHASE</pattern>
+        <template>
+            <redirect>INSTALLMENT PLAN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HOARDING (.*)</pattern>
+        <template>
+            <redirect>\1 BILLBOARD \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOARDING (.*)</pattern>
+        <template>
+            <redirect>BILLBOARD \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HOARDING</pattern>
+        <template>
+            <redirect>\1 BILLBOARD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOARDING</pattern>
+        <template>
+            <redirect>BILLBOARD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HOB (.*)</pattern>
+        <template>
+            <redirect>\1 STOVETOP \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOB (.*)</pattern>
+        <template>
+            <redirect>STOVETOP \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HOB</pattern>
+        <template>
+            <redirect>\1 STOVETOP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOB</pattern>
+        <template>
+            <redirect>STOVETOP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HOLDALL (.*)</pattern>
+        <template>
+            <redirect>\1 CARRYALL \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOLDALL (.*)</pattern>
+        <template>
+            <redirect>CARRYALL \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HOLDALL</pattern>
+        <template>
+            <redirect>\1 CARRYALL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOLDALL</pattern>
+        <template>
+            <redirect>CARRYALL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HOLIDAY (.*)</pattern>
+        <template>
+            <redirect>\1 VACATION \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOLIDAY (.*)</pattern>
+        <template>
+            <redirect>VACATION \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HOLIDAY</pattern>
+        <template>
+            <redirect>\1 VACATION</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOLIDAY</pattern>
+        <template>
+            <redirect>VACATION</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HOLIDAYMAKER (.*)</pattern>
+        <template>
+            <redirect>\1 VACATIONER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOLIDAYMAKER (.*)</pattern>
+        <template>
+            <redirect>VACATIONER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HOLIDAYMAKER</pattern>
+        <template>
+            <redirect>\1 VACATIONER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOLIDAYMAKER</pattern>
+        <template>
+            <redirect>VACATIONER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HOMELY (.*)</pattern>
+        <template>
+            <redirect>\1 HOMEY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOMELY (.*)</pattern>
+        <template>
+            <redirect>HOMEY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HOMELY</pattern>
+        <template>
+            <redirect>\1 HOMEY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOMELY</pattern>
+        <template>
+            <redirect>HOMEY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) IN HOSPITAL (.*)</pattern>
+        <template>
+            <redirect>\1 IN THE HOSPITAL \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IN HOSPITAL (.*)</pattern>
+        <template>
+            <redirect>IN THE HOSPITAL \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) IN HOSPITAL</pattern>
+        <template>
+            <redirect>\1 IN THE HOSPITAL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IN HOSPITAL</pattern>
+        <template>
+            <redirect>IN THE HOSPITAL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HOT FLUSH (.*)</pattern>
+        <template>
+            <redirect>\1 HOT FLASH \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOT FLUSH (.*)</pattern>
+        <template>
+            <redirect>HOT FLASH \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HOT FLUSH</pattern>
+        <template>
+            <redirect>\1 HOT FLASH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOT FLUSH</pattern>
+        <template>
+            <redirect>HOT FLASH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HOUSING ESTATE (.*)</pattern>
+        <template>
+            <redirect>\1 HOUSING DEVELOPMENT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOUSING ESTATE (.*)</pattern>
+        <template>
+            <redirect>HOUSING DEVELOPMENT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HOUSING ESTATE</pattern>
+        <template>
+            <redirect>\1 HOUSING DEVELOPMENT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOUSING ESTATE</pattern>
+        <template>
+            <redirect>HOUSING DEVELOPMENT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ICE LOLLY (.*)</pattern>
+        <template>
+            <redirect>\1 POPSICLE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ICE LOLLY (.*)</pattern>
+        <template>
+            <redirect>POPSICLE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ICE LOLLY</pattern>
+        <template>
+            <redirect>\1 POPSICLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ICE LOLLY</pattern>
+        <template>
+            <redirect>POPSICLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ICING SUGAR (.*)</pattern>
+        <template>
+            <redirect>\1 CONFECTIONERS’ SUGAR \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ICING SUGAR (.*)</pattern>
+        <template>
+            <redirect>CONFECTIONERS’ SUGAR \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ICING SUGAR</pattern>
+        <template>
+            <redirect>\1 CONFECTIONERS’ SUGAR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ICING SUGAR</pattern>
+        <template>
+            <redirect>CONFECTIONERS’ SUGAR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) INSIDE LEG (.*)</pattern>
+        <template>
+            <redirect>\1 INSEAM \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>INSIDE LEG (.*)</pattern>
+        <template>
+            <redirect>INSEAM \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) INSIDE LEG</pattern>
+        <template>
+            <redirect>\1 INSEAM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>INSIDE LEG</pattern>
+        <template>
+            <redirect>INSEAM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) JELLY BABIES (.*)</pattern>
+        <template>
+            <redirect>\1 JELLY BEANS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>JELLY BABIES (.*)</pattern>
+        <template>
+            <redirect>JELLY BEANS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) JELLY BABIES</pattern>
+        <template>
+            <redirect>\1 JELLY BEANS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>JELLY BABIES</pattern>
+        <template>
+            <redirect>JELLY BEANS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) JOE BLOGGS (.*)</pattern>
+        <template>
+            <redirect>\1 JOE BLOW \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>JOE BLOGGS (.*)</pattern>
+        <template>
+            <redirect>JOE BLOW \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) JOE BLOGGS</pattern>
+        <template>
+            <redirect>\1 JOE BLOW</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>JOE BLOGGS</pattern>
+        <template>
+            <redirect>JOE BLOW</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) JOE PUBLIC (.*)</pattern>
+        <template>
+            <redirect>\1 JOHN Q. PUBLIC \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>JOE PUBLIC (.*)</pattern>
+        <template>
+            <redirect>JOHN Q. PUBLIC \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) JOE PUBLIC</pattern>
+        <template>
+            <redirect>\1 JOHN Q. PUBLIC</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>JOE PUBLIC</pattern>
+        <template>
+            <redirect>JOHN Q. PUBLIC</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) JUMBLE SALE (.*)</pattern>
+        <template>
+            <redirect>\1 RUMMAGE SALE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>JUMBLE SALE (.*)</pattern>
+        <template>
+            <redirect>RUMMAGE SALE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) JUMBLE SALE</pattern>
+        <template>
+            <redirect>\1 RUMMAGE SALE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>JUMBLE SALE</pattern>
+        <template>
+            <redirect>RUMMAGE SALE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) JUMP LEAD (.*)</pattern>
+        <template>
+            <redirect>\1 JUMPER CABLE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>JUMP LEAD (.*)</pattern>
+        <template>
+            <redirect>JUMPER CABLE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) JUMP LEAD</pattern>
+        <template>
+            <redirect>\1 JUMPER CABLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>JUMP LEAD</pattern>
+        <template>
+            <redirect>JUMPER CABLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) JUMPER (.*)</pattern>
+        <template>
+            <redirect>\1 SWEATER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>JUMPER (.*)</pattern>
+        <template>
+            <redirect>SWEATER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) JUMPER</pattern>
+        <template>
+            <redirect>\1 SWEATER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>JUMPER</pattern>
+        <template>
+            <redirect>SWEATER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) JUNIOR SCHOOL (.*)</pattern>
+        <template>
+            <redirect>\1 ELEMENTARY SCHOOL \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>JUNIOR SCHOOL (.*)</pattern>
+        <template>
+            <redirect>ELEMENTARY SCHOOL \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) JUNIOR SCHOOL</pattern>
+        <template>
+            <redirect>\1 ELEMENTARY SCHOOL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>JUNIOR SCHOOL</pattern>
+        <template>
+            <redirect>ELEMENTARY SCHOOL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) KENNEL (.*)</pattern>
+        <template>
+            <redirect>\1 DOGHOUSE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>KENNEL (.*)</pattern>
+        <template>
+            <redirect>DOGHOUSE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) KENNEL</pattern>
+        <template>
+            <redirect>\1 DOGHOUSE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>KENNEL</pattern>
+        <template>
+            <redirect>DOGHOUSE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LADYBIRD (.*)</pattern>
+        <template>
+            <redirect>\1 LADYBUG \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LADYBIRD (.*)</pattern>
+        <template>
+            <redirect>LADYBUG \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LADYBIRD</pattern>
+        <template>
+            <redirect>\1 LADYBUG</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LADYBIRD</pattern>
+        <template>
+            <redirect>LADYBUG</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) A LETTUCE (.*)</pattern>
+        <template>
+            <redirect>\1 A HEAD OF LETTUCE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>A LETTUCE (.*)</pattern>
+        <template>
+            <redirect>A HEAD OF LETTUCE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) A LETTUCE</pattern>
+        <template>
+            <redirect>\1 A HEAD OF LETTUCE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>A LETTUCE</pattern>
+        <template>
+            <redirect>A HEAD OF LETTUCE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LEVEL CROSSING (.*)</pattern>
+        <template>
+            <redirect>\1 GRADE CROSSING \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LEVEL CROSSING (.*)</pattern>
+        <template>
+            <redirect>GRADE CROSSING \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LEVEL CROSSING</pattern>
+        <template>
+            <redirect>\1 GRADE CROSSING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LEVEL CROSSING</pattern>
+        <template>
+            <redirect>GRADE CROSSING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LIFT (.*)</pattern>
+        <template>
+            <redirect>\1 ELEVATOR \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LIFT (.*)</pattern>
+        <template>
+            <redirect>ELEVATOR \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LIFT</pattern>
+        <template>
+            <redirect>\1 ELEVATOR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LIFT</pattern>
+        <template>
+            <redirect>ELEVATOR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LOLLY (.*)</pattern>
+        <template>
+            <redirect>\1 LOLLIPOP \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LOLLY (.*)</pattern>
+        <template>
+            <redirect>LOLLIPOP \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LOLLY</pattern>
+        <template>
+            <redirect>\1 LOLLIPOP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LOLLY</pattern>
+        <template>
+            <redirect>LOLLIPOP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LOOSE COVER (.*)</pattern>
+        <template>
+            <redirect>\1 SLIPCOVER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LOOSE COVER (.*)</pattern>
+        <template>
+            <redirect>SLIPCOVER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LOOSE COVER</pattern>
+        <template>
+            <redirect>\1 SLIPCOVER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LOOSE COVER</pattern>
+        <template>
+            <redirect>SLIPCOVER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LORRY (.*)</pattern>
+        <template>
+            <redirect>\1 TRUCK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LORRY (.*)</pattern>
+        <template>
+            <redirect>TRUCK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LORRY</pattern>
+        <template>
+            <redirect>\1 TRUCK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LORRY</pattern>
+        <template>
+            <redirect>TRUCK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LOUDHAILER (.*)</pattern>
+        <template>
+            <redirect>\1 BULLHORN \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LOUDHAILER (.*)</pattern>
+        <template>
+            <redirect>BULLHORN \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LOUDHAILER</pattern>
+        <template>
+            <redirect>\1 BULLHORN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LOUDHAILER</pattern>
+        <template>
+            <redirect>BULLHORN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LOW LOADER (.*)</pattern>
+        <template>
+            <redirect>\1 FLATBED TRUCK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LOW LOADER (.*)</pattern>
+        <template>
+            <redirect>FLATBED TRUCK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LOW LOADER</pattern>
+        <template>
+            <redirect>\1 FLATBED TRUCK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LOW LOADER</pattern>
+        <template>
+            <redirect>FLATBED TRUCK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LUCKY DIP (.*)</pattern>
+        <template>
+            <redirect>\1 GRAB BAG \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LUCKY DIP (.*)</pattern>
+        <template>
+            <redirect>GRAB BAG \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LUCKY DIP</pattern>
+        <template>
+            <redirect>\1 GRAB BAG</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LUCKY DIP</pattern>
+        <template>
+            <redirect>GRAB BAG</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LUGGAGE VAN (.*)</pattern>
+        <template>
+            <redirect>\1 BAGGAGE CAR \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LUGGAGE VAN (.*)</pattern>
+        <template>
+            <redirect>BAGGAGE CAR \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LUGGAGE VAN</pattern>
+        <template>
+            <redirect>\1 BAGGAGE CAR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LUGGAGE VAN</pattern>
+        <template>
+            <redirect>BAGGAGE CAR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MAIZE (.*)</pattern>
+        <template>
+            <redirect>\1 CORN \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MAIZE (.*)</pattern>
+        <template>
+            <redirect>CORN \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MAIZE</pattern>
+        <template>
+            <redirect>\1 CORN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MAIZE</pattern>
+        <template>
+            <redirect>CORN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MANGETOUT (.*)</pattern>
+        <template>
+            <redirect>\1 SNOW PEA \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MANGETOUT (.*)</pattern>
+        <template>
+            <redirect>SNOW PEA \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MANGETOUT</pattern>
+        <template>
+            <redirect>\1 SNOW PEA</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MANGETOUT</pattern>
+        <template>
+            <redirect>SNOW PEA</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MARKET GARDEN (.*)</pattern>
+        <template>
+            <redirect>\1 TRUCK FARM \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MARKET GARDEN (.*)</pattern>
+        <template>
+            <redirect>TRUCK FARM \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MARKET GARDEN</pattern>
+        <template>
+            <redirect>\1 TRUCK FARM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MARKET GARDEN</pattern>
+        <template>
+            <redirect>TRUCK FARM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MARSHALLING YARD (.*)</pattern>
+        <template>
+            <redirect>\1 RAILROAD YARD \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MARSHALLING YARD (.*)</pattern>
+        <template>
+            <redirect>RAILROAD YARD \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MARSHALLING YARD</pattern>
+        <template>
+            <redirect>\1 RAILROAD YARD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MARSHALLING YARD</pattern>
+        <template>
+            <redirect>RAILROAD YARD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MATHS (.*)</pattern>
+        <template>
+            <redirect>\1 MATH \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MATHS (.*)</pattern>
+        <template>
+            <redirect>MATH \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MATHS</pattern>
+        <template>
+            <redirect>\1 MATH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MATHS</pattern>
+        <template>
+            <redirect>MATH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) METALLED ROAD (.*)</pattern>
+        <template>
+            <redirect>\1 PAVED ROAD \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>METALLED ROAD (.*)</pattern>
+        <template>
+            <redirect>PAVED ROAD \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) METALLED ROAD</pattern>
+        <template>
+            <redirect>\1 PAVED ROAD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>METALLED ROAD</pattern>
+        <template>
+            <redirect>PAVED ROAD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MILOMETER (.*)</pattern>
+        <template>
+            <redirect>\1 ODOMETER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MILOMETER (.*)</pattern>
+        <template>
+            <redirect>ODOMETER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MILOMETER</pattern>
+        <template>
+            <redirect>\1 ODOMETER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MILOMETER</pattern>
+        <template>
+            <redirect>ODOMETER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MOBILE PHONE (.*)</pattern>
+        <template>
+            <redirect>\1 CELL PHONE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MOBILE PHONE (.*)</pattern>
+        <template>
+            <redirect>CELL PHONE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MOBILE PHONE</pattern>
+        <template>
+            <redirect>\1 CELL PHONE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MOBILE PHONE</pattern>
+        <template>
+            <redirect>CELL PHONE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MONKEY TRICKS (.*)</pattern>
+        <template>
+            <redirect>\1 MONKEYSHINES \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MONKEY TRICKS (.*)</pattern>
+        <template>
+            <redirect>MONKEYSHINES \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MONKEY TRICKS</pattern>
+        <template>
+            <redirect>\1 MONKEYSHINES</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MONKEY TRICKS</pattern>
+        <template>
+            <redirect>MONKEYSHINES</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MOTORWAY (.*)</pattern>
+        <template>
+            <redirect>\1 HIGHWAY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MOTORWAY (.*)</pattern>
+        <template>
+            <redirect>HIGHWAY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MOTORWAY</pattern>
+        <template>
+            <redirect>\1 HIGHWAY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MOTORWAY</pattern>
+        <template>
+            <redirect>HIGHWAY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MUM (.*)</pattern>
+        <template>
+            <redirect>\1 MOM \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MUM (.*)</pattern>
+        <template>
+            <redirect>MOM \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) MUM</pattern>
+        <template>
+            <redirect>\1 MOM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MUM</pattern>
+        <template>
+            <redirect>MOM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NAPPY (.*)</pattern>
+        <template>
+            <redirect>\1 DIAPER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NAPPY (.*)</pattern>
+        <template>
+            <redirect>DIAPER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NAPPY</pattern>
+        <template>
+            <redirect>\1 DIAPER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NAPPY</pattern>
+        <template>
+            <redirect>DIAPER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NEEDLECORD (.*)</pattern>
+        <template>
+            <redirect>\1 PINWALE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NEEDLECORD (.*)</pattern>
+        <template>
+            <redirect>PINWALE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NEEDLECORD</pattern>
+        <template>
+            <redirect>\1 PINWALE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NEEDLECORD</pattern>
+        <template>
+            <redirect>PINWALE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NEWSREADER (.*)</pattern>
+        <template>
+            <redirect>\1 NEWSCASTER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NEWSREADER (.*)</pattern>
+        <template>
+            <redirect>NEWSCASTER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NEWSREADER</pattern>
+        <template>
+            <redirect>\1 NEWSCASTER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NEWSREADER</pattern>
+        <template>
+            <redirect>NEWSCASTER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NOUGHTS AND CROSSES (.*)</pattern>
+        <template>
+            <redirect>\1 TIC-TAC-TOE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NOUGHTS AND CROSSES (.*)</pattern>
+        <template>
+            <redirect>TIC-TAC-TOE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NOUGHTS AND CROSSES</pattern>
+        <template>
+            <redirect>\1 TIC-TAC-TOE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NOUGHTS AND CROSSES</pattern>
+        <template>
+            <redirect>TIC-TAC-TOE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NUMBER PLATE (.*)</pattern>
+        <template>
+            <redirect>\1 LICENSE PLATE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NUMBER PLATE (.*)</pattern>
+        <template>
+            <redirect>LICENSE PLATE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NUMBER PLATE</pattern>
+        <template>
+            <redirect>\1 LICENSE PLATE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NUMBER PLATE</pattern>
+        <template>
+            <redirect>LICENSE PLATE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) OFF-LICENCE (.*)</pattern>
+        <template>
+            <redirect>\1 LIQUOR STORE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>OFF-LICENCE (.*)</pattern>
+        <template>
+            <redirect>LIQUOR STORE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) OFF-LICENCE</pattern>
+        <template>
+            <redirect>\1 LIQUOR STORE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>OFF-LICENCE</pattern>
+        <template>
+            <redirect>LIQUOR STORE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) OPENCAST MINING (.*)</pattern>
+        <template>
+            <redirect>\1 OPEN-PIT MINING \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>OPENCAST MINING (.*)</pattern>
+        <template>
+            <redirect>OPEN-PIT MINING \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) OPENCAST MINING</pattern>
+        <template>
+            <redirect>\1 OPEN-PIT MINING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>OPENCAST MINING</pattern>
+        <template>
+            <redirect>OPEN-PIT MINING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ORDINARY SHARE (.*)</pattern>
+        <template>
+            <redirect>\1 COMMON STOCK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ORDINARY SHARE (.*)</pattern>
+        <template>
+            <redirect>COMMON STOCK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ORDINARY SHARE</pattern>
+        <template>
+            <redirect>\1 COMMON STOCK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ORDINARY SHARE</pattern>
+        <template>
+            <redirect>COMMON STOCK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) OVEN GLOVE (.*)</pattern>
+        <template>
+            <redirect>\1 OVEN MITT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>OVEN GLOVE (.*)</pattern>
+        <template>
+            <redirect>OVEN MITT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) OVEN GLOVE</pattern>
+        <template>
+            <redirect>\1 OVEN MITT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>OVEN GLOVE</pattern>
+        <template>
+            <redirect>OVEN MITT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PADDLING POOL (.*)</pattern>
+        <template>
+            <redirect>\1 WADING POOL \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PADDLING POOL (.*)</pattern>
+        <template>
+            <redirect>WADING POOL \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PADDLING POOL</pattern>
+        <template>
+            <redirect>\1 WADING POOL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PADDLING POOL</pattern>
+        <template>
+            <redirect>WADING POOL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PARACETAMOL (.*)</pattern>
+        <template>
+            <redirect>\1 ACETAMINOPHEN \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PARACETAMOL (.*)</pattern>
+        <template>
+            <redirect>ACETAMINOPHEN \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PARACETAMOL</pattern>
+        <template>
+            <redirect>\1 ACETAMINOPHEN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PARACETAMOL</pattern>
+        <template>
+            <redirect>ACETAMINOPHEN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PATIENCE (.*)</pattern>
+        <template>
+            <redirect>\1 SOLITAIRE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PATIENCE (.*)</pattern>
+        <template>
+            <redirect>SOLITAIRE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PATIENCE</pattern>
+        <template>
+            <redirect>\1 SOLITAIRE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PATIENCE</pattern>
+        <template>
+            <redirect>SOLITAIRE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PAVEMENT (.*)</pattern>
+        <template>
+            <redirect>\1 SIDEWALK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PAVEMENT (.*)</pattern>
+        <template>
+            <redirect>SIDEWALK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PAVEMENT</pattern>
+        <template>
+            <redirect>\1 SIDEWALK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PAVEMENT</pattern>
+        <template>
+            <redirect>SIDEWALK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PAY PACKET (.*)</pattern>
+        <template>
+            <redirect>\1 PAY ENVELOPE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PAY PACKET (.*)</pattern>
+        <template>
+            <redirect>PAY ENVELOPE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PAY PACKET</pattern>
+        <template>
+            <redirect>\1 PAY ENVELOPE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PAY PACKET</pattern>
+        <template>
+            <redirect>PAY ENVELOPE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PEDESTRIAN CROSSING (.*)</pattern>
+        <template>
+            <redirect>\1 CROSSWALK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PEDESTRIAN CROSSING (.*)</pattern>
+        <template>
+            <redirect>CROSSWALK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PEDESTRIAN CROSSING</pattern>
+        <template>
+            <redirect>\1 CROSSWALK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PEDESTRIAN CROSSING</pattern>
+        <template>
+            <redirect>CROSSWALK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PEG (.*)</pattern>
+        <template>
+            <redirect>\1 CLOTHESPIN \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PEG (.*)</pattern>
+        <template>
+            <redirect>CLOTHESPIN \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PEG</pattern>
+        <template>
+            <redirect>\1 CLOTHESPIN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PEG</pattern>
+        <template>
+            <redirect>CLOTHESPIN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PELMET (.*)</pattern>
+        <template>
+            <redirect>\1 VALANCE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PELMET (.*)</pattern>
+        <template>
+            <redirect>VALANCE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PELMET</pattern>
+        <template>
+            <redirect>\1 VALANCE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PELMET</pattern>
+        <template>
+            <redirect>VALANCE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PETROL (.*)</pattern>
+        <template>
+            <redirect>\1 GASOLINE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PETROL (.*)</pattern>
+        <template>
+            <redirect>GASOLINE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PETROL</pattern>
+        <template>
+            <redirect>\1 GASOLINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PETROL</pattern>
+        <template>
+            <redirect>GASOLINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PHYSIOTHERAPY (.*)</pattern>
+        <template>
+            <redirect>\1 PHYSICAL THERAPY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PHYSIOTHERAPY (.*)</pattern>
+        <template>
+            <redirect>PHYSICAL THERAPY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PHYSIOTHERAPY</pattern>
+        <template>
+            <redirect>\1 PHYSICAL THERAPY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PHYSIOTHERAPY</pattern>
+        <template>
+            <redirect>PHYSICAL THERAPY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PINAFORE DRESS (.*)</pattern>
+        <template>
+            <redirect>\1 JUMPER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PINAFORE DRESS (.*)</pattern>
+        <template>
+            <redirect>JUMPER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PINAFORE DRESS</pattern>
+        <template>
+            <redirect>\1 JUMPER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PINAFORE DRESS</pattern>
+        <template>
+            <redirect>JUMPER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PLAIN CHOCOLATE (.*)</pattern>
+        <template>
+            <redirect>\1 DARK CHOCOLATE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PLAIN CHOCOLATE (.*)</pattern>
+        <template>
+            <redirect>DARK CHOCOLATE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PLAIN CHOCOLATE</pattern>
+        <template>
+            <redirect>\1 DARK CHOCOLATE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PLAIN CHOCOLATE</pattern>
+        <template>
+            <redirect>DARK CHOCOLATE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PLAIN FLOUR (.*)</pattern>
+        <template>
+            <redirect>\1 ALL-PURPOSE FLOUR \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PLAIN FLOUR (.*)</pattern>
+        <template>
+            <redirect>ALL-PURPOSE FLOUR \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PLAIN FLOUR</pattern>
+        <template>
+            <redirect>\1 ALL-PURPOSE FLOUR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PLAIN FLOUR</pattern>
+        <template>
+            <redirect>ALL-PURPOSE FLOUR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) POLO NECK (.*)</pattern>
+        <template>
+            <redirect>\1 TURTLENECK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>POLO NECK (.*)</pattern>
+        <template>
+            <redirect>TURTLENECK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) POLO NECK</pattern>
+        <template>
+            <redirect>\1 TURTLENECK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>POLO NECK</pattern>
+        <template>
+            <redirect>TURTLENECK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) POSITIVE DISCRIMINATION (.*)</pattern>
+        <template>
+            <redirect>\1 REVERSE DISCRIMINATION \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>POSITIVE DISCRIMINATION (.*)</pattern>
+        <template>
+            <redirect>REVERSE DISCRIMINATION \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) POSITIVE DISCRIMINATION</pattern>
+        <template>
+            <redirect>\1 REVERSE DISCRIMINATION</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>POSITIVE DISCRIMINATION</pattern>
+        <template>
+            <redirect>REVERSE DISCRIMINATION</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) POSTAL VOTE (.*)</pattern>
+        <template>
+            <redirect>\1 ABSENTEE BALLOT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>POSTAL VOTE (.*)</pattern>
+        <template>
+            <redirect>ABSENTEE BALLOT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) POSTAL VOTE</pattern>
+        <template>
+            <redirect>\1 ABSENTEE BALLOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>POSTAL VOTE</pattern>
+        <template>
+            <redirect>ABSENTEE BALLOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) POSTBOX (.*)</pattern>
+        <template>
+            <redirect>\1 MAILBOX \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>POSTBOX (.*)</pattern>
+        <template>
+            <redirect>MAILBOX \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) POSTBOX</pattern>
+        <template>
+            <redirect>\1 MAILBOX</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>POSTBOX</pattern>
+        <template>
+            <redirect>MAILBOX</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) POSTCODE (.*)</pattern>
+        <template>
+            <redirect>\1 ZIP CODE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>POSTCODE (.*)</pattern>
+        <template>
+            <redirect>ZIP CODE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) POSTCODE</pattern>
+        <template>
+            <redirect>\1 ZIP CODE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>POSTCODE</pattern>
+        <template>
+            <redirect>ZIP CODE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) POTATO CRISP (.*)</pattern>
+        <template>
+            <redirect>\1 POTATO CHIP \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>POTATO CRISP (.*)</pattern>
+        <template>
+            <redirect>POTATO CHIP \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) POTATO CRISP</pattern>
+        <template>
+            <redirect>\1 POTATO CHIP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>POTATO CRISP</pattern>
+        <template>
+            <redirect>POTATO CHIP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PRAM (.*)</pattern>
+        <template>
+            <redirect>\1 BABY CARRIAGE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PRAM (.*)</pattern>
+        <template>
+            <redirect>BABY CARRIAGE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PRAM</pattern>
+        <template>
+            <redirect>\1 BABY CARRIAGE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PRAM</pattern>
+        <template>
+            <redirect>BABY CARRIAGE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PRESS STUD (.*)</pattern>
+        <template>
+            <redirect>\1 SNAP \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PRESS STUD (.*)</pattern>
+        <template>
+            <redirect>SNAP \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PRESS STUD</pattern>
+        <template>
+            <redirect>\1 SNAP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PRESS STUD</pattern>
+        <template>
+            <redirect>SNAP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PRESS-UP (.*)</pattern>
+        <template>
+            <redirect>\1 PUSHUP \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PRESS-UP (.*)</pattern>
+        <template>
+            <redirect>PUSHUP \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PRESS-UP</pattern>
+        <template>
+            <redirect>\1 PUSHUP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PRESS-UP</pattern>
+        <template>
+            <redirect>PUSHUP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PUBLIC SCHOOL (.*)</pattern>
+        <template>
+            <redirect>\1 PRIVATE SCHOOL \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PUBLIC SCHOOL (.*)</pattern>
+        <template>
+            <redirect>PRIVATE SCHOOL \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PUBLIC SCHOOL</pattern>
+        <template>
+            <redirect>\1 PRIVATE SCHOOL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PUBLIC SCHOOL</pattern>
+        <template>
+            <redirect>PRIVATE SCHOOL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PUBLIC TRANSPORT (.*)</pattern>
+        <template>
+            <redirect>\1 PUBLIC TRANSPORTATION \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PUBLIC TRANSPORT (.*)</pattern>
+        <template>
+            <redirect>PUBLIC TRANSPORTATION \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PUBLIC TRANSPORT</pattern>
+        <template>
+            <redirect>\1 PUBLIC TRANSPORTATION</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PUBLIC TRANSPORT</pattern>
+        <template>
+            <redirect>PUBLIC TRANSPORTATION</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PUNCHBAG (.*)</pattern>
+        <template>
+            <redirect>\1 PUNCHING BAG \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PUNCHBAG (.*)</pattern>
+        <template>
+            <redirect>PUNCHING BAG \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PUNCHBAG</pattern>
+        <template>
+            <redirect>\1 PUNCHING BAG</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PUNCHBAG</pattern>
+        <template>
+            <redirect>PUNCHING BAG</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PUSHCHAIR (.*)</pattern>
+        <template>
+            <redirect>\1 STROLLER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PUSHCHAIR (.*)</pattern>
+        <template>
+            <redirect>STROLLER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PUSHCHAIR</pattern>
+        <template>
+            <redirect>\1 STROLLER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PUSHCHAIR</pattern>
+        <template>
+            <redirect>STROLLER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PYLON (.*)</pattern>
+        <template>
+            <redirect>\1 UTILITY POLE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PYLON (.*)</pattern>
+        <template>
+            <redirect>UTILITY POLE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PYLON</pattern>
+        <template>
+            <redirect>\1 UTILITY POLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PYLON</pattern>
+        <template>
+            <redirect>UTILITY POLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUANTITY SURVEYOR (.*)</pattern>
+        <template>
+            <redirect>\1 ESTIMATOR \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUANTITY SURVEYOR (.*)</pattern>
+        <template>
+            <redirect>ESTIMATOR \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUANTITY SURVEYOR</pattern>
+        <template>
+            <redirect>\1 ESTIMATOR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUANTITY SURVEYOR</pattern>
+        <template>
+            <redirect>ESTIMATOR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUEUE (.*)</pattern>
+        <template>
+            <redirect>\1 LINE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUEUE (.*)</pattern>
+        <template>
+            <redirect>LINE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUEUE</pattern>
+        <template>
+            <redirect>\1 LINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUEUE</pattern>
+        <template>
+            <redirect>LINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) RACING CAR (.*)</pattern>
+        <template>
+            <redirect>\1 RACE CAR \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>RACING CAR (.*)</pattern>
+        <template>
+            <redirect>RACE CAR \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) RACING CAR</pattern>
+        <template>
+            <redirect>\1 RACE CAR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>RACING CAR</pattern>
+        <template>
+            <redirect>RACE CAR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) RAILWAY (.*)</pattern>
+        <template>
+            <redirect>\1 RAILROAD \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>RAILWAY (.*)</pattern>
+        <template>
+            <redirect>RAILROAD \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) RAILWAY</pattern>
+        <template>
+            <redirect>\1 RAILROAD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>RAILWAY</pattern>
+        <template>
+            <redirect>RAILROAD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) REAL TENNIS (.*)</pattern>
+        <template>
+            <redirect>\1 COURT TENNIS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>REAL TENNIS (.*)</pattern>
+        <template>
+            <redirect>COURT TENNIS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) REAL TENNIS</pattern>
+        <template>
+            <redirect>\1 COURT TENNIS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>REAL TENNIS</pattern>
+        <template>
+            <redirect>COURT TENNIS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) RECORDED DELIVERY (.*)</pattern>
+        <template>
+            <redirect>\1 CERTIFIED MAIL \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>RECORDED DELIVERY (.*)</pattern>
+        <template>
+            <redirect>CERTIFIED MAIL \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) RECORDED DELIVERY</pattern>
+        <template>
+            <redirect>\1 CERTIFIED MAIL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>RECORDED DELIVERY</pattern>
+        <template>
+            <redirect>CERTIFIED MAIL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) REGISTRATION PLATE (.*)</pattern>
+        <template>
+            <redirect>\1 LICENSE PLATE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>REGISTRATION PLATE (.*)</pattern>
+        <template>
+            <redirect>LICENSE PLATE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) REGISTRATION PLATE</pattern>
+        <template>
+            <redirect>\1 LICENSE PLATE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>REGISTRATION PLATE</pattern>
+        <template>
+            <redirect>LICENSE PLATE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) REVERSE THE CHARGES (.*)</pattern>
+        <template>
+            <redirect>\1 CALL COLLECT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>REVERSE THE CHARGES (.*)</pattern>
+        <template>
+            <redirect>CALL COLLECT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) REVERSE THE CHARGES</pattern>
+        <template>
+            <redirect>\1 CALL COLLECT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>REVERSE THE CHARGES</pattern>
+        <template>
+            <redirect>CALL COLLECT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) REVERSING LIGHTS (.*)</pattern>
+        <template>
+            <redirect>\1 BACK-UP LIGHTS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>REVERSING LIGHTS (.*)</pattern>
+        <template>
+            <redirect>BACK-UP LIGHTS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) REVERSING LIGHTS</pattern>
+        <template>
+            <redirect>\1 BACK-UP LIGHTS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>REVERSING LIGHTS</pattern>
+        <template>
+            <redirect>BACK-UP LIGHTS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) RIGHT-ANGLED TRIANGLE (.*)</pattern>
+        <template>
+            <redirect>\1 RIGHT TRIANGLE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>RIGHT-ANGLED TRIANGLE (.*)</pattern>
+        <template>
+            <redirect>RIGHT TRIANGLE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) RIGHT-ANGLED TRIANGLE</pattern>
+        <template>
+            <redirect>\1 RIGHT TRIANGLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>RIGHT-ANGLED TRIANGLE</pattern>
+        <template>
+            <redirect>RIGHT TRIANGLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) RING ROAD (.*)</pattern>
+        <template>
+            <redirect>\1 BELTWAY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>RING ROAD (.*)</pattern>
+        <template>
+            <redirect>BELTWAY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) RING ROAD</pattern>
+        <template>
+            <redirect>\1 BELTWAY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>RING ROAD</pattern>
+        <template>
+            <redirect>BELTWAY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ROWING BOAT (.*)</pattern>
+        <template>
+            <redirect>\1 ROWBOAT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ROWING BOAT (.*)</pattern>
+        <template>
+            <redirect>ROWBOAT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ROWING BOAT</pattern>
+        <template>
+            <redirect>\1 ROWBOAT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ROWING BOAT</pattern>
+        <template>
+            <redirect>ROWBOAT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SAILING BOAT (.*)</pattern>
+        <template>
+            <redirect>\1 SAILBOAT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SAILING BOAT (.*)</pattern>
+        <template>
+            <redirect>SAILBOAT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SAILING BOAT</pattern>
+        <template>
+            <redirect>\1 SAILBOAT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SAILING BOAT</pattern>
+        <template>
+            <redirect>SAILBOAT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SANDPIT (.*)</pattern>
+        <template>
+            <redirect>\1 SANDBOX \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SANDPIT (.*)</pattern>
+        <template>
+            <redirect>SANDBOX \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SANDPIT</pattern>
+        <template>
+            <redirect>\1 SANDBOX</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SANDPIT</pattern>
+        <template>
+            <redirect>SANDBOX</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SANDWICH CAKE (.*)</pattern>
+        <template>
+            <redirect>\1 LAYER CAKE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SANDWICH CAKE (.*)</pattern>
+        <template>
+            <redirect>LAYER CAKE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SANDWICH CAKE</pattern>
+        <template>
+            <redirect>\1 LAYER CAKE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SANDWICH CAKE</pattern>
+        <template>
+            <redirect>LAYER CAKE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SANITARY TOWEL (.*)</pattern>
+        <template>
+            <redirect>\1 SANITARY NAPKIN \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SANITARY TOWEL (.*)</pattern>
+        <template>
+            <redirect>SANITARY NAPKIN \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SANITARY TOWEL</pattern>
+        <template>
+            <redirect>\1 SANITARY NAPKIN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SANITARY TOWEL</pattern>
+        <template>
+            <redirect>SANITARY NAPKIN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SELF-RAISING FLOUR (.*)</pattern>
+        <template>
+            <redirect>\1 SELF-RISING FLOUR \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SELF-RAISING FLOUR (.*)</pattern>
+        <template>
+            <redirect>SELF-RISING FLOUR \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SELF-RAISING FLOUR</pattern>
+        <template>
+            <redirect>\1 SELF-RISING FLOUR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SELF-RAISING FLOUR</pattern>
+        <template>
+            <redirect>SELF-RISING FLOUR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SHARE OPTION (.*)</pattern>
+        <template>
+            <redirect>\1 STOCK OPTION \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SHARE OPTION (.*)</pattern>
+        <template>
+            <redirect>STOCK OPTION \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SHARE OPTION</pattern>
+        <template>
+            <redirect>\1 STOCK OPTION</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SHARE OPTION</pattern>
+        <template>
+            <redirect>STOCK OPTION</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SHOPPING TROLLEY (.*)</pattern>
+        <template>
+            <redirect>\1 SHOPPING CART \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SHOPPING TROLLEY (.*)</pattern>
+        <template>
+            <redirect>SHOPPING CART \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SHOPPING TROLLEY</pattern>
+        <template>
+            <redirect>\1 SHOPPING CART</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SHOPPING TROLLEY</pattern>
+        <template>
+            <redirect>SHOPPING CART</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SHOW HOUSE (.*)</pattern>
+        <template>
+            <redirect>\1 MODEL HOME \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SHOW HOUSE (.*)</pattern>
+        <template>
+            <redirect>MODEL HOME \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SHOW HOUSE</pattern>
+        <template>
+            <redirect>\1 MODEL HOME</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SHOW HOUSE</pattern>
+        <template>
+            <redirect>MODEL HOME</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SILVERSIDE (.*)</pattern>
+        <template>
+            <redirect>\1 RUMP ROAST \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SILVERSIDE (.*)</pattern>
+        <template>
+            <redirect>RUMP ROAST \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SILVERSIDE</pattern>
+        <template>
+            <redirect>\1 RUMP ROAST</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SILVERSIDE</pattern>
+        <template>
+            <redirect>RUMP ROAST</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SKELETON IN THE CUPBOARD (.*)</pattern>
+        <template>
+            <redirect>\1 SKELETON IN THE CLOSET \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SKELETON IN THE CUPBOARD (.*)</pattern>
+        <template>
+            <redirect>SKELETON IN THE CLOSET \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SKELETON IN THE CUPBOARD</pattern>
+        <template>
+            <redirect>\1 SKELETON IN THE CLOSET</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SKELETON IN THE CUPBOARD</pattern>
+        <template>
+            <redirect>SKELETON IN THE CLOSET</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SKIMMED MILK (.*)</pattern>
+        <template>
+            <redirect>\1 SKIM MILK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SKIMMED MILK (.*)</pattern>
+        <template>
+            <redirect>SKIM MILK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SKIMMED MILK</pattern>
+        <template>
+            <redirect>\1 SKIM MILK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SKIMMED MILK</pattern>
+        <template>
+            <redirect>SKIM MILK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SKIPPING ROPE (.*)</pattern>
+        <template>
+            <redirect>\1 JUMP ROPE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SKIPPING ROPE (.*)</pattern>
+        <template>
+            <redirect>JUMP ROPE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SKIPPING ROPE</pattern>
+        <template>
+            <redirect>\1 JUMP ROPE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SKIPPING ROPE</pattern>
+        <template>
+            <redirect>JUMP ROPE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SKIRTING BOARD (.*)</pattern>
+        <template>
+            <redirect>\1 BASEBOARD \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SKIRTING BOARD (.*)</pattern>
+        <template>
+            <redirect>BASEBOARD \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SKIRTING BOARD</pattern>
+        <template>
+            <redirect>\1 BASEBOARD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SKIRTING BOARD</pattern>
+        <template>
+            <redirect>BASEBOARD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SLEDGE (.*)</pattern>
+        <template>
+            <redirect>\1 SLED \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SLEDGE (.*)</pattern>
+        <template>
+            <redirect>SLED \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SLEDGE</pattern>
+        <template>
+            <redirect>\1 SLED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SLEDGE</pattern>
+        <template>
+            <redirect>SLED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SLEEPER (.*)</pattern>
+        <template>
+            <redirect>\1 RAILROAD TIE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SLEEPER (.*)</pattern>
+        <template>
+            <redirect>RAILROAD TIE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SLEEPER</pattern>
+        <template>
+            <redirect>\1 RAILROAD TIE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SLEEPER</pattern>
+        <template>
+            <redirect>RAILROAD TIE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SLEEPING PARTNER (.*)</pattern>
+        <template>
+            <redirect>\1 SILENT PARTNER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SLEEPING PARTNER (.*)</pattern>
+        <template>
+            <redirect>SILENT PARTNER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SLEEPING PARTNER</pattern>
+        <template>
+            <redirect>\1 SILENT PARTNER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SLEEPING PARTNER</pattern>
+        <template>
+            <redirect>SILENT PARTNER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SLOWCOACH (.*)</pattern>
+        <template>
+            <redirect>\1 SLOWPOKE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SLOWCOACH (.*)</pattern>
+        <template>
+            <redirect>SLOWPOKE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SLOWCOACH</pattern>
+        <template>
+            <redirect>\1 SLOWPOKE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SLOWCOACH</pattern>
+        <template>
+            <redirect>SLOWPOKE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SNAKES AND LADDERS (.*)</pattern>
+        <template>
+            <redirect>\1 CHUTES AND LADDERS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SNAKES AND LADDERS (.*)</pattern>
+        <template>
+            <redirect>CHUTES AND LADDERS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SNAKES AND LADDERS</pattern>
+        <template>
+            <redirect>\1 CHUTES AND LADDERS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SNAKES AND LADDERS</pattern>
+        <template>
+            <redirect>CHUTES AND LADDERS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SOLICITOR (.*)</pattern>
+        <template>
+            <redirect>\1 LAWYER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SOLICITOR (.*)</pattern>
+        <template>
+            <redirect>LAWYER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SOLICITOR</pattern>
+        <template>
+            <redirect>\1 LAWYER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SOLICITOR</pattern>
+        <template>
+            <redirect>LAWYER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SOYA (.*)</pattern>
+        <template>
+            <redirect>\1 SOY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SOYA (.*)</pattern>
+        <template>
+            <redirect>SOY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SOYA</pattern>
+        <template>
+            <redirect>\1 SOY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SOYA</pattern>
+        <template>
+            <redirect>SOY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SPLASHBACK (.*)</pattern>
+        <template>
+            <redirect>\1 BACKSPLASH \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SPLASHBACK (.*)</pattern>
+        <template>
+            <redirect>BACKSPLASH \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SPLASHBACK</pattern>
+        <template>
+            <redirect>\1 BACKSPLASH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SPLASHBACK</pattern>
+        <template>
+            <redirect>BACKSPLASH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SPRING ONION (.*)</pattern>
+        <template>
+            <redirect>\1 SCALLION \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SPRING ONION (.*)</pattern>
+        <template>
+            <redirect>SCALLION \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SPRING ONION</pattern>
+        <template>
+            <redirect>\1 SCALLION</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SPRING ONION</pattern>
+        <template>
+            <redirect>SCALLION</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) STAG NIGHT (.*)</pattern>
+        <template>
+            <redirect>\1 BACHELOR PARTY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>STAG NIGHT (.*)</pattern>
+        <template>
+            <redirect>BACHELOR PARTY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) STAG NIGHT</pattern>
+        <template>
+            <redirect>\1 BACHELOR PARTY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>STAG NIGHT</pattern>
+        <template>
+            <redirect>BACHELOR PARTY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) STANLEY KNIFE (.*)</pattern>
+        <template>
+            <redirect>\1 UTILITY KNIFE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>STANLEY KNIFE (.*)</pattern>
+        <template>
+            <redirect>UTILITY KNIFE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) STANLEY KNIFE</pattern>
+        <template>
+            <redirect>\1 UTILITY KNIFE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>STANLEY KNIFE</pattern>
+        <template>
+            <redirect>UTILITY KNIFE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) STARTER (.*)</pattern>
+        <template>
+            <redirect>\1 APPETIZER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>STARTER (.*)</pattern>
+        <template>
+            <redirect>APPETIZER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) STARTER</pattern>
+        <template>
+            <redirect>\1 APPETIZER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>STARTER</pattern>
+        <template>
+            <redirect>APPETIZER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) STATE SCHOOL (.*)</pattern>
+        <template>
+            <redirect>\1 PUBLIC SCHOOL \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>STATE SCHOOL (.*)</pattern>
+        <template>
+            <redirect>PUBLIC SCHOOL \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) STATE SCHOOL</pattern>
+        <template>
+            <redirect>\1 PUBLIC SCHOOL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>STATE SCHOOL</pattern>
+        <template>
+            <redirect>PUBLIC SCHOOL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) STORM IN A TEACUP (.*)</pattern>
+        <template>
+            <redirect>\1 TEMPEST IN A TEAPOT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>STORM IN A TEACUP (.*)</pattern>
+        <template>
+            <redirect>TEMPEST IN A TEAPOT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) STORM IN A TEACUP</pattern>
+        <template>
+            <redirect>\1 TEMPEST IN A TEAPOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>STORM IN A TEACUP</pattern>
+        <template>
+            <redirect>TEMPEST IN A TEAPOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SURTITLE (.*)</pattern>
+        <template>
+            <redirect>\1 SUPERTITLE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SURTITLE (.*)</pattern>
+        <template>
+            <redirect>SUPERTITLE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SURTITLE</pattern>
+        <template>
+            <redirect>\1 SUPERTITLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SURTITLE</pattern>
+        <template>
+            <redirect>SUPERTITLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SWEDE (.*)</pattern>
+        <template>
+            <redirect>\1 RUTABAGA \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SWEDE (.*)</pattern>
+        <template>
+            <redirect>RUTABAGA \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SWEDE</pattern>
+        <template>
+            <redirect>\1 RUTABAGA</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SWEDE</pattern>
+        <template>
+            <redirect>RUTABAGA</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TAXI RANK (.*)</pattern>
+        <template>
+            <redirect>\1 TAXI STAND \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TAXI RANK (.*)</pattern>
+        <template>
+            <redirect>TAXI STAND \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TAXI RANK</pattern>
+        <template>
+            <redirect>\1 TAXI STAND</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TAXI RANK</pattern>
+        <template>
+            <redirect>TAXI STAND</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TEA TOWEL (.*)</pattern>
+        <template>
+            <redirect>\1 DISH TOWEL \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TEA TOWEL (.*)</pattern>
+        <template>
+            <redirect>DISH TOWEL \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TEA TOWEL</pattern>
+        <template>
+            <redirect>\1 DISH TOWEL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TEA TOWEL</pattern>
+        <template>
+            <redirect>DISH TOWEL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TERRACE HOUSE (.*)</pattern>
+        <template>
+            <redirect>\1 ROW HOUSE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TERRACE HOUSE (.*)</pattern>
+        <template>
+            <redirect>ROW HOUSE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TERRACE HOUSE</pattern>
+        <template>
+            <redirect>\1 ROW HOUSE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TERRACE HOUSE</pattern>
+        <template>
+            <redirect>ROW HOUSE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TICK (.*)</pattern>
+        <template>
+            <redirect>\1 CHECK MARK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TICK (.*)</pattern>
+        <template>
+            <redirect>CHECK MARK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TICK</pattern>
+        <template>
+            <redirect>\1 CHECK MARK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TICK</pattern>
+        <template>
+            <redirect>CHECK MARK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TICKET TOUT (.*)</pattern>
+        <template>
+            <redirect>\1 SCALPER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TICKET TOUT (.*)</pattern>
+        <template>
+            <redirect>SCALPER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TICKET TOUT</pattern>
+        <template>
+            <redirect>\1 SCALPER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TICKET TOUT</pattern>
+        <template>
+            <redirect>SCALPER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TIMBER (.*)</pattern>
+        <template>
+            <redirect>\1 LUMBER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TIMBER (.*)</pattern>
+        <template>
+            <redirect>LUMBER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TIMBER</pattern>
+        <template>
+            <redirect>\1 LUMBER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TIMBER</pattern>
+        <template>
+            <redirect>LUMBER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TITBIT (.*)</pattern>
+        <template>
+            <redirect>\1 TIDBIT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TITBIT (.*)</pattern>
+        <template>
+            <redirect>TIDBIT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TITBIT</pattern>
+        <template>
+            <redirect>\1 TIDBIT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TITBIT</pattern>
+        <template>
+            <redirect>TIDBIT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TOFFEE APPLE (.*)</pattern>
+        <template>
+            <redirect>\1 CANDY APPLE OR CARAMEL APPLE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TOFFEE APPLE (.*)</pattern>
+        <template>
+            <redirect>CANDY APPLE OR CARAMEL APPLE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TOFFEE APPLE</pattern>
+        <template>
+            <redirect>\1 CANDY APPLE OR CARAMEL APPLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TOFFEE APPLE</pattern>
+        <template>
+            <redirect>CANDY APPLE OR CARAMEL APPLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TOUCH WOOD (.*)</pattern>
+        <template>
+            <redirect>\1 KNOCK ON WOOD \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TOUCH WOOD (.*)</pattern>
+        <template>
+            <redirect>KNOCK ON WOOD \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TOUCH WOOD</pattern>
+        <template>
+            <redirect>\1 KNOCK ON WOOD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TOUCH WOOD</pattern>
+        <template>
+            <redirect>KNOCK ON WOOD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TRADE UNION (.*)</pattern>
+        <template>
+            <redirect>\1 LABOR UNION \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TRADE UNION (.*)</pattern>
+        <template>
+            <redirect>LABOR UNION \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TRADE UNION</pattern>
+        <template>
+            <redirect>\1 LABOR UNION</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TRADE UNION</pattern>
+        <template>
+            <redirect>LABOR UNION</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TRADING ESTATE (.*)</pattern>
+        <template>
+            <redirect>\1 INDUSTRIAL PARK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TRADING ESTATE (.*)</pattern>
+        <template>
+            <redirect>INDUSTRIAL PARK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TRADING ESTATE</pattern>
+        <template>
+            <redirect>\1 INDUSTRIAL PARK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TRADING ESTATE</pattern>
+        <template>
+            <redirect>INDUSTRIAL PARK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TRAINERS (.*)</pattern>
+        <template>
+            <redirect>\1 SNEAKERS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TRAINERS (.*)</pattern>
+        <template>
+            <redirect>SNEAKERS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TRAINERS</pattern>
+        <template>
+            <redirect>\1 SNEAKERS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TRAINERS</pattern>
+        <template>
+            <redirect>SNEAKERS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TRANSPORT CAFE (.*)</pattern>
+        <template>
+            <redirect>\1 TRUCK STOP \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TRANSPORT CAFE (.*)</pattern>
+        <template>
+            <redirect>TRUCK STOP \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TRANSPORT CAFE</pattern>
+        <template>
+            <redirect>\1 TRUCK STOP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TRANSPORT CAFE</pattern>
+        <template>
+            <redirect>TRUCK STOP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TROLLEY (.*)</pattern>
+        <template>
+            <redirect>\1 SHOPPING CART \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TROLLEY (.*)</pattern>
+        <template>
+            <redirect>SHOPPING CART \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TROLLEY</pattern>
+        <template>
+            <redirect>\1 SHOPPING CART</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TROLLEY</pattern>
+        <template>
+            <redirect>SHOPPING CART</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWELVE-BORE (.*)</pattern>
+        <template>
+            <redirect>\1 TWELVE-GAUGE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWELVE-BORE (.*)</pattern>
+        <template>
+            <redirect>TWELVE-GAUGE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWELVE-BORE</pattern>
+        <template>
+            <redirect>\1 TWELVE-GAUGE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWELVE-BORE</pattern>
+        <template>
+            <redirect>TWELVE-GAUGE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) UNDERGROUND (.*)</pattern>
+        <template>
+            <redirect>\1 SUBWAY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>UNDERGROUND (.*)</pattern>
+        <template>
+            <redirect>SUBWAY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) UNDERGROUND</pattern>
+        <template>
+            <redirect>\1 SUBWAY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>UNDERGROUND</pattern>
+        <template>
+            <redirect>SUBWAY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) VACUUM FLASK (.*)</pattern>
+        <template>
+            <redirect>\1 THERMOS BOTTLE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>VACUUM FLASK (.*)</pattern>
+        <template>
+            <redirect>THERMOS BOTTLE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) VACUUM FLASK</pattern>
+        <template>
+            <redirect>\1 THERMOS BOTTLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>VACUUM FLASK</pattern>
+        <template>
+            <redirect>THERMOS BOTTLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) VEST (.*)</pattern>
+        <template>
+            <redirect>\1 UNDERSHIRT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>VEST (.*)</pattern>
+        <template>
+            <redirect>UNDERSHIRT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) VEST</pattern>
+        <template>
+            <redirect>\1 UNDERSHIRT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>VEST</pattern>
+        <template>
+            <redirect>UNDERSHIRT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) VETERINARY SURGEON (.*)</pattern>
+        <template>
+            <redirect>\1 VETERINARIAN \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>VETERINARY SURGEON (.*)</pattern>
+        <template>
+            <redirect>VETERINARIAN \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) VETERINARY SURGEON</pattern>
+        <template>
+            <redirect>\1 VETERINARIAN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>VETERINARY SURGEON</pattern>
+        <template>
+            <redirect>VETERINARIAN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WAISTCOAT (.*)</pattern>
+        <template>
+            <redirect>\1 VEST \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WAISTCOAT (.*)</pattern>
+        <template>
+            <redirect>VEST \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WAISTCOAT</pattern>
+        <template>
+            <redirect>\1 VEST</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WAISTCOAT</pattern>
+        <template>
+            <redirect>VEST</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WALKING FRAME (.*)</pattern>
+        <template>
+            <redirect>\1 WALKER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WALKING FRAME (.*)</pattern>
+        <template>
+            <redirect>WALKER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WALKING FRAME</pattern>
+        <template>
+            <redirect>\1 WALKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WALKING FRAME</pattern>
+        <template>
+            <redirect>WALKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WARDROBE (.*)</pattern>
+        <template>
+            <redirect>\1 CLOSET \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WARDROBE (.*)</pattern>
+        <template>
+            <redirect>CLOSET \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WARDROBE</pattern>
+        <template>
+            <redirect>\1 CLOSET</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WARDROBE</pattern>
+        <template>
+            <redirect>CLOSET</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WATER ICE (.*)</pattern>
+        <template>
+            <redirect>\1 ITALIAN ICE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WATER ICE (.*)</pattern>
+        <template>
+            <redirect>ITALIAN ICE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WATER ICE</pattern>
+        <template>
+            <redirect>\1 ITALIAN ICE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WATER ICE</pattern>
+        <template>
+            <redirect>ITALIAN ICE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WEATHERBOARD (.*)</pattern>
+        <template>
+            <redirect>\1 CLAPBOARD \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WEATHERBOARD (.*)</pattern>
+        <template>
+            <redirect>CLAPBOARD \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WEATHERBOARD</pattern>
+        <template>
+            <redirect>\1 CLAPBOARD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WEATHERBOARD</pattern>
+        <template>
+            <redirect>CLAPBOARD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WHITE COFFEE (.*)</pattern>
+        <template>
+            <redirect>\1 COFFEE WITH CREAM \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WHITE COFFEE (.*)</pattern>
+        <template>
+            <redirect>COFFEE WITH CREAM \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WHITE COFFEE</pattern>
+        <template>
+            <redirect>\1 COFFEE WITH CREAM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WHITE COFFEE</pattern>
+        <template>
+            <redirect>COFFEE WITH CREAM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WHITE SPIRIT (.*)</pattern>
+        <template>
+            <redirect>\1 MINERAL SPIRITS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WHITE SPIRIT (.*)</pattern>
+        <template>
+            <redirect>MINERAL SPIRITS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WHITE SPIRIT</pattern>
+        <template>
+            <redirect>\1 MINERAL SPIRITS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WHITE SPIRIT</pattern>
+        <template>
+            <redirect>MINERAL SPIRITS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WHOLEMEAL BREAD (.*)</pattern>
+        <template>
+            <redirect>\1 WHOLEWHEAT BREAD \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WHOLEMEAL BREAD (.*)</pattern>
+        <template>
+            <redirect>WHOLEWHEAT BREAD \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WHOLEMEAL BREAD</pattern>
+        <template>
+            <redirect>\1 WHOLEWHEAT BREAD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WHOLEMEAL BREAD</pattern>
+        <template>
+            <redirect>WHOLEWHEAT BREAD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WINDCHEATER (.*)</pattern>
+        <template>
+            <redirect>\1 WINDBREAKER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WINDCHEATER (.*)</pattern>
+        <template>
+            <redirect>WINDBREAKER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WINDCHEATER</pattern>
+        <template>
+            <redirect>\1 WINDBREAKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WINDCHEATER</pattern>
+        <template>
+            <redirect>WINDBREAKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WINDSCREEN (.*)</pattern>
+        <template>
+            <redirect>\1 WINDSHIELD \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WINDSCREEN (.*)</pattern>
+        <template>
+            <redirect>WINDSHIELD \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WINDSCREEN</pattern>
+        <template>
+            <redirect>\1 WINDSHIELD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WINDSCREEN</pattern>
+        <template>
+            <redirect>WINDSHIELD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WORKTOP (.*)</pattern>
+        <template>
+            <redirect>\1 COUNTERTOP \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WORKTOP (.*)</pattern>
+        <template>
+            <redirect>COUNTERTOP \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WORKTOP</pattern>
+        <template>
+            <redirect>\1 COUNTERTOP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WORKTOP</pattern>
+        <template>
+            <redirect>COUNTERTOP</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ZEBRA CROSSING (.*)</pattern>
+        <template>
+            <redirect>\1 CROSSWALK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ZEBRA CROSSING (.*)</pattern>
+        <template>
+            <redirect>CROSSWALK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ZEBRA CROSSING</pattern>
+        <template>
+            <redirect>\1 CROSSWALK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ZEBRA CROSSING</pattern>
+        <template>
+            <redirect>CROSSWALK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ZIP (.*)</pattern>
+        <template>
+            <redirect>\1 ZIPPER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ZIP (.*)</pattern>
+        <template>
+            <redirect>ZIPPER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ZIP</pattern>
+        <template>
+            <redirect>\1 ZIPPER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ZIP</pattern>
+        <template>
+            <redirect>ZIPPER</redirect>
+        </template>
+    </category>
+</aiml>

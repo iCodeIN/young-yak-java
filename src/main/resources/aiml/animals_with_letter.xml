@@ -1,0 +1,511 @@
+<aiml version="1.0">
+	<category>
+		<pattern>NAME AN ANIMAL WITH ([ABCDEFGHIJKLMNOPQRSTUVWXYZ])</pattern>
+		<template>
+			<redirect>NAME AN ANIMAL WITH LETTER \1</redirect>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL STARTING WITH THE LETTER ([ABCDEFGHIJKLMNOPQRSTUVWXYZ])</pattern>
+		<template>
+			<redirect>NAME AN ANIMAL WITH LETTER \1</redirect>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL STARTING WITH ([ABCDEFGHIJKLMNOPQRSTUVWXYZ])</pattern>
+		<template>
+			<redirect>NAME AN ANIMAL WITH LETTER \1</redirect>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL THAT STARTS WITH THE LETTER ([ABCDEFGHIJKLMNOPQRSTUVWXYZ])</pattern>
+		<template>
+			<redirect>NAME AN ANIMAL WITH LETTER \1</redirect>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL THAT STARTS WITH ([ABCDEFGHIJKLMNOPQRSTUVWXYZ])</pattern>
+		<template>
+			<redirect>NAME AN ANIMAL WITH LETTER \1</redirect>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH THE LETTER ([ABCDEFGHIJKLMNOPQRSTUVWXYZ])</pattern>
+		<template>
+			<redirect>NAME AN ANIMAL WITH LETTER \1</redirect>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER A</pattern>
+		<template>
+			<random>
+				<li>Aardvark</li>
+				<li>Adelie Penguin</li>
+				<li>African Bush Elephant</li>
+				<li>African Wild Dog</li>
+				<li>Alligator</li>
+				<li>Amazon River Dolphin</li>
+				<li>American Pika</li>
+				<li>Amur Leopard</li>
+				<li>Anaconda</li>
+				<li>Ant</li>
+				<li>Arctic Fox</li>
+				<li>Armadillo</li>
+				<li>Atlantic Cod</li>
+				<li>Atlantic Puffin</li>
+				<li>Atlantic Salmon</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER B</pattern>
+		<template>
+			<random>
+				<li>Baboon</li>
+				<li>Badger</li>
+				<li>Barracuda</li>
+				<li>Basking Shark</li>
+				<li>Bear</li>
+				<li>Beaver</li>
+				<li>Bee Hummingbird</li>
+				<li>Bengal Tiger</li>
+				<li>Bharal</li>
+				<li>Black Bear</li>
+				<li>Black Rhinoceros</li>
+				<li>Black-Footed Ferret</li>
+				<li>Blue Whale</li>
+				<li>Blue Wildebeest</li>
+				<li>Bobcat</li>
+				<li>Bombardier Beetle</li>
+				<li>Bowhead Whale</li>
+				<li>Brown Hare</li>
+				<li>Bumblebee</li>
+				<li>Butterfly</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER C</pattern>
+		<template>
+			<random>
+				<li>Caiman</li>
+				<li>Caiman Lizard</li>
+				<li>Cairn Terrier</li>
+				<li>Camel</li>
+				<li>Canaan Dog</li>
+				<li>Capybara</li>
+				<li>Caracal</li>
+				<li>Carolina Dog</li>
+				<li>Cassowary</li>
+				<li>Cat</li>
+				<li>Caterpillar</li>
+				<li>Catfish</li>
+				<li>Cavalier King Charles Spaniel</li>
+				<li>Centipede</li>
+				<li>Cesky Fousek</li>
+				<li>Chameleon</li>
+				<li>Chamois</li>
+				<li>Cheetah</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER D</pattern>
+		<template>
+			<random>
+				<li>Dachshund</li>
+				<li>Dalmatian</li>
+				<li>Darwin's Frog</li>
+				<li>Deer</li>
+				<li>Desert Tortoise</li>
+				<li>Deutsche Bracke</li>
+				<li>Dhole</li>
+				<li>Dingo</li>
+				<li>Discus</li>
+				<li>Doberman Pinscher</li>
+				<li>Dodo</li>
+				<li>Dog</li>
+				<li>Dogo Argentino</li>
+				<li>Dogue De Bordeaux</li>
+				<li>Dolphin</li>
+				<li>Donkey</li>
+				<li>Dormouse</li>
+				<li>Dragonfly</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER E</pattern>
+		<template>
+			<random>
+				<li>Eagle</li>
+				<li>Earwig</li>
+				<li>Eastern Gorilla</li>
+				<li>Eastern Lowland Gorilla</li>
+				<li>Echidna</li>
+				<li>Edible Frog</li>
+				<li>Egyptian Mau</li>
+				<li>Electric Eel</li>
+				<li>Elephant</li>
+				<li>Elephant Seal</li>
+				<li>Elephant Shrew</li>
+				<li>Emperor Penguin</li>
+				<li>Emperor Tamarin</li>
+				<li>Emu</li>
+				<li>English Cocker Spaniel</li>
+				<li>English Sheperd</li>
+				<li>English Springer Spaniel</li>
+				<li>Entlebucher Mountain Dog</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER F</pattern>
+		<template>
+			<random>
+				<li>Falcon</li>
+				<li>Fennec Fox</li>
+				<li>Ferret</li>
+				<li>Field Spaniel</li>
+				<li>Fin Whale</li>
+				<li>Finnish Spitz</li>
+				<li>Fire-Bellied Toad</li>
+				<li>Fish</li>
+				<li>Fishing Cat</li>
+				<li>Flamingo</li>
+				<li>Flat Coat Retriever</li>
+				<li>Flounder</li>
+				<li>Fly</li>
+				<li>Flying Squirrel</li>
+				<li>Fossa</li>
+				<li>Fox</li>
+				<li>Fox Terrier</li>
+				<li>French Bulldog</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER G</pattern>
+		<template>
+			<random>
+				<li>Galapagos Penguin</li>
+				<li>Galapagos Tortoise</li>
+				<li>Gar</li>
+				<li>Gecko</li>
+				<li>Gentoo Penguin</li>
+				<li>Geoffroys Tamarin</li>
+				<li>Gerbil</li>
+				<li>German Pinscher</li>
+				<li>German Sheperd</li>
+				<li>Gharial</li>
+				<li>Giant African Land Snail</li>
+				<li>Giant Clam</li>
+				<li>Giant Panda Bear</li>
+				<li>Giant Schnauzer</li>
+				<li>Gibbon</li>
+				<li>Gila Monster</li>
+				<li>Giraffe</li>
+				<li>Glass Lizard</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER H</pattern>
+		<template>
+			<random>
+				<li>Hammerhead Shark</li>
+				<li>Hamster</li>
+				<li>Hare</li>
+				<li>Harrier</li>
+				<li>Havanese</li>
+				<li>Hedgehog</li>
+				<li>Hercules Beetle</li>
+				<li>Hermit Crab</li>
+				<li>Heron</li>
+				<li>Highland Cattle</li>
+				<li>Himalayan</li>
+				<li>Hippopotamus</li>
+				<li>Honey Bee</li>
+				<li>Horn Shark</li>
+				<li>Horned Frog</li>
+				<li>Horse</li>
+				<li>Horseshoe Crab</li>
+				<li>Howler Monkey</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER I</pattern>
+		<template>
+			<random>
+				<li>Ibis</li>
+				<li>Ibizan Hound</li>
+				<li>Iguana</li>
+				<li>Impala</li>
+				<li>Indian Elephant</li>
+				<li>Indian Palm Squirrel</li>
+				<li>Indian Rhinoceros</li>
+				<li>Indian Star Tortoise</li>
+				<li>Indochinese Tiger</li>
+				<li>Indri</li>
+				<li>Insect</li>
+				<li>Irish Setter</li>
+				<li>Irish Wolfhound</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER J</pattern>
+		<template>
+			<random>
+				<li>Jack Russel</li>
+				<li>Jackal</li>
+				<li>Jaguar</li>
+				<li>Japanese Chin</li>
+				<li>Japanese Macaque</li>
+				<li>Javan Rhinoceros</li>
+				<li>Javanese</li>
+				<li>Jellyfish</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER K</pattern>
+		<template>
+			<random>
+				<li>Kakapo</li>
+				<li>Kangaroo</li>
+				<li>Keel Billed Toucan</li>
+				<li>Killer Whale</li>
+				<li>King Crab</li>
+				<li>King Penguin</li>
+				<li>Kingfisher</li>
+				<li>Kiwi</li>
+				<li>Koala</li>
+				<li>Komodo Dragon</li>
+				<li>Kudu</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER L</pattern>
+		<template>
+			<random>
+				<li>Labradoodle</li>
+				<li>Labrador Retriever</li>
+				<li>Ladybird</li>
+				<li>Leaf-Tailed Gecko</li>
+				<li>Lemming</li>
+				<li>Lemur</li>
+				<li>Leopard</li>
+				<li>Leopard Cat</li>
+				<li>Leopard Seal</li>
+				<li>Leopard Tortoise</li>
+				<li>Liger</li>
+				<li>Lion</li>
+				<li>Lionfish</li>
+				<li>Little Penguin</li>
+				<li>Lizard</li>
+				<li>Llama</li>
+				<li>Lobster</li>
+				<li>Long-Eared Owl</li>
+				<li>Lynx</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER M</pattern>
+		<template>
+			<random>
+				<li>Macaroni Penguin</li>
+				<li>Macaw</li>
+				<li>Magellanic Penguin</li>
+				<li>Magpie</li>
+				<li>Maine Coon</li>
+				<li>Malayan Civet</li>
+				<li>Malayan Tiger</li>
+				<li>Maltese</li>
+				<li>Manatee</li>
+				<li>Mandrill</li>
+				<li>Manta Ray</li>
+				<li>Marine Toad</li>
+				<li>Markhor</li>
+				<li>Marsh Frog</li>
+				<li>Masked Palm Civet</li>
+				<li>Mastiff</li>
+				<li>Mayfly</li>
+				<li>Meerkat</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER N</pattern>
+		<template>
+			<random>
+				<li>Neapolitan Mastiff</li>
+				<li>Newfoundland</li>
+				<li>Newt</li>
+				<li>Nightingale</li>
+				<li>Norfolk Terrier</li>
+				<li>Norwegian Forest</li>
+				<li>Numbat</li>
+				<li>Nurse Shark</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER O</pattern>
+		<template>
+			<random>
+				<li>Ocelot</li>
+				<li>Octopus</li>
+				<li>Okapi</li>
+				<li>Old English Sheepdog</li>
+				<li>Olm</li>
+				<li>Opossum</li>
+				<li>Orang-utan</li>
+				<li>Ostrich</li>
+				<li>Otter</li>
+				<li>Oyster</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER P</pattern>
+		<template>
+			<random>
+				<li>Padamelon</li>
+				<li>Panther</li>
+				<li>Parrot</li>
+				<li>Patas Monkey</li>
+				<li>Peacock</li>
+				<li>Pekingese</li>
+				<li>Pelican</li>
+				<li>Penguin</li>
+				<li>Persian</li>
+				<li>Pheasant</li>
+				<li>Pied Tamarin</li>
+				<li>Pig</li>
+				<li>Pika</li>
+				<li>Pike</li>
+				<li>Pink Fairy Armadillo</li>
+				<li>Piranha</li>
+				<li>Platypus</li>
+				<li>Pointer</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER Q</pattern>
+		<template>
+			<random>
+				<li>Quail</li>
+				<li>Quetzal</li>
+				<li>Quokka</li>
+				<li>Quoll</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER R</pattern>
+		<template>
+			<random>
+				<li>Rabbit</li>
+				<li>Raccoon</li>
+				<li>Raccoon Dog</li>
+				<li>Radiated Tortoise</li>
+				<li>Ragdoll</li>
+				<li>Rat</li>
+				<li>Rattlesnake</li>
+				<li>Red Knee Tarantula</li>
+				<li>Red Panda</li>
+				<li>Red Wolf</li>
+				<li>Red-Handed Tamarin</li>
+				<li>Reindeer</li>
+				<li>Rhinoceros</li>
+				<li>River Dolphin</li>
+				<li>River Turtle</li>
+				<li>Robin</li>
+				<li>Rock Hyrax</li>
+				<li>Rockhopper Penguin</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER U</pattern>
+		<template>
+			<random>
+				<li>Uakari</li>
+				<li>Uguisu</li>
+				<li>Umbrellabird</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER V</pattern>
+		<template>
+			<random>
+				<li>Vampire Bat</li>
+				<li>Velvet Monkey</li>
+				<li>Vulture</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER W</pattern>
+		<template>
+			<random>
+				<li>Wallaby</li>
+				<li>Walrus</li>
+				<li>Warthog</li>
+				<li>Wasp</li>
+				<li>Water Buffalo</li>
+				<li>Water Dragon</li>
+				<li>Water Vole</li>
+				<li>Weasel</li>
+				<li>Welsh Corgi</li>
+				<li>West Highland Terrier</li>
+				<li>Western Gorilla</li>
+				<li>Western Lowland Gorilla</li>
+				<li>Whale Shark</li>
+				<li>Whippet</li>
+				<li>White Faced Capuchin</li>
+				<li>White Rhinoceros</li>
+				<li>White Tiger</li>
+				<li>Wild Boar</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER X</pattern>
+		<template>
+			<random>
+				<li>X-Ray Tetra</li>
+				<li>Xenons</li>
+				<li>Xenops</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER Y</pattern>
+		<template>
+			<random>
+				<li>Yak</li>
+				<li>Yellow-Eyed Penguin</li>
+				<li>Yorkshire Terrier</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>NAME AN ANIMAL WITH LETTER Z</pattern>
+		<template>
+			<random>
+				<li>Zebra</li>
+				<li>Zebra Shark</li>
+				<li>Zebu</li>
+				<li>Zonkey</li>
+				<li>Zorse</li>
+			</random>
+		</template>
+	</category>
+</aiml>

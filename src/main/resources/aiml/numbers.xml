@@ -1,0 +1,2452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <category>
+        <pattern>(.*) PI (.*)</pattern>
+        <template>
+            <redirect>\1 3.14159265359 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PI (.*)</pattern>
+        <template>
+            <redirect>3.14159265359 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PI</pattern>
+        <template>
+            <redirect>\1 3.14159265359</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PI</pattern>
+        <template>
+            <redirect>3.14159265359</redirect>
+        </template>
+    </category>
+    <!-- integers -->
+    <category>
+        <pattern>(.*) ZERO (.*)</pattern>
+        <template>
+            <redirect>\1 0 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ZERO (.*)</pattern>
+        <template>
+            <redirect>0 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ZERO</pattern>
+        <template>
+            <redirect>\1 0</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ZERO</pattern>
+        <template>
+            <redirect>0</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ONE (.*)</pattern>
+        <template>
+            <redirect>\1 1 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ONE (.*)</pattern>
+        <template>
+            <redirect>1 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ONE</pattern>
+        <template>
+            <redirect>\1 1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ONE</pattern>
+        <template>
+            <redirect>1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWO (.*)</pattern>
+        <template>
+            <redirect>\1 2 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWO (.*)</pattern>
+        <template>
+            <redirect>2 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWO</pattern>
+        <template>
+            <redirect>\1 2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWO</pattern>
+        <template>
+            <redirect>2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THREE (.*)</pattern>
+        <template>
+            <redirect>\1 3 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THREE (.*)</pattern>
+        <template>
+            <redirect>3 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THREE</pattern>
+        <template>
+            <redirect>\1 3</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THREE</pattern>
+        <template>
+            <redirect>3</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FOUR (.*)</pattern>
+        <template>
+            <redirect>\1 4 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FOUR (.*)</pattern>
+        <template>
+            <redirect>4 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FOUR</pattern>
+        <template>
+            <redirect>\1 4</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FOUR</pattern>
+        <template>
+            <redirect>4</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIVE (.*)</pattern>
+        <template>
+            <redirect>\1 5 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIVE (.*)</pattern>
+        <template>
+            <redirect>5 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIVE</pattern>
+        <template>
+            <redirect>\1 5</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIVE</pattern>
+        <template>
+            <redirect>5</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIX (.*)</pattern>
+        <template>
+            <redirect>\1 6 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIX (.*)</pattern>
+        <template>
+            <redirect>6 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIX</pattern>
+        <template>
+            <redirect>\1 6</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIX</pattern>
+        <template>
+            <redirect>6</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVEN (.*)</pattern>
+        <template>
+            <redirect>\1 7 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVEN (.*)</pattern>
+        <template>
+            <redirect>7 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVEN</pattern>
+        <template>
+            <redirect>\1 7</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVEN</pattern>
+        <template>
+            <redirect>7</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHT (.*)</pattern>
+        <template>
+            <redirect>\1 8 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHT (.*)</pattern>
+        <template>
+            <redirect>8 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHT</pattern>
+        <template>
+            <redirect>\1 8</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHT</pattern>
+        <template>
+            <redirect>8</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINE (.*)</pattern>
+        <template>
+            <redirect>\1 9 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINE (.*)</pattern>
+        <template>
+            <redirect>9 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINE</pattern>
+        <template>
+            <redirect>\1 9</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINE</pattern>
+        <template>
+            <redirect>9</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TEN (.*)</pattern>
+        <template>
+            <redirect>\1 10 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TEN (.*)</pattern>
+        <template>
+            <redirect>10 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TEN</pattern>
+        <template>
+            <redirect>\1 10</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TEN</pattern>
+        <template>
+            <redirect>10</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ELEVEN (.*)</pattern>
+        <template>
+            <redirect>\1 11 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ELEVEN (.*)</pattern>
+        <template>
+            <redirect>11 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ELEVEN</pattern>
+        <template>
+            <redirect>\1 11</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ELEVEN</pattern>
+        <template>
+            <redirect>11</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWELVE (.*)</pattern>
+        <template>
+            <redirect>\1 12 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWELVE (.*)</pattern>
+        <template>
+            <redirect>12 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWELVE</pattern>
+        <template>
+            <redirect>\1 12</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWELVE</pattern>
+        <template>
+            <redirect>12</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTEEN (.*)</pattern>
+        <template>
+            <redirect>\1 13 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTEEN (.*)</pattern>
+        <template>
+            <redirect>13 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTEEN</pattern>
+        <template>
+            <redirect>\1 13</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTEEN</pattern>
+        <template>
+            <redirect>13</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FOURTEEN (.*)</pattern>
+        <template>
+            <redirect>\1 14 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FOURTEEN (.*)</pattern>
+        <template>
+            <redirect>14 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FOURTEEN</pattern>
+        <template>
+            <redirect>\1 14</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FOURTEEN</pattern>
+        <template>
+            <redirect>14</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTEEN (.*)</pattern>
+        <template>
+            <redirect>\1 15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTEEN (.*)</pattern>
+        <template>
+            <redirect>15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTEEN</pattern>
+        <template>
+            <redirect>\1 15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTEEN</pattern>
+        <template>
+            <redirect>15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTEEN (.*)</pattern>
+        <template>
+            <redirect>\1 16 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTEEN (.*)</pattern>
+        <template>
+            <redirect>16 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTEEN</pattern>
+        <template>
+            <redirect>\1 16</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTEEN</pattern>
+        <template>
+            <redirect>16</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTEEN (.*)</pattern>
+        <template>
+            <redirect>\1 17 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTEEN (.*)</pattern>
+        <template>
+            <redirect>17 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTEEN</pattern>
+        <template>
+            <redirect>\1 17</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTEEN</pattern>
+        <template>
+            <redirect>17</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTEEN (.*)</pattern>
+        <template>
+            <redirect>\1 18 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTEEN (.*)</pattern>
+        <template>
+            <redirect>18 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTEEN</pattern>
+        <template>
+            <redirect>\1 18</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTEEN</pattern>
+        <template>
+            <redirect>18</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETEEN (.*)</pattern>
+        <template>
+            <redirect>\1 19 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETEEN (.*)</pattern>
+        <template>
+            <redirect>19 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETEEN</pattern>
+        <template>
+            <redirect>\1 19</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETEEN</pattern>
+        <template>
+            <redirect>19</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY (.*)</pattern>
+        <template>
+            <redirect>\1 20 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY (.*)</pattern>
+        <template>
+            <redirect>20 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY</pattern>
+        <template>
+            <redirect>\1 20</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY</pattern>
+        <template>
+            <redirect>20</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-ONE (.*)</pattern>
+        <template>
+            <redirect>\1 21 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-ONE (.*)</pattern>
+        <template>
+            <redirect>21 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-ONE</pattern>
+        <template>
+            <redirect>\1 21</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-ONE</pattern>
+        <template>
+            <redirect>21</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-TWO (.*)</pattern>
+        <template>
+            <redirect>\1 22 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-TWO (.*)</pattern>
+        <template>
+            <redirect>22 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-TWO</pattern>
+        <template>
+            <redirect>\1 22</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-TWO</pattern>
+        <template>
+            <redirect>22</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-THREE (.*)</pattern>
+        <template>
+            <redirect>\1 23 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-THREE (.*)</pattern>
+        <template>
+            <redirect>23 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-THREE</pattern>
+        <template>
+            <redirect>\1 23</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-THREE</pattern>
+        <template>
+            <redirect>23</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-FOUR (.*)</pattern>
+        <template>
+            <redirect>\1 24 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-FOUR (.*)</pattern>
+        <template>
+            <redirect>24 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-FOUR</pattern>
+        <template>
+            <redirect>\1 24</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-FOUR</pattern>
+        <template>
+            <redirect>24</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-FIVE (.*)</pattern>
+        <template>
+            <redirect>\1 25 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-FIVE (.*)</pattern>
+        <template>
+            <redirect>25 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-FIVE</pattern>
+        <template>
+            <redirect>\1 25</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-FIVE</pattern>
+        <template>
+            <redirect>25</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-SIX (.*)</pattern>
+        <template>
+            <redirect>\1 26 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-SIX (.*)</pattern>
+        <template>
+            <redirect>26 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-SIX</pattern>
+        <template>
+            <redirect>\1 26</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-SIX</pattern>
+        <template>
+            <redirect>26</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-SEVEN (.*)</pattern>
+        <template>
+            <redirect>\1 27 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-SEVEN (.*)</pattern>
+        <template>
+            <redirect>27 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-SEVEN</pattern>
+        <template>
+            <redirect>\1 27</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-SEVEN</pattern>
+        <template>
+            <redirect>27</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-EIGHT (.*)</pattern>
+        <template>
+            <redirect>\1 28 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-EIGHT (.*)</pattern>
+        <template>
+            <redirect>28 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-EIGHT</pattern>
+        <template>
+            <redirect>\1 28</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-EIGHT</pattern>
+        <template>
+            <redirect>28</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-NINE (.*)</pattern>
+        <template>
+            <redirect>\1 29 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-NINE (.*)</pattern>
+        <template>
+            <redirect>29 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TWENTY-NINE</pattern>
+        <template>
+            <redirect>\1 29</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TWENTY-NINE</pattern>
+        <template>
+            <redirect>29</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY (.*)</pattern>
+        <template>
+            <redirect>\1 30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY (.*)</pattern>
+        <template>
+            <redirect>30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY</pattern>
+        <template>
+            <redirect>\1 30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY</pattern>
+        <template>
+            <redirect>30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-ONE (.*)</pattern>
+        <template>
+            <redirect>\1 31 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-ONE (.*)</pattern>
+        <template>
+            <redirect>31 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-ONE</pattern>
+        <template>
+            <redirect>\1 31</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-ONE</pattern>
+        <template>
+            <redirect>31</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-TWO (.*)</pattern>
+        <template>
+            <redirect>\1 32 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-TWO (.*)</pattern>
+        <template>
+            <redirect>32 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-TWO</pattern>
+        <template>
+            <redirect>\1 32</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-TWO</pattern>
+        <template>
+            <redirect>32</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-THREE (.*)</pattern>
+        <template>
+            <redirect>\1 33 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-THREE (.*)</pattern>
+        <template>
+            <redirect>33 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-THREE</pattern>
+        <template>
+            <redirect>\1 33</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-THREE</pattern>
+        <template>
+            <redirect>33</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-FOUR (.*)</pattern>
+        <template>
+            <redirect>\1 34 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-FOUR (.*)</pattern>
+        <template>
+            <redirect>34 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-FOUR</pattern>
+        <template>
+            <redirect>\1 34</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-FOUR</pattern>
+        <template>
+            <redirect>34</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-FIVE (.*)</pattern>
+        <template>
+            <redirect>\1 35 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-FIVE (.*)</pattern>
+        <template>
+            <redirect>35 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-FIVE</pattern>
+        <template>
+            <redirect>\1 35</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-FIVE</pattern>
+        <template>
+            <redirect>35</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-SIX (.*)</pattern>
+        <template>
+            <redirect>\1 36 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-SIX (.*)</pattern>
+        <template>
+            <redirect>36 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-SIX</pattern>
+        <template>
+            <redirect>\1 36</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-SIX</pattern>
+        <template>
+            <redirect>36</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-SEVEN (.*)</pattern>
+        <template>
+            <redirect>\1 37 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-SEVEN (.*)</pattern>
+        <template>
+            <redirect>37 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-SEVEN</pattern>
+        <template>
+            <redirect>\1 37</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-SEVEN</pattern>
+        <template>
+            <redirect>37</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-EIGHT (.*)</pattern>
+        <template>
+            <redirect>\1 38 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-EIGHT (.*)</pattern>
+        <template>
+            <redirect>38 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-EIGHT</pattern>
+        <template>
+            <redirect>\1 38</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-EIGHT</pattern>
+        <template>
+            <redirect>38</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-NINE (.*)</pattern>
+        <template>
+            <redirect>\1 39 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-NINE (.*)</pattern>
+        <template>
+            <redirect>39 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THIRTY-NINE</pattern>
+        <template>
+            <redirect>\1 39</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THIRTY-NINE</pattern>
+        <template>
+            <redirect>39</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY (.*)</pattern>
+        <template>
+            <redirect>\1 40 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY (.*)</pattern>
+        <template>
+            <redirect>40 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY</pattern>
+        <template>
+            <redirect>\1 40</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY</pattern>
+        <template>
+            <redirect>40</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-ONE (.*)</pattern>
+        <template>
+            <redirect>\1 41 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-ONE (.*)</pattern>
+        <template>
+            <redirect>41 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-ONE</pattern>
+        <template>
+            <redirect>\1 41</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-ONE</pattern>
+        <template>
+            <redirect>41</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-TWO (.*)</pattern>
+        <template>
+            <redirect>\1 42 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-TWO (.*)</pattern>
+        <template>
+            <redirect>42 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-TWO</pattern>
+        <template>
+            <redirect>\1 42</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-TWO</pattern>
+        <template>
+            <redirect>42</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-THREE (.*)</pattern>
+        <template>
+            <redirect>\1 43 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-THREE (.*)</pattern>
+        <template>
+            <redirect>43 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-THREE</pattern>
+        <template>
+            <redirect>\1 43</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-THREE</pattern>
+        <template>
+            <redirect>43</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-FOUR (.*)</pattern>
+        <template>
+            <redirect>\1 44 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-FOUR (.*)</pattern>
+        <template>
+            <redirect>44 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-FOUR</pattern>
+        <template>
+            <redirect>\1 44</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-FOUR</pattern>
+        <template>
+            <redirect>44</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-FIVE (.*)</pattern>
+        <template>
+            <redirect>\1 45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-FIVE (.*)</pattern>
+        <template>
+            <redirect>45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-FIVE</pattern>
+        <template>
+            <redirect>\1 45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-FIVE</pattern>
+        <template>
+            <redirect>45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-SIX (.*)</pattern>
+        <template>
+            <redirect>\1 46 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-SIX (.*)</pattern>
+        <template>
+            <redirect>46 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-SIX</pattern>
+        <template>
+            <redirect>\1 46</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-SIX</pattern>
+        <template>
+            <redirect>46</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-SEVEN (.*)</pattern>
+        <template>
+            <redirect>\1 47 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-SEVEN (.*)</pattern>
+        <template>
+            <redirect>47 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-SEVEN</pattern>
+        <template>
+            <redirect>\1 47</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-SEVEN</pattern>
+        <template>
+            <redirect>47</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-EIGHT (.*)</pattern>
+        <template>
+            <redirect>\1 48 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-EIGHT (.*)</pattern>
+        <template>
+            <redirect>48 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-EIGHT</pattern>
+        <template>
+            <redirect>\1 48</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-EIGHT</pattern>
+        <template>
+            <redirect>48</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-NINE (.*)</pattern>
+        <template>
+            <redirect>\1 49 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-NINE (.*)</pattern>
+        <template>
+            <redirect>49 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FORTY-NINE</pattern>
+        <template>
+            <redirect>\1 49</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FORTY-NINE</pattern>
+        <template>
+            <redirect>49</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY (.*)</pattern>
+        <template>
+            <redirect>\1 50 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY (.*)</pattern>
+        <template>
+            <redirect>50 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY</pattern>
+        <template>
+            <redirect>\1 50</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY</pattern>
+        <template>
+            <redirect>50</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-ONE (.*)</pattern>
+        <template>
+            <redirect>\1 51 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-ONE (.*)</pattern>
+        <template>
+            <redirect>51 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-ONE</pattern>
+        <template>
+            <redirect>\1 51</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-ONE</pattern>
+        <template>
+            <redirect>51</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-TWO (.*)</pattern>
+        <template>
+            <redirect>\1 52 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-TWO (.*)</pattern>
+        <template>
+            <redirect>52 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-TWO</pattern>
+        <template>
+            <redirect>\1 52</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-TWO</pattern>
+        <template>
+            <redirect>52</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-THREE (.*)</pattern>
+        <template>
+            <redirect>\1 53 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-THREE (.*)</pattern>
+        <template>
+            <redirect>53 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-THREE</pattern>
+        <template>
+            <redirect>\1 53</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-THREE</pattern>
+        <template>
+            <redirect>53</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-FOUR (.*)</pattern>
+        <template>
+            <redirect>\1 54 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-FOUR (.*)</pattern>
+        <template>
+            <redirect>54 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-FOUR</pattern>
+        <template>
+            <redirect>\1 54</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-FOUR</pattern>
+        <template>
+            <redirect>54</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-FIVE (.*)</pattern>
+        <template>
+            <redirect>\1 55 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-FIVE (.*)</pattern>
+        <template>
+            <redirect>55 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-FIVE</pattern>
+        <template>
+            <redirect>\1 55</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-FIVE</pattern>
+        <template>
+            <redirect>55</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-SIX (.*)</pattern>
+        <template>
+            <redirect>\1 56 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-SIX (.*)</pattern>
+        <template>
+            <redirect>56 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-SIX</pattern>
+        <template>
+            <redirect>\1 56</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-SIX</pattern>
+        <template>
+            <redirect>56</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-SEVEN (.*)</pattern>
+        <template>
+            <redirect>\1 57 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-SEVEN (.*)</pattern>
+        <template>
+            <redirect>57 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-SEVEN</pattern>
+        <template>
+            <redirect>\1 57</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-SEVEN</pattern>
+        <template>
+            <redirect>57</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-EIGHT (.*)</pattern>
+        <template>
+            <redirect>\1 58 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-EIGHT (.*)</pattern>
+        <template>
+            <redirect>58 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-EIGHT</pattern>
+        <template>
+            <redirect>\1 58</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-EIGHT</pattern>
+        <template>
+            <redirect>58</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-NINE (.*)</pattern>
+        <template>
+            <redirect>\1 59 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-NINE (.*)</pattern>
+        <template>
+            <redirect>59 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) FIFTY-NINE</pattern>
+        <template>
+            <redirect>\1 59</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>FIFTY-NINE</pattern>
+        <template>
+            <redirect>59</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY (.*)</pattern>
+        <template>
+            <redirect>\1 60 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY (.*)</pattern>
+        <template>
+            <redirect>60 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY</pattern>
+        <template>
+            <redirect>\1 60</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY</pattern>
+        <template>
+            <redirect>60</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-ONE (.*)</pattern>
+        <template>
+            <redirect>\1 61 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-ONE (.*)</pattern>
+        <template>
+            <redirect>61 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-ONE</pattern>
+        <template>
+            <redirect>\1 61</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-ONE</pattern>
+        <template>
+            <redirect>61</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-TWO (.*)</pattern>
+        <template>
+            <redirect>\1 62 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-TWO (.*)</pattern>
+        <template>
+            <redirect>62 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-TWO</pattern>
+        <template>
+            <redirect>\1 62</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-TWO</pattern>
+        <template>
+            <redirect>62</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-THREE (.*)</pattern>
+        <template>
+            <redirect>\1 63 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-THREE (.*)</pattern>
+        <template>
+            <redirect>63 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-THREE</pattern>
+        <template>
+            <redirect>\1 63</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-THREE</pattern>
+        <template>
+            <redirect>63</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-FOUR (.*)</pattern>
+        <template>
+            <redirect>\1 64 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-FOUR (.*)</pattern>
+        <template>
+            <redirect>64 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-FOUR</pattern>
+        <template>
+            <redirect>\1 64</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-FOUR</pattern>
+        <template>
+            <redirect>64</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-FIVE (.*)</pattern>
+        <template>
+            <redirect>\1 65 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-FIVE (.*)</pattern>
+        <template>
+            <redirect>65 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-FIVE</pattern>
+        <template>
+            <redirect>\1 65</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-FIVE</pattern>
+        <template>
+            <redirect>65</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-SIX (.*)</pattern>
+        <template>
+            <redirect>\1 66 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-SIX (.*)</pattern>
+        <template>
+            <redirect>66 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-SIX</pattern>
+        <template>
+            <redirect>\1 66</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-SIX</pattern>
+        <template>
+            <redirect>66</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-SEVEN (.*)</pattern>
+        <template>
+            <redirect>\1 67 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-SEVEN (.*)</pattern>
+        <template>
+            <redirect>67 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-SEVEN</pattern>
+        <template>
+            <redirect>\1 67</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-SEVEN</pattern>
+        <template>
+            <redirect>67</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-EIGHT (.*)</pattern>
+        <template>
+            <redirect>\1 68 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-EIGHT (.*)</pattern>
+        <template>
+            <redirect>68 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-EIGHT</pattern>
+        <template>
+            <redirect>\1 68</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-EIGHT</pattern>
+        <template>
+            <redirect>68</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-NINE (.*)</pattern>
+        <template>
+            <redirect>\1 69 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-NINE (.*)</pattern>
+        <template>
+            <redirect>69 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SIXTY-NINE</pattern>
+        <template>
+            <redirect>\1 69</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SIXTY-NINE</pattern>
+        <template>
+            <redirect>69</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY (.*)</pattern>
+        <template>
+            <redirect>\1 70 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY (.*)</pattern>
+        <template>
+            <redirect>70 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY</pattern>
+        <template>
+            <redirect>\1 70</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY</pattern>
+        <template>
+            <redirect>70</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-ONE (.*)</pattern>
+        <template>
+            <redirect>\1 71 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-ONE (.*)</pattern>
+        <template>
+            <redirect>71 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-ONE</pattern>
+        <template>
+            <redirect>\1 71</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-ONE</pattern>
+        <template>
+            <redirect>71</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-TWO (.*)</pattern>
+        <template>
+            <redirect>\1 72 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-TWO (.*)</pattern>
+        <template>
+            <redirect>72 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-TWO</pattern>
+        <template>
+            <redirect>\1 72</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-TWO</pattern>
+        <template>
+            <redirect>72</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-THREE (.*)</pattern>
+        <template>
+            <redirect>\1 73 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-THREE (.*)</pattern>
+        <template>
+            <redirect>73 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-THREE</pattern>
+        <template>
+            <redirect>\1 73</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-THREE</pattern>
+        <template>
+            <redirect>73</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-FOUR (.*)</pattern>
+        <template>
+            <redirect>\1 74 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-FOUR (.*)</pattern>
+        <template>
+            <redirect>74 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-FOUR</pattern>
+        <template>
+            <redirect>\1 74</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-FOUR</pattern>
+        <template>
+            <redirect>74</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-FIVE (.*)</pattern>
+        <template>
+            <redirect>\1 75 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-FIVE (.*)</pattern>
+        <template>
+            <redirect>75 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-FIVE</pattern>
+        <template>
+            <redirect>\1 75</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-FIVE</pattern>
+        <template>
+            <redirect>75</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-SIX (.*)</pattern>
+        <template>
+            <redirect>\1 76 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-SIX (.*)</pattern>
+        <template>
+            <redirect>76 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-SIX</pattern>
+        <template>
+            <redirect>\1 76</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-SIX</pattern>
+        <template>
+            <redirect>76</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-SEVEN (.*)</pattern>
+        <template>
+            <redirect>\1 77 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-SEVEN (.*)</pattern>
+        <template>
+            <redirect>77 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-SEVEN</pattern>
+        <template>
+            <redirect>\1 77</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-SEVEN</pattern>
+        <template>
+            <redirect>77</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-EIGHT (.*)</pattern>
+        <template>
+            <redirect>\1 78 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-EIGHT (.*)</pattern>
+        <template>
+            <redirect>78 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-EIGHT</pattern>
+        <template>
+            <redirect>\1 78</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-EIGHT</pattern>
+        <template>
+            <redirect>78</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-NINE (.*)</pattern>
+        <template>
+            <redirect>\1 79 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-NINE (.*)</pattern>
+        <template>
+            <redirect>79 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) SEVENTY-NINE</pattern>
+        <template>
+            <redirect>\1 79</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SEVENTY-NINE</pattern>
+        <template>
+            <redirect>79</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY (.*)</pattern>
+        <template>
+            <redirect>\1 80 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY (.*)</pattern>
+        <template>
+            <redirect>80 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY</pattern>
+        <template>
+            <redirect>\1 80</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY</pattern>
+        <template>
+            <redirect>80</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-ONE (.*)</pattern>
+        <template>
+            <redirect>\1 81 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-ONE (.*)</pattern>
+        <template>
+            <redirect>81 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-ONE</pattern>
+        <template>
+            <redirect>\1 81</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-ONE</pattern>
+        <template>
+            <redirect>81</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-TWO (.*)</pattern>
+        <template>
+            <redirect>\1 82 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-TWO (.*)</pattern>
+        <template>
+            <redirect>82 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-TWO</pattern>
+        <template>
+            <redirect>\1 82</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-TWO</pattern>
+        <template>
+            <redirect>82</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-THREE (.*)</pattern>
+        <template>
+            <redirect>\1 83 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-THREE (.*)</pattern>
+        <template>
+            <redirect>83 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-THREE</pattern>
+        <template>
+            <redirect>\1 83</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-THREE</pattern>
+        <template>
+            <redirect>83</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-FOUR (.*)</pattern>
+        <template>
+            <redirect>\1 84 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-FOUR (.*)</pattern>
+        <template>
+            <redirect>84 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-FOUR</pattern>
+        <template>
+            <redirect>\1 84</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-FOUR</pattern>
+        <template>
+            <redirect>84</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-FIVE (.*)</pattern>
+        <template>
+            <redirect>\1 85 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-FIVE (.*)</pattern>
+        <template>
+            <redirect>85 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-FIVE</pattern>
+        <template>
+            <redirect>\1 85</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-FIVE</pattern>
+        <template>
+            <redirect>85</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-SIX (.*)</pattern>
+        <template>
+            <redirect>\1 86 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-SIX (.*)</pattern>
+        <template>
+            <redirect>86 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-SIX</pattern>
+        <template>
+            <redirect>\1 86</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-SIX</pattern>
+        <template>
+            <redirect>86</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-SEVEN (.*)</pattern>
+        <template>
+            <redirect>\1 87 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-SEVEN (.*)</pattern>
+        <template>
+            <redirect>87 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-SEVEN</pattern>
+        <template>
+            <redirect>\1 87</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-SEVEN</pattern>
+        <template>
+            <redirect>87</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-EIGHT (.*)</pattern>
+        <template>
+            <redirect>\1 88 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-EIGHT (.*)</pattern>
+        <template>
+            <redirect>88 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-EIGHT</pattern>
+        <template>
+            <redirect>\1 88</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-EIGHT</pattern>
+        <template>
+            <redirect>88</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-NINE (.*)</pattern>
+        <template>
+            <redirect>\1 89 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-NINE (.*)</pattern>
+        <template>
+            <redirect>89 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) EIGHTY-NINE</pattern>
+        <template>
+            <redirect>\1 89</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EIGHTY-NINE</pattern>
+        <template>
+            <redirect>89</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY (.*)</pattern>
+        <template>
+            <redirect>\1 90 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY (.*)</pattern>
+        <template>
+            <redirect>90 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY</pattern>
+        <template>
+            <redirect>\1 90</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY</pattern>
+        <template>
+            <redirect>90</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-ONE (.*)</pattern>
+        <template>
+            <redirect>\1 91 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-ONE (.*)</pattern>
+        <template>
+            <redirect>91 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-ONE</pattern>
+        <template>
+            <redirect>\1 91</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-ONE</pattern>
+        <template>
+            <redirect>91</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-TWO (.*)</pattern>
+        <template>
+            <redirect>\1 92 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-TWO (.*)</pattern>
+        <template>
+            <redirect>92 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-TWO</pattern>
+        <template>
+            <redirect>\1 92</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-TWO</pattern>
+        <template>
+            <redirect>92</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-THREE (.*)</pattern>
+        <template>
+            <redirect>\1 93 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-THREE (.*)</pattern>
+        <template>
+            <redirect>93 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-THREE</pattern>
+        <template>
+            <redirect>\1 93</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-THREE</pattern>
+        <template>
+            <redirect>93</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-FOUR (.*)</pattern>
+        <template>
+            <redirect>\1 94 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-FOUR (.*)</pattern>
+        <template>
+            <redirect>94 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-FOUR</pattern>
+        <template>
+            <redirect>\1 94</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-FOUR</pattern>
+        <template>
+            <redirect>94</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-FIVE (.*)</pattern>
+        <template>
+            <redirect>\1 95 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-FIVE (.*)</pattern>
+        <template>
+            <redirect>95 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-FIVE</pattern>
+        <template>
+            <redirect>\1 95</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-FIVE</pattern>
+        <template>
+            <redirect>95</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-SIX (.*)</pattern>
+        <template>
+            <redirect>\1 96 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-SIX (.*)</pattern>
+        <template>
+            <redirect>96 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-SIX</pattern>
+        <template>
+            <redirect>\1 96</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-SIX</pattern>
+        <template>
+            <redirect>96</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-SEVEN (.*)</pattern>
+        <template>
+            <redirect>\1 97 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-SEVEN (.*)</pattern>
+        <template>
+            <redirect>97 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-SEVEN</pattern>
+        <template>
+            <redirect>\1 97</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-SEVEN</pattern>
+        <template>
+            <redirect>97</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-EIGHT (.*)</pattern>
+        <template>
+            <redirect>\1 98 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-EIGHT (.*)</pattern>
+        <template>
+            <redirect>98 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-EIGHT</pattern>
+        <template>
+            <redirect>\1 98</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-EIGHT</pattern>
+        <template>
+            <redirect>98</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-NINE (.*)</pattern>
+        <template>
+            <redirect>\1 99 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-NINE (.*)</pattern>
+        <template>
+            <redirect>99 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NINETY-NINE</pattern>
+        <template>
+            <redirect>\1 99</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NINETY-NINE</pattern>
+        <template>
+            <redirect>99</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ONE HUNDRED (.*)</pattern>
+        <template>
+            <redirect>\1 100 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ONE HUNDRED (.*)</pattern>
+        <template>
+            <redirect>100 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ONE HUNDRED</pattern>
+        <template>
+            <redirect>\1 100</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ONE HUNDRED</pattern>
+        <template>
+            <redirect>100</redirect>
+        </template>
+    </category>
+</aiml>

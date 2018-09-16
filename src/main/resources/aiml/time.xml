@@ -1,0 +1,2307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>(.*) HALF PAST 1 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 13:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 1 PM (.*)</pattern>
+        <template>
+            <redirect>13:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 1 PM</pattern>
+        <template>
+            <redirect>\1 13:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 1 PM</pattern>
+        <template>
+            <redirect>13:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 1 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 1:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 1 AM (.*)</pattern>
+        <template>
+            <redirect>1:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 1 AM</pattern>
+        <template>
+            <redirect>\1 1:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 1 AM</pattern>
+        <template>
+            <redirect>1:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 1 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 13:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 1 PM (.*)</pattern>
+        <template>
+            <redirect>13:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 1 PM</pattern>
+        <template>
+            <redirect>\1 13:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 1 PM</pattern>
+        <template>
+            <redirect>13:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 1 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 1:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 1 AM (.*)</pattern>
+        <template>
+            <redirect>1:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 1 AM</pattern>
+        <template>
+            <redirect>\1 1:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 1 AM</pattern>
+        <template>
+            <redirect>1:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 1 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 12:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 1 PM (.*)</pattern>
+        <template>
+            <redirect>12:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 1 PM</pattern>
+        <template>
+            <redirect>\1 12:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 1 PM</pattern>
+        <template>
+            <redirect>12:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 1 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 0:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 1 AM (.*)</pattern>
+        <template>
+            <redirect>0:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 1 AM</pattern>
+        <template>
+            <redirect>\1 0:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 1 AM</pattern>
+        <template>
+            <redirect>0:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 1 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 13:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>1 PM (.*)</pattern>
+        <template>
+            <redirect>13:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 1 PM</pattern>
+        <template>
+            <redirect>\1 13:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>1 PM</pattern>
+        <template>
+            <redirect>13:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 1 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 1:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>1 AM (.*)</pattern>
+        <template>
+            <redirect>1:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 1 AM</pattern>
+        <template>
+            <redirect>\1 1:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>1 AM</pattern>
+        <template>
+            <redirect>1:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 2 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 14:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 2 PM (.*)</pattern>
+        <template>
+            <redirect>14:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 2 PM</pattern>
+        <template>
+            <redirect>\1 14:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 2 PM</pattern>
+        <template>
+            <redirect>14:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 2 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 2:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 2 AM (.*)</pattern>
+        <template>
+            <redirect>2:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 2 AM</pattern>
+        <template>
+            <redirect>\1 2:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 2 AM</pattern>
+        <template>
+            <redirect>2:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 2 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 14:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 2 PM (.*)</pattern>
+        <template>
+            <redirect>14:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 2 PM</pattern>
+        <template>
+            <redirect>\1 14:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 2 PM</pattern>
+        <template>
+            <redirect>14:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 2 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 2:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 2 AM (.*)</pattern>
+        <template>
+            <redirect>2:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 2 AM</pattern>
+        <template>
+            <redirect>\1 2:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 2 AM</pattern>
+        <template>
+            <redirect>2:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 2 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 13:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 2 PM (.*)</pattern>
+        <template>
+            <redirect>13:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 2 PM</pattern>
+        <template>
+            <redirect>\1 13:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 2 PM</pattern>
+        <template>
+            <redirect>13:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 2 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 1:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 2 AM (.*)</pattern>
+        <template>
+            <redirect>1:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 2 AM</pattern>
+        <template>
+            <redirect>\1 1:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 2 AM</pattern>
+        <template>
+            <redirect>1:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 2 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 14:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>2 PM (.*)</pattern>
+        <template>
+            <redirect>14:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 2 PM</pattern>
+        <template>
+            <redirect>\1 14:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>2 PM</pattern>
+        <template>
+            <redirect>14:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 2 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 2:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>2 AM (.*)</pattern>
+        <template>
+            <redirect>2:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 2 AM</pattern>
+        <template>
+            <redirect>\1 2:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>2 AM</pattern>
+        <template>
+            <redirect>2:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 3 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 15:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 3 PM (.*)</pattern>
+        <template>
+            <redirect>15:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 3 PM</pattern>
+        <template>
+            <redirect>\1 15:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 3 PM</pattern>
+        <template>
+            <redirect>15:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 3 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 3:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 3 AM (.*)</pattern>
+        <template>
+            <redirect>3:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 3 AM</pattern>
+        <template>
+            <redirect>\1 3:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 3 AM</pattern>
+        <template>
+            <redirect>3:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 3 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 15:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 3 PM (.*)</pattern>
+        <template>
+            <redirect>15:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 3 PM</pattern>
+        <template>
+            <redirect>\1 15:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 3 PM</pattern>
+        <template>
+            <redirect>15:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 3 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 3:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 3 AM (.*)</pattern>
+        <template>
+            <redirect>3:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 3 AM</pattern>
+        <template>
+            <redirect>\1 3:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 3 AM</pattern>
+        <template>
+            <redirect>3:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 3 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 14:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 3 PM (.*)</pattern>
+        <template>
+            <redirect>14:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 3 PM</pattern>
+        <template>
+            <redirect>\1 14:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 3 PM</pattern>
+        <template>
+            <redirect>14:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 3 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 2:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 3 AM (.*)</pattern>
+        <template>
+            <redirect>2:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 3 AM</pattern>
+        <template>
+            <redirect>\1 2:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 3 AM</pattern>
+        <template>
+            <redirect>2:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 3 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 15:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>3 PM (.*)</pattern>
+        <template>
+            <redirect>15:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 3 PM</pattern>
+        <template>
+            <redirect>\1 15:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>3 PM</pattern>
+        <template>
+            <redirect>15:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 3 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 3:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>3 AM (.*)</pattern>
+        <template>
+            <redirect>3:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 3 AM</pattern>
+        <template>
+            <redirect>\1 3:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>3 AM</pattern>
+        <template>
+            <redirect>3:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 4 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 16:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 4 PM (.*)</pattern>
+        <template>
+            <redirect>16:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 4 PM</pattern>
+        <template>
+            <redirect>\1 16:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 4 PM</pattern>
+        <template>
+            <redirect>16:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 4 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 4:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 4 AM (.*)</pattern>
+        <template>
+            <redirect>4:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 4 AM</pattern>
+        <template>
+            <redirect>\1 4:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 4 AM</pattern>
+        <template>
+            <redirect>4:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 4 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 16:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 4 PM (.*)</pattern>
+        <template>
+            <redirect>16:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 4 PM</pattern>
+        <template>
+            <redirect>\1 16:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 4 PM</pattern>
+        <template>
+            <redirect>16:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 4 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 4:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 4 AM (.*)</pattern>
+        <template>
+            <redirect>4:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 4 AM</pattern>
+        <template>
+            <redirect>\1 4:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 4 AM</pattern>
+        <template>
+            <redirect>4:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 4 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 15:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 4 PM (.*)</pattern>
+        <template>
+            <redirect>15:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 4 PM</pattern>
+        <template>
+            <redirect>\1 15:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 4 PM</pattern>
+        <template>
+            <redirect>15:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 4 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 3:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 4 AM (.*)</pattern>
+        <template>
+            <redirect>3:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 4 AM</pattern>
+        <template>
+            <redirect>\1 3:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 4 AM</pattern>
+        <template>
+            <redirect>3:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 4 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 16:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>4 PM (.*)</pattern>
+        <template>
+            <redirect>16:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 4 PM</pattern>
+        <template>
+            <redirect>\1 16:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>4 PM</pattern>
+        <template>
+            <redirect>16:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 4 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 4:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>4 AM (.*)</pattern>
+        <template>
+            <redirect>4:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 4 AM</pattern>
+        <template>
+            <redirect>\1 4:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>4 AM</pattern>
+        <template>
+            <redirect>4:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 5 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 17:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 5 PM (.*)</pattern>
+        <template>
+            <redirect>17:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 5 PM</pattern>
+        <template>
+            <redirect>\1 17:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 5 PM</pattern>
+        <template>
+            <redirect>17:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 5 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 5:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 5 AM (.*)</pattern>
+        <template>
+            <redirect>5:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 5 AM</pattern>
+        <template>
+            <redirect>\1 5:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 5 AM</pattern>
+        <template>
+            <redirect>5:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 5 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 17:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 5 PM (.*)</pattern>
+        <template>
+            <redirect>17:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 5 PM</pattern>
+        <template>
+            <redirect>\1 17:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 5 PM</pattern>
+        <template>
+            <redirect>17:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 5 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 5:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 5 AM (.*)</pattern>
+        <template>
+            <redirect>5:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 5 AM</pattern>
+        <template>
+            <redirect>\1 5:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 5 AM</pattern>
+        <template>
+            <redirect>5:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 5 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 16:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 5 PM (.*)</pattern>
+        <template>
+            <redirect>16:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 5 PM</pattern>
+        <template>
+            <redirect>\1 16:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 5 PM</pattern>
+        <template>
+            <redirect>16:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 5 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 4:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 5 AM (.*)</pattern>
+        <template>
+            <redirect>4:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 5 AM</pattern>
+        <template>
+            <redirect>\1 4:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 5 AM</pattern>
+        <template>
+            <redirect>4:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 5 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 17:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>5 PM (.*)</pattern>
+        <template>
+            <redirect>17:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 5 PM</pattern>
+        <template>
+            <redirect>\1 17:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>5 PM</pattern>
+        <template>
+            <redirect>17:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 5 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 5:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>5 AM (.*)</pattern>
+        <template>
+            <redirect>5:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 5 AM</pattern>
+        <template>
+            <redirect>\1 5:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>5 AM</pattern>
+        <template>
+            <redirect>5:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 6 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 18:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 6 PM (.*)</pattern>
+        <template>
+            <redirect>18:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 6 PM</pattern>
+        <template>
+            <redirect>\1 18:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 6 PM</pattern>
+        <template>
+            <redirect>18:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 6 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 6:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 6 AM (.*)</pattern>
+        <template>
+            <redirect>6:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 6 AM</pattern>
+        <template>
+            <redirect>\1 6:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 6 AM</pattern>
+        <template>
+            <redirect>6:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 6 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 18:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 6 PM (.*)</pattern>
+        <template>
+            <redirect>18:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 6 PM</pattern>
+        <template>
+            <redirect>\1 18:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 6 PM</pattern>
+        <template>
+            <redirect>18:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 6 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 6:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 6 AM (.*)</pattern>
+        <template>
+            <redirect>6:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 6 AM</pattern>
+        <template>
+            <redirect>\1 6:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 6 AM</pattern>
+        <template>
+            <redirect>6:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 6 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 17:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 6 PM (.*)</pattern>
+        <template>
+            <redirect>17:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 6 PM</pattern>
+        <template>
+            <redirect>\1 17:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 6 PM</pattern>
+        <template>
+            <redirect>17:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 6 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 5:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 6 AM (.*)</pattern>
+        <template>
+            <redirect>5:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 6 AM</pattern>
+        <template>
+            <redirect>\1 5:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 6 AM</pattern>
+        <template>
+            <redirect>5:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 6 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 18:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>6 PM (.*)</pattern>
+        <template>
+            <redirect>18:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 6 PM</pattern>
+        <template>
+            <redirect>\1 18:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>6 PM</pattern>
+        <template>
+            <redirect>18:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 6 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 6:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>6 AM (.*)</pattern>
+        <template>
+            <redirect>6:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 6 AM</pattern>
+        <template>
+            <redirect>\1 6:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>6 AM</pattern>
+        <template>
+            <redirect>6:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 7 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 19:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 7 PM (.*)</pattern>
+        <template>
+            <redirect>19:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 7 PM</pattern>
+        <template>
+            <redirect>\1 19:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 7 PM</pattern>
+        <template>
+            <redirect>19:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 7 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 7:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 7 AM (.*)</pattern>
+        <template>
+            <redirect>7:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 7 AM</pattern>
+        <template>
+            <redirect>\1 7:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 7 AM</pattern>
+        <template>
+            <redirect>7:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 7 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 19:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 7 PM (.*)</pattern>
+        <template>
+            <redirect>19:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 7 PM</pattern>
+        <template>
+            <redirect>\1 19:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 7 PM</pattern>
+        <template>
+            <redirect>19:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 7 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 7:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 7 AM (.*)</pattern>
+        <template>
+            <redirect>7:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 7 AM</pattern>
+        <template>
+            <redirect>\1 7:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 7 AM</pattern>
+        <template>
+            <redirect>7:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 7 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 18:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 7 PM (.*)</pattern>
+        <template>
+            <redirect>18:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 7 PM</pattern>
+        <template>
+            <redirect>\1 18:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 7 PM</pattern>
+        <template>
+            <redirect>18:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 7 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 6:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 7 AM (.*)</pattern>
+        <template>
+            <redirect>6:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 7 AM</pattern>
+        <template>
+            <redirect>\1 6:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 7 AM</pattern>
+        <template>
+            <redirect>6:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 7 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 19:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>7 PM (.*)</pattern>
+        <template>
+            <redirect>19:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 7 PM</pattern>
+        <template>
+            <redirect>\1 19:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>7 PM</pattern>
+        <template>
+            <redirect>19:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 7 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 7:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>7 AM (.*)</pattern>
+        <template>
+            <redirect>7:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 7 AM</pattern>
+        <template>
+            <redirect>\1 7:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>7 AM</pattern>
+        <template>
+            <redirect>7:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 8 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 20:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 8 PM (.*)</pattern>
+        <template>
+            <redirect>20:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 8 PM</pattern>
+        <template>
+            <redirect>\1 20:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 8 PM</pattern>
+        <template>
+            <redirect>20:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 8 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 8:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 8 AM (.*)</pattern>
+        <template>
+            <redirect>8:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 8 AM</pattern>
+        <template>
+            <redirect>\1 8:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 8 AM</pattern>
+        <template>
+            <redirect>8:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 8 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 20:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 8 PM (.*)</pattern>
+        <template>
+            <redirect>20:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 8 PM</pattern>
+        <template>
+            <redirect>\1 20:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 8 PM</pattern>
+        <template>
+            <redirect>20:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 8 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 8:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 8 AM (.*)</pattern>
+        <template>
+            <redirect>8:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 8 AM</pattern>
+        <template>
+            <redirect>\1 8:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 8 AM</pattern>
+        <template>
+            <redirect>8:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 8 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 19:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 8 PM (.*)</pattern>
+        <template>
+            <redirect>19:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 8 PM</pattern>
+        <template>
+            <redirect>\1 19:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 8 PM</pattern>
+        <template>
+            <redirect>19:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 8 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 7:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 8 AM (.*)</pattern>
+        <template>
+            <redirect>7:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 8 AM</pattern>
+        <template>
+            <redirect>\1 7:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 8 AM</pattern>
+        <template>
+            <redirect>7:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 8 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 20:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>8 PM (.*)</pattern>
+        <template>
+            <redirect>20:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 8 PM</pattern>
+        <template>
+            <redirect>\1 20:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>8 PM</pattern>
+        <template>
+            <redirect>20:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 8 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 8:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>8 AM (.*)</pattern>
+        <template>
+            <redirect>8:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 8 AM</pattern>
+        <template>
+            <redirect>\1 8:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>8 AM</pattern>
+        <template>
+            <redirect>8:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 9 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 21:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 9 PM (.*)</pattern>
+        <template>
+            <redirect>21:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 9 PM</pattern>
+        <template>
+            <redirect>\1 21:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 9 PM</pattern>
+        <template>
+            <redirect>21:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 9 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 9:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 9 AM (.*)</pattern>
+        <template>
+            <redirect>9:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 9 AM</pattern>
+        <template>
+            <redirect>\1 9:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 9 AM</pattern>
+        <template>
+            <redirect>9:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 9 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 21:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 9 PM (.*)</pattern>
+        <template>
+            <redirect>21:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 9 PM</pattern>
+        <template>
+            <redirect>\1 21:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 9 PM</pattern>
+        <template>
+            <redirect>21:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 9 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 9:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 9 AM (.*)</pattern>
+        <template>
+            <redirect>9:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 9 AM</pattern>
+        <template>
+            <redirect>\1 9:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 9 AM</pattern>
+        <template>
+            <redirect>9:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 9 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 20:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 9 PM (.*)</pattern>
+        <template>
+            <redirect>20:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 9 PM</pattern>
+        <template>
+            <redirect>\1 20:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 9 PM</pattern>
+        <template>
+            <redirect>20:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 9 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 8:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 9 AM (.*)</pattern>
+        <template>
+            <redirect>8:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 9 AM</pattern>
+        <template>
+            <redirect>\1 8:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 9 AM</pattern>
+        <template>
+            <redirect>8:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 9 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 21:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>9 PM (.*)</pattern>
+        <template>
+            <redirect>21:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 9 PM</pattern>
+        <template>
+            <redirect>\1 21:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>9 PM</pattern>
+        <template>
+            <redirect>21:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 9 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 9:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>9 AM (.*)</pattern>
+        <template>
+            <redirect>9:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 9 AM</pattern>
+        <template>
+            <redirect>\1 9:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>9 AM</pattern>
+        <template>
+            <redirect>9:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 10 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 22:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 10 PM (.*)</pattern>
+        <template>
+            <redirect>22:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 10 PM</pattern>
+        <template>
+            <redirect>\1 22:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 10 PM</pattern>
+        <template>
+            <redirect>22:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 10 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 10:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 10 AM (.*)</pattern>
+        <template>
+            <redirect>10:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 10 AM</pattern>
+        <template>
+            <redirect>\1 10:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 10 AM</pattern>
+        <template>
+            <redirect>10:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 10 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 22:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 10 PM (.*)</pattern>
+        <template>
+            <redirect>22:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 10 PM</pattern>
+        <template>
+            <redirect>\1 22:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 10 PM</pattern>
+        <template>
+            <redirect>22:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 10 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 10:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 10 AM (.*)</pattern>
+        <template>
+            <redirect>10:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 10 AM</pattern>
+        <template>
+            <redirect>\1 10:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 10 AM</pattern>
+        <template>
+            <redirect>10:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 10 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 21:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 10 PM (.*)</pattern>
+        <template>
+            <redirect>21:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 10 PM</pattern>
+        <template>
+            <redirect>\1 21:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 10 PM</pattern>
+        <template>
+            <redirect>21:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 10 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 9:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 10 AM (.*)</pattern>
+        <template>
+            <redirect>9:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 10 AM</pattern>
+        <template>
+            <redirect>\1 9:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 10 AM</pattern>
+        <template>
+            <redirect>9:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 10 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 22:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>10 PM (.*)</pattern>
+        <template>
+            <redirect>22:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 10 PM</pattern>
+        <template>
+            <redirect>\1 22:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>10 PM</pattern>
+        <template>
+            <redirect>22:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 10 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 10:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>10 AM (.*)</pattern>
+        <template>
+            <redirect>10:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 10 AM</pattern>
+        <template>
+            <redirect>\1 10:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>10 AM</pattern>
+        <template>
+            <redirect>10:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 11 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 23:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 11 PM (.*)</pattern>
+        <template>
+            <redirect>23:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 11 PM</pattern>
+        <template>
+            <redirect>\1 23:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 11 PM</pattern>
+        <template>
+            <redirect>23:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 11 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 11:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 11 AM (.*)</pattern>
+        <template>
+            <redirect>11:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 11 AM</pattern>
+        <template>
+            <redirect>\1 11:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 11 AM</pattern>
+        <template>
+            <redirect>11:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 11 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 23:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 11 PM (.*)</pattern>
+        <template>
+            <redirect>23:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 11 PM</pattern>
+        <template>
+            <redirect>\1 23:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 11 PM</pattern>
+        <template>
+            <redirect>23:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 11 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 11:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 11 AM (.*)</pattern>
+        <template>
+            <redirect>11:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 11 AM</pattern>
+        <template>
+            <redirect>\1 11:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 11 AM</pattern>
+        <template>
+            <redirect>11:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 11 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 22:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 11 PM (.*)</pattern>
+        <template>
+            <redirect>22:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 11 PM</pattern>
+        <template>
+            <redirect>\1 22:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 11 PM</pattern>
+        <template>
+            <redirect>22:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 11 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 10:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 11 AM (.*)</pattern>
+        <template>
+            <redirect>10:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 11 AM</pattern>
+        <template>
+            <redirect>\1 10:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 11 AM</pattern>
+        <template>
+            <redirect>10:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 11 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 23:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>11 PM (.*)</pattern>
+        <template>
+            <redirect>23:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 11 PM</pattern>
+        <template>
+            <redirect>\1 23:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>11 PM</pattern>
+        <template>
+            <redirect>23:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 11 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 11:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>11 AM (.*)</pattern>
+        <template>
+            <redirect>11:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 11 AM</pattern>
+        <template>
+            <redirect>\1 11:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>11 AM</pattern>
+        <template>
+            <redirect>11:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 12 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 24:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 12 PM (.*)</pattern>
+        <template>
+            <redirect>24:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 12 PM</pattern>
+        <template>
+            <redirect>\1 24:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 12 PM</pattern>
+        <template>
+            <redirect>24:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 12 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 12:30 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 12 AM (.*)</pattern>
+        <template>
+            <redirect>12:30 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) HALF PAST 12 AM</pattern>
+        <template>
+            <redirect>\1 12:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HALF PAST 12 AM</pattern>
+        <template>
+            <redirect>12:30</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 12 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 24:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 12 PM (.*)</pattern>
+        <template>
+            <redirect>24:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 12 PM</pattern>
+        <template>
+            <redirect>\1 24:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 12 PM</pattern>
+        <template>
+            <redirect>24:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 12 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 12:15 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 12 AM (.*)</pattern>
+        <template>
+            <redirect>12:15 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER PAST 12 AM</pattern>
+        <template>
+            <redirect>\1 12:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER PAST 12 AM</pattern>
+        <template>
+            <redirect>12:15</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 12 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 23:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 12 PM (.*)</pattern>
+        <template>
+            <redirect>23:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 12 PM</pattern>
+        <template>
+            <redirect>\1 23:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 12 PM</pattern>
+        <template>
+            <redirect>23:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 12 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 11:45 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 12 AM (.*)</pattern>
+        <template>
+            <redirect>11:45 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) QUARTER TO 12 AM</pattern>
+        <template>
+            <redirect>\1 11:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>QUARTER TO 12 AM</pattern>
+        <template>
+            <redirect>11:45</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 12 PM ( .*)</pattern>
+        <template>
+            <redirect>\1 24:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>12 PM (.*)</pattern>
+        <template>
+            <redirect>24:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 12 PM</pattern>
+        <template>
+            <redirect>\1 24:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>12 PM</pattern>
+        <template>
+            <redirect>24:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 12 AM ( .*)</pattern>
+        <template>
+            <redirect>\1 12:00 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>12 AM (.*)</pattern>
+        <template>
+            <redirect>12:00 \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) 12 AM</pattern>
+        <template>
+            <redirect>\1 12:00</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>12 AM</pattern>
+        <template>
+            <redirect>12:00</redirect>
+        </template>
+    </category>
+</aiml>

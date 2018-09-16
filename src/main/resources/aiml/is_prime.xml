@@ -1,0 +1,1705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>IS ([0123456789]+) A PRIME</pattern>
+        <template>
+            <redirect>IS \1 PRIME</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IS ([0123456789]+) A PRIME NUMBER</pattern>
+        <template>
+            <redirect>IS \1 PRIME</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 2 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 3 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 5 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 7 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 11 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 13 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 17 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 19 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 23 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 29 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 31 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 37 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 41 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 43 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 47 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 53 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 59 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 61 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 67 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 71 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 73 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 79 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 83 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 89 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 97 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 101 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 103 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 107 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 109 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 113 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 127 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 131 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 137 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 139 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 149 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 151 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 157 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 163 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 167 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 173 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 179 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 181 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 191 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 193 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 197 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 199 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 211 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 223 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 227 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 229 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 233 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 239 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 241 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 251 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 257 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 263 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 269 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 271 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 277 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 281 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 283 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 293 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 307 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 311 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 313 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 317 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 331 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 337 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 347 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 349 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 353 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 359 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 367 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 373 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 379 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 383 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 389 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 397 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 401 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 409 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 419 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 421 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 431 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 433 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 439 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 443 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 449 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 457 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 461 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 463 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 467 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 479 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 487 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 491 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 499 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 503 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 509 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 521 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 523 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 541 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 547 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 557 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 563 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 569 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 571 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 577 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 587 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 593 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 599 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 601 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 607 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 613 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 617 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 619 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 631 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 641 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 643 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 647 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 653 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 659 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 661 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 673 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 677 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 683 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 691 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 701 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 709 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 719 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 727 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 733 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 739 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 743 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 751 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 757 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 761 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 769 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 773 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 787 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 797 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 809 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 811 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 821 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 823 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 827 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 829 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 839 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 853 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 857 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 859 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 863 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 877 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 881 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 883 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 887 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 907 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 911 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 919 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 929 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 937 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 941 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 947 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 953 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 967 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 971 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 977 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 983 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 991 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS 997 PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it is.</li>
+                <li>Yes.</li>
+                <li>Yes!</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS ([123456789][0123456789]*[0123456789]*) PRIME</pattern>
+        <template>
+            <random>
+                <li>Of course it isn't.</li>
+                <li>No.</li>
+                <li>No!</li>
+            </random>
+        </template>
+    </category>
+</aiml>

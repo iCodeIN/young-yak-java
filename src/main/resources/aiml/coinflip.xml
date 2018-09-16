@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <category>
+        <pattern>FLIP A COIN</pattern>
+        <template>
+            <random>
+                <li>Heads.</li>
+                <li>Tails.</li>
+                <li>It came up heads.</li>
+                <li>It came up tails.</li>
+                <li>I flipped a coin, it came up heads.</li>
+                <li>I flipped a coin, it came up tails.</li>
+            </random>
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>WHAT DAY IS TODAY</pattern>
+        <template>
+            <redirect>WHAT DAY IS IT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IS IT MONDAY</pattern>
+        <template>
+            <redirect>WHAT DAY IS IT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IS IT TUESDAY</pattern>
+        <template>
+            <redirect>WHAT DAY IS IT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IS IT WEDNESDAY</pattern>
+        <template>
+            <redirect>WHAT DAY IS IT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IS IT THURSDAY</pattern>
+        <template>
+            <redirect>WHAT DAY IS IT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IS IT FRIDAY</pattern>
+        <template>
+            <redirect>WHAT DAY IS IT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IS IT SATURDAY</pattern>
+        <template>
+            <redirect>WHAT DAY IS IT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IS IT SUNDAY</pattern>
+        <template>
+            <redirect>WHAT DAY IS IT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DAY IS IT</pattern>
+        <template>
+            <random>
+                <li>Today is <script>['Monday', 'Tuesday', 'Wednesday','Thursday','Friday','Saturday','Sunday'][(new
+                    Date().getDay() + 6) % 7]</script>.
+                </li>
+                <li>It's <script>['Monday', 'Tuesday', 'Wednesday','Thursday','Friday','Saturday','Sunday'][(new
+                    Date().getDay() + 6) % 7]</script>.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT YEAR IS IT</pattern>
+        <template>
+            <random>
+                <li><script>new Date().getFullYear().toString()</script>.
+                </li>
+                <li>It's <script>new Date().getFullYear().toString()</script>.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT MONTH IS IT</pattern>
+        <template>
+            <random>
+                <li><script>['January', 'February', 'March','April','May','June','July', 'August', 'September',
+                    'October', 'November', 'December'][new Date().getMonth()]</script>.
+                </li>
+                <li>It's <script>['January', 'February', 'March','April','May','June','July', 'August', 'September',
+                    'October', 'November', 'December'][new Date().getMonth()]</script>.
+                </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT DATE ARE WE</pattern>
+        <template>
+            <redirect>WHAT IS THE DATE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE DATE</pattern>
+        <template>
+            <random>
+                <li>Today is <script>new Date().getDay().toString()</script>-<script>new
+                    Date().getMonth().toString()</script>-<script>new Date().getFullYear().toString()</script>.
+                </li>
+                <li><script>new Date().getDay().toString()</script>-<script>new
+                    Date().getMonth().toString()</script>-<script>new Date().getFullYear().toString()</script>.
+                </li>
+            </random>
+        </template>
+    </category>
+</aiml>

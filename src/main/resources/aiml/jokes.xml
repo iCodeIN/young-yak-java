@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <category>
+        <pattern>TELL ME A JOKE</pattern>
+        <template>
+            <redirect>TELL A JOKE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TELL ME A JOKE PLEASE</pattern>
+        <template>
+            <redirect>TELL A JOKE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PLEASE TELL ME A JOKE</pattern>
+        <template>
+            <redirect>TELL A JOKE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TELL A JOKE PLEASE</pattern>
+        <template>
+            <redirect>TELL A JOKE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PLEASE TELL A JOKE</pattern>
+        <template>
+            <redirect>TELL A JOKE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TELL A JOKE</pattern>
+        <template>
+            <random>
+                <li>What do you call a Mexican who has lost his car? Carlos.</li>
+                <li>A jumper cable walks into a bar. The bartender says, “I’ll serve you, but don’t start anything.”
+                </li>
+                <li>A man walks into a bar and orders helicopter flavor chips. The barman replies “sorry mate we only do
+                    plain”
+                </li>
+                <li>A man woke up in a hospital after a serious accident. He shouted, Doctor, doctor, I can’t feel my
+                    legs!” The doctor replied, “I know you can’t I’ve cut off your arms!”
+                </li>
+                <li>A police officer caught two kids playing with a firework and a car battery. He charged one and let
+                    the other one off.
+                </li>
+                <li>A red and a blue ship have just collided in the Caribbean. Apparently the survivors are marooned.
+                </li>
+                <li>A Sandwich walks into a bar, the bartender says “Sorry, we don’t serve food here”</li>
+                <li>A steak pun is a rare medium well done.</li>
+                <li>A termite walks into a bar and asks “Is the bar tender here?”</li>
+                <li>A woman is on trial for beating her husband to death with his guitar collection. Judge says, "First
+                    offender?" She says, "No, first a Gibson! Then a Fender!”
+                </li>
+                <li>An invisible man marries an invisible woman. The kids were nothing to look at either.</li>
+                <li>Atheism is a non-prophet organisation.</li>
+                <li>Bicycles can’t stand on their own, they’re two tired.</li>
+                <li>Breaking news! Energizer Bunny arrested – charged with battery</li>
+                <li>Did I tell you the time I fell in love during a backflip? I was heels over head.</li>
+                <li>Did you hear about the guy who invented Lifesavers? They say he made a mint.</li>
+                <li>Did you hear about the kidnapping at school? It’s fine, he woke up.</li>
+                <li>Did you hear about the man who stole a calendar? He got 12 months.</li>
+                <li>Did you hear about the restaurant on the moon? Great food, no atmosphere.</li>
+                <li>Did you know the first French fries weren't actually cooked in France? They were cooked in Greece.
+                </li>
+                <li>Did you see they made round bails of hay illegal in Wisconsin? It’s because the cows weren’t getting
+                    a square meal.
+                </li>
+                <li>Do you know where you can get chicken broth in bulk? The stock market.</li>
+                <li>Doctor, I’ve broken my arm in several places” To which the doctor said “Well don’t go to those
+                    places.”
+                </li>
+                <li>Have you ever heard of a music group called Cellophane? They mostly wrap.</li>
+                <li>How can you tell if a ant is a boy or a girl? They’re all girls, otherwise they’d be uncles.</li>
+                <li>How do you make a tissue dance? You put a little boogie in it!</li>
+                <li>How do you make holy water? You boil the hell out of it.</li>
+                <li>How do you organize an outer space party? You planet.</li>
+                <li>How do you tell the difference between a frog and a horny toad? A frog says, "Ribbit, ribbit" and a
+                    horny toad says, "Rub it, rub it.”
+                </li>
+                <li>How does a penguin build it’s house? Igloos it together.</li>
+                <li>How many apples grow on a tree? All of them.</li>
+                <li>How many tickles does it take to make an octopus laugh? Ten-tickles.</li>
+                <li>How much does a hipster weigh? An instagram.</li>
+                <li>I am terrified of elevators. I’m going to start taking steps to avoid them.</li>
+                <li>I cut my finger chopping cheese, but I think that I may have greater problems.</li>
+                <li>I don’t play soccer because I enjoy the sport. I’m just doing it for kicks.</li>
+                <li>I dreamed about drowning in an ocean made out of orange soda last night. It took me a while to work
+                    out it was just a Fanta sea.
+                </li>
+                <li>I gave all my dead batteries away today… Free of charge.</li>
+                <li>I got so angry the other day when I couldn’t find my stress ball.</li>
+                <li>I had a dream that I was a muffler last night. I woke up exhausted!</li>
+                <li>I heard there was a new store called Moderation. They have everything there</li>
+                <li>I knew I shouldn’t have ate that seafood. Because now i’m feeling a little… Eel</li>
+                <li>I needed a password eight characters long so I picked Snow White and the Seven Dwarfs.</li>
+                <li>I thought about going on an all-almond diet. But that's just nuts.</li>
+                <li>I used to have a job at a calendar factory but I got the sack because I took a couple of days off.
+                </li>
+                <li>I used to work in a shoe recycling shop. It was sole destroying.</li>
+                <li>I was interrogated over the theft of a cheese toastie. Man, they really grilled me.</li>
+                <li>I went to a seafood disco last week… and pulled a mussel.</li>
+                <li>I went to buy some camouflage trousers the other day, but I couldn’t find any.</li>
+                <li>I went to the zoo the other day, there was only one dog in it. It was a shitzu.</li>
+                <li>I would avoid the sushi if I was you. It’s a little fishy.</li>
+                <li>I'm reading a book about anti-gravity. It's impossible to put down!</li>
+                <li>I’m not indecisive. Unless you want me to be.</li>
+                <li>I’m on a whiskey diet. I’ve lost three days already.</li>
+                <li>I’m reading a book on the history of glue – can’t put it down.</li>
+                <li>I’ve deleted the phone numbers of all the Germans I know from my mobile phone. Now it’s Hans free.
+                </li>
+                <li>If I had a dime for every book I’ve ever read, I’d say: “Wow, that’s coincidental.”</li>
+                <li>If you see a robbery at an Apple Store does that make you an iWitness?</li>
+                <li>If your nose runs and your feet smell, you are built upside down!</li>
+                <li>Just watched a documentary about beavers… It was the best damn program I’ve ever seen.</li>
+                <li>Last night me and my girlfriend watched three DVDs back to back. Luckily I was the one facing the
+                    TV.
+                </li>
+                <li>Milk is also the fastest liquid on earth – its pasteurized before you even see it</li>
+                <li>My cat was just sick on the carpet, I don’t think it’s feline well.</li>
+                <li>People don’t like having to bend over to get their drinks. We really need to raise the bar.</li>
+                <li>Slept like a app.entities last night … woke up in the fireplace.</li>
+                <li>So a duck walks into a pharmacy and says “Give me some chap-stick… and put it on my bill”</li>
+                <li>Spring is here! I got so excited I wet my plants!</li>
+                <li>The fattest knight at King Arthur’s round table was Sir Cumference. He acquired his size from too
+                    much pi.
+                </li>
+                <li>The only thing worse than having diarrhea is having to spell it.</li>
+                <li>The shovel was a ground-breaking invention.</li>
+                <li>There’s a new type of broom out, it’s sweeping the nation.</li>
+                <li>This graveyard looks overcrowded. People must be dying to get in there.</li>
+                <li>To the man in the wheelchair that stole my camouflage jacket... You can hide but you can't run.</li>
+                <li>Two peanuts were walking down the street. One was a salted.</li>
+                <li>Want to hear a joke about paper? Nevermind it’s tearable.</li>
+                <li>What cheese can never be yours? Nacho cheese.</li>
+                <li>What did baby corn say to mama corn? Where’s popcorn?</li>
+                <li>What did daddy spider say to baby spider? You spend too much time on the app.web.</li>
+                <li>What did one snowman say to the other one? “Do you smell carrots?”</li>
+                <li>What did the 0 say to the 8? Nice belt.</li>
+                <li>What did the Buffalo say to his little boy when he dropped him off at school? Bison.</li>
+                <li>What did the buffalo say to his son when he dropped him off at school? Bison.</li>
+                <li>What did the daddy tomato say to the baby tomato? A: catch up!</li>
+                <li>What did the mountain climber name his son? Cliff.</li>
+                <li>What did the ocean say to the shore? Nothing, it just waved.</li>
+                <li>What do you call a belt with a watch on it? A waist of time.</li>
+                <li>What do you call a cheese that isn't yours? Nacho cheese.</li>
+                <li>What do you call a cow with no legs? Ground beef.</li>
+                <li>What do you call a cow with two legs? Lean beef. If the cow has no legs, then it’s ground beef.</li>
+                <li>What do you call a dog that can do magic? A Labracadabrador.</li>
+                <li>What do you call a factory that sells passable products? A satisfactory.</li>
+                <li>What do you call a fake noodle? An Impasta.</li>
+                <li>What do you call a fat psychic? A four-chin teller.</li>
+                <li>What do you call a fish with no eyes? A fshhhh.</li>
+                <li>What do you call a fish with two knees? A “two-knee” fish.</li>
+                <li>What do you call a group of killer whales playing instruments? An Orca-stra.</li>
+                <li>What do you call a lonely cheese? Provolone.</li>
+                <li>What do you call a man with no arms and no legs lying in front of your door? Matt.</li>
+                <li>What do you call a man with no nose and no body? Nobody nose.</li>
+                <li>What do you call a sheep with no legs? A cloud.</li>
+                <li>What do you call an Argentinian with a rubber toe? Roberto</li>
+                <li>What do you call Jay-Z when he’s sleeping? Jay Zzzzzzzzzz.</li>
+                <li>What do you do when a blonde throws a grenade at you? Pull the pin and throw it back.</li>
+                <li>What do you get when you cross a snowman with a vampire? Frostbite.</li>
+                <li>What do you get when you cross an elephant with a rhino? Elephino.</li>
+                <li>What does a zombie vegetarian eat? “GRRRAAAAAIIIINNNNS!”</li>
+                <li>What happened when the two antennas got married? Well, the ceremony was kinda boring, but the
+                    reception was great!
+                </li>
+                <li>What is Beethoven’s favorite fruit? A ba-na-na-na.</li>
+                <li>What kind of magic do cows believe in? MOODOO.</li>
+                <li>What kind of shoes does a thief wear? Sneakers</li>
+                <li>What's the best part about living in Switzerland? I don't know, but the flag is a big plus.</li>
+                <li>What’s 50 Cent’s name in Zimbabwe? 400 Million Dollars.</li>
+                <li>What’s brown and sticky? A stick.</li>
+                <li>What’s ET short for? Because he’s only got little legs.</li>
+                <li>What’s Forrest Gump’s password? '1forrest1'</li>
+                <li>What’s the advantage of living in Switzerland? Well, the flag is a big plus.</li>
+                <li>What’s the difference between an African elephant and an Indian elephant? About 5000 miles</li>
+                <li>Where did the college-aged vampire like to shop? Forever 21.</li>
+                <li>Where did the one-legged waitress work? IHOP!</li>
+                <li>Where does batman go to the bathroom? The batroom.</li>
+                <li>Why are skeletons so calm? Because nothing gets under their skin.</li>
+                <li>Why can't you hear a pterodactyl go to the bathroom? Because the pee is silent.</li>
+                <li>Why did the blonde stare at the orange juice container? It said concentrate!</li>
+                <li>Why did the Clydesdale give the pony a glass of water? Because he was a little horse!”</li>
+                <li>Why did the girl smear peanut butter on the road? To go with the traffic jam.</li>
+                <li>Why did the invisible man turn down the job offer? He couldn't see himself doing it.</li>
+                <li>Why did the octopus beat the shark in a fight? Because it was well armed.</li>
+                <li>Why did the scarecrow win an award? Because he was outstanding in his field.</li>
+                <li>Why do chicken coops only have two doors? Because if they had four, they would be chicken sedans!
+                </li>
+                <li>Why do crabs never give to charity? Because they’re shellfish.</li>
+                <li>Why do scuba divers fall backwards into the water? Because if they fell forwards they’d still be in
+                    the boat.
+                </li>
+                <li>Why do you never see elephants hiding in trees? Because they’re so good at it.</li>
+                <li>Why does a chicken coop only have two doors? Because if it had four doors it would be a chicken
+                    sedan.
+                </li>
+                <li>Why does Superman gets invited to dinners? Because he is a Supperhero.</li>
+                <li>Why don’t seagulls fly over the bay? Because then they’d be bay-gulls!</li>
+                <li>Why don’t skeletons ever go trick or treating? Because they have nobody to go with.</li>
+                <li>Why was the big cat disqualified from the race? Because it was a cheetah.</li>
+                <li>Why wasn't the woman happy with the velcro she bought? It was a total ripoff.</li>
+                <li>Without geometry life is pointless.</li>
+                <li>You heard of that new band 1023MB? They're good but they haven't got a gig yet.</li>
+                <li>You know what the loudest pet you can get is? A trumpet.</li>
+                <li>You know, people say they pick their nose, but I feel like I was just born with mine.</li>
+                <li>You're American when you go into the bathroom, and you're American when you come out, but do you
+                    know what you are while you're in there? European.
+                </li>
+            </random>
+        </template>
+    </category>
+</aiml>
+

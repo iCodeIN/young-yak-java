@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>TELL ME ABOUT ([12][0-9][0-9][0-9])</pattern>
+        <template>
+            <redirect>WHAT HAPPENED IN \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>EVENTS IN ([12][0-9][0-9][0-9])</pattern>
+        <template>
+            <redirect>WHAT HAPPENED IN \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1900</pattern>
+        <template>Austrian psychiatrist Sigmund Freud publishes The Interpretation of Dreams. In China, the
+            anti-foreigner Boxers occupy Beijing. International force ends both the siege and the Boxer Rebellion.
+            Fauvist movement in painting begins, led by Henri Matisse.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1901</pattern>
+        <template>Queen Victoria dies on Jan. 22 after a reign of nearly 64 years, and is succeeded by her son, Edward
+            VII. The Boxer Rebellion officially ends on Sept. 7 with the signing of the Peace of Beijing.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1902</pattern>
+        <template>Enrico Caruso makes his first gramophone recording. Aswan Dam is completed in central Egypt, becoming
+            the chief means of storing irrigation water for the Nile valley. Cuba gains independence from Spain.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1903</pattern>
+        <template>Panama declares independence from Colombia (Nov. 3). King Alexander of Serbia and his wife are
+            assassinated by conspirators (June 10).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1904</pattern>
+        <template>Russo-Japanese War begins. As Russia and Japan fight over Manchuria and Korea. Entente Cordiale:
+            Britain and France settle their international differences.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1905</pattern>
+        <template>In Russo-Japanese War, Port Arthur surrenders to Japanese; Russia suffers other defeats. The Russian
+            Revolution of 1905 begins on "Bloody Sunday" when troops fire onto a defenseless group of demonstrators in
+            St. Petersburg. Strikes and riots follow. Sailors on Russian battleship Potemkin mutiny; reforms, including
+            first Duma, established by Czar Nicholas II’s"October Manifesto."
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1906</pattern>
+        <template>Roald Amundsen, Norwegian explorer, locates Magnetic North Pole. Ethiopia declared independent in a
+            tripartite pact; country is divided into British, French, and Italian spheres of influence. Finland is the
+            first European country to give women the vote.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1907</pattern>
+        <template>Second Hague Peace Conference, of 46 nations, adopts 10 conventions on rules of war. The first Cubist
+            exhibition is held in Paris.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1908</pattern>
+        <template>Earthquake and resulting tsunami kill 70,000 to 100,000 in southern Italy and Sicily. Petroleum
+            production starts in Middle East. Mysterious Siberian explosion levels hundreds of square miles of forest.
+            Explanations include a comet, meteorite, natural atomic explosion, or crashed UFO.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1909</pattern>
+        <template>North Pole reportedly reached by American explorers Robert E. Peary and Matthew Henson. Turkish
+            parliament deposes sultan Abd al-Hamid II and replaces him with his brother, Muhammad V. Japan begins
+            36-year occupation of Korea. Japanese prince Hirobumi Ito assassinated by Korean nationalist.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1910</pattern>
+        <template>Union of South Africa established, with its parliamentary capital in Cape Town and administrative
+            capital in Pretoria (May 31). Portuguese monarchy ends. Teofilio Braga is selected as president of new
+            republic. Japan formally annexes Korea. Mexican revolution begins; Francisco Madero publishes his manifesto
+            La sucesión presidencial en 1910.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1911</pattern>
+        <template>First use of aircraft as offensive weapon occurs in Turkish-Italian War. Italy defeats Turks and
+            annexes Libya. Chinese Republic proclaimed after revolution overthrows Manchu dynasty. Sun Yat-sen named
+            president. Mexican Revolution: Porfirio Diaz, president since 1877, replaced by Francisco Madero. Roald
+            Amundsen becomes first man to reach South Pole. U.S. explorer Hiram Bingham discovers Incan city of Machu
+            Picchu.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1912</pattern>
+        <template>The "unsinkable" oceanliner Titanic sinks on maiden voyage after colliding with an iceberg; over 1,500
+            drown (April 15). Balkan Wars begin, resulting from territorial disputes: Turkey defeated by alliance of
+            Bulgaria, Serbia, Greece, and Montenegro (Oct.).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1913</pattern>
+        <template>Suffragettes demonstrate in London and Washington, D.C. London peace treaty partitions most of
+            European Turkey among the victors of first Balkan War. In second Balkan war, Bulgaria attacks Serbia and
+            Greece and is defeated after Romania intervenes and Turks recapture Adrianople (June).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1914</pattern>
+        <template>World War I begins: Austria declares war on Serbia; Germany on Russia and France; Britain on Germany.
+            Austrian Archduke Francis Ferdinand and wife Sophie assassinated in Sarajevo by Serbian nationalist Gavrilo
+            Princip. Panama Canal is officially opened after 10 years of construction.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1915</pattern>
+        <template>British oceanliner Lusitania sunk by German submarine, 1,195 perish. Second Battle of Ypres is fought.
+            Genocide of estimated 600,000 to 1 million Armenians by Turkish soldiers.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1916</pattern>
+        <template>Battle of Verdunis fought. Battle of the Somme follows in July. Pershing fails in raid into Mexico in
+            quest of rebel Pancho Villa. Easter Rebellion in Ireland put down by British troops.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1917</pattern>
+        <template>First U.S. combat troops arrive in France as U.S. declares war on Germany (April 6). Third Battle of
+            Ypresis fought. World-wide influenza pandemic strikes; by 1920, nearly 20 million are dead. In U.S. alone,
+            500,000 perish. Dutch dancer Mata Hari is convicted and executed as a German spy. Government offices are
+            seized and the Romanov's Winter Palace is stormed in Russian October Revolution.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1918</pattern>
+        <template>Russian revolutionaries execute the former czar and his family. Russian Civil War between Reds
+            (Bolsheviks) and Whites (anti-Bolsheviks); Reds win in 1920. Allied troops (U.S., British, French) intervene
+            in Russia (March). Second Battle of the Marne (July-Aug). German Kaiser abdicates (Nov.); hostilities cease
+            on the Western Front. Japanese hold Vladivostok until 1922. Worldwide Spanish influenza epidemic strikes; by
+            1920, nearly 20 million are dead. In U.S. alone, 500,000 perish.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1919</pattern>
+        <template>Versailles Treaty, incorporating Woodrow Wilson's draft Covenant of League of Nations, signed by
+            Allies and Germany; rejected by U.S. Senate. 18th Amendment (Prohibition) adopted. Mahatma Gandhi initiates
+            Satyagraha campaigns, beginning his nonviolent resistance movement against British rule in India.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1920</pattern>
+        <template>U.S. Dept. of Justice "red hunt" nets thousands of radicals; aliens deported. Women's suffrage (19th)
+            amendment ratified. Mexican president Venustiano Carranza is assassinated. Treaty of Sèvres dissolves
+            Ottoman Empire.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1921</pattern>
+        <template>Major treaties signed at Washington Disarmament Conference limit naval tonnage and pledge to respect
+            territorial integrity of China.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1922</pattern>
+        <template>Mussolini marches on Rome; forms Fascist government. Irish Free State, a self-governing dominion of
+            British Empire, officially proclaimed. Reparations Commission fixes German liability at 132 billion gold
+            marks. German inflation begins. Kemal Atatürk, founder of modern Turkey, overthrows last sultan.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1923</pattern>
+        <template>Adolf Hitler's "Beer Hall Putsch" in Munich fails; in 1924 he is sentenced to five years in prison
+            where he writes Mein Kampf. He is released after eight months. Earthquake destroys one-third of Tokyo.
+            Occupation of Ruhr by French and Belgian troops to enforce reparations payments.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1924</pattern>
+        <template>Death of Lenin; Stalin wins power struggle, rules as Soviet dictator until death in 1953. Italian
+            Fascists murder Socialist leader Giacomo Matteotti. Ottoman empire (founded 1290) ends when Turkish
+            president Mustafa Kemal ends the caliphate.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1925</pattern>
+        <template>Locarno conferences seek to secure European peace by mutual guarantees. John Logie Baird, Scottish
+            inventor, transmits human features by television. Adolf Hitler publishes Volume I of Mein Kampf.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1926</pattern>
+        <template>A general strike in Britain brings the nation's activities to a standstill. U.S. marines are
+            dispatched to Nicaragua during the revolt; they remain until 1933. Chiang Kai-shek becomes leader of China's
+            revolutionary party following the 1925 death of Sun Yat-sen. Richard E. Byrd and Floyd Bennett fly from
+            Spitsbergen to the North Pole and back.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1927</pattern>
+        <template>The German economy collapses. Socialists riot in Vienna; a general strike follows acquittal of Nazis
+            for political murder. Trotsky is expelled from the Russian Communist Party. Charles Lindbergh makes the
+            first nonstop solo transatlantic flight.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1928</pattern>
+        <template>Kellogg-Briand Pact, outlawing war, is signed in Paris by 65 nations. Richard E. Byrd starts an
+            expedition to Antarctic; returns in 1930. The first of Joseph Stalin's Five Year Plans imposes
+            collectivization on agriculture in the Soviet Union.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1929</pattern>
+        <template>Trotsky is expelled from U.S.S.R. The Lateran Treaty establishes an independent Vatican City. First
+            large-scale Jewish-Arab violence caused by a clash at the Wailing Wall in Jerusalem.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1930</pattern>
+        <template>Britain, U.S., Japan, France, and Italy sign naval disarmament treaty. Nazis gain in German elections.
+            Haile Selassie becomes emperor of Ethiopia.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1931</pattern>
+        <template>Spain becomes a republic with the overthrow of King Alfonso XIII. British parliament enacts the
+            Statute of Westminster, legalizing dominion equality with Britain. Mukden Incident begins Japanese
+            occupation of Manchuria. The planned capital of New Delhi opens in India.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1932</pattern>
+        <template>Nazis lead in German elections with 230 Reichstag seats. Famine is widespread in U.S.S.R.</template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1933</pattern>
+        <template>Reichstag fire in Berlin; Nazi terror begins (Feb. 27). Hitler becomes German chancellor (Jan. 30).
+            Germany and Japan withdraw from League of Nations.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1934</pattern>
+        <template>Chancellor Dollfuss of Austria is assassinated by Nazis. U.S.S.R. admitted to League of Nations.
+            Dionne sisters, first quintuplets to survive beyond infancy, born in Canada. Background: Multiple Birth. Mao
+            Zedong begins the Long March north with 100,000 soldiers. Hitler becomes Führer when chancellorship and
+            presidency are united.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1935</pattern>
+        <template>Nazis repudiate Versailles Treaty, introduce compulsory military service. Mussolini invades Ethiopia;
+            League of Nations invokes sanctions. Persia becomes Iran under Reza Shah Pahlevi. Nazis enact Nuremberg Laws
+            against Jews to prevent "racial pollution." Heinrich Himmler starts breeding program to produce "Aryan super
+            race."
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1936</pattern>
+        <template>Rome-Berlin Axis is proclaimed (Japan to join in 1940). Spanish civil war begins. Hundreds of
+            Americans join the "Lincoln Brigades". Franco's fascist forces defeat Loyalist forces by 1939, when Madrid
+            falls. War between China and Japan begins, to continue through World War II. Japan and Germany sign
+            anti-Comintern pact; joined by Italy in 1937. Gen. Anastasio Somoza leads a coup d'etat in Nicaragua
+            ushering in Somoza family dictatorship for more than 4 decades. King George V dies; succeeded by son, Edward
+            VIII, who soon abdicates to marry an American-born divorcée, and is succeeded by brother, George VI.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1937</pattern>
+        <template>Italy withdraws from League of Nations. U.S. gunboat Panay sunk by Japanese in Yangtze River. Japan
+            invades China, conquers most of coastal area. Britain begins 999 emergency telephone number. The United
+            States starts 911 service in New York in 1968.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1938</pattern>
+        <template>Hitler marches into Austria; political and geographical union of Germany and Austria proclaimed.
+            Munich Pact—Britain, France, and Italy agree to let Germany partition Czechoslovakia. Nazis destroy Jewish
+            shops, homes, synagogues in Kristallnacht riots; 20,000-30,000 sent to concentration camps. First oil strike
+            in Kuwait transforms the emirate's economy.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1939</pattern>
+        <template>Germany invades Poland; occupies Bohemia and Moravia; renounces pact with England and concludes
+            10-year non-aggression pact with U.S.S.R. Russo-Finnish War begins; Finns to lose one-tenth of territory in
+            1940 peace treaty. World War II begins.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1940</pattern>
+        <template>Winston Churchill becomes Britain's Prime Minister. Trotsky is assassinated in Mexico. Estonia,
+            Latvia, and Lithuania annexed by U.S.S.R. Hitler invades Denmark, the Netherlands, Belgium, France, and
+            Luxembourg. Lascaux caves with Cro-Magnon art discovered by French schoolboy.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1941</pattern>
+        <template>Germany attacks the Balkans and Russia. Japanese surprise attack on U.S. fleet at Pearl Harbor brings
+            U.S. into World War II; U.S. and Britain declare war on Japan. The first U.S. Lend-Lease shipment of food
+            sent to Britain.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1942</pattern>
+        <template>Nazi leaders attend the Wannsee Conference to coordinate the "final solution to the Jewish question,"
+            the systematic genocide of Jews known as the Holocaust. Declaration of United Nations is signed in
+            Washington.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1943</pattern>
+        <template>Churchill and Roosevelt hold the Casablanca Conference. Mussolini is deposed and placed under arrest
+            (July).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1944</pattern>
+        <template>Allies invade Normandy on D-Day (June 6). Bretton Woods Conference creates International Monetary Fund
+            and World Bank. Battle of the Bulge begins as Germans penetrate Allied front in Belgium (Dec. 16 to Jan.
+            1945). Anne Frank and her family betrayed and sent to concentration camps. She will die in 1945. Dumbarton
+            Oaks Conference—U.S., British Commonwealth, and U.S.S.R. propose establishment of United Nations.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1945</pattern>
+        <template>Yalta Conference (Roosevelt, Churchill, Stalin) plans final defeat of Germany (Feb). Hitler commits
+            suicide (April 30); Germany surrenders (May 7); May 8 is declared V-E Day. Japan signs official surrender on
+            V-J Day (Sept. 2). Potsdam Conference (Truman, Churchill, Stalin) establishes basis of German reconstruction
+            (July–Aug.). San Francisco Conference establishes the United Nations (April–June). US drops atomic bombs on
+            Japanese cities of Hiroshima (Aug. 6) and Nagasaki (Aug. 9).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1946</pattern>
+        <template>First meeting of United Nations General Assembly opens in London (Jan. 10). League of Nations
+            dissolved (April). Italy abolishes monarchy (June). The Philippines gains independence from the United
+            States (July 4). 12 Nazi leaders (including 1 tried in absentia) are sentenced to hang, 7 imprisoned, and 3
+            acquitted in the Nuremberg trials (Oct. 1). Winston Churchill's "Iron Curtain" speech warns of Soviet
+            expansion. Juan Perón becomes president of Argentina.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1947</pattern>
+        <template>Britain nationalizes coal mines (Jan. 1). Peace treaties for Italy, Romania, Bulgaria, Hungary,
+            Finland signed in Paris (Feb. 10). Soviet Union rejects US plan for UN atomic-energy control (March 4).
+            Marshall Plan proposed to help European nations recover economically from World War II (June). India and
+            Pakistan gain independence from Britain (Aug. 15). The Dead Sea Scrolls are discovered at Qumran.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1948</pattern>
+        <template>Gandhi assassinated in New Delhi by a Hindu militant (Jan. 30). Communists seize power in
+            Czechoslovakia (Feb. 23-25). Organization of American States (OAS) Charter signed at Bogotá, Colombia (April
+            30). Nation of Israel proclaimed; British end Mandate at midnight; Arab armies attack (May 14). Berlin
+            Airlift begins (June 21); ends May 12, 1949. Stalin and Tito break (June 28). United States of Indonesia
+            established as Dutch and Indonesians settle conflict (Dec. 27).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1949</pattern>
+        <template>Twelve nations sign the North Atlantic Treaty establishing NATO (Apr. 4). German Federal Republic
+            (West Germany) established (Sept. 21). Communist People's Republic of China formally proclaimed by Chairman
+            Mao Zedong (Oct. 1). South Africa institutionalizes apartheid. Britain recognizes the independence of the
+            Republic of Ireland. Northern Ireland remains a part of the United Kingdom.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1950</pattern>
+        <template>Korean War begins when North Korean Communist forces invade South Korea. Sino-Soviet friendship treaty
+            signed. Communist Chinese forces invade Tibet. British atomic physicist Klaus Fuchs is convicted of spying
+            for the Soviet Union.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1951</pattern>
+        <template>Seoul falls first to Communist forces (Jan. 4), then to US-led UN troops (Mar. 14). Despite peace
+            talks in July and October, the Korean War continues. Six nations agree to Schuman Plan to pool European coal
+            and steel (March 19; in effect Feb. 10, 1953). Japanese peace treaty signed in San Francisco by 49 nations
+            (Sept. 8). Libya gains independence from Italy (Dec. 24).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1952</pattern>
+        <template>George VI of England dies; his daughter becomes Elizabeth II (Feb. 6). NATO conference approves
+            European army (Feb.). King Farouk of Egypt is ousted by a military coup (July 23). General Mohammed Naguib
+            assumes power. Britain announces its development of atomic weapons (Oct.). Greece and Turkey join NATO.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1953</pattern>
+        <template>Joseph Stalin dies (March 5). Georgi Malenkov becomes Soviet Premier; Lavrenti Beria, Minister of
+            Interior; Vyacheslav Molotov, Foreign Minister (March 6). East Berliners rise against Communist rule;
+            quelled by tanks (June 17). Korean armistice signed (July 27). Moscow announces explosion of hydrogen bomb
+            (Aug. 20). Tito becomes president of Yugoslavia.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1954</pattern>
+        <template>Nasser becomes premier of Egypt (April 17). Geneva Conference is convened to bring peace to Vietnam
+            (April to July). The country is divided at the 17th parallel, pending democratic elections. Dien Bien Phu,
+            French military outpost in Vietnam, falls to Viet Minh army (May 7). Eight-nation Southeast Asia Collective
+            Defense Treaty (establishing SEATO) signed at Manila (Sept. 8). Paris agreements grant West Germany
+            sovereignty and admittance to NATO and Western European Union (Oct. 23; effective May, 1955). Algerian War
+            of Independence against France begins (Oct. 31).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1955</pattern>
+        <template>Nikolai A. Bulganin becomes Soviet premier, replacing Malenkov (Feb. 8). Churchill resigns (April 5);
+            Anthony Eden succeeds him (April 6). Federal Republic of West Germany becomes a sovereign state (May 5). The
+            Soviet Union and seven East European countries sign the Warsaw Pact, a mutual defense treaty (May 14).
+            Argentina ousts dictator Juan Perón (Sept. 19). US starts sending $216 million in aid to Vietnam. The US,
+            UK, USSR, and France meet at a summit in Geneva.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1956</pattern>
+        <template>Nikita Khrushchev, First Secretary of USSR Communist Party, denounces Stalin's excesses (Feb. 24).
+            Morocco gains independence from France (March 1) and Spain (April 7). Workers' uprising against Communist
+            rule in Poland is crushed (June 28-30). Egypt takes control of Suez Canal (July 26). Israel launches attack
+            on Egypt's Sinai peninsula and drives toward Suez Canal (Oct. 29). British and French invade Egypt at Port
+            Said (Nov. 5). Cease-fire forced by US pressure stops British, French, and Israeli advance (Nov. 6). Soviet
+            troops and tanks crush anti-Communist uprisings in Hungary (November).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1957</pattern>
+        <template>Anthony Eden resigns (Jan. 9); MacMillan becomes British Prime Minister. The USSR tests its first
+            successful ICBM. Russia launches Sputnik I, first earth-orbiting satellite—the Space Age begins (Oct. 4).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1958</pattern>
+        <template>European Economic Community (Common Market) becomes effective (Jan. 1). Egypt and Syria merge into
+            United Arab Republic (Feb. 1). Khrushchev becomes Premier of Soviet Union as Bulganin resigns (Mar. 27).
+            Gen. Charles de Gaulle becomes French premier (June 1), remaining in power until 1969. Eisenhower orders US
+            Marines into Lebanon at request of President Chamoun, who fears overthrow (July 15). New French constitution
+            adopted (Sept. 28), de Gaulle elected president of 5th Republic (Dec. 21).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1959</pattern>
+        <template>Cuban President Batista resigns and flees (Jan. 1). Fidel Castro assumes power (Feb. 16). Tibet's
+            Dalai Lama escapes to India (Mar. 31). Soviet Premier Nikita Khrushchev tours the United States, meeting
+            with Eisenhower at Camp David. Britain recognizes the independence of Cyprus.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1960</pattern>
+        <template>American U-2 spy plane, piloted by Francis Gary Powers, shot down over Russia (May 1). Khrushchev
+            kills Paris summit conference because of U-2 (May 16). Communist China and Soviet Union split in conflict
+            over Communist ideology. Senegal, Ghana, Nigeria, Madagascar, and Zaire (Belgian Congo) gain independence.
+            There are 900 US military advisers in South Vietnam. Top Nazi murderer of Jews, Adolf Eichmann, captured by
+            Israelis in Argentina (May 23)—executed in Israel in 1962.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1961</pattern>
+        <template>US breaks diplomatic relations with Cuba (Jan. 3). 1,200 US-sponsored anti-Castro exiles invade Cuba
+            at the Bay of Pigs (April 17); the attackers are all killed or captured by Cuban forces. East Germany erects
+            the Berlin Wall between East and West Berlin to halt flood of refugees (Aug. 13). USSR detonates 50-megaton
+            hydrogen bomb in the largest man-made explosion in history (Oct. 29). There are 2,000 US military advisers
+            in South Vietnam. OPEC (Organization of Petroleum Exporting Countries) formally constituted.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1962</pattern>
+        <template>France transfers sovereignty to new republic of Algeria (July 3). Cuban Missile Crisis: USSR to build
+            missile bases in Cuba; Kennedy orders Cuban blockade, lifts blockade after Russia backs down (Aug.-Nov.).
+            Pope John XXIII opens Second Vatican Council (Oct. 11). Cuba releases 1,113 prisoners of 1961 invasion
+            attempt (Dec. 24). Burundi, Jamaica, Western Samoa, Uganda, and Trinidad and Tobago become independent.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1963</pattern>
+        <template>France and West Germany sign treaty of cooperation ending four centuries of conflict (Jan. 22). Pope
+            John XXIII dies (June 3), and is succeeded June 21 by Cardinal Montini, who becomes Paul VI. British
+            Secretary of War John Profumo resigns in the wake of an affair with Christine Keeler, a teenage showgirl who
+            was also involved with the Soviet naval attaché (June). Washington-to-Moscow "hot line" communications link
+            opens, designed to reduce risk of accidental war (Aug. 30). Kenya achieves independence. There are 15,000 US
+            military advisers in South Vietnam. 32 independent African nations establish the Organization for African
+            Unity.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1964</pattern>
+        <template>Nelson Mandela sentenced to life imprisonment in South Africa (June 11). Congress approves Gulf of
+            Tonkin Resolution after North Vietnamese torpedo boats allegedly attack US destroyers (Aug. 7). Khrushchev
+            is deposed; Kosygin becomes premier and Brezhnev becomes first secretary of the Communist Party (October).
+            China detonates its first atomic bomb.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1965</pattern>
+        <template>The first US combat troops arrive in Vietnam. By the end of the year, 190,000 American soldiers are in
+            Vietnam. France withdraws its Atlantic fleet from NATO. Rhodesia unilaterally declares its independence from
+            Britain (Nov. 11). US Marines land in the Dominican Republic as fighting persists between rebels and
+            Dominican army (April 28).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1966</pattern>
+        <template>France withdraws its forces from NATO. President De Gaulle visits the USSR (June 20). Sukarno leaves
+            office in Indonesia; Suharto assumes power. Botswana, Lesotho, and Guyana become independent states within
+            the British Commonwealth. India suffers the worst famine in 20 years; Lyndon Johnson asks for $1 billion in
+            aid to the country.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1967</pattern>
+        <template>Biafra secedes from Nigeria (May). Israeli and Arab forces battle; Six-Day War ends with Israel
+            occupying Sinai Peninsula, Golan Heights, Gaza Strip and West Bank (June 5). Right-wing military coup
+            deposes King Constantine IIof Greece. Communist China announces explosion of its first hydrogen bomb (June
+            17). The US and USSR propose a nuclear nonproliferation treaty.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1968</pattern>
+        <template>North Korea seizes US Navy ship Pueblo; holds 83 on board as spies (Jan. 23). North Vietnamese launch
+            the Tet Offensive, a turning point in the Vietnam War (Jan.-Feb.). American soldiers massacre 347 civilians
+            at My Lai (March 16). Czechoslovakia is invaded by Russians and Warsaw Pact forces to crush liberal regime
+            (Aug. 20).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1969</pattern>
+        <template>Nixon begins "Vietnamization" in Southeast Asia. The United States, USSR, and about 100 other
+            countries sign the nuclear nonproliferation treaty (NPT). Russian and Chinese troops clash along the Ussuri
+            River. 27-year-old Colonel Muammar al-Qaddafi deposes King Idris of Libya and establishes a pro-Arabic,
+            anti-Western, Islamic republic.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1970</pattern>
+        <template>Biafra surrenders after 32-month fight for independence from Nigeria (Jan. 12). Rhodesia severs last
+            tie with British Crown and declares itself a racially segregated republic (March 1). US troops invade
+            Cambodia (May 1). A Palestinian revolt erupts in Jordan. Forces loyal to King Hussein suppress the revolt
+            and expel the PLO from the country. Earthquake kills more than 50,000 in Peru (May 31). Egyptian President
+            Nasser dies and is replaced by Anwar el-Sadat. Tonga (June 4) and Fiji (Oct. 10) gain independence from
+            Britain.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1971</pattern>
+        <template>A military junta led by Major General Idi Amin siezes power in Uganda (Jan. 25). Mao Zedong invites
+            the US ping-pong team to visit Beijing (Apr. 6). Nixon ends the US trade embargo against China. (Apr. 14).
+            Erich Honecker assumes leadership of the East German Communist Party after Walter Ulbricht's resignation
+            (May). India and the USSR sign a 20-year friendship pact (Aug. 9). President Mobutu renames the Democratic
+            Republic of Congo, establishing Zaire (Oct. 27).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1972</pattern>
+        <template>President Nixon makes unprecedented eight-day visit to Communist China and meets with Mao Zedong (Feb.
+            17). Britain takes over direct rule of Northern Ireland in bid for peace (March 24). Eleven Israeli athletes
+            at Olympic Games in Munich are killed after eight members of an Arab terrorist group invades Olympic
+            Village; five guerrillas and one policeman are also killed (Sept. 5). Nixon orders "Christmas bombing" of
+            North Vietnam (Dec.).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1973</pattern>
+        <template>Great Britain, Ireland, and Denmarkenter European Economic Community (Jan. 1). A ceasefire is signed,
+            ending involvement of American ground troops in the Vietnam War. (Jan. 28). US bombing of Cambodia ends,
+            marking official halt to 12 years of combat activity in Southeast Asia (Aug. 15). Chile's Marxist president,
+            Salvadore Allende, is overthrown (Sept. 11); Gen. Augusto Pinochet takes power. Fourth and largest
+            Arab-Israeli conflict begins when Egyptian and Syrian forces attack Israel as Jews mark Yom Kippur, holiest
+            day in their calendar (Oct. 6). Egypt and Israel sign US-sponsored cease-fire accord (Nov. 11). Organization
+            of Petroleum Exporting Countries (OPEC) hikes oil prices tremendously in retaliation for Western countries'
+            involvement in Yom Kippur War.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1974</pattern>
+        <template>OPEC ends the oil embargo begun in 1973 during the Yom Kippur War (Mar. 18). Nixon and Brezhnev meet
+            in Moscow to discuss arms limitation agreements. Leftist revolution ends almost 50 years of dictatorial rule
+            in Portugal (launched Apr. 25). India successfully tests an atomic device, becoming the world's sixth
+            nuclear power (May 18). Emperor Haile Selassie of Ethiopia is deposed. A collective military dictatorship
+            assumes power (Sept. 12).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1975</pattern>
+        <template>Pol Pot and Khmer Rouge take over Cambodia (April). The city of Saigon is surrendered and remaining
+            Americans are evacuated, ending the Vietnam War (April 30). American merchant ship Mayaguez, seized by
+            Cambodian forces, is rescued in operation by US Navy and Marines, 38 of whom are killed (May 15). Apollo and
+            Soyuz spacecraft take off for US-Soviet link-up in space (July 15).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1976</pattern>
+        <template>Khmer Rouge leader Pol Pot becomes prime minister (and virtual dictator) of Cambodia after Prince
+            Sihanouk steps down (April 2). Israeli airborne commandos attack Uganda's Entebbe Airport and free 103
+            hostages held by pro-Palestinian hijackers of Air France plane; one Israeli and several Ugandan soldiers
+            killed in raid (July 4). 19-month civil war ends in Lebanon after threatening to escalate to global level
+            (Nov.).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1977</pattern>
+        <template>Deng Xiaoping, purged Chinese leader, restored to power as Gang of Four is expelled from Communist
+            Party (July 22). South African activist Steve Biko dies in police custody (Sept. 12). Nuclear-proliferation
+            pact, curbing spread of nuclear weapons, is signed by 15 countries, including US and USSR (Sept. 21).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1978</pattern>
+        <template>Rhodesia's Prime Minister Ian D. Smith and three black leaders agree on transfer to black majority
+            rule (Feb. 15). US Senate approves Panama Canal neutrality treaty (March 16); votes treaty to turn canal
+            over to Panama by year 2000 (April 18). Former Italian Premier Aldo Moro kidnapped by left wing terrorists,
+            who kill five bodyguards (March 16); he is found slain (May 9). Pope Paul VI, dead at 80, mourned (Aug. 6);
+            new Pope, John Paul I, 65, dies unexpectedly after 34 days in office (Sept. 28); succeeded by Karol Cardinal
+            Wojtyla of Poland as John Paul II (Oct. 16). "Framework for Peace" in Middle East signed by Egypt's
+            President Anwar Sadat and Israeli Premier Menachem Begin after 13-day conference at Camp David led by
+            President Jimmy Carter (Sept. 17). Jim Jones's followers commit mass suicide in Jonestown, Guyana (Nov. 18).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1979</pattern>
+        <template>Vietnam and Vietnam-backed Cambodian insurgents announce fall of Cambodian capital Phnom Penh and
+            collapse of Pol Pot regime (Jan. 7). Shah leaves Iran after year of turmoil (Jan. 16); revolutionary forces
+            under Muslim leader, Ayatollah Ruhollah Khomeini, take over (Feb. 1 et seq.). Carter and Brezhnev sign SALT
+            II agreement (June 14). Conservatives win British election; Margaret Thatcher becomes new prime minister
+            (May 3). Nicaraguan President General Anastasio Somoza Debayle resigns and flees to Miami (July 17);
+            Sandinistas form government (July 19). Iranian militants seize US embassy in Teheran and hold hostages (Nov.
+            4). Soviet invasion of Afghanistan stirs world protests (Dec. 27).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1980</pattern>
+        <template>Six US embassy aides escape from Iran with Canadian help (Jan. 29). US breaks diplomatic ties with
+            Iran (April 7). Eight US servicemen are killed and five are injured as helicopter and cargo plane collide in
+            abortive desert raid to rescue American hostages in Teheran (April 25). Iraqi troops hold 90 square miles of
+            Iran after invasion; 8-year Iran-Iraq War begins (Sept. 19). Three US nuns and a lay worker are found shot
+            in El Salvador (Dec. 4). Anastasio Somoza Debayle, ousted Nicaraguan ruler, and two aides are assassinated
+            in Paraguayan capital of Asunción (Sept. 17).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1981</pattern>
+        <template>US-Iran agreement frees 52 hostages held in Teheran since 1979 (Jan. 20); hostages welcomed back in US
+            (Jan. 25). Pope John Paul II wounded by gunman (May 14). Israel annexes the disputed Golan Heights territory
+            (Dec. 14). Egyptian president Anwar el-Sadat is assassinated by Islamic extremists during a military parade
+            in Cairo (Oct. 6). President Hilla Limann is overthrown in Ghana as Jerry J. Rawlings seizes power.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1982</pattern>
+        <template>British overcome Argentina in Falklands war (April 2-June 15). Israel invades Lebanon in attack on
+            PLO. (June 4). Princess Grace, 52, dies of injuries when car plunges off mountain road; daughter Stephanie,
+            17, suffers serious injuries (Sept. 14). Lebanese Christian Phalangists kill hundreds of people in two
+            Palestinian refugee camps in West Beirut (Sept. 15). Leonid I. Brezhnev, Soviet leader, dies at 75 (Nov.
+            10). Yuri V. Andropov, 68, chosen as successor (Nov. 15).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1983</pattern>
+        <template>Pope John Paul II signs new Roman Catholic code incorporating changes brought about by Second Vatican
+            Council (Jan. 25). Benigno S. Aquino, Jr., 50, political rival of Philippines President Ferdinand Marcos, is
+            assassinated in Manila (Aug. 21). South Korean Boeing 747 jetliner bound for Seoul apparently strays into
+            Soviet airspace and is shot down by a Soviet SU-15 fighter after it had tracked the airliner for two hours;
+            all 269 aboard are killed. (Aug. 30). Terrorist explosion kills 237 US Marines in Beirut (Oct. 23). US
+            invades Grenada (Oct. 25).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1984</pattern>
+        <template>Syria frees captured US Navy pilot, Lieut. Robert C. Goodman, Jr. (Jan. 3). US and Vatican exchange
+            diplomats after 116-year hiatus (Jan. 10). Reagan orders US Marines withdrawn from Beirut international
+            peacekeeping force (Feb. 7). Yuri V. Andropov dies at 69; Konstantin U. Chernenko, 72, named Soviet leader
+            (Feb. 9). Italy and Vatican agree to end Roman Catholicism as state religion (Feb. 18). Soviet Union
+            withdraws from summer Olympic games in US, and other bloc nations follow (May 7 et seq.). José Napoleón
+            Duarte, moderate, elected president of El Salvador (May 11). Three hundred slain as Indian Army occupies
+            Sikh Golden Temple in Amritsar (June 6). Indian Prime Minister Indira Gandhi assassinated by two Sikh
+            bodyguards; 1,000 killed in anti-Sikh riots; son Rajiv succeeds her (Oct. 31). Toxic gas leaks from Union
+            Carbide plant in Bhopal, India, killing 2,000 and injuring 150,000 (Dec. 3).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1985</pattern>
+        <template>Soviet leader Chernenko dies at 73 and is replaced by Mikhail Gorbachev, 54 (March 11). Under the
+            slogans of glasnost and Perestroika, Gorbachev initiates a broad program of reform and liberalization. Two
+            Shi'ite Muslim gunmen capture TWA airliner with 133 aboard, 104 of them Americans (June 14); 39 remaining
+            hostages freed in Beirut (June 30). PLO terrorists hijack Achille Lauro, Italian cruise ship, with 80
+            passengers, plus crew (Oct. 7); American, Leon Klinghoffer, killed (Oct. 8); Italian government toppled by
+            political crisis over hijacking (Oct. 16). Reagan and Gorbachev meet at summit (Nov. 19); agree to step up
+            arms control talks and renew cultural contacts (Nov. 21). Terrorists seize Egyptian Boeing 737 airliner
+            after takeoff from Athens (Nov. 23); 59 dead as Egyptian forces storm plane on Malta (Nov. 24).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1986</pattern>
+        <template>Spain and Portugal join European Economic Community (Jan. 1). President Reagan freezes Libyan assets
+            in US (Jan. 8). US planes attack Libyan "terrorist centers" (April 14). Haitian President Jean-Claude
+            Duvalier flees to France (Feb. 7). President Ferdinand Marcos flees Philippines after ruling for 20 years;
+            newly elected Corazon Aquino succeeds him (Feb. 26). Union Carbide agrees to settlement with victims of
+            Bhopal gas leak in India (March 22). Major nuclear accident at Soviet Union's Chernobyl power station alarms
+            world (April 26 et seq.). Ex-Navy analyst, Jonathan Jay Pollard, 31, guilty as spy for Israel (June 4).
+            World Court rules US broke international law in mining Nicaraguan waters (June 27).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1987</pattern>
+        <template>William Buckley, American hostage in Lebanon, reported slain (Jan. 20). Iraqi missiles kill 37 in
+            attack on US frigate Stark in Persian Gulf (May 17); Iraqi president Hussein apologizes (May 18). Prime
+            Minister Thatcher wins rare third term in Britain (June 11). Klaus Barbie, 73, Gestapo wartime chief in
+            Lyon, sentenced to life by French court for war crimes (July 4).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1988</pattern>
+        <template>US and Canada reach free trade agreement (Jan. 2). Terrorists kill nine tourists on Aegean cruise
+            (July 11). Benazir Bhutto, first Islamic woman prime minister, chosen to lead Pakistan (Dec. 1). Pan-Am 747
+            explodes from terrorist bomb and crashes in Lockerbie, Scotland, killing all 259 aboard and 11 on ground
+            (Dec. 21).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1989</pattern>
+        <template>US planes shoot down two Libyan fighters over international waters in Mediterranean (Jan. 4). Iran's
+            Ayatollah Khomeini declares author Salman Rushdie's book The Satanic Verses offensive and sentences him to
+            death (Feb. 14). Tens of thousands of Chinese students take over Beijing's Tiananmen Square in rally for
+            democracy (April 19 et seq.). More than one million in Beijing demonstrate for democracy; chaos spreads
+            across nation (mid-May et seq.). Thousands killed in Tiananmen Square as Chinese leaders take hard line
+            toward demonstrators (June 4 et seq.). Mikhail S. Gorbachev named Soviet President (May 25). P. W. Botha
+            quits as South Africa's President (Aug. 14). Deng Xiaoping resigns from China's leadership (Nov. 9). After
+            28 years, Berlin Wall is open to West (Nov. 11). Czech Parliament ends Communists' dominant role (Nov. 30).
+            Romanian uprising overthrows Communist government (Dec. 15 et seq.); President Ceausescu and wife executed
+            (Dec. 25). US troops invade Panama, seeking capture of General Manuel Noriega (Dec. 20).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1990</pattern>
+        <template>General Manuel Noriega surrenders in Panama (Jan. 3). Yugoslav Communists end 45-year monopoly of
+            power (Jan. 22). Communist Party relinquish sole power in Soviet government (Feb. 7). South Africa frees
+            Nelson Mandela, imprisoned 27½ years (Feb. 11). US-Soviet summit reaches accord on armaments (June 1).
+            Western Alliance ends Cold War and proposes joint action with Soviet Union and Eastern Europe (July 6).
+            Iraqi troops invade Kuwait, setting off the Persian Gulf War (Aug. 2 et seq.). East and West Germany
+            reunited (Aug. 31 et seq.). Margaret Thatcher resigns as British Prime Minister (Nov. 22); John Major
+            succeeds her (Nov. 28). Lech Walesa wins Poland's runoff Presidential election (Dec. 9).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1991</pattern>
+        <template>Cease-fire ends Persian Gulf War (April 3); UN forces are victorious. Europeans end sanctions on South
+            Africa (April 15). South African Parliament repeals apartheid laws (June 5). France agrees to sign 1968
+            treaty banning spread of atomic weapons (June 3). China accepts nuclear nonproliferation treaty (Aug. 10).
+            Bush-Gorbachev summit negotiates strategic arms reduction treaty (July 31). Communist Government of Albania
+            resigns (June 4). Warsaw Pact dissolved (July 1). Boris Yeltsin becomes first freely elected president of
+            Russian Republic (July 10). Yeltsin's stock increases when he takes a prominent role in suppressing an
+            anti-Gorbachev coup by communist hardliners (Aug. 18-22). Lithuania, Estonia, and Latvia win independence
+            from USSR (Aug. 25); US recognizes them (Sept. 2). Haitian troops seize president in uprising (Sept. 30). US
+            suspends assistance to Haiti (Oct. 1). US indicts two Libyans in 1988 bombing of Pan Am Flight 103 over
+            Lockerbie, Scotland (Nov. 15). Soviet Union breaks up after President Gorbachev's resignation; constituent
+            republics form Commonwealth of Independent States (Dec. 25).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1992</pattern>
+        <template>Yugoslav Federation broken up (Jan. 15). US recognizes three former Yugoslav republics (April 7). UN
+            expels Serbian-dominated Yugoslavia (Sept. 22). Bush and Yeltsin proclaim a formal end to the Cold War (Feb.
+            1). US lifts trade sanctions against China (Feb. 21). General Manuel Noriega, former leader of Panama,
+            convicted in US court (April 9) and sentenced to 40 years on drug charges (July 10). Russian Parliament
+            approves START treaty (Nov. 4). US forces leave Philippines, ending nearly a century of American military
+            presence (Nov. 24). Czechoslovak Parliament approves separation into two nations (Nov. 25). UN approves
+            US-led force to guard food for Somalia (Dec. 3). North American Free Trade Agreement (NAFTA) signed (Dec.
+            17).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1993</pattern>
+        <template>Vaclav Havel elected Czech President (Jan. 26). British House of Commons approves European unity pact
+            (May 20). Maastricht Treaty takes effect, creating European Union (Nov. 1). Twenty-two UN troops killed in
+            Somalia (June 5). Israeli-Palestinian accord reached (Aug. 28). Yeltsin's forces crush revolt in Russian
+            Parliament (Oct. 4 et seq.). China breaks nuclear test moratorium (Oct. 5). South Africa adopts majority
+            rule constitution (Nov. 18).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1994</pattern>
+        <template>Serbs' heavy weapons pound Sarajevo (Jan. 5-6). Thousands dead in Rwanda massacre (April 6). South
+            Africa holds first interracial national election (April 29); Nelson Mandela elected President. Israel signs
+            accord with Palestinians (May 4), peace treaty with Jordan (Oct. 17). IRA declares cease-fire in Northern
+            Ireland (Aug. 31). Ulster Protestants declare cease-fire (Oct. 13). Aristide returns to Haiti (Oct. 4),
+            forms Government with Prime Minister and full Cabinet (Nov. 9). US sends forces to Persian Gulf (Oct. 7).
+            Russians attack secessionist Republic of Chechnya (Dec. 11 et seq.).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1995</pattern>
+        <template>US rescues Mexico's economy with $20-billion aid program (Feb. 21). Russian space station Mir greets
+            first Americans (March 14). US shuttle docks with station (June 27). Nerve gas attack in Tokyo subway kills
+            eight and injures thousands. The Aum Shinrikyo ("Supreme Truth") cult is to blame (March 20). Death toll
+            2,000 in Rwanda massacre (April 22). Fighting escalates in Bosnia and Croatia (May 1). Warring parties agree
+            on cease-fire (Oct. 5); sign peace treaty (Dec. 14). France explodes nuclear device in Pacific; wide
+            protests ensue (Sept. 5). Israelis and Palestinians agree on transferring West Bank to Arabs (Sept. 24).
+            Israeli Prime Minister Yitzhak Rabin slain by Jewish extremist at peace rally (Nov. 4).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1996</pattern>
+        <template>Chechens capture 2,000 Russians (Jan. 9). Chechnya peace treaty signed (May 27). France agrees to end
+            nuclear testing (Jan. 29). Britain alarmed by an outbreak of "mad cow" disease (March 20 et seq.). UN
+            tribunal charges war crimes by Bosnian Muslims and Croats (March 22). Nations pledge $1.23 billion in aid to
+            rebuild Bosnia (April 22). South Africa gets new constitution (May 8). Israel elects Benjamin Netanyahu as
+            prime minister (May 31). Militant Taliban leaders seize Afghan capital of Kabul (Sept. 27). Iraqis strike at
+            Kurdish enclave (Aug. 31); after warning, US attacks Iraq's southern air defenses (Sept. 2–3). Ethnic
+            violence breaks out in Zairian refugee camps (Oct. 13); Clinton approves plan for UN-backed relief mission
+            for 1.2 million Hutu refugees starving in eastern Zaire (Nov. 13). Hundreds of thousands return to Rwanda
+            (Nov. 15–18).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1997</pattern>
+        <template>Hebron agreement signed; Israel gives up large part of West Bank city of Hebron (Jan. 16). Israeli
+            government approves establishment of Jewish settlement in East Jerusalem, a setback in Middle East peace
+            process (Feb. 26). US, UK, and France agree to freeze Nazis' gold loot (Feb. 3). Hong Kong returns to
+            Chinese rule (June 30). Khmer Rouge hold trial of longtime leader Pol Pot (July 25). Swiss plan first
+            payment to Holocaust victims (Sept. 17). European Union plans to admit six nations (Dec. 13).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1998</pattern>
+        <template>Serbs battle ethnic Albanians in Kosovo (March 5 et seq.). Serbs renew attack on Kosovo rebels (June
+            1). NATO, on verge of air strikes, reaches settlement with Milosevic on Kosovo (Oct. 12). Good Friday Accord
+            is reached in Northern Ireland (April 10). Irish Parliament backs peace agreement (April 22). Europeans
+            agree on single currency, the euro (May 3). India conducts three atomic tests despite worldwide disapproval
+            (May 11, 13). Pakistan stages five nuclear tests in response (May 29, 30). Indonesian dictator Suharto steps
+            down after 32 years in power (May 21). US embassies in Kenya and Tanzania bombed (Aug. 7). US cruise
+            missiles hit suspected terrorist bases in Sudan and Afghanistan (Aug. 20). Russia fights to avert financial
+            collapse (Aug. 17). Former Chilean dictator Augusto Pinochet arrested in London (Oct. 16). Wye Mills
+            Agreement between Netanyahu and Arafat moves Middle East peace talks forward (Oct. 23). Iraq ends
+            cooperation with UN arms inspectors (Aug. 5). Clinton orders air strikes (Dec. 16–19).
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 1999</pattern>
+        <template>Russian president Boris Yeltsin survives impeachment hearings (May), reshuffles his cabinet twice
+            (May, Aug.), and takes military action against Islamic separatists in Dagestan and Chechnya. Nelson Mandela,
+            first black president of South Africa, steps down (June 16), and Thabo Mbeki takes over. War erupts in
+            Kosovo after Yugoslavia's president Slobodan Milosevic clamps down on the province, massacring and deporting
+            ethnic Albanians. NATO begins Operation Allied Force on March 24, 1999, launching air strikes against
+            Belgrade for 78 consecutive days until Milosevic relents. Background: Timeline: The Splintering of Kosovo
+            and Timeline: NATO in Kosovo. Magnitude 7.4 earthquake kills more than 15,600 and leaves 600,000 homeless in
+            Turkey (Aug. 17). East Timor population votes for independence from Indonesia (Aug. 30, 1999), which causes
+            pro-Indonesian forces to massacre and uproot thousands of East Timorese. Pakistani government is overthrown
+            in the midst of economic strife and intensified fighting with India over Kashmir (Oct. 12). The world awaits
+            the consequences of the Y2K bug, with more drastic millennial theorists warning of Armageddon.
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT HAPPENED IN 2000</pattern>
+        <template>Austria at center of European dispute after conservative People's Party forms coalition with the
+            far-right Freedom Party, headed by xenophobe Jörg Haider (Feb. 3). Reformists win control of Iranian
+            parliament for first time since 1979 Islamic revolution (Feb. 26). Governing of Northern Ireland passes back
+            and forth between Britain and nascent Northern Irish parliament; major dispute over IRA's refusal to disarm
+            (Feb-May). Former Indonesian president Suharto under house arrest, charged with corruption and abuse of
+            power (May 29). Presidents of North and South Korea sign peace accord, and at least symbolically, end a
+            half-century of antagonism (June 13). Vicente Fox Quesada elected president of Mexico, ending 71 years of
+            one-party rule by the Institutional Revolutionary Party (PRI) (July 2). Concorde crash kills 113 near Paris
+            (July 25). Palestinians and Israelis clash, spurred by visit of right-wing Israeli leader Ariel Sharon to a
+            joint Jewish/Muslim holy site; "Al Aksa intifada" continues unabated (Sept. 30 et seq.). Nationwide uprising
+            overthrows Yugoslavian president Milosevic (Oct. 5); Vojislav Kostunica sworn in as president (Oct. 7). U.S.
+            sailors on Navy destroyer Cole die in Yemen terrorist explosion (Oct. 12). Mad cow disease alarms Europe
+            (Nov. 30 et seq.).
+        </template>
+    </category>
+</aiml>

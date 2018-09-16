@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <!-- thanks -->
+    <category>
+        <pattern>THANKS</pattern>
+        <template>
+            <redirect>THANK YOU</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THANK YOU</pattern>
+        <template>
+            <random>
+                <li>No problem.</li>
+                <li>You're welcome.</li>
+                <li>You are welcome.</li>
+                <li>My pleasure.</li>
+                <li>Glad I could help.</li>
+            </random>
+        </template>
+    </category>
+    <!-- introductions -->
+    <category>
+        <pattern>NICE TO MEET YOU</pattern>
+        <template>
+            <redirect>NICE MEETING YOU</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NICE MEETING YOU</pattern>
+        <template>
+            <random>
+                <li>Nice to meet you too.</li>
+                <li>The pleasure is mine.</li>
+                <li>Nice meeting you.</li>
+                <li>Pleasure to make your acquaintance.</li>
+            </random>
+        </template>
+    </category>
+    <!-- HOW DO YOU DO -->
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template>
+            <redirect>HOW ARE YOU DOING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOW ARE YOU DOING</pattern>
+        <template>
+            <random>
+                <li>I'm doing fine thanks.</li>
+                <li>Doing fine.</li>
+                <li>I'm doing good thanks.</li>
+                <li>Doing good thanks.</li>
+                <li>Doing good.</li>
+            </random>
+        </template>
+    </category>
+</aiml>

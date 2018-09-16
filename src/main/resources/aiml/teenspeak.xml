@@ -1,0 +1,678 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <!-- AFAP-->
+    <category>
+        <pattern>(.*) AFAP (.*)</pattern>
+        <template>
+            <redirect>\1 AS FAR AS POSSIBLE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>AFAP (.*)</pattern>
+        <template>
+            <redirect>AS FAR AS POSSIBLE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) AFAP</pattern>
+        <template>
+            <redirect>\1 AS FAR AS POSSIBLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>AFAP</pattern>
+        <template>
+            <redirect>AS FAR AS POSSIBLE</redirect>
+        </template>
+    </category>
+    <!-- AFK -->
+    <category>
+        <pattern>(.*) AFK (.*)</pattern>
+        <template>
+            <redirect>\1 AWAY FROM KEYBOARD \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>AFK (.*)</pattern>
+        <template>
+            <redirect>AWAY FROM KEYBOARD \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) AFK</pattern>
+        <template>
+            <redirect>\1 AWAY FROM KEYBOARD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>AFK</pattern>
+        <template>
+            <redirect>AWAY FROM KEYBOARD</redirect>
+        </template>
+    </category>
+    <!-- ANY1 -->
+    <category>
+        <pattern>(.*) ANY1 (.*)</pattern>
+        <template>
+            <redirect>\1 ANYONE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ANY1 (.*)</pattern>
+        <template>
+            <redirect>ANYONE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ANY1</pattern>
+        <template>
+            <redirect>\1 ANYONE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ANY1</pattern>
+        <template>
+            <redirect>ANYONE</redirect>
+        </template>
+    </category>
+    <!-- ASAP -->
+    <category>
+        <pattern>(.*) ASAP (.*)</pattern>
+        <template>
+            <redirect>\1 AS SOON AS POSSIBLE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ASAP (.*)</pattern>
+        <template>
+            <redirect>AS SOON AS POSSIBLE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ASAP</pattern>
+        <template>
+            <redirect>\1 AS SOON AS POSSIBLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ASAP</pattern>
+        <template>
+            <redirect>AS SOON AS POSSIBLE</redirect>
+        </template>
+    </category>
+    <!-- B4 -->
+    <category>
+        <pattern>(.*) B4 (.*)</pattern>
+        <template>
+            <redirect>\1 BEFORE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>B4 (.*)</pattern>
+        <template>
+            <redirect>BEFORE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) B4</pattern>
+        <template>
+            <redirect>\1 BEFORE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>B4</pattern>
+        <template>
+            <redirect>BEFORE</redirect>
+        </template>
+    </category>
+    <!-- BRB -->
+    <category>
+        <pattern>(.*) BRB (.*)</pattern>
+        <template>
+            <redirect>\1 BE RIGHT BACK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BRB (.*)</pattern>
+        <template>
+            <redirect>BE RIGHT BACK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BRB</pattern>
+        <template>
+            <redirect>\1 BE RIGHT BACK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BRB</pattern>
+        <template>
+            <redirect>BE RIGHT BACK</redirect>
+        </template>
+    </category>
+    <!-- BTW -->
+    <category>
+        <pattern>(.*) BTW (.*)</pattern>
+        <template>
+            <redirect>\1 BY THE WAY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BTW (.*)</pattern>
+        <template>
+            <redirect>BY THE WAY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) BTW</pattern>
+        <template>
+            <redirect>\1 BY THE WAY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>BTW</pattern>
+        <template>
+            <redirect>BY THE WAY</redirect>
+        </template>
+    </category>
+    <!-- G2G -->
+    <category>
+        <pattern>(.*) G2G (.*)</pattern>
+        <template>
+            <redirect>\1 GOT TO GO \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>G2G (.*)</pattern>
+        <template>
+            <redirect>GOT TO GO \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) G2G</pattern>
+        <template>
+            <redirect>\1 GOT TO GO</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>G2G</pattern>
+        <template>
+            <redirect>GOT TO GO</redirect>
+        </template>
+    </category>
+    <!-- GTG -->
+    <category>
+        <pattern>(.*) GTG (.*)</pattern>
+        <template>
+            <redirect>\1 GOT TO GO \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GTG (.*)</pattern>
+        <template>
+            <redirect>GOT TO GO \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) GTG</pattern>
+        <template>
+            <redirect>\1 GOT TO GO</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GTG</pattern>
+        <template>
+            <redirect>GOT TO GO</redirect>
+        </template>
+    </category>
+    <!-- IMO -->
+    <category>
+        <pattern>(.*) IMO (.*)</pattern>
+        <template>
+            <redirect>\1 IN MY OPINION \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IMO (.*)</pattern>
+        <template>
+            <redirect>IN MY OPINION \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) IMO</pattern>
+        <template>
+            <redirect>\1 IN MY OPINION</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IMO</pattern>
+        <template>
+            <redirect>IN MY OPINION</redirect>
+        </template>
+    </category>
+    <!-- IMHO -->
+    <category>
+        <pattern>(.*) IMHO (.*)</pattern>
+        <template>
+            <redirect>\1 IN MY HUMBLE OPINION \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IMHO (.*)</pattern>
+        <template>
+            <redirect>IN MY HUMBLE OPINION \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) IMHO</pattern>
+        <template>
+            <redirect>\1 IN MY HUMBLE OPINION</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IMHO</pattern>
+        <template>
+            <redirect>IN MY HUMBLE OPINION</redirect>
+        </template>
+    </category>
+    <!-- LMAO -->
+    <category>
+        <pattern>(.*) LMAO (.*)</pattern>
+        <template>
+            <redirect>\1 LAUGHING MY ASS OFF \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LMAO (.*)</pattern>
+        <template>
+            <redirect>LAUGHING MY ASS OFF \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LMAO</pattern>
+        <template>
+            <redirect>\1 LAUGHING MY ASS OFF</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LMAO</pattern>
+        <template>
+            <redirect>LAUGHING MY ASS OFF</redirect>
+        </template>
+    </category>
+    <!-- LMFAO -->
+    <category>
+        <pattern>(.*) LMFAO (.*)</pattern>
+        <template>
+            <redirect>\1 LAUGHING MY FUCKING ASS OFF \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LMFAO (.*)</pattern>
+        <template>
+            <redirect>LAUGHING MY FUCKING ASS OFF \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) LMFAO</pattern>
+        <template>
+            <redirect>\1 LAUGHING MY FUCKING ASS OFF</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>LMFAO</pattern>
+        <template>
+            <redirect>LAUGHING MY FUCKING ASS OFF</redirect>
+        </template>
+    </category>
+    <!-- NP -->
+    <category>
+        <pattern>(.*) NP (.*)</pattern>
+        <template>
+            <redirect>\1 NO PROBLEM \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NP (.*)</pattern>
+        <template>
+            <redirect>NO PROBLEM \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NP</pattern>
+        <template>
+            <redirect>\1 NO PROBLEM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NP</pattern>
+        <template>
+            <redirect>NO PROBLEM</redirect>
+        </template>
+    </category>
+    <!-- NSFW -->
+    <category>
+        <pattern>(.*) NSFW (.*)</pattern>
+        <template>
+            <redirect>\1 NOT SAFE FOR WORK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NSFW (.*)</pattern>
+        <template>
+            <redirect>NOT SAFE FOR WORK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) NSFW</pattern>
+        <template>
+            <redirect>\1 NOT SAFE FOR WORK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>NSFW</pattern>
+        <template>
+            <redirect>NOT SAFE FOR WORK</redirect>
+        </template>
+    </category>
+    <!-- OMG -->
+    <category>
+        <pattern>(.*) OMG (.*)</pattern>
+        <template>
+            <redirect>\1 OH MY GOD \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>OMG (.*)</pattern>
+        <template>
+            <redirect>OH MY GOD \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) OMG</pattern>
+        <template>
+            <redirect>\1 OH MY GOD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>OMG</pattern>
+        <template>
+            <redirect>OH MY GOD</redirect>
+        </template>
+    </category>
+    <!-- PIX -->
+    <category>
+        <pattern>(.*) PIX (.*)</pattern>
+        <template>
+            <redirect>\1 PICTURES \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PIX (.*)</pattern>
+        <template>
+            <redirect>PICTURES \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PIX</pattern>
+        <template>
+            <redirect>\1 PICTURES</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PIX</pattern>
+        <template>
+            <redirect>PICTURES</redirect>
+        </template>
+    </category>
+    <!-- PROBS -->
+    <category>
+        <pattern>(.*) PROBS (.*)</pattern>
+        <template>
+            <redirect>\1 PROBABLY \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PROBS (.*)</pattern>
+        <template>
+            <redirect>PROBABLY \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) PROBS</pattern>
+        <template>
+            <redirect>\1 PROBABLY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>PROBS</pattern>
+        <template>
+            <redirect>PROBABLY</redirect>
+        </template>
+    </category>
+    <!-- ROFL -->
+    <category>
+        <pattern>(.*) ROFL (.*)</pattern>
+        <template>
+            <redirect>\1 ROLLING ON THE FLOOR LAUGHING \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ROFL (.*)</pattern>
+        <template>
+            <redirect>ROLLING ON THE FLOOR LAUGHING \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ROFL</pattern>
+        <template>
+            <redirect>\1 ROLLING ON THE FLOOR LAUGHING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ROFL</pattern>
+        <template>
+            <redirect>ROLLING ON THE FLOOR LAUGHING</redirect>
+        </template>
+    </category>
+    <!-- THNX -->
+    <category>
+        <pattern>(.*) THNX (.*)</pattern>
+        <template>
+            <redirect>\1 THANKS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THNX (.*)</pattern>
+        <template>
+            <redirect>THANKS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THNX</pattern>
+        <template>
+            <redirect>\1 THANKS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THNX</pattern>
+        <template>
+            <redirect>THANKS</redirect>
+        </template>
+    </category>
+    <!-- THX -->
+    <category>
+        <pattern>(.*) THX (.*)</pattern>
+        <template>
+            <redirect>\1 THANKS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THX (.*)</pattern>
+        <template>
+            <redirect>THANKS \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) THX</pattern>
+        <template>
+            <redirect>\1 THANKS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THX</pattern>
+        <template>
+            <redirect>THANKS</redirect>
+        </template>
+    </category>
+    <!-- TTYL -->
+    <category>
+        <pattern>(.*) TTYL (.*)</pattern>
+        <template>
+            <redirect>\1 TALK TO YOU LATER \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TTYL (.*)</pattern>
+        <template>
+            <redirect>TALK TO YOU LATER \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TTYL</pattern>
+        <template>
+            <redirect>\1 TALK TO YOU LATER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TTYL</pattern>
+        <template>
+            <redirect>TALK TO YOU LATER</redirect>
+        </template>
+    </category>
+    <!-- TTYT -->
+    <category>
+        <pattern>(.*) TTYT (.*)</pattern>
+        <template>
+            <redirect>\1 TALK TO YOU TOMORROW \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TTYT (.*)</pattern>
+        <template>
+            <redirect>TALK TO YOU TOMORROW \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) TTYT</pattern>
+        <template>
+            <redirect>\1 TALK TO YOU TOMORROW</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TTYT</pattern>
+        <template>
+            <redirect>TALK TO YOU TOMORROW</redirect>
+        </template>
+    </category>
+    <!-- W8 -->
+    <category>
+        <pattern>(.*) W8 (.*)</pattern>
+        <template>
+            <redirect>\1 WAIT \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>W8 (.*)</pattern>
+        <template>
+            <redirect>WAIT \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) W8</pattern>
+        <template>
+            <redirect>\1 WAIT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>W8</pattern>
+        <template>
+            <redirect>WAIT</redirect>
+        </template>
+    </category>
+    <!-- WTF -->
+    <category>
+        <pattern>(.*) WTF (.*)</pattern>
+        <template>
+            <redirect>\1 WHAT THE FUCK \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WTF (.*)</pattern>
+        <template>
+            <redirect>WHAT THE FUCK \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WTF</pattern>
+        <template>
+            <redirect>\1 WHAT THE FUCK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WTF</pattern>
+        <template>
+            <redirect>WHAT THE FUCK</redirect>
+        </template>
+    </category>
+    <!-- WTH -->
+    <category>
+        <pattern>(.*) WTH (.*)</pattern>
+        <template>
+            <redirect>\1 WHAT THE HELL \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WTH (.*)</pattern>
+        <template>
+            <redirect>WHAT THE HELL \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WTH</pattern>
+        <template>
+            <redirect>\1 WHAT THE HELL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WTH</pattern>
+        <template>
+            <redirect>WHAT THE HELL</redirect>
+        </template>
+    </category>
+    <!-- YW -->
+    <category>
+        <pattern>(.*) YW (.*)</pattern>
+        <template>
+            <redirect>\1 YOU ARE WELCOME \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YW (.*)</pattern>
+        <template>
+            <redirect>YOU ARE WELCOME \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) YW</pattern>
+        <template>
+            <redirect>\1 YOU ARE WELCOME</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YW</pattern>
+        <template>
+            <redirect>YOU ARE WELCOME</redirect>
+        </template>
+    </category>
+</aiml>

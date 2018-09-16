@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <!-- HOW MUCH IS -->
+    <category>
+        <pattern>HOW MUCH IS ([0123456789\\+-\\*\\/\\^ ]+)</pattern>
+        <template>
+            <random>
+                <li>That would be </li>
+                <li>I think </li>
+                <li>That'd be </li>
+                <li>I think that'd be </li>
+                <li></li>
+            </random>
+            <redirect>\1</redirect>.
+        </template>
+    </category>
+    <!-- TIMES -->
+    <category>
+        <pattern>(.*) ([0123456789]*\.?[0123456879]+) TIMES ([0123456789]*\.?[0123456879]+) (.*)</pattern>
+        <template>
+            <redirect>\1 \2 * \3 \4</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>([0123456789]*\.?[0123456879]+) TIMES ([0123456789]*\.?[0123456879]+) (.*)</pattern>
+        <template>
+            <redirect>\1 * \2 \3</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ([0123456789]*\.?[0123456879]+) TIMES ([0123456789]*\.?[0123456879]+)</pattern>
+        <template>
+            <redirect>\1 \2 * \3</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>([0123456789]*\.?[0123456879]+) TIMES ([0123456789]*\.?[0123456879]+)</pattern>
+        <template>
+            <redirect>\1 * \2</redirect>
+        </template>
+    </category>
+    <!-- DIVIDE -->
+    <category>
+        <pattern>(.*) ([0123456789]*\.?[0123456879]+) DIVIDED BY ([0123456789]*\.?[0123456879]+) (.*)</pattern>
+        <template>
+            <redirect>\1 \2 / \3 \4</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>([0123456789]*\.?[0123456879]+) DIVIDED BY ([0123456789]*\.?[0123456879]+) (.*)</pattern>
+        <template>
+            <redirect>\1 / \2 \3</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ([0123456789]*\.?[0123456879]+) DIVIDED BY ([0123456789]*\.?[0123456879]+)</pattern>
+        <template>
+            <redirect>\1 \2 / \3</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>([0123456789]*\.?[0123456879]+) DIVIDED BY ([0123456789]*\.?[0123456879]+)</pattern>
+        <template>
+            <redirect>\1 / \2</redirect>
+        </template>
+    </category>
+    <!-- PLUS -->
+    <category>
+        <pattern>(.*) ([0123456789]*\.?[0123456879]+) PLUS ([0123456789]*\.?[0123456879]+) (.*)</pattern>
+        <template>
+            <redirect>\1 \2 + \3 \4</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>([0123456789]*\.?[0123456879]+) PLUS ([0123456789]*\.?[0123456879]+) (.*)</pattern>
+        <template>
+            <redirect>\1 + \2 \3</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ([0123456789]*\.?[0123456879]+) PLUS ([0123456789]*\.?[0123456879]+)</pattern>
+        <template>
+            <redirect>\1 \2 + \3</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>([0123456789]*\.?[0123456879]+) PLUS ([0123456789]*\.?[0123456879]+)</pattern>
+        <template>
+            <redirect>\1 + \2</redirect>
+        </template>
+    </category>
+    <!-- MINUS -->
+    <category>
+        <pattern>(.*) ([0123456789]*\.?[0123456879]+) MINUS ([0123456789]*\.?[0123456879]+) (.*)</pattern>
+        <template>
+            <redirect>\1 \2 - \3 \4</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>([0123456789]*\.?[0123456879]+) MINUS ([0123456789]*\.?[0123456879]+) (.*)</pattern>
+        <template>
+            <redirect>\1 - \2 \3</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) ([0123456789]*\.?[0123456879]+) MINUS ([0123456789]*\.?[0123456879]+)</pattern>
+        <template>
+            <redirect>\1 \2 - \3</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>([0123456789]*\.?[0123456879]+) MINUS ([0123456789]*\.?[0123456879]+)</pattern>
+        <template>
+            <redirect>\1 - \2</redirect>
+        </template>
+    </category>
+</aiml>

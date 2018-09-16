@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <category>
+        <!-- punctuation marks-->
+        <pattern>(.*)\?(.*)</pattern>
+        <template>
+            <redirect>\1 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*)\!(.*)</pattern>
+        <template>
+            <redirect>\1 \2</redirect>
+        </template>
+    </category>
+    <!-- , -->
+    <category>
+        <pattern>(.*)\,([^0-9].*)</pattern>
+        <template>
+            <redirect>\1 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*[^0-9])\,(.*)</pattern>
+        <template>
+            <redirect>\1 \2</redirect>
+        </template>
+    </category>
+    <!-- . -->
+    <category>
+        <pattern>(.*)\.([^0-9].*)</pattern>
+        <template>
+            <redirect>\1 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*[^0-9])\.(.*)</pattern>
+        <template>
+            <redirect>\1 \2</redirect>
+        </template>
+    </category>
+    <!-- whitespaces -->
+    <category>
+        <pattern>(.+)  (.+)</pattern>
+        <template>
+            <redirect>\1 \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.+) +</pattern>
+        <template>
+            <redirect>\1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern> +(.+)</pattern>
+        <template>
+            <redirect>\1</redirect>
+        </template>
+    </category>
+</aiml>

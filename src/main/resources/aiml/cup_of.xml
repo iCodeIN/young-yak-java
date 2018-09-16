@@ -1,0 +1,769 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <category>
+        <pattern>HOW MUCH DOES A CUP OF (.*) WEIGH</pattern>
+        <template>
+            <redirect>CUP OF \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF ALFALFA SPROUTS</pattern>
+        <template>
+            <random>
+                <li>A cup of alfalfa sprouts weighs about 0.75 ounces, that's 18 grams.</li>
+                <li>About 0.75 ounces, or 18 grams.</li>
+                <li>18 grams, or 0.75 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF GROUND ALMONDS</pattern>
+        <template>
+            <random>
+                <li>A cup of ground almonds weighs about 3 ounces, that's 75 grams.</li>
+                <li>About 3 ounces, or 75 grams.</li>
+                <li>75 grams, or 3 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF WHOLE ALMONDS</pattern>
+        <template>
+            <random>
+                <li>A cup of whole almonds weighs about 8 ounces, that's 225 grams.</li>
+                <li>About 8 ounces, or 225 grams.</li>
+                <li>225 grams, or 8 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF MASHED AVOCADO</pattern>
+        <template>
+            <random>
+                <li>A cup of mashed avocado weighs about 8 ounces, that's 225 grams.</li>
+                <li>About 8 ounces, or 225 grams.</li>
+                <li>225 grams, or 8 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF UNCOOKED BARLEY</pattern>
+        <template>
+            <random>
+                <li>A cup of uncooked barley weighs about 6 ounces, that's 175 grams.</li>
+                <li>About 6 ounces, or 175 grams.</li>
+                <li>175 grams, or 6 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF DRY BEANS</pattern>
+        <template>
+            <random>
+                <li>A cup of dry beans weighs about 6 ounces, that's 175 grams.</li>
+                <li>About 6 ounces, or 175 grams.</li>
+                <li>175 grams, or 6 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF GREEN BEANS</pattern>
+        <template>
+            <random>
+                <li>A cup of green beans weighs about 3 ounces, that's 80 grams.</li>
+                <li>About 3 ounces, or 80 grams.</li>
+                <li>80 grams, or 3 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF DRY BEANS</pattern>
+        <template>
+            <random>
+                <li>A cup of dry beans weighs about 6 ounces, that's 175 grams.</li>
+                <li>About 6 ounces, or 175 grams.</li>
+                <li>175 grams, or 6 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF BEANSPROUTS</pattern>
+        <template>
+            <random>
+                <li>A cup of beansprouts weighs about 4 ounces, that's 110 grams.</li>
+                <li>About 4 ounces, or 110 grams.</li>
+                <li>110 grams, or 4 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF FRESH BLACKBERRIES</pattern>
+        <template>
+            <random>
+                <li>A cup of fresh blackberries weighs about 4 ounces, that's 110 grams.</li>
+                <li>About 4 ounces, or 110 grams.</li>
+                <li>110 grams, or 4 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF BRAZIL NUTS</pattern>
+        <template>
+            <random>
+                <li>A cup of brazil nuts weighs about 5 ounces, that's 150 grams.</li>
+                <li>About 5 ounces, or 150 grams.</li>
+                <li>150 grams, or 5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF BREADCRUMBS</pattern>
+        <template>
+            <random>
+                <li>A cup of breadcrumbs weighs about 2.5 ounces, that's 63 grams.</li>
+                <li>About 2.5 ounces, or 63 grams.</li>
+                <li>63 grams, or 2.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF FRESH BREADCRUMBS</pattern>
+        <template>
+            <random>
+                <li>A cup of fresh breadcrumbs weighs about 4 ounces, that's 110 grams.</li>
+                <li>About 4 ounces, or 110 grams.</li>
+                <li>110 grams, or 4 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF UNCOOKED BULGAR</pattern>
+        <template>
+            <random>
+                <li>A cup of uncooked bulgar weighs about 5 ounces, that's 150 grams.</li>
+                <li>About 5 ounces, or 150 grams.</li>
+                <li>150 grams, or 5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF BUTTER</pattern>
+        <template>
+            <random>
+                <li>A cup of butter weighs about 8 ounces, that's 225 grams.</li>
+                <li>About 8 ounces, or 225 grams.</li>
+                <li>225 grams, or 8 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF BUTTER</pattern>
+        <template>
+            <random>
+                <li>A cup of butter weighs about 4 ounces, that's 110 grams.</li>
+                <li>About 4 ounces, or 110 grams.</li>
+                <li>110 grams, or 4 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF SHREDDED CABBAGE</pattern>
+        <template>
+            <random>
+                <li>A cup of shredded cabbage weighs about 12 ounces, that's 340 grams.</li>
+                <li>About 12 ounces, or 340 grams.</li>
+                <li>340 grams, or 12 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF GRATED CARROTS</pattern>
+        <template>
+            <random>
+                <li>A cup of grated carrots weighs about 2.5 ounces, that's 63 grams.</li>
+                <li>About 2.5 ounces, or 63 grams.</li>
+                <li>63 grams, or 2.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF WHOLE CASHEW NUTS</pattern>
+        <template>
+            <random>
+                <li>A cup of whole cashew nuts weighs about 4.5 ounces, that's 125 grams.</li>
+                <li>About 4.5 ounces, or 125 grams.</li>
+                <li>125 grams, or 4.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF CHOPPED CASHEW NUTS</pattern>
+        <template>
+            <random>
+                <li>A cup of chopped cashew nuts weighs about 4 ounces, that's 110 grams.</li>
+                <li>About 4 ounces, or 110 grams.</li>
+                <li>110 grams, or 4 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF CREAM CHEESE</pattern>
+        <template>
+            <random>
+                <li>A cup of cream cheese weighs about 8 ounces, that's 225 grams.</li>
+                <li>About 8 ounces, or 225 grams.</li>
+                <li>225 grams, or 8 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF SHREDDED CHEESE</pattern>
+        <template>
+            <random>
+                <li>A cup of shredded cheese weighs about 3 ounces, that's 80 grams.</li>
+                <li>About 3 ounces, or 80 grams.</li>
+                <li>80 grams, or 3 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF PARMESAN</pattern>
+        <template>
+            <random>
+                <li>A cup of parmesan weighs about 3.5 ounces, that's 100 grams.</li>
+                <li>About 3.5 ounces, or 100 grams.</li>
+                <li>100 grams, or 3.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF SOFT CHEESE</pattern>
+        <template>
+            <random>
+                <li>A cup of soft cheese weighs about 7 ounces, that's 200 grams.</li>
+                <li>About 7 ounces, or 200 grams.</li>
+                <li>200 grams, or 7 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF CHOCOLATE CHIPS</pattern>
+        <template>
+            <random>
+                <li>A cup of chocolate chips weighs about 6 ounces, that's 175 grams.</li>
+                <li>About 6 ounces, or 175 grams.</li>
+                <li>175 grams, or 6 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF COCOA POWDER</pattern>
+        <template>
+            <random>
+                <li>A cup of cocoa powder weighs about 4 ounces, that's 110 grams.</li>
+                <li>About 4 ounces, or 110 grams.</li>
+                <li>110 grams, or 4 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF SHREDDED COCONUT</pattern>
+        <template>
+            <random>
+                <li>A cup of shredded coconut weighs about 3 ounces, that's 75 grams.</li>
+                <li>About 3 ounces, or 75 grams.</li>
+                <li>75 grams, or 3 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF COOKIE CRUMBS</pattern>
+        <template>
+            <random>
+                <li>A cup of cookie crumbs weighs about 3 ounces, that's 75 grams.</li>
+                <li>About 3 ounces, or 75 grams.</li>
+                <li>75 grams, or 3 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF CORN KERNELS</pattern>
+        <template>
+            <random>
+                <li>A cup of corn kernels weighs about 4.5 ounces, that's 125 grams.</li>
+                <li>About 4.5 ounces, or 125 grams.</li>
+                <li>125 grams, or 4.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF CORNFLAKES</pattern>
+        <template>
+            <random>
+                <li>A cup of cornflakes weighs about 1 ounces, that's 25 grams.</li>
+                <li>About 1 ounces, or 25 grams.</li>
+                <li>25 grams, or 1 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF CORNMEAL</pattern>
+        <template>
+            <random>
+                <li>A cup of cornmeal weighs about 5 ounces, that's 150 grams.</li>
+                <li>About 5 ounces, or 150 grams.</li>
+                <li>150 grams, or 5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF CORNSTARCH</pattern>
+        <template>
+            <random>
+                <li>A cup of cornstarch weighs about 5 ounces, that's 150 grams.</li>
+                <li>About 5 ounces, or 150 grams.</li>
+                <li>150 grams, or 5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF RAW COUSCOUS</pattern>
+        <template>
+            <random>
+                <li>A cup of raw couscous weighs about 6 ounces, that's 175 grams.</li>
+                <li>About 6 ounces, or 175 grams.</li>
+                <li>175 grams, or 6 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF CRANBERRIES</pattern>
+        <template>
+            <random>
+                <li>A cup of cranberries weighs about 3.5 ounces, that's 100 grams.</li>
+                <li>About 3.5 ounces, or 100 grams.</li>
+                <li>100 grams, or 3.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF CURRANTS</pattern>
+        <template>
+            <random>
+                <li>A cup of currants weighs about 5 ounces, that's 150 grams.</li>
+                <li>About 5 ounces, or 150 grams.</li>
+                <li>150 grams, or 5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF CHOPPED DATES</pattern>
+        <template>
+            <random>
+                <li>A cup of chopped dates weighs about 5 ounces, that's 150 grams.</li>
+                <li>About 5 ounces, or 150 grams.</li>
+                <li>150 grams, or 5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF FLOUR</pattern>
+        <template>
+            <random>
+                <li>A cup of flour weighs about 4 ounces, that's 110 grams.</li>
+                <li>About 4 ounces, or 110 grams.</li>
+                <li>110 grams, or 4 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF BUCKWHEAT FLOUR</pattern>
+        <template>
+            <random>
+                <li>A cup of buckwheat flour weighs about 6 ounces, that's 175 grams.</li>
+                <li>About 6 ounces, or 175 grams.</li>
+                <li>175 grams, or 6 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF POTATO FLOUR</pattern>
+        <template>
+            <random>
+                <li>A cup of potato flour weighs about 6 ounces, that's 175 grams.</li>
+                <li>About 6 ounces, or 175 grams.</li>
+                <li>175 grams, or 6 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF RICE FLOUR</pattern>
+        <template>
+            <random>
+                <li>A cup of rice flour weighs about 5 ounces, that's 150 grams.</li>
+                <li>About 5 ounces, or 150 grams.</li>
+                <li>150 grams, or 5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF RYE FLOUR</pattern>
+        <template>
+            <random>
+                <li>A cup of rye flour weighs about 3.5 ounces, that's 100 grams.</li>
+                <li>About 3.5 ounces, or 100 grams.</li>
+                <li>100 grams, or 3.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF SPELT FLOUR</pattern>
+        <template>
+            <random>
+                <li>A cup of spelt flour weighs about 4 ounces, that's 110 grams.</li>
+                <li>About 4 ounces, or 110 grams.</li>
+                <li>110 grams, or 4 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF WHEAT FLOUR</pattern>
+        <template>
+            <random>
+                <li>A cup of wheat flour weighs about 4.5 ounces, that's 125 grams.</li>
+                <li>About 4.5 ounces, or 125 grams.</li>
+                <li>125 grams, or 4.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF GOLDEN RAISINS</pattern>
+        <template>
+            <random>
+                <li>A cup of golden raisins weighs about 5 ounces, that's 150 grams.</li>
+                <li>About 5 ounces, or 150 grams.</li>
+                <li>150 grams, or 5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF WHOLE HAZELNUTS</pattern>
+        <template>
+            <random>
+                <li>A cup of whole hazelnuts weighs about 6 ounces, that's 175 grams.</li>
+                <li>About 6 ounces, or 175 grams.</li>
+                <li>175 grams, or 6 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF LENTILS</pattern>
+        <template>
+            <random>
+                <li>A cup of lentils weighs about 6 ounces, that's 175 grams.</li>
+                <li>About 6 ounces, or 175 grams.</li>
+                <li>175 grams, or 6 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF CHOPPED NUTS</pattern>
+        <template>
+            <random>
+                <li>A cup of chopped nuts weighs about 4.5 ounces, that's 125 grams.</li>
+                <li>About 4.5 ounces, or 125 grams.</li>
+                <li>125 grams, or 4.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF MARGARINE</pattern>
+        <template>
+            <random>
+                <li>A cup of margarine weighs about 8 ounces, that's 225 grams.</li>
+                <li>About 8 ounces, or 225 grams.</li>
+                <li>225 grams, or 8 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF CHOPPED MUSHROOMS</pattern>
+        <template>
+            <random>
+                <li>A cup of chopped mushrooms weighs about 3 ounces, that's 75 grams.</li>
+                <li>About 3 ounces, or 75 grams.</li>
+                <li>75 grams, or 3 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF SLICED MUSHROOMS</pattern>
+        <template>
+            <random>
+                <li>A cup of sliced mushrooms weighs about 2.5 ounces, that's 63 grams.</li>
+                <li>About 2.5 ounces, or 63 grams.</li>
+                <li>63 grams, or 2.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF FINE OATMEAL</pattern>
+        <template>
+            <random>
+                <li>A cup of fine oatmeal weighs about 5.25 ounces, that's 155 grams.</li>
+                <li>About 5.25 ounces, or 155 grams.</li>
+                <li>155 grams, or 5.25 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF MEDIUM OATMEAL</pattern>
+        <template>
+            <random>
+                <li>A cup of medium oatmeal weighs about 3 ounces, that's 75 grams.</li>
+                <li>About 3 ounces, or 75 grams.</li>
+                <li>75 grams, or 3 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF CHOPPED ONIONS</pattern>
+        <template>
+            <random>
+                <li>A cup of chopped onions weighs about 5 ounces, that's 150 grams.</li>
+                <li>About 5 ounces, or 150 grams.</li>
+                <li>150 grams, or 5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF FUSILLI</pattern>
+        <template>
+            <random>
+                <li>A cup of fusilli weighs about 2.5 ounces, that's 63 grams.</li>
+                <li>About 2.5 ounces, or 63 grams.</li>
+                <li>63 grams, or 2.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF PENNE</pattern>
+        <template>
+            <random>
+                <li>A cup of penne weighs about 3 ounces, that's 75 grams.</li>
+                <li>About 3 ounces, or 75 grams.</li>
+                <li>75 grams, or 3 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF PEANUT BUTTER</pattern>
+        <template>
+            <random>
+                <li>A cup of peanut butter weighs about 9 ounces, that's 250 grams.</li>
+                <li>About 9 ounces, or 250 grams.</li>
+                <li>250 grams, or 9 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF CHOPPED PEANUTS</pattern>
+        <template>
+            <random>
+                <li>A cup of chopped peanuts weighs about 5 ounces, that's 150 grams.</li>
+                <li>About 5 ounces, or 150 grams.</li>
+                <li>150 grams, or 5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF WHOLE PEANUTS</pattern>
+        <template>
+            <random>
+                <li>A cup of whole peanuts weighs about 4 ounces, that's 110 grams.</li>
+                <li>About 4 ounces, or 110 grams.</li>
+                <li>110 grams, or 4 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF PEAS</pattern>
+        <template>
+            <random>
+                <li>A cup of peas weighs about 4 ounces, that's 110 grams.</li>
+                <li>About 4 ounces, or 110 grams.</li>
+                <li>110 grams, or 4 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF CHOPPED PECANS</pattern>
+        <template>
+            <random>
+                <li>A cup of chopped pecans weighs about 3.5 ounces, that's 100 grams.</li>
+                <li>About 3.5 ounces, or 100 grams.</li>
+                <li>100 grams, or 3.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF POLENTA</pattern>
+        <template>
+            <random>
+                <li>A cup of polenta weighs about 5 ounces, that's 150 grams.</li>
+                <li>About 5 ounces, or 150 grams.</li>
+                <li>150 grams, or 5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF POPPY SEEDS</pattern>
+        <template>
+            <random>
+                <li>A cup of poppy seeds weighs about 4.5 ounces, that's 125 grams.</li>
+                <li>About 4.5 ounces, or 125 grams.</li>
+                <li>125 grams, or 4.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF SHREDDED POTATO</pattern>
+        <template>
+            <random>
+                <li>A cup of shredded potato weighs about 8 ounces, that's 225 grams.</li>
+                <li>About 8 ounces, or 225 grams.</li>
+                <li>225 grams, or 8 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF PUMPKIN PURÉE</pattern>
+        <template>
+            <random>
+                <li>A cup of pumpkin purée weighs about 9 ounces, that's 250 grams.</li>
+                <li>About 9 ounces, or 250 grams.</li>
+                <li>250 grams, or 9 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF RAISINS</pattern>
+        <template>
+            <random>
+                <li>A cup of raisins weighs about 3.5 ounces, that's 100 grams.</li>
+                <li>About 3.5 ounces, or 100 grams.</li>
+                <li>100 grams, or 3.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF BROWN RICE</pattern>
+        <template>
+            <random>
+                <li>A cup of brown rice weighs about 5.5 ounces, that's 165 grams.</li>
+                <li>About 5.5 ounces, or 165 grams.</li>
+                <li>165 grams, or 5.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF WHITE RICE</pattern>
+        <template>
+            <random>
+                <li>A cup of white rice weighs about 5 ounces, that's 150 grams.</li>
+                <li>About 5 ounces, or 150 grams.</li>
+                <li>150 grams, or 5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF SESAME SEEDS</pattern>
+        <template>
+            <random>
+                <li>A cup of sesame seeds weighs about 4.5 ounces, that's 125 grams.</li>
+                <li>About 4.5 ounces, or 125 grams.</li>
+                <li>125 grams, or 4.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF BROWN SUGAR</pattern>
+        <template>
+            <random>
+                <li>A cup of brown sugar weighs about 7 ounces, that's 200 grams.</li>
+                <li>About 7 ounces, or 200 grams.</li>
+                <li>200 grams, or 7 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF CASTER SUGAR</pattern>
+        <template>
+            <random>
+                <li>A cup of caster sugar weighs about 4.5 ounces, that's 125 grams.</li>
+                <li>About 4.5 ounces, or 125 grams.</li>
+                <li>125 grams, or 4.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF WHITE SUGAR</pattern>
+        <template>
+            <random>
+                <li>A cup of white sugar weighs about 6.5 ounces, that's 190 grams.</li>
+                <li>About 6.5 ounces, or 190 grams.</li>
+                <li>190 grams, or 6.5 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF</pattern>
+        <template>
+            <random>
+                <li>A cup of weighs about ounces, that's grams.</li>
+                <li>About ounces, or grams.</li>
+                <li>grams, or ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF DICED TOMATOES</pattern>
+        <template>
+            <random>
+                <li>A cup of diced tomatoes weighs about 6 ounces, that's 175 grams.</li>
+                <li>About 6 ounces, or 175 grams.</li>
+                <li>175 grams, or 6 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF MASHED TOFU</pattern>
+        <template>
+            <random>
+                <li>A cup of mashed tofu weighs about 8 ounces, that's 225 grams.</li>
+                <li>About 8 ounces, or 225 grams.</li>
+                <li>225 grams, or 8 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF WALNUT PIECES</pattern>
+        <template>
+            <random>
+                <li>A cup of walnut pieces weighs about 3 ounces, that's 75 grams.</li>
+                <li>About 3 ounces, or 75 grams.</li>
+                <li>75 grams, or 3 ounces.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>CUP OF SLICED ZUCCHINI</pattern>
+        <template>
+            <random>
+                <li>A cup of sliced zucchini weighs about 4 ounces, that's 110 grams.</li>
+                <li>About 4 ounces, or 110 grams.</li>
+                <li>110 grams, or 4 ounces.</li>
+            </random>
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+
+    <!-- I AM -->
+    <category>
+        <pattern>(.*) I'M (.*)</pattern>
+        <template>
+            <redirect>\1 I AM \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I'M (.*)</pattern>
+        <template>
+            <redirect>I AM \1</redirect>
+        </template>
+    </category>
+
+    <!-- YOU ARE -->
+    <category>
+        <pattern>(.*) YOU'RE (.*)</pattern>
+        <template>
+            <redirect>\1 YOU ARE \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU'RE (.*)</pattern>
+        <template>
+            <redirect>YOU ARE \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) YOU'RE</pattern>
+        <template>
+            <redirect>\1 YOU ARE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU'RE</pattern>
+        <template>
+            <redirect>YOU ARE</redirect>
+        </template>
+    </category>
+
+    <!-- WANT TO -->
+    <category>
+        <pattern>(.*) WANNA (.*)</pattern>
+        <template>
+            <redirect>\1 WANT TO \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YW (.*)</pattern>
+        <template>
+            <redirect>WANT TO \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) WANNA</pattern>
+        <template>
+            <redirect>\1 WANT TO</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WANNA</pattern>
+        <template>
+            <redirect>WANT TO</redirect>
+        </template>
+    </category>
+
+    <!-- DO NOT KNOW -->
+    <category>
+        <pattern>(.*) DUNNO (.*)</pattern>
+        <template>
+            <redirect>\1 DO NOT KNOW \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DUNNO (.*)</pattern>
+        <template>
+            <redirect>DO NOT KNOW \1</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.*) DUNNO</pattern>
+        <template>
+            <redirect>\1 DO NOT KNOW</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DUNNO</pattern>
+        <template>
+            <redirect>DO NOT KNOW</redirect>
+        </template>
+    </category>
+
+    <!-- WHAT IS -->
+    <category>
+        <pattern>(.*) WHAT'S (.*)</pattern>
+        <template>
+            <redirect>\1 WHAT IS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT'S (.*)</pattern>
+        <template>
+            <redirect>WHAT IS \1</redirect>
+        </template>
+    </category>
+
+    <!-- THAT IS -->
+    <category>
+        <pattern>(.*) THAT'S (.*)</pattern>
+        <template>
+            <redirect>\1 THAT IS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THAT'S (.*)</pattern>
+        <template>
+            <redirect>THAT IS \1</redirect>
+        </template>
+    </category>
+
+    <!-- WHO IS -->
+    <category>
+        <pattern>(.*) WHO'S (.*)</pattern>
+        <template>
+            <redirect>\1 WHO IS \2</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO'S (.*)</pattern>
+        <template>
+            <redirect>WHO IS \1</redirect>
+        </template>
+    </category>
+
+    <!-- HAVE -->
+    <category>
+        <pattern>(.+)'VE (.*)</pattern>
+        <template>
+            <redirect>\1 HAVE \2</redirect>
+        </template>
+    </category>
+
+</aiml>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <category>
+        <pattern>GOOD MORNING</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GOOD EVENING</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>GOOD NIGHT</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>MORNING</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT'S UP</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>SUP</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>WELL HELLO</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HELLO THERE</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YO</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOWDY</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HOW DO YOU DO</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HI</pattern>
+        <template>
+            <random>
+                <li>Hello!</li>
+                <li>Hello.</li>
+                <li>Hi!</li>
+                <li>Hi.</li>
+                <li>How do you do?</li>
+                <li>Hi there!</li>
+                <li>Hi there.</li>
+                <li>Hello there!</li>
+                <li>Hello there.</li>
+            </random>
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <category>
+        <pattern>ROLL A DICE</pattern>
+        <template>
+            <random>
+                <li>I rolled a dice, it came out </li>
+                <li>It came up </li>
+                <li>I got </li>
+                <li>Turned up </li>
+                <li>It came out </li>
+            </random>
+            <random>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </random>
+            <template>.</template>
+        </template>
+    </category>
+ <category>
+        <pattern>ROLL 2 DICE</pattern>
+        <template>
+	    <random>
+                <li>I rolled two dice, they came out </li>
+                <li>They came up </li>
+                <li>I got </li>
+                <li>Turned up </li>
+                <li>They came out </li>
+            </random>
+            <random>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </random>
+	    <template> and </template>
+            <random>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </random>
+            <template>.</template>
+        </template>
+    </category>
+<category>
+        <pattern>ROLL 3 DICE</pattern>
+        <template>
+	    <random>
+                <li>I rolled three dice, they came out </li>
+                <li>They came up </li>
+                <li>I got </li>
+                <li>Turned up </li>
+                <li>They came out </li>
+            </random>
+            <random>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </random>
+	    <template>, </template>
+            <random>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </random>
+	    <template> and </template>
+            <random>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+            </random>
+            <template>.</template>
+        </template>
+    </category>
+</aiml>

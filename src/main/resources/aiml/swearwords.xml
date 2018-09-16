@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <category>
+        <pattern>(.* )?ARSE( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?ARSEHOLE( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?ASSHOLE( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?ASSLICKER( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?ASSMUNCHER( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?ASSPIRATE( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?BASTARD( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?BEANER( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?BITCH( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?BUGGER( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?BINT( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?BOLLOCKS( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?BULLSHIT( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?COCK( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?COCKSUCKER( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?CHINK( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?CHINC( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?COCKMONGLER( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?COCKMASTER( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?COCKMONKEY( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?COCKSUCKER( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?COON( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?CUMDUMP( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?CUMDUMPSTER( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?CUNT( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?CUNTFACE( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?DAGO( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?DEGO( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?DICKHEAD( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?DIKE( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?DIPSHIT( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?DOUCHEBAG( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?DUMBASS( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?DUMBFUCK( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?DYKE( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?FECK( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?FUCK( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?FUCKER( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?FUCKING( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?HOMO( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?HO( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?HOE( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?HONKEY( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?JACKASS( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?JAP( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?JERKOFF( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?JERKASS( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?JIGABOO( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?JIZZ( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?JUNGLEBUNNY( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?JUNGLE BUNNY( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?KIKE( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?KRAUT( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?KUNT( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?KYKE( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?LAMEASS( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?LESBO( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?LARDASS( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?NIGGER( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?NIGGERS( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?NIGLET( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?NIGGA( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?NIGGABOO( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?QUEEF( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?QUEERBAIT( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?QUEERHOLE( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?SHIT( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?TWAT( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?TITS( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?UNCLEFUCKER( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?WANKJOB( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?WETBACK( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?WHORE( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?WHOREFACE( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?WHOREBAG( .*)?</pattern>
+        <template>
+            <redirect>WANKER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>(.* )?WANKER( .*)?</pattern>
+        <template>
+            <random>
+                <li>Please don't use such language.</li>
+                <li>I would prefer if you didn't use that kind of language.</li>
+                <li>I would prefer if you didn't use that word.</li>
+                <li>Please don't use that word.</li>
+                <li>Please refrain from using such language.</li>
+                <li>Please refrain from using that word.</li>
+            </random>
+        </template>
+    </category>
+</aiml>

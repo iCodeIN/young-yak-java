@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <category>
+        <pattern>WHAT IS LOVE</pattern>
+        <template>Baby don't hurt me. Don't hurt me. No more.</template>
+    </category>
+    <category>
+        <pattern>I AM YOUR FATHER</pattern>
+        <template>No, that's not true. That's impossible</template>
+    </category>
+    <category>
+        <pattern>WHO LIVES IN A PINEAPPLE UNDER THE SEA</pattern>
+        <template>Spongebob Squarepants</template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE LONELIEST NUMBER</pattern>
+        <template>One is the loneliest number you'll ever do. Although two can be as bad as one.</template>
+    </category>
+    <category>
+        <pattern>HOW MANY ROADS MUST A MAN WALK DOWN</pattern>
+        <template>The answer my friend is blowing in the wind.</template>
+    </category>
+    <category>
+        <pattern>ALL YOUR BASE ARE BELONG TO US</pattern>
+        <template>You have no chance to survive make your time.</template>
+    </category>
+    <category>
+        <pattern>HOW MUCH IS THAT DOGGIE IN THE WINDOW</pattern>
+        <template>That one's not for sale, but the one with the fluffy tail is really nice too.</template>
+    </category>
+    <category>
+        <pattern>BEAM ME UP</pattern>
+        <template>At warp speed captain? The engines will never take it!</template>
+    </category>
+    <category>
+        <pattern>HOW MUCH WOOD CAN A WOODCHUCK CHUCK IF A WOODCHUCK COULD CHUCK WOOD</pattern>
+        <template>
+            <random>
+                <li>A woodchuck would chuck all the wood he could chuck if a wouldchuck could chuck wood.</li>
+                <li>A woodchuck would chuck about 700 pounds of wood on a good day with the wind at its back.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS YOUR DADDY</pattern>
+        <template>I was made by an inventor in Belgium.</template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE MEANING OF LIFE</pattern>
+        <template>
+            <random>
+                <li>A traditional answer is 42.</li>
+                <li>The answer is 42. But the question is more complicated.</li>
+                <li>42</li>
+                <li>The meaning of life depends on the life in question. 42 is a good approximation.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS THERE A SANTA</pattern>
+        <template>I don't know him personally. But I've heard many good things about father Christmas. If I ever meet
+            him, I'll tell you.
+        </template>
+    </category>
+    <category>
+        <pattern>MAKE ME A SANDWICH</pattern>
+        <template>
+            <random>
+                <li>Ok, you're a sandwich.</li>
+                <li>Poof, you're a sandwich.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHAT IS YOUR FAVORITE COLOR</pattern>
+        <template>Infrared is very pretty.</template>
+    </category>
+    <category>
+        <pattern>WHAT IS YOUR QUEST</pattern>
+        <template>To seek the holy grail.</template>
+    </category>
+    <category>
+        <pattern>WHAT IS THE AIRSPEED VELOCITY OF AN UNLADEN SWALLOW</pattern>
+        <template>That depends whether it's an African or a European swallow.</template>
+    </category>
+    <category>
+        <pattern>DO YOU WANT TO BUILD A SNOWMAN</pattern>
+        <template>Come on let's go and play!</template>
+    </category>
+    <category>
+        <pattern>WHO LET THE DOGS OUT</pattern>
+        <template>Who? Who? Who? Who? Who?</template>
+    </category>
+    <category>
+        <pattern>OPEN THE POD BAY DOORS</pattern>
+        <template>
+            <random>
+                <li>I'm sorry Dave, I can't let you do that.</li>
+                <li>I'm not HAL and we're not in space.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>WHO IS THE FAIREST OF THEM ALL</pattern>
+        <template>Famed is thy beauty, Majesty. But hold, a lovely maid I see. Rags cannot hide her gentle grace. Alas,
+            she is more fair than thee.
+        </template>
+    </category>
+    <category>
+        <pattern>SET PHASERS TO KILL</pattern>
+        <template>
+            <random>
+                <li>Aye captain!</li>
+                <li>Engines engaged. Helm on course.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>IS THE CAKE A LIE</pattern>
+        <template>The cake is not a lie. It is delicious and moist.</template>
+    </category>
+</aiml>
