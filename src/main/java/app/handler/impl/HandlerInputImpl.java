@@ -2,6 +2,10 @@ package app.handler.impl;
 
 import app.handler.IHandlerInput;
 
+/**
+ * This class represents  an input to the system.
+ * It keeps track of the user input and the user ID
+ */
 public class HandlerInputImpl implements IHandlerInput {
 
     private String txt;

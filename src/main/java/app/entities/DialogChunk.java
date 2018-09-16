@@ -3,7 +3,7 @@ package app.entities;
 import javax.persistence.*;
 
 /**
- * Entity used for logging
+ * Entity used for logging <br>
  * Logging enables ISkill implementations to correct spelling mistakes
  */
 @Entity
@@ -27,6 +27,13 @@ public class DialogChunk {
 
     public DialogChunk(){}
 
+    /**
+     * Constructor
+     * @param input the user input
+     * @param output the user output
+     * @param userID the user ID
+     * @param timestamp the time at which the input was given to the system
+     */
     public DialogChunk(String input, String output, String userID, long timestamp){
         this.input = input;
         this.output = output;
@@ -34,12 +41,28 @@ public class DialogChunk {
         this.timestamp = timestamp;
     }
 
+    /**
+     * Get the input of this DialogChunk
+     * @return the input of this DialogChunk
+     */
     public String getInput(){ return input; }
 
+    /**
+     * Get the output of this DialogChunk
+     * @return the output of this DialogChunk
+     */
     public String getOutput(){ return output; }
 
+    /**
+     * Get the user ID of this DialogChunk
+     * @return the user ID of this DialogChunk
+     */
     public String getUserID(){ return userID; }
 
+    /**
+     * Get the timestamp of this DialogChunk
+     * @return the timestamp of this DialogChunk
+     */
     public long getTimestamp(){ return timestamp; }
 
 }

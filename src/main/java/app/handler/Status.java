@@ -1,5 +1,9 @@
 package app.handler;
 
+/**
+ * This enum represents the status of an IHandlerResponse.<br>
+ * The status codes are based on the HTTP status codes.
+ */
 public enum Status {
 
     STATUS_200_OK,
