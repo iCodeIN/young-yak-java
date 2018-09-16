@@ -3,7 +3,7 @@ package app.handler.impl;
 import app.handler.IHandlerInput;
 
 /**
- * This class represents  an input to the system.
+ * This class represents  an input to the system.<br>
  * It keeps track of the user input and the user ID
  */
 public class HandlerInputImpl implements IHandlerInput {

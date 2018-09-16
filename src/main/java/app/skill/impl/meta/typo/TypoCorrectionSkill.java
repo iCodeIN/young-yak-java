@@ -7,6 +7,11 @@ import app.handler.Status;
 import app.skill.ISkill;
 import app.web.BotController;
 
+/**
+ * This ISkill uses the DialogChunkRepository to correct spelling mistakes.<br>
+ * Whenever is sees an IHandlerInput that is close to a past successfully matched IHandlerInput<br>
+ * it redirects the new IHandlerInput to the past IHandlerInput.
+ */
 public class TypoCorrectionSkill implements ISkill {
 
     private final BotController botController;

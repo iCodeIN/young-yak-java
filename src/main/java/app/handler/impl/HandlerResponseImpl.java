@@ -4,7 +4,7 @@ import app.handler.IHandlerResponse;
 import app.handler.Status;
 
 /**
- * This class represents  an output to the system.
+ * This class represents  an output to the system.<br>
  * It keeps track of the user input and the user ID
  */
 public class HandlerResponseImpl implements IHandlerResponse {

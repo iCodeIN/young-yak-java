@@ -1,17 +1,16 @@
 package app.skill.impl.meta.stats;
 
-import app.bot.DefaultBotImpl;
-import app.bot.IBot;
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.impl.HandlerResponseImpl;
-import app.skill.ISkill;
 import app.skill.impl.regex.RegexSkill;
 import app.web.BotController;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.regex.Pattern;
 
+/**
+ * This ISkill deals with diagnostic inquiries about the number of logs being stored.
+ */
 public class LogSizeSkill extends RegexSkill {
 
     private static Pattern[] PATTERNS = {

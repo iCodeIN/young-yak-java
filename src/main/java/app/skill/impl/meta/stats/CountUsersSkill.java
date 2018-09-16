@@ -11,6 +11,9 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.regex.Pattern;
 
+/**
+ * This ISkill deals with diagnostic inquiries about the number of users.
+ */
 public class CountUsersSkill extends RegexSkill {
 
     private static Pattern[] PATTERNS = {

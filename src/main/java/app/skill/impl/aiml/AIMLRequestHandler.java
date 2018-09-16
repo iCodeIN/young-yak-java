@@ -20,14 +20,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
-/**
- * This IRequestHandler deals with AIML.<br>
- * AIML, or Artificial Intelligence Markup Language, is an XML dialect for creating natural language software agents.<br>
- * The XML dialect called AIML was developed by Richard Wallace and a worldwide free software community between 1995 and 2002. <br>
- * AIML formed the basis for what was initially a highly extended Eliza called "A.L.I.C.E.." ("Artificial Linguistic Internet Computer Entity"), <br>
- * which won the annual Loebner Prize Competition in Artificial Intelligence three times, and was also the Chatterbox Challenge Champion in 2004.
- */
-public class AIMLRequestHandler implements IRequestHandler {
+class AIMLRequestHandler implements IRequestHandler {
 
     private static Random RANDOM = new Random(System.currentTimeMillis());
     private final IBot bot;

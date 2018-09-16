@@ -10,6 +10,9 @@ import app.web.BotController;
 import java.util.Random;
 import java.util.regex.Pattern;
 
+/**
+ * This ISkill deals with diagnostic inquiries about the number of logs being stored pertaining to the current user.
+ */
 public class PersonalLogSizeSkill extends RegexSkill {
 
     private static Pattern[] PATTERNS = {

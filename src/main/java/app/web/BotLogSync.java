@@ -17,6 +17,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/**
+ * This class regularly syncs the current logs to file and vice versa.<br>
+ * This mechanism ensures minimal traffic.
+ */
 @Component
 public class BotLogSync {
 

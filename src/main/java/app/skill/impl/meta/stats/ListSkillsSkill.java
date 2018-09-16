@@ -11,6 +11,9 @@ import app.web.BotController;
 
 import java.util.regex.Pattern;
 
+/**
+ * This ISkill deals with diagnostic inquiries about the number of skills.
+ */
 public class ListSkillsSkill extends RegexSkill {
 
     private static Pattern[] PATTERNS = {

@@ -11,7 +11,7 @@ import java.util.Optional;
 import java.util.Random;
 import java.util.regex.Pattern;
 
-public class RegexRequestHandler implements IRequestHandler {
+class RegexRequestHandler implements IRequestHandler {
 
     private static Random RANDOM = new Random(System.currentTimeMillis());
     private List<Pattern> patternList = new ArrayList<>();

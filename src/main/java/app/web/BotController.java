@@ -25,6 +25,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Optional;
 
+/**
+ * REST controller that provides the main API for interacting with the chatbot.
+ */
 @RestController
 public class BotController {
 

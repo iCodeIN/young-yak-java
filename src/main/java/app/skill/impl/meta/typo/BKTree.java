@@ -3,7 +3,6 @@ package app.skill.impl.meta.typo;
 import java.util.*;
 
 /**
- * Created by joris on 9/24/17.
  * This class implements a generic BK tree datastructure
  */
 public class BKTree<T> {

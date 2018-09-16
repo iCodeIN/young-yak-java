@@ -10,7 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * This IRequestHandler matches a collection of regular expressions, extracts an attribute
+ * This ISkill matches a collection of regular expressions, extracts an attribute
  * and then calls the abstract function lookup with the first matched group
  */
 public abstract class AbstractLookupSkill extends RegexSkill {

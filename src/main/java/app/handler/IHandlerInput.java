@@ -1,7 +1,7 @@
 package app.handler;
 
 /**
- * This interface represents  an input to the system.
+ * This interface represents  an input to the system.<br>
  * It keeps track of the user input and the user ID
  */
 public interface IHandlerInput {
