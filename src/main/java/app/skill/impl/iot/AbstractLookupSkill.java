@@ -9,6 +9,10 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**
+ * This IRequestHandler matches a collection of regular expressions, extracts an attribute
+ * and then calls the abstract function lookup with the first matched group
+ */
 public abstract class AbstractLookupSkill extends RegexSkill {
 
     private Pattern[] PATTERNS;
@@ -41,6 +45,14 @@ public abstract class AbstractLookupSkill extends RegexSkill {
         }
     }
 
+    /**
+     * This method is called to generate the output.
+     * The text returned in this method is wrapped in a HandlerResponseImpl object before being returned.
+     * @param q the first group captured in the regular expression that was matched
+     * @return
+     * @throws IOException
+     * @throws Exception
+     */
     public abstract String lookup(String q) throws IOException, Exception;
 
 }

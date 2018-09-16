@@ -11,6 +11,16 @@ import java.io.InputStreamReader;
 import java.net.URLEncoder;
 import java.util.regex.Pattern;
 
+/**
+ * This ISkill redirects incoming input to the duck duck go search engine.<br>
+ *  Questions must match:<br>
+ *  <ul>
+ *      <li>WHO IS [A-Z]+</li>
+ *      <li>WHO WAS [A-Z]+</li>
+ *      <li>WHAT IS [A-Z]+</li>
+ *      <li>WHAT WAS [A-Z]+</li>
+ *  </ul>
+ */
 public class DuckDuckGoSkill extends AbstractLookupSkill {
 
     private static String USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36";

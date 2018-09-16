@@ -14,6 +14,9 @@ import java.net.URLEncoder;
 import java.util.*;
 import java.util.regex.Pattern;
 
+/**
+ * This ISkill deals with picture/image inquiries.
+ */
 public class UnsplashSkill extends AbstractLookupSkill {
 
     private static Random RANDOM = new Random(System.currentTimeMillis());

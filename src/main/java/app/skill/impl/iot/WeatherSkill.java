@@ -12,6 +12,9 @@ import java.io.InputStreamReader;
 import java.net.URLEncoder;
 import java.util.regex.Pattern;
 
+/**
+ * This ISkill deals with weather inquiries.
+ */
 public class WeatherSkill extends AbstractLookupSkill {
 
     private String API_KEY = "fa9cb4a1bbe7769a5acd1e6a1ee00f27";

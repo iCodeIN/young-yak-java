@@ -8,6 +8,9 @@ import app.skill.impl.regex.RegexSkill;
 import java.util.Date;
 import java.util.regex.Pattern;
 
+/**
+ * This IRequestHandler deals with  request for the current day of the week.
+ */
 public class DaySkill extends RegexSkill {
 
     private String[] daysOfTheWeek = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};

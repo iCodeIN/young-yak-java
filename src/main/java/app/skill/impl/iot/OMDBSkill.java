@@ -11,6 +11,9 @@ import java.io.InputStreamReader;
 import java.net.URLEncoder;
 import java.util.regex.Pattern;
 
+/**
+ * This ISkill deals with movie inquiries.
+ */
 public class OMDBSkill extends AbstractLookupSkill {
 
     private static String API_KEY = "caee14d8ab9e074ae59f4e85e83662fa";

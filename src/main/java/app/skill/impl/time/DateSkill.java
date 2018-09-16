@@ -9,6 +9,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.regex.Pattern;
 
+/**
+ * This IRequestHandler deals with  request for the current date.
+ */
 public class DateSkill extends RegexSkill {
 
     private SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
