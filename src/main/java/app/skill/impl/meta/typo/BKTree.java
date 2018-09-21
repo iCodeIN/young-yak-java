@@ -109,6 +109,10 @@ public class BKTree<T> {
         }
     }
 
+    public void clear(){
+        root = null;
+    }
+
     /**
      * define metric for object of type T
      *
@@ -211,5 +215,6 @@ public class BKTree<T> {
             s++; // add self
             return s;
         }
+
     }
 }

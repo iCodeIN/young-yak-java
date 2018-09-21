@@ -1,0 +1,82 @@
+<root>
+    <e>
+        <q>What is the difference between iText, JasperReports and Adobe LC?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-what-difference-between-itext-jasperreports-and-adobe-lc</a>
+    </e>
+    <e>
+        <q>Where is the origin (x,y) of a PDF page?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-where-origin-xy-pdf-page</a>
+    </e>
+    <e>
+        <q>How to get the page number of an arbitrary PDF object?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-how-get-page-number-arbitrary-pdf-object</a>
+    </e>
+    <e>
+        <q>How should I interpret the coordinates of a rectangle in PDF?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-how-should-i-interpret-coordinates-rectangle-pdf</a>
+    </e>
+    <e>
+        <q>How to allow page extraction when setting password security?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-how-allow-page-extraction-when-setting-password-security</a>
+    </e>
+    <e>
+        <q>How to encrypt PDF using a certificate?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-how-encrypt-pdf-using-certificate</a>
+    </e>
+    <e>
+        <q>Why are PDF files different even if the content is the same?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-why-are-pdf-files-different-even-if-content-same</a>
+    </e>
+    <e>
+        <q>How to disable the save button and hide the menu bar in Adobe Reader?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-how-disable-save-button-and-hide-menu-bar-adobe-reader</a>
+    </e>
+    <e>
+        <q>Does a PDF file have styles, headers and footers?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-does-pdf-file-have-styles-headers-and-footers</a>
+    </e>
+    <e>
+        <q>How to extract a page number from a PDF file?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-how-extract-page-number-pdf-file</a>
+    </e>
+    <e>
+        <q>How to close a PDF file to recreate it? (File in use problem)</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-how-close-pdf-file-recreate-it-file-use-problem</a>
+    </e>
+    <e>
+        <q>What is the size limit of pdf file?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-what-size-limit-pdf-file</a>
+    </e>
+    <e>
+        <q>How to hide the Adobe floating toolbar when showing a PDF in browser?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-how-hide-adobe-floating-toolbar-when-showing-pdf-browser</a>
+    </e>
+    <e>
+        <q>Can I change the page count by changing internal metadata?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-can-i-change-page-count-changing-internal-metadata</a>
+    </e>
+    <e>
+        <q>How do I rotate a PDF page to an arbitrary angle?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-how-do-i-rotate-pdf-page-arbitrary-angle</a>
+    </e>
+    <e>
+        <q>How to protect an already existing PDF with a password?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-how-protect-already-existing-pdf-password</a>
+    </e>
+    <e>
+        <q>How to protect a PDF with a username and password?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-how-protect-pdf-username-and-password</a>
+    </e>
+    <e>
+        <q>Why do PDFs change when processing them?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-why-do-pdfs-change-when-processing-them</a>
+    </e>
+    <e>
+        <q>What is the connection between LTV and document timestamps?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-what-connection-between-ltv-and-document-timestamps</a>
+    </e>
+    <e>
+        <q>What does "Not LTV-enabled" mean?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-what-does-not-ltv-enabled-mean</a>
+    </e>
+</root>

@@ -35,6 +35,12 @@ class AIMLRequestHandler implements IRequestHandler {
         }
     }
 
+    /**
+     * Reads the given inputstream and parses the XML as AIML
+     * @param is the inputstream representing the AIML document
+     * @throws JDOMException
+     * @throws IOException
+     */
     private void readAIML(InputStream is) throws JDOMException, IOException {
         Element root = new SAXBuilder().build(is).getRootElement();
         for (Element categoryElement : root.getChildren()) {
@@ -51,6 +57,12 @@ class AIMLRequestHandler implements IRequestHandler {
         return false;
     }
 
+    /**
+     * Checks whether a given XML Element can process the given IHandlerInput
+     * @param input the IHandlerInput
+     * @param element the XML Element
+     * @return true if the XML Element represents an AIML pattern that matches the IHandlerInput
+     */
     private boolean canHandle(IHandlerInput input, Element element) {
         String txt = input.getContent().toString();
 
@@ -75,6 +87,12 @@ class AIMLRequestHandler implements IRequestHandler {
         return true;
     }
 
+    /**
+     * This function fetches the first Element of an XML Element with given name
+     * @param e parent Element
+     * @param name name of the child Element to fetch
+     * @return
+     */
     private Element child(Element e, String name) {
         for (Element c : e.getChildren())
             if (c.getName().equals(name))

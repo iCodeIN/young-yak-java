@@ -14,6 +14,7 @@ import app.skill.impl.meta.stats.ListSkillsSkill;
 import app.skill.impl.meta.stats.LogSizeSkill;
 import app.skill.impl.meta.stats.PersonalLogSizeSkill;
 import app.skill.impl.meta.typo.TypoCorrectionSkill;
+import app.skill.impl.meta.word2vec.FAQSkill;
 import app.skill.impl.time.DateSkill;
 import app.skill.impl.time.DaySkill;
 import app.skill.impl.time.TimeSkill;
@@ -62,7 +63,8 @@ public class BotController {
                 .addSkill(new DuckDuckGoSkill())
 
                 // input mods
-                .addSkill(new TypoCorrectionSkill(this));
+                .addSkill(new TypoCorrectionSkill(this))
+                .addSkill(new FAQSkill(this.getClass().getClassLoader().getResourceAsStream("faq/faq.xml")));
     }
 
     public IBot getBot(){
