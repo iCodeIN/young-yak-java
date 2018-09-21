@@ -70,7 +70,7 @@ public class SemanticStringMap<T> implements Map<String, T> {
     }
 
     public boolean containsKey(Object o, int maxDistance) {
-        return get(o, maxDistance) != null;
+        return !get(o, maxDistance).isEmpty();
     }
 
     @Override
