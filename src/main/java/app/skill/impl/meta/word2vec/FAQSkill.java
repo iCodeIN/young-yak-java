@@ -28,6 +28,8 @@ public class FAQSkill implements ISkill {
 
     // prefix
     private static String[] PREFIX = {  "I found some links for you.",
+                                        "Maybe this is helpful;",
+                                        "I hope this helps;",
                                         "I think I may have found something for you.",
                                         "These seem useful;"};
     private static Random RANDOM = new Random(System.currentTimeMillis());
@@ -79,7 +81,7 @@ public class FAQSkill implements ISkill {
 
         LabelsSource source = new LabelsSource("SENTENCE_");
 
-        // we load externally originated model
+        // create the model
         ParagraphVectors out = new ParagraphVectors.Builder()
                 .minWordFrequency(1)
                 .iterations(100)

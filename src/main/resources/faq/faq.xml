@@ -1,4 +1,5 @@
 <root>
+    <!-- Questions about PDF in general (iText 7) -->
     <e>
         <q>What is the difference between iText, JasperReports and Adobe LC?</q>
         <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-what-difference-between-itext-jasperreports-and-adobe-lc</a>
@@ -78,5 +79,26 @@
     <e>
         <q>What does "Not LTV-enabled" mean?</q>
         <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/questions-about-pdf-general/itext7-what-does-not-ltv-enabled-mean</a>
+    </e>
+    <!-- Content parsing, extraction and redaction of text (iText 7) -->
+    <e>
+        <q>How to extract text and anchor information from a PDF?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/content-parsing-extraction-and-redaction-text/itext7-how-extract-text-and-anchor-information-pdf</a>
+    </e>
+    <e>
+        <q>Why is the text I extract from an English PDF page garbled?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/content-parsing-extraction-and-redaction-text/itext7-why-text-i-extract-english-pdf-page-garbled</a>
+    </e>
+    <e>
+        <q>Why can't I extract text added using a Type3 font correctly from a PDF?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/content-parsing-extraction-and-redaction-text/itext7-why-cant-i-extract-text-added-using-type3-font-correctly-pdf</a>
+    </e>
+    <e>
+        <q>How to use a text extraction strategy after applying a location extraction strategy?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/content-parsing-extraction-and-redaction-text/itext7-how-use-text-extraction-strategy-after-applying-location-extraction-strategy</a>
+    </e>
+    <e>
+        <q>How to remove text from a PDF?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/content-parsing-extraction-and-redaction-text/itext7-how-remove-text-pdf</a>
     </e>
 </root>

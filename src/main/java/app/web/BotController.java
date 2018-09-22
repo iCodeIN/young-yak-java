@@ -15,6 +15,7 @@ import app.skill.impl.meta.stats.LogSizeSkill;
 import app.skill.impl.meta.stats.PersonalLogSizeSkill;
 import app.skill.impl.meta.typo.TypoCorrectionSkill;
 import app.skill.impl.meta.word2vec.FAQSkill;
+import app.skill.impl.meta.word2vec.SemanticMatchSkill;
 import app.skill.impl.time.DateSkill;
 import app.skill.impl.time.DaySkill;
 import app.skill.impl.time.TimeSkill;
@@ -64,6 +65,7 @@ public class BotController {
 
                 // input mods
                 .addSkill(new TypoCorrectionSkill(this))
+                .addSkill(new SemanticMatchSkill(this))
                 .addSkill(new FAQSkill(this.getClass().getClassLoader().getResourceAsStream("faq/faq.xml")));
     }
 
