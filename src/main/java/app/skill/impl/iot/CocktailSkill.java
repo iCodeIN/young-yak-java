@@ -38,7 +38,7 @@ public class CocktailSkill extends AbstractLookupSkill {
     }
 
     @Override
-    public String lookup(String q) throws IOException, Exception {
+    public String lookup(String q) throws Exception {
         CloseableHttpClient client = HttpClientBuilder.create().build();
         HttpGet request = new HttpGet("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" + URLEncoder.encode(q));
 

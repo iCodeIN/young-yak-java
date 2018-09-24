@@ -36,7 +36,7 @@ public class WeatherSkill extends AbstractLookupSkill {
     }
 
     @Override
-    public String lookup(String q) throws IOException, Exception {
+    public String lookup(String q) throws Exception {
         String url = "http://api.openweathermap.org/data/2.5/weather?q=" + URLEncoder.encode(q) + "&appid=" + API_KEY + "&mode=json";
 
         CloseableHttpClient client = HttpClientBuilder.create().build();

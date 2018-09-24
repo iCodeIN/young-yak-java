@@ -87,7 +87,7 @@ public class BotLogSync {
         }
         lastLogCount = tmp.size();
 
-        fileWriter.write(new JSONArray(tmp).toString(3).toString());
+        fileWriter.write(new JSONArray(tmp).toString(3));
         fileWriter.close();
     }
 

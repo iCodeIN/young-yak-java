@@ -39,7 +39,7 @@ public class NewYorkTimesSkill extends AbstractLookupSkill {
     }
 
     @Override
-    public String lookup(String q) throws IOException, Exception {
+    public String lookup(String q) throws Exception {
         String url = "http://rss.nytimes.com/services/xml/rss/nyt/World.xml";
 
         CloseableHttpClient client = HttpClientBuilder.create().build();

@@ -35,54 +35,44 @@ public class FAQSkill implements ISkill {
     private static Random RANDOM = new Random(System.currentTimeMillis());
 
     // NLP
+    private boolean isBuildingModel = false;
     private ParagraphVectors paragraphVectorModel;
     private SemanticStringMap<String> frequentlyAskedQuestions;
 
-    public FAQSkill(String[][] faqTuples){
-        // build paragraph vector model
-        String[] sentences = new String[faqTuples.length];
-        for(int i=0;i<faqTuples.length;i++)
-            sentences[i] = faqTuples[i][0];
-        this.paragraphVectorModel = rebuildModel(sentences);
-
-        // build semantic map
-        this.frequentlyAskedQuestions = new SemanticStringMap<>(paragraphVectorModel);
-        for(String[] faq : faqTuples){
-            this.frequentlyAskedQuestions.put(faq[0], faq[1]);
-        }
-    }
+    // data
+    private String[] qs;
+    private String[] as;
 
     public FAQSkill(InputStream xmlDocument){
         try {
             Element root = new SAXBuilder().build(xmlDocument).getRootElement();
             List<Element> children = root.getChildren();
             int N = children.size();
-            String[] qs = new String[N];
-            String[] as = new String[N];
+            qs = new String[N];
+            as = new String[N];
             for(int i=0;i<children.size();i++){
                 qs[i] = children.get(i).getChildText("q");
                 as[i] = children.get(i).getChildText("a");
             }
-            paragraphVectorModel = rebuildModel(qs);
-            this.frequentlyAskedQuestions = new SemanticStringMap<>(paragraphVectorModel);
-            for(int i=0;i<qs.length;i++){
-                this.frequentlyAskedQuestions.put(qs[i], as[i]);
-            }
         } catch (JDOMException | IOException e) { }
     }
 
-    private ParagraphVectors rebuildModel(String[] sentences){
+    private void _buildModel(){
+        if(isBuildingModel)
+            return;
+        isBuildingModel = true;
+
         TokenizerFactory t = new DefaultTokenizerFactory();
         t.setTokenPreProcessor(new CommonPreprocessor());
 
-        SentenceIterator iter = new CollectionSentenceIterator(Arrays.asList(sentences));
+        SentenceIterator iter = new CollectionSentenceIterator(Arrays.asList(qs));
 
         AbstractCache<VocabWord> cache = new AbstractCache<>();
 
         LabelsSource source = new LabelsSource("SENTENCE_");
 
         // create the model
-        ParagraphVectors out = new ParagraphVectors.Builder()
+        paragraphVectorModel = new ParagraphVectors.Builder()
                 .minWordFrequency(1)
                 .iterations(100)
                 .epochs(1)
@@ -97,14 +87,32 @@ public class FAQSkill implements ISkill {
                 .sampling(0)
                 .build();
 
-        out.fit();
+        paragraphVectorModel.fit();
 
-        // return
-        return out;
+        // build map
+        frequentlyAskedQuestions = new SemanticStringMap<>(paragraphVectorModel);
+        for(int i=0;i<qs.length;i++){
+            frequentlyAskedQuestions.put(qs[i], as[i]);
+        }
+
+        // release lock
+        isBuildingModel = false;
+    }
+
+    private void buildModel(){
+        new Thread(){
+            public void run(){
+                _buildModel();
+            }
+        }.start();
     }
 
     @Override
     public boolean canHandle(IHandlerInput input) {
+        if(frequentlyAskedQuestions == null) {
+            buildModel();
+            return false;
+        }
         return frequentlyAskedQuestions.containsKey(input.getContent().toString(), 10);
     }
 

@@ -101,4 +101,49 @@
         <q>How to remove text from a PDF?</q>
         <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/content-parsing-extraction-and-redaction-text/itext7-how-remove-text-pdf</a>
     </e>
+    <e>
+        <q>What are the extra characters in the font name of my PDF?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/content-parsing-extraction-and-redaction-text/itext7-what-are-extra-characters-font-name-my-pdf</a>
+    </e>
+    <!-- Manipulating existing PDFs (iText 7) -->
+    <e>
+        <q>How to add a cover page to an existing PDF document?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/manipulating-existing-pdfs/itext7-how-add-cover-page-existing-pdf-document</a>
+    </e>
+    <e>
+        <q>How to merge PDFs and add bookmarks?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/manipulating-existing-pdfs/itext7-how-merge-pdfs-and-add-bookmarks</a>
+    </e>
+    <e>
+        <q>How to add blank pages to an existing PDF in java?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/manipulating-existing-pdfs/itext7-how-add-blank-pages-existing-pdf-java</a>
+    </e>
+    <e>
+        <q>How to add blank pages while concatenating several PDFs using PdfSmartCopy</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/manipulating-existing-pdfs/itext7-how-add-blank-pages-while-concatenating-several-pdfs-using-pdfsmartcopy</a>
+    </e>
+    <e>
+        <q>How to convert PdfStamper to a byte array?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/manipulating-existing-pdfs/itext7-how-convert-pdfstamper-byte-array</a>
+    </e>
+    <e>
+        <q>How to load a PDF from a stream and add a file attachment?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/manipulating-existing-pdfs/itext7-how-load-pdf-stream-and-add-file-attachment</a>
+    </e>
+    <e>
+        <q>How to reorder pages in an existing PDF file?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/manipulating-existing-pdfs/itext7-how-reorder-pages-existing-pdf-file</a>
+    </e>
+    <e>
+        <q>How to reuse a page from one PDF document into another PDF document?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/manipulating-existing-pdfs/itext7-how-reuse-page-one-pdf-document-another-pdf-document</a>
+    </e>
+    <e>
+        <q>How can I crop the pages of an existing PDF document?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/manipulating-existing-pdfs/itext7-how-can-i-crop-pages-existing-pdf-document</a>
+    </e>
+    <e>
+        <q>Why does the function to concatenate / merge PDFs cause issues in some cases?</q>
+        <a>https://developers.itextpdf.com/content/best-itext-questions-stackoverview/manipulating-existing-pdfs/itext7-why-does-function-concatenate-merge-pdfs-cause-issues-some-cases</a>
+    </e>
 </root>

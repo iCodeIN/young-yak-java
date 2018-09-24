@@ -80,11 +80,7 @@ class AIMLRequestHandler implements IRequestHandler {
 
         // must output something
         Element templateElement = child(element, "template");
-        if (templateElement == null)
-            return false;
-
-        // default
-        return true;
+        return templateElement != null;
     }
 
     /**

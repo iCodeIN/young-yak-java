@@ -62,8 +62,8 @@ public class OMDBSkill extends AbstractLookupSkill {
         JSONObject object = new JSONObject(result.toString()).getJSONArray("results").getJSONObject(0);
 
         String plot = object.get("overview").toString();
-        String year = object.getString("release_date").toString();
-        String title = object.getString("original_title").toString();
+        String year = object.getString("release_date");
+        String title = object.getString("original_title");
 
         return "<table>" +
                 "   <tr>" +
