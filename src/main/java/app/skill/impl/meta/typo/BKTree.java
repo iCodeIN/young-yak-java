@@ -113,6 +113,20 @@ public class BKTree<T> {
         root = null;
     }
 
+    private void graph(){
+        graph(root, 0);
+    }
+
+    private void graph(Node n, int level){
+        String indent = "";
+        for(int i=0;i<level;i++)
+            indent += "   ";
+        System.out.println(indent + n.data.hashCode() + "");
+        for(Object c : n.children.values()){
+            graph((Node) c, level+1);
+        }
+    }
+
     /**
      * define metric for object of type T
      *

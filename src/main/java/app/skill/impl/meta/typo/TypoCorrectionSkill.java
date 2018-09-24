@@ -25,13 +25,15 @@ public class TypoCorrectionSkill implements ISkill {
         bkTree = new BKTree<DialogChunk>(new BKTree.Metric<DialogChunk>() {
             @Override
             public int distance(DialogChunk obj0, DialogChunk obj1) {
-                String s0 = obj0.getInput();
-                String s1 = obj1.getInput();
-                return java.lang.Math.min(Levenshtein.distance(s0, s1, false), 5);
+                String s0 = obj0.getInput().toUpperCase();
+                String s1 = obj1.getInput().toUpperCase();
+                return java.lang.Math.min(Levenshtein.distance(s0, s1, false), 10);
             }
         });
         for(DialogChunk dc : botController.getDialogChunkRepository().findAll()){
             if(dc.getOutput().isEmpty())
+                continue;
+            if(dc.getInput().isEmpty())
                 continue;
             bkTree.add(dc);
         }

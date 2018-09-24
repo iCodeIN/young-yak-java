@@ -24,8 +24,8 @@ public class SemanticStringMap<T> implements Map<String, T> {
         this.tree = new BKTree<>(new BKTree.Metric<SSMEntry>() {
             @Override
             public int distance(SSMEntry obj0, SSMEntry obj1) {
-                String k0 = obj0.key;
-                String k1 = obj1.key;
+                String k0 = obj0.key.toUpperCase();
+                String k1 = obj1.key.toUpperCase();
 
                 double[] d0 = null;
                 try{d0 = paragraphVectorModel.inferVector(k0).data().asDouble();} catch (Exception ex){}
@@ -51,7 +51,9 @@ public class SemanticStringMap<T> implements Map<String, T> {
                 d = (d + 1.0) / 2.0;
 
                 // to int [ 0 .. 100 ]
-                return (int) ((1.0 - d) * 100);
+                int d2 = (int) ((1.0 - d) * 100);
+                d2 = d2 - (d2 % 5);
+                return d2;
             }
         });
     }

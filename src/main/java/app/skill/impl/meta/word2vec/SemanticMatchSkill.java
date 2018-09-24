@@ -23,6 +23,7 @@ public class SemanticMatchSkill implements ISkill {
     private static Random RANDOM = new Random(System.currentTimeMillis());
     private BotController botController;
 
+    // model
     private boolean isBuildingModel = false;
     private SemanticStringMap<Set<String>> synonymMap;
 

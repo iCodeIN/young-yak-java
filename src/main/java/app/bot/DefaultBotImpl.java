@@ -48,11 +48,24 @@ public class DefaultBotImpl implements IBot {
 
     @Override
     public Optional<IHandlerResponse> respond(IHandlerInput input) {
+        /* Just to ensure we are not going to deep in the recursion
+         * we explictly count the number of StackTraceElements that match the current method
+         */
+        int d = 0;
+        for(StackTraceElement el : Thread.currentThread().getStackTrace()){
+            if(el.getClassName().equals(DefaultBotImpl.class.getName()) && el.getMethodName().equals("respond"))
+                d++;
+        }
+        // recursion
+        return respond(input, 16 - d);
+    }
+
+    public Optional<IHandlerResponse> respond(IHandlerInput input, int maxDepth){
 
         List<ResponseStackElement> tmp = new ArrayList<>();
         tmp.add(new ResponseStackElement(input.getContent().toString(), ""));
 
-        IHandlerResponse response = respond(tmp, input.getUserID(), 32);
+        IHandlerResponse response = respond(tmp, input.getUserID(), maxDepth);
 
         return response == null ? Optional.empty() : Optional.ofNullable(response);
     }
