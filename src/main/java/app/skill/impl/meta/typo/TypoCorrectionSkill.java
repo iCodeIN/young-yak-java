@@ -64,7 +64,6 @@ public class TypoCorrectionSkill implements ISkill {
             public Status getStatus() { return Status.STATUS_303_SEE_OTHER; }
             @Override
             public Object getContent() { return synonymText; }
-
             @Override
             public String[] getInvokedSkills() {
                 return new String[]{TypoCorrectionSkill.class.getName()};

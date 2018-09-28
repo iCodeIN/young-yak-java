@@ -144,7 +144,7 @@ class AIMLRequestHandler implements IRequestHandler {
                 invokedSkills.addAll(Arrays.asList(tmpC.getInvokedSkills()));
                 return tmpC.getContent().toString();
             }
-            return null;
+            return "";
         }
 
         // template
