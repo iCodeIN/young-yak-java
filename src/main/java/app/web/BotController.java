@@ -81,20 +81,25 @@ public class BotController {
     @RequestMapping("/respond")
     public BotReply respond(@RequestParam(value = "text", defaultValue = "") String text, @RequestParam(value = "userid", defaultValue = "") String userID) {
         Optional<IHandlerResponse> tmpA = bot.respond(new HandlerInputImpl(text, userID));
-        String tmpB = tmpA.isPresent() ? tmpA.get().getContent().toString() : "";
 
         // store
-        storeDialogChunk(text, tmpB, userID);
+        storeDialogChunk(text,
+                        tmpA.isPresent() ? tmpA.get().getContent().toString() : "",
+                        tmpA.isPresent() ? tmpA.get().getInvokedSkills() : new String[]{},
+                        userID);
 
         // return
-        return new BotReply(userID, tmpB);
+        return new BotReply(userID,
+                            tmpA.isPresent() ? tmpA.get().getContent().toString() : ""
+                            );
     }
 
-    private void storeDialogChunk(String in, String out, String user){
+    private void storeDialogChunk(String in, String out, String[] invokedSkills, String user){
         try {
             DialogChunk dialogChunk = new DialogChunk(
                     in.substring(0, java.lang.Math.min(in.length(), 2048)),
                     out.substring(0, java.lang.Math.min(out.length(), 2048)),
+                    invokedSkills,
                     user,
                     System.currentTimeMillis());
             dialogChunkRepository.save(dialogChunk);

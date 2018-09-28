@@ -36,6 +36,6 @@ public class ListSkillsSkill extends RegexSkill {
         for(ISkill s : ((DefaultBotImpl)botController.getBot()).getSkills())
             out += ("<li>" + s.getClass().getSimpleName() + "</li>");
         out += "</ul>";
-        return new HandlerResponseImpl(out);
+        return new HandlerResponseImpl(out, new String[]{this.getClass().getName()});
     }
 }

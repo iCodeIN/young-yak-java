@@ -19,4 +19,5 @@ public interface IHandlerResponse {
      */
     Object getContent();
 
+    String[] getInvokedSkills();
 }

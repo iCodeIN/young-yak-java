@@ -83,6 +83,7 @@ public class BotLogSync {
                     .put("input", dc.getInput())
                     .put("output", dc.getOutput())
                     .put("userid", dc.getUserID())
+                    .put("invokedSkills", dc.getInvokedSkills())
                     .put("timestamp", dc.getTimestamp()));
         }
         lastLogCount = tmp.size();
@@ -107,8 +108,18 @@ public class BotLogSync {
             JSONObject dialogChunk = object.getJSONObject(i);
             dialogChunkRepository.save(new DialogChunk(dialogChunk.getString("input"),
                     dialogChunk.getString("output"),
+                    dialogChunk.has("invokedSkills") ? convertJSONArrayToStringArray(dialogChunk.getJSONArray("invokedSkills")): new String[]{},
                     dialogChunk.has("userid") ? dialogChunk.getString("userid") : "",
                     dialogChunk.getLong("timestamp")));
         }
+    }
+
+    private String[] convertJSONArrayToStringArray(JSONArray arr){
+        int N = arr.length();
+        String[] out = new String[N];
+        for (int i=0;i<N;i++){
+            out[i] = arr.getString(i);
+        }
+        return out;
     }
 }

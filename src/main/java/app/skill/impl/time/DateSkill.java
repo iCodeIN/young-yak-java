@@ -3,6 +3,7 @@ package app.skill.impl.time;
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.Status;
+import app.handler.impl.HandlerResponseImpl;
 import app.skill.impl.regex.RegexSkill;
 
 import java.text.SimpleDateFormat;
@@ -28,17 +29,7 @@ public class DateSkill extends RegexSkill {
 
     @Override
     public IHandlerResponse invoke(IHandlerInput input) {
-        return new IHandlerResponse() {
-            @Override
-            public Status getStatus() {
-                return Status.STATUS_200_OK;
-            }
-
-            @Override
-            public Object getContent() {
-                return "Today is " + dateFormat.format(new Date()) + ".";
-            }
-        };
+        return new HandlerResponseImpl("Today is " + dateFormat.format(new Date()) + ".", new String[]{this.getClass().getName()});
     }
 
 }

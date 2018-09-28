@@ -49,6 +49,6 @@ public class LogSizeSkill extends RegexSkill {
     public IHandlerResponse invoke(IHandlerInput input) {
         String txt = super.invoke(input).getContent().toString();
         int N = (int) botController.getDialogChunkRepository().count();
-        return new HandlerResponseImpl(String.format(txt, N));
+        return new HandlerResponseImpl(String.format(txt, N), new String[]{this.getClass().getName()});
     }
 }

@@ -10,10 +10,12 @@ import app.handler.Status;
 public class HandlerResponseImpl implements IHandlerResponse {
 
     private String text;
+    private String[] invokedSkills;
     private Status status;
 
-    public HandlerResponseImpl(String text) {
+    public HandlerResponseImpl(String text, String[] invokedSkills) {
         this.text = text;
+        this.invokedSkills = invokedSkills;
         this.status = Status.STATUS_200_OK;
     }
 
@@ -25,5 +27,10 @@ public class HandlerResponseImpl implements IHandlerResponse {
     @Override
     public Object getContent() {
         return text;
+    }
+
+    @Override
+    public String[] getInvokedSkills() {
+        return invokedSkills;
     }
 }

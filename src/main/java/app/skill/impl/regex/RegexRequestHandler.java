@@ -46,6 +46,11 @@ class RegexRequestHandler implements IRequestHandler {
             public Object getContent() {
                 return reply;
             }
+
+            @Override
+            public String[] getInvokedSkills() {
+                return new String[]{RegexSkill.class.getName()};
+            }
         };
         return Optional.ofNullable(response);
     }

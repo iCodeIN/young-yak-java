@@ -4,12 +4,10 @@ import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.Status;
 import app.handler.impl.HandlerInputImpl;
+import app.handler.impl.HandlerResponseImpl;
 import app.skill.ISkill;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 /**
  * Default implementation of IBot interface
@@ -121,12 +119,15 @@ public class DefaultBotImpl implements IBot {
 
             // recursion
             if (response.getStatus() == Status.STATUS_303_SEE_OTHER) {
-                ResponseStackElement next = new ResponseStackElement(response.getContent().toString(), skill.getClass().getName());
-                stk.add(next);
-                response = respond(stk, userID, maxDepth);
+                stk.add(new ResponseStackElement(response.getContent().toString(), skill.getClass().getName()));
+                IHandlerResponse finalResponse = respond(stk, userID, maxDepth);
                 stk.remove(stk.size() - 1);
-                if (response != null)
-                    return response;
+                if (finalResponse != null){
+                    List<String> invokedSkills = new ArrayList<>();
+                    invokedSkills.addAll(Arrays.asList(response.getInvokedSkills()));
+                    invokedSkills.addAll(Arrays.asList(finalResponse.getInvokedSkills()));
+                    return new HandlerResponseImpl(finalResponse.getContent().toString(), invokedSkills.toArray(new String[]{}));
+                }
             }
         }
 

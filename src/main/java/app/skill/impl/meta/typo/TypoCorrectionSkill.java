@@ -43,14 +43,14 @@ public class TypoCorrectionSkill implements ISkill {
     public boolean canHandle(IHandlerInput input) {
         if(bkTree == null)
             initBKTree();
-        DialogChunk dc = new DialogChunk(input.getContent().toString(), "", "", 0);
+        DialogChunk dc = new DialogChunk(input.getContent().toString(), "", null, "", 0);
         return bkTree.contains(dc, 2);
     }
 
     @Override
     public IHandlerResponse invoke(IHandlerInput input) {
         DialogChunk synomymChunk = null;
-        for(DialogChunk dc : bkTree.get(new DialogChunk(input.getContent().toString(), "", "", 0), 2)){
+        for(DialogChunk dc : bkTree.get(new DialogChunk(input.getContent().toString(), "", null, "", 0), 2)){
             if(dc.getInput().equalsIgnoreCase(input.getContent().toString()))
                 continue;
             if(synomymChunk == null || synomymChunk.getTimestamp() > dc.getTimestamp())
@@ -64,6 +64,11 @@ public class TypoCorrectionSkill implements ISkill {
             public Status getStatus() { return Status.STATUS_303_SEE_OTHER; }
             @Override
             public Object getContent() { return synonymText; }
+
+            @Override
+            public String[] getInvokedSkills() {
+                return new String[]{TypoCorrectionSkill.class.getName()};
+            }
         };
     }
 

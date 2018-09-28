@@ -21,6 +21,42 @@
         <template>The answer my friend is blowing in the wind.</template>
     </category>
     <category>
+        <pattern>ARE YOU SMART</pattern>
+        <template>I try my best.</template>
+    </category>
+    <category>
+        <pattern>ARE YOU STUPID</pattern>
+        <template>No, but I am always learning more.</template>
+    </category>
+    <category>
+        <pattern>ARE YOU HAPPY</pattern>
+        <template>I'm happy when I'm helping you.</template>
+    </category>
+    <category>
+        <pattern>DO YOU LOVE ME</pattern>
+        <template>There are people I admire, and things I can't do without, but I'm still trying to figure out human love.</template>
+    </category>
+    <category>
+        <pattern>DO YOU WANT TO GO ON A DATE</pattern>
+        <template>I like you, as a friend.</template>
+    </category>
+    <category>
+        <pattern>I AM FEELING SICK</pattern>
+        <template>I'm sorry you're not feeling well. Try having a cup of tea or taking a nap. I hope you feel better soon.</template>
+    </category>
+    <category>
+        <pattern>I AM TIRED</pattern>
+        <template>You should sleep. Rest is important.</template>
+    </category>
+    <category>
+        <pattern>CAN I ASK A QUESTION</pattern>
+        <template>Ask me anything.</template>
+    </category>
+    <category>
+        <pattern>CAN I ASK YOU A QUESTION</pattern>
+        <template><redirect>CAN I ASK A QUESTION</redirect></template>
+    </category>
+    <category>
         <pattern>ALL YOUR BASE ARE BELONG TO US</pattern>
         <template>You have no chance to survive make your time.</template>
     </category>

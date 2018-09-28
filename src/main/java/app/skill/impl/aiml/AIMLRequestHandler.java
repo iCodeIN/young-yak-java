@@ -6,16 +6,14 @@ import app.handler.IHandlerResponse;
 import app.handler.IRequestHandler;
 import app.handler.Status;
 import app.handler.impl.HandlerInputImpl;
+import app.handler.impl.HandlerResponseImpl;
 import org.jdom2.Element;
 import org.jdom2.JDOMException;
 import org.jdom2.input.SAXBuilder;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
-import java.util.Random;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
@@ -112,25 +110,20 @@ class AIMLRequestHandler implements IRequestHandler {
         Matcher matcher = pattern.matcher(txt);
         matcher.matches();
 
-        String response = buildResponse(matcher, element, input.getUserID());
-        return response.isEmpty() ? Optional.empty() : Optional.ofNullable(new IHandlerResponse() {
-            @Override
-            public Status getStatus() {
-                return Status.STATUS_200_OK;
-            }
+        List<String> invokedSkills = new ArrayList<>();
+        invokedSkills.add(this.getClass().getName());
 
-            @Override
-            public Object getContent() {
-                return response;
-            }
-        });
+        // build response
+        String response = buildResponse(matcher, element, invokedSkills, input.getUserID());
+
+        return response == null ? Optional.empty() : Optional.ofNullable(new HandlerResponseImpl(response, invokedSkills.toArray(new String[]{})));
 
     }
 
-    private String buildResponse(Matcher matcher, Element root, String userID) {
+    private String buildResponse(Matcher matcher, Element root, List<String> invokedSkills, String userID) {
         // category
         if (root.getName().equals("category"))
-            return buildResponse(matcher, child(root, "template"), userID);
+            return buildResponse(matcher, child(root, "template"), invokedSkills, userID);
 
         // <li> element without children
         if (root.getName().equals("li") && root.getChildren().isEmpty()) {
@@ -146,21 +139,26 @@ class AIMLRequestHandler implements IRequestHandler {
         if (root.getName().equals("redirect") && root.getChildren().isEmpty()) {
             IHandlerInput tmpA = new HandlerInputImpl(replaceGroups(matcher, root.getText()), userID);
             Optional<IHandlerResponse> tmpB = bot.respond(tmpA);
-            return tmpB.isPresent() ? tmpB.get().getContent().toString() : "";
+            if(tmpB.isPresent()) {
+                IHandlerResponse tmpC = tmpB.get();
+                invokedSkills.addAll(Arrays.asList(tmpC.getInvokedSkills()));
+                return tmpC.getContent().toString();
+            }
+            return null;
         }
 
         // template
         if (root.getName().equals("template") || root.getName().equals("li")) {
             String out = "";
             for (Element c : root.getChildren())
-                out += buildResponse(matcher, c, userID);
+                out += buildResponse(matcher, c, invokedSkills, userID);
             return out;
         }
 
         // random
         if (root.getName().equals("random")) {
             List<Element> cs = root.getChildren();
-            return buildResponse(matcher, cs.get(RANDOM.nextInt(cs.size())), userID);
+            return buildResponse(matcher, cs.get(RANDOM.nextInt(cs.size())), invokedSkills, userID);
         }
 
         // default

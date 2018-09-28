@@ -21,6 +21,8 @@ public class DialogChunk {
     @Lob
     private String output;
 
+    private String[] invokedSkills;
+
     private String userID;
 
     private long timestamp;
@@ -31,12 +33,14 @@ public class DialogChunk {
      * Constructor
      * @param input the user input
      * @param output the user output
+     * @param invokedSkills the skills invoked to generate this output
      * @param userID the user ID
      * @param timestamp the time at which the input was given to the system
      */
-    public DialogChunk(String input, String output, String userID, long timestamp){
+    public DialogChunk(String input, String output, String[] invokedSkills, String userID, long timestamp){
         this.input = input;
         this.output = output;
+        this.invokedSkills = invokedSkills;
         this.userID = userID;
         this.timestamp = timestamp;
     }
@@ -64,5 +68,7 @@ public class DialogChunk {
      * @return the timestamp of this DialogChunk
      */
     public long getTimestamp(){ return timestamp; }
+
+    public String[] getInvokedSkills(){ return invokedSkills; }
 
 }

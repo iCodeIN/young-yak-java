@@ -5,6 +5,7 @@ import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.Status;
 import app.skill.ISkill;
+import app.skill.impl.meta.typo.TypoCorrectionSkill;
 import app.web.BotController;
 import org.deeplearning4j.models.paragraphvectors.ParagraphVectors;
 import org.deeplearning4j.models.word2vec.VocabWord;
@@ -40,6 +41,14 @@ public class SemanticMatchSkill implements ISkill {
         for(DialogChunk dc : botController.getDialogChunkRepository().findAll()){
             if(dc.getOutput().isEmpty())
                 continue;
+
+            // do not build fuzzy logic on top of fuzzy logic
+            List<String> tmp = Arrays.asList(dc.getInvokedSkills());
+            if(tmp.contains(SemanticMatchSkill.class.getName()))
+                continue;
+            if(tmp.contains(TypoCorrectionSkill.class.getName()))
+                continue;
+
             sentences.add(dc.getInput());
         }
 
@@ -114,6 +123,11 @@ public class SemanticMatchSkill implements ISkill {
             public Status getStatus() { return Status.STATUS_303_SEE_OTHER; }
             @Override
             public Object getContent() { return out; }
+
+            @Override
+            public String[] getInvokedSkills() {
+                return new String[]{SemanticMatchSkill.class.getName()};
+            }
         };
     }
 }

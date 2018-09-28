@@ -129,7 +129,7 @@ public class FAQSkill implements ISkill {
         out += "</ul>";
 
         // return
-        return new HandlerResponseImpl(out);
+        return new HandlerResponseImpl(out, new String[]{this.getClass().getName()});
     }
 
 }

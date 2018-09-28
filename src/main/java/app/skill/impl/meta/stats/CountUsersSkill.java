@@ -49,6 +49,6 @@ public class CountUsersSkill extends RegexSkill {
             userIDs.add(dc.getUserID());
         }
         int N = userIDs.size();
-        return new HandlerResponseImpl(String.format(txt, N));
+        return new HandlerResponseImpl(String.format(txt, N), new String[]{this.getClass().getName()});
     }
 }

@@ -118,6 +118,6 @@ public class PersonalLogSizeSkill extends RegexSkill {
             txt = MORE_THAN_ONE_REPLIES[RANDOM.nextInt(MORE_THAN_ONE_REPLIES.length)];
             txt = String.format(txt, N);
         }
-        return new HandlerResponseImpl(txt);
+        return new HandlerResponseImpl(txt, new String[]{this.getClass().getName()});
     }
 }

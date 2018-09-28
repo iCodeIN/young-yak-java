@@ -35,7 +35,7 @@ class MathRequestHandler implements IRequestHandler {
         // try to evaluate
         try {
             String out = scriptEngine.eval(txt).toString();
-            return Optional.ofNullable(new HandlerResponseImpl(out));
+            return Optional.ofNullable(new HandlerResponseImpl(out, new String[]{this.getClass().getName()}));
         } catch (ScriptException e) { return Optional.empty(); }
     }
 

@@ -39,7 +39,7 @@ public abstract class AbstractLookupSkill extends RegexSkill {
         // lookup
         try {
             String reply = lookup(keyword);
-            return (reply == null || reply.isEmpty()) ? null : new HandlerResponseImpl(reply);
+            return (reply == null || reply.isEmpty()) ? null : new HandlerResponseImpl(reply, new String[]{this.getClass().getName()});
         } catch (Exception e) {
             return null;
         }
