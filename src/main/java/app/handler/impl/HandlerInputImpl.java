@@ -22,6 +22,8 @@ public class HandlerInputImpl implements IHandlerInput {
     }
 
     @Override
-    public String getUserID() { return userID; }
+    public String getUserID() {
+        return userID;
+    }
 
 }

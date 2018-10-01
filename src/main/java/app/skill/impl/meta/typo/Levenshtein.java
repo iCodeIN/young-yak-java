@@ -31,7 +31,7 @@ public class Levenshtein {
     private static int characterTransitionCost(char a, char b, boolean caseSensitive) {
         if (a == b)
             return 0;
-        if(!caseSensitive && Character.toUpperCase(a) == Character.toUpperCase(b))
+        if (!caseSensitive && Character.toUpperCase(a) == Character.toUpperCase(b))
             return 0;
         if (Character.isAlphabetic(a) && Character.isAlphabetic(b))
             return 1;

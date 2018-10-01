@@ -40,7 +40,7 @@ public class PersonalLogSizeSkill extends RegexSkill {
             "I didn't find any logs about you.",
             "I didn't find any logs concerning you.",
             "I didn't find any logs on you."
-                                            };
+    };
 
     private static String[] ONE_REPLIES = {
             "I only have one log entry about you.",
@@ -90,9 +90,8 @@ public class PersonalLogSizeSkill extends RegexSkill {
             "According to the database, there should be %d logs on you."
 
     };
-
-    private BotController botController;
     private static Random RANDOM = new Random(System.currentTimeMillis());
+    private BotController botController;
 
     public PersonalLogSizeSkill(BotController botController) {
         super(PATTERNS, MORE_THAN_ONE_REPLIES);
@@ -102,19 +101,17 @@ public class PersonalLogSizeSkill extends RegexSkill {
     @Override
     public IHandlerResponse invoke(IHandlerInput input) {
         int N = 0;
-        for(DialogChunk dc : botController.getDialogChunkRepository().findAll()) {
+        for (DialogChunk dc : botController.getDialogChunkRepository().findAll()) {
             if (dc.getUserID().equals(input.getUserID())) {
                 N++;
             }
         }
         String txt = null;
-        if(N == 0){
+        if (N == 0) {
             txt = ZERO_REPLIES[RANDOM.nextInt(ZERO_REPLIES.length)];
-        }
-        else if(N == 1){
+        } else if (N == 1) {
             txt = ONE_REPLIES[RANDOM.nextInt(ONE_REPLIES.length)];
-        }
-        else{
+        } else {
             txt = MORE_THAN_ONE_REPLIES[RANDOM.nextInt(MORE_THAN_ONE_REPLIES.length)];
             txt = String.format(txt, N);
         }

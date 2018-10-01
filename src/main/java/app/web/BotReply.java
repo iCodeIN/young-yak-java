@@ -10,7 +10,8 @@ public class BotReply {
 
     /**
      * Constructor
-     * @param id the user ID
+     *
+     * @param id  the user ID
      * @param txt the output text
      */
     public BotReply(String id, String txt) {
@@ -20,6 +21,7 @@ public class BotReply {
 
     /**
      * Get the user ID
+     *
      * @return the user ID
      */
     public String getId() {
@@ -28,6 +30,7 @@ public class BotReply {
 
     /**
      * Get the output text
+     *
      * @return the output text
      */
     public String getText() {

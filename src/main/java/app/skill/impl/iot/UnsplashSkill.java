@@ -90,26 +90,26 @@ public class UnsplashSkill extends AbstractLookupSkill {
         Document doc = Jsoup.parse(result.toString());
 
         Map<String, Integer> cssClassCount = new HashMap<>();
-        for(Element imgElement : doc.getElementsByTag("img")){
+        for (Element imgElement : doc.getElementsByTag("img")) {
             String url = imgElement.attr("src");
-            if(url.contains("profile"))
+            if (url.contains("profile"))
                 continue;
-            for(String className : imgElement.classNames()){
-                if(cssClassCount.containsKey(className))
+            for (String className : imgElement.classNames()) {
+                if (cssClassCount.containsKey(className))
                     cssClassCount.put(className, cssClassCount.get(className) + 1);
                 else
                     cssClassCount.put(className, 1);
             }
         }
         Map.Entry<String, Integer> topEntry = null;
-        for(Map.Entry<String, Integer> entry : cssClassCount.entrySet()){
-            if(topEntry == null || topEntry.getValue() < entry.getValue())
+        for (Map.Entry<String, Integer> entry : cssClassCount.entrySet()) {
+            if (topEntry == null || topEntry.getValue() < entry.getValue())
                 topEntry = entry;
         }
 
         List<String> imgURLs = new ArrayList<>();
-        for(Element imgElement : doc.getElementsByTag("img")){
-            if(!imgElement.classNames().contains(topEntry.getKey()))
+        for (Element imgElement : doc.getElementsByTag("img")) {
+            if (!imgElement.classNames().contains(topEntry.getKey()))
                 continue;
             imgURLs.add(imgElement.attr("src"));
         }

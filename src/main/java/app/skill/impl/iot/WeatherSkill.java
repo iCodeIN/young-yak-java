@@ -17,9 +17,7 @@ import java.util.regex.Pattern;
  */
 public class WeatherSkill extends AbstractLookupSkill {
 
-    private String API_KEY = "fa9cb4a1bbe7769a5acd1e6a1ee00f27";
     private static String USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36";
-
     private static Pattern[] PATTERNS = {
             Pattern.compile("WHAT IS THE WEATHER IN ([A-Z ]+)", Pattern.CASE_INSENSITIVE),
             Pattern.compile("WHAT IS THE WEATHER LIKE IN ([A-Z ]+)", Pattern.CASE_INSENSITIVE),
@@ -30,6 +28,7 @@ public class WeatherSkill extends AbstractLookupSkill {
             Pattern.compile("WHAT IS TODAYS WEATHER IN ([A-Z ]+)", Pattern.CASE_INSENSITIVE),
             Pattern.compile("WHAT IS TODAYS WEATHER LIKE IN ([A-Z ]+)", Pattern.CASE_INSENSITIVE)
     };
+    private String API_KEY = "fa9cb4a1bbe7769a5acd1e6a1ee00f27";
 
     public WeatherSkill() {
         super(PATTERNS);
@@ -90,7 +89,7 @@ public class WeatherSkill extends AbstractLookupSkill {
                 "</table>";
     }
 
-    private double celcius(double kelvin){
+    private double celcius(double kelvin) {
         return java.lang.Math.round((kelvin - 273.15) * 10.0) / 10.0;
     }
 }

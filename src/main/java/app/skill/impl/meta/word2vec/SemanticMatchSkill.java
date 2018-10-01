@@ -28,25 +28,25 @@ public class SemanticMatchSkill implements ISkill {
     private boolean isBuildingModel = false;
     private SemanticStringMap<Set<String>> synonymMap;
 
-    public SemanticMatchSkill(BotController botController){
+    public SemanticMatchSkill(BotController botController) {
         this.botController = botController;
     }
 
-    private void _buildModel(){
-        if(isBuildingModel)
+    private void _buildModel() {
+        if (isBuildingModel)
             return;
         isBuildingModel = true;
 
         List<String> sentences = new ArrayList<>();
-        for(DialogChunk dc : botController.getDialogChunkRepository().findAll()){
-            if(dc.getOutput().isEmpty())
+        for (DialogChunk dc : botController.getDialogChunkRepository().findAll()) {
+            if (dc.getOutput().isEmpty())
                 continue;
 
             // do not build fuzzy logic on top of fuzzy logic
             List<String> tmp = Arrays.asList(dc.getInvokedSkills());
-            if(tmp.contains(SemanticMatchSkill.class.getName()))
+            if (tmp.contains(SemanticMatchSkill.class.getName()))
                 continue;
-            if(tmp.contains(TypoCorrectionSkill.class.getName()))
+            if (tmp.contains(TypoCorrectionSkill.class.getName()))
                 continue;
 
             sentences.add(dc.getInput());
@@ -81,8 +81,8 @@ public class SemanticMatchSkill implements ISkill {
 
         // create synonyms
         synonymMap = new SemanticStringMap<>(out);
-        for(String s : sentences){
-            if(synonymMap.containsKey(s))
+        for (String s : sentences) {
+            if (synonymMap.containsKey(s))
                 synonymMap.get(s).add(s);
             else
                 synonymMap.put(s, new HashSet<>(Arrays.asList(s)));
@@ -92,9 +92,9 @@ public class SemanticMatchSkill implements ISkill {
         isBuildingModel = false;
     }
 
-    private void buildModel(){
-        new Thread(){
-            public void run(){
+    private void buildModel() {
+        new Thread() {
+            public void run() {
                 _buildModel();
             }
         }.start();
@@ -102,7 +102,7 @@ public class SemanticMatchSkill implements ISkill {
 
     @Override
     public boolean canHandle(IHandlerInput input) {
-        if(synonymMap == null) {
+        if (synonymMap == null) {
             buildModel();
             return false;
         }
@@ -112,17 +112,22 @@ public class SemanticMatchSkill implements ISkill {
     @Override
     public IHandlerResponse invoke(IHandlerInput input) {
         Collection<Set<String>> tmp = synonymMap.get(input.getContent().toString(), 10);
-        if(tmp.isEmpty())
+        if (tmp.isEmpty())
             return null;
 
-        List<String>  syns = new ArrayList<>(tmp.iterator().next());
+        List<String> syns = new ArrayList<>(tmp.iterator().next());
         String out = syns.get(RANDOM.nextInt(syns.size()));
 
         return new IHandlerResponse() {
             @Override
-            public Status getStatus() { return Status.STATUS_303_SEE_OTHER; }
+            public Status getStatus() {
+                return Status.STATUS_303_SEE_OTHER;
+            }
+
             @Override
-            public Object getContent() { return out; }
+            public Object getContent() {
+                return out;
+            }
 
             @Override
             public String[] getInvokedSkills() {

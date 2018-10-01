@@ -9,12 +9,14 @@ public interface IHandlerResponse {
     /**
      * Get the status of the response
      * <br> The status indicates how the reply was obtained
+     *
      * @return
      */
     Status getStatus();
 
     /**
      * Get the output
+     *
      * @return the output
      */
     Object getContent();

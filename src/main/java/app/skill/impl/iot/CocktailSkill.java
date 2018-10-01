@@ -33,7 +33,7 @@ public class CocktailSkill extends AbstractLookupSkill {
             Pattern.compile("WHAT IS THE RECIPE FOR AN ([A-Z ]+)", Pattern.CASE_INSENSITIVE)
     };
 
-    public CocktailSkill(){
+    public CocktailSkill() {
         super(PATTERNS);
     }
 
@@ -55,16 +55,16 @@ public class CocktailSkill extends AbstractLookupSkill {
         }
 
         JSONArray object = new JSONObject(result.toString()).getJSONArray("drinks");
-        if(object.isEmpty())
+        if (object.isEmpty())
             return null;
 
         JSONObject drinkObject = object.getJSONObject(0);
 
         List<String[]> ingredients = new ArrayList<>();
-        for(int i=0;i<20;i++){
+        for (int i = 0; i < 20; i++) {
             String t0 = drinkObject.has("strIngredient" + i) ? drinkObject.getString("strIngredient" + i) : "";
             String t1 = drinkObject.has("strMeasure" + i) ? drinkObject.getString("strMeasure" + i) : "";
-            if(t0.isEmpty() || t1.isEmpty())
+            if (t0.isEmpty() || t1.isEmpty())
                 continue;
             ingredients.add(new String[]{t0, t1});
         }

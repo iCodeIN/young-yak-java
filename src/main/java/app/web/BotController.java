@@ -23,14 +23,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Optional;
 
 /**
  * REST controller that provides the main API for interacting with the chatbot.
  */
-@RestController
 public class BotController {
 
     @Autowired
@@ -69,11 +67,11 @@ public class BotController {
                 .addSkill(new FAQSkill(this.getClass().getClassLoader().getResourceAsStream("faq/faq.xml")));
     }
 
-    public IBot getBot(){
+    public IBot getBot() {
         return bot;
     }
 
-    public DialogChunkRepository getDialogChunkRepository(){
+    public DialogChunkRepository getDialogChunkRepository() {
         return dialogChunkRepository;
     }
 
@@ -84,17 +82,17 @@ public class BotController {
 
         // store
         storeDialogChunk(text,
-                        tmpA.isPresent() ? tmpA.get().getContent().toString() : "",
-                        tmpA.isPresent() ? tmpA.get().getInvokedSkills() : new String[]{},
-                        userID);
+                tmpA.isPresent() ? tmpA.get().getContent().toString() : "",
+                tmpA.isPresent() ? tmpA.get().getInvokedSkills() : new String[]{},
+                userID);
 
         // return
         return new BotReply(userID,
-                            tmpA.isPresent() ? tmpA.get().getContent().toString() : ""
-                            );
+                tmpA.isPresent() ? tmpA.get().getContent().toString() : ""
+        );
     }
 
-    private void storeDialogChunk(String in, String out, String[] invokedSkills, String user){
+    private void storeDialogChunk(String in, String out, String[] invokedSkills, String user) {
         try {
             DialogChunk dialogChunk = new DialogChunk(
                     in.substring(0, java.lang.Math.min(in.length(), 2048)),
@@ -103,7 +101,8 @@ public class BotController {
                     user,
                     System.currentTimeMillis());
             dialogChunkRepository.save(dialogChunk);
-        }catch (Throwable ex){}
+        } catch (Throwable ex) {
+        }
     }
 
 }

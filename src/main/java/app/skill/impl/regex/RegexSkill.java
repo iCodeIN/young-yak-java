@@ -11,7 +11,6 @@ import java.util.regex.Pattern;
 public class RegexSkill extends DefaultSkillImpl {
 
     /**
-     *
      * @param patterns
      * @param replies
      */
@@ -20,7 +19,6 @@ public class RegexSkill extends DefaultSkillImpl {
     }
 
     /**
-     *
      * @param patterns
      * @param replies
      */

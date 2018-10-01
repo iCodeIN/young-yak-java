@@ -11,6 +11,7 @@ public interface IRequestHandler {
 
     /**
      * Determines whether this IRequestHandler can (or should) handle the incoming IHandlerInput
+     *
      * @param input the given IHandlerInput
      * @return true iff the IRequestHandler can (and should) handle the input
      */
@@ -18,6 +19,7 @@ public interface IRequestHandler {
 
     /**
      * Determines the IHandlerResponse for the incoming IHandlerInput
+     *
      * @param input the given IHandlerInput
      * @return the output
      */

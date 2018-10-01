@@ -109,21 +109,35 @@ public class BKTree<T> {
         }
     }
 
-    public void clear(){
+    public Object[] toArray() {
+        int N = size();
+        if (N == 0)
+            return new Object[]{};
+
+        Object[] out = new Object[N];
+        int i = 0;
+        for (Node<T> n : root.all()) {
+            out[i] = n.data;
+            i++;
+        }
+        return out;
+    }
+
+    public void clear() {
         root = null;
     }
 
-    private void graph(){
+    private void graph() {
         graph(root, 0);
     }
 
-    private void graph(Node n, int level){
+    private void graph(Node n, int level) {
         String indent = "";
-        for(int i=0;i<level;i++)
+        for (int i = 0; i < level; i++)
             indent += "   ";
         System.out.println(indent + n.data.hashCode() + "");
-        for(Object c : n.children.values()){
-            graph((Node) c, level+1);
+        for (Object c : n.children.values()) {
+            graph((Node) c, level + 1);
         }
     }
 
@@ -230,5 +244,16 @@ public class BKTree<T> {
             return s;
         }
 
+        public List<Node<T>> all() {
+            List<Node<T>> tmp = new ArrayList<>();
+            all(tmp);
+            return tmp;
+        }
+
+        private void all(Collection<Node<T>> tmp) {
+            tmp.add(this);
+            for (Node<T> n : children.values())
+                n.all(tmp);
+        }
     }
 }

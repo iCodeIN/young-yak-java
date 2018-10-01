@@ -31,33 +31,42 @@ public class BotLogSync {
     private boolean isSaveEnabled = false;
 
     @PostConstruct
-    private void setup(){
+    private void setup() {
         // add hook
         addShutdownHook();
 
         // read repository
-        try { read(); } catch (FileNotFoundException e) { }
+        try {
+            read();
+        } catch (FileNotFoundException e) {
+        }
 
         // setup timer
         isSaveEnabled = true;
         lastLogCount = 0;
-        new Thread(){
-            public void run(){
-                while(isSaveEnabled){
+        new Thread() {
+            public void run() {
+                while (isSaveEnabled) {
                     // sleep
-                    try { Thread.sleep(60 * 60 * 1000); } catch (InterruptedException e) { }
+                    try {
+                        Thread.sleep(60 * 60 * 1000);
+                    } catch (InterruptedException e) {
+                    }
                     // save
-                    try { save(); } catch (IOException e) { }
+                    try {
+                        save();
+                    } catch (IOException e) {
+                    }
                 }
             }
         }.start();
     }
 
-    private void addShutdownHook(){
+    private void addShutdownHook() {
         Runtime.getRuntime().addShutdownHook(new Thread() {
             @Override
             public void run() {
-               preDestroy();
+                preDestroy();
             }
         });
     }
@@ -67,18 +76,21 @@ public class BotLogSync {
         // disable save
         isSaveEnabled = false;
         // write here any instructions that should be executed
-        try { save(); } catch (IOException e) { }
+        try {
+            save();
+        } catch (IOException e) {
+        }
     }
 
     private void save() throws IOException {
-        if(dialogChunkRepository != null && lastLogCount == dialogChunkRepository.count())
+        if (dialogChunkRepository != null && lastLogCount == dialogChunkRepository.count())
             return;
 
-        File outFile = new File(System.getProperty("user.home"),"alice.db.json");
+        File outFile = new File(System.getProperty("user.home"), "alice.db.json");
         FileWriter fileWriter = new FileWriter(outFile);
 
         List<JSONObject> tmp = new ArrayList<>();
-        for(DialogChunk dc : dialogChunkRepository.findAll()) {
+        for (DialogChunk dc : dialogChunkRepository.findAll()) {
             tmp.add(new JSONObject()
                     .put("input", dc.getInput())
                     .put("output", dc.getOutput())
@@ -93,8 +105,8 @@ public class BotLogSync {
     }
 
     private void read() throws FileNotFoundException {
-        File inFile = new File(System.getProperty("user.home"),"alice.db.json");
-        if(!inFile.exists())
+        File inFile = new File(System.getProperty("user.home"), "alice.db.json");
+        if (!inFile.exists())
             return;
 
         String txt = "";
@@ -104,20 +116,20 @@ public class BotLogSync {
         scanner.close();
 
         JSONArray object = new JSONArray(txt);
-        for (int i=0;i<object.length();i++) {
+        for (int i = 0; i < object.length(); i++) {
             JSONObject dialogChunk = object.getJSONObject(i);
             dialogChunkRepository.save(new DialogChunk(dialogChunk.getString("input"),
                     dialogChunk.getString("output"),
-                    dialogChunk.has("invokedSkills") ? convertJSONArrayToStringArray(dialogChunk.getJSONArray("invokedSkills")): new String[]{},
+                    dialogChunk.has("invokedSkills") ? convertJSONArrayToStringArray(dialogChunk.getJSONArray("invokedSkills")) : new String[]{},
                     dialogChunk.has("userid") ? dialogChunk.getString("userid") : "",
                     dialogChunk.getLong("timestamp")));
         }
     }
 
-    private String[] convertJSONArrayToStringArray(JSONArray arr){
+    private String[] convertJSONArrayToStringArray(JSONArray arr) {
         int N = arr.length();
         String[] out = new String[N];
-        for (int i=0;i<N;i++){
+        for (int i = 0; i < N; i++) {
             out[i] = arr.getString(i);
         }
         return out;

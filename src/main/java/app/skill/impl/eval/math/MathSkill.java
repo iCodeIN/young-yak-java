@@ -7,7 +7,7 @@ import app.skill.DefaultSkillImpl;
  */
 public class MathSkill extends DefaultSkillImpl {
 
-    public MathSkill(){
+    public MathSkill() {
         addRequestHandler(new MathRequestHandler());
     }
 

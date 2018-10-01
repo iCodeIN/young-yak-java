@@ -13,13 +13,13 @@ import java.util.regex.Pattern;
 
 /**
  * This ISkill redirects incoming input to the duck duck go search engine.<br>
- *  Questions must match:<br>
- *  <ul>
- *      <li>WHO IS [A-Z]+</li>
- *      <li>WHO WAS [A-Z]+</li>
- *      <li>WHAT IS [A-Z]+</li>
- *      <li>WHAT WAS [A-Z]+</li>
- *  </ul>
+ * Questions must match:<br>
+ * <ul>
+ * <li>WHO IS [A-Z]+</li>
+ * <li>WHO WAS [A-Z]+</li>
+ * <li>WHAT IS [A-Z]+</li>
+ * <li>WHAT WAS [A-Z]+</li>
+ * </ul>
  */
 public class DuckDuckGoSkill extends AbstractLookupSkill {
 

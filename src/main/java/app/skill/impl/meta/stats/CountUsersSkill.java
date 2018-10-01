@@ -45,7 +45,7 @@ public class CountUsersSkill extends RegexSkill {
     public IHandlerResponse invoke(IHandlerInput input) {
         String txt = super.invoke(input).getContent().toString();
         Set<String> userIDs = new HashSet<>();
-        for(DialogChunk dc : botController.getDialogChunkRepository().findAll()){
+        for (DialogChunk dc : botController.getDialogChunkRepository().findAll()) {
             userIDs.add(dc.getUserID());
         }
         int N = userIDs.size();

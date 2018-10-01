@@ -33,7 +33,7 @@ public class ListSkillsSkill extends RegexSkill {
     @Override
     public IHandlerResponse invoke(IHandlerInput input) {
         String out = "<ul>";
-        for(ISkill s : ((DefaultBotImpl)botController.getBot()).getSkills())
+        for (ISkill s : ((DefaultBotImpl) botController.getBot()).getSkills())
             out += ("<li>" + s.getClass().getSimpleName() + "</li>");
         out += "</ul>";
         return new HandlerResponseImpl(out, new String[]{this.getClass().getName()});

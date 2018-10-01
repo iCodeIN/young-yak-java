@@ -15,7 +15,7 @@ import java.util.Arrays;
 
 public class TestSemanticStringMap {
 
-    private static String[] SENTENCES = {        "What is the difference between iText, JasperReports and Adobe LC?",
+    private static String[] SENTENCES = {"What is the difference between iText, JasperReports and Adobe LC?",
             "Where is the origin (x,y) of a PDF page?",
             "How to get the page number of an arbitrary PDF object?",
             "How should I interpret the coordinates of a rectangle in PDF?",
@@ -36,7 +36,7 @@ public class TestSemanticStringMap {
             "What is the connection between LTV and document timestamps?",
             "What does \"Not LTV-enabled\" mean?"};
 
-    private ParagraphVectors trainModel(String[] sentences){
+    private ParagraphVectors trainModel(String[] sentences) {
 
         TokenizerFactory t = new DefaultTokenizerFactory();
         t.setTokenPreProcessor(new CommonPreprocessor());
@@ -70,24 +70,24 @@ public class TestSemanticStringMap {
     }
 
     @Test
-    public void testSemanticMap(){
+    public void testSemanticMap() {
 
         // train model
         ParagraphVectors paragraphVectors = trainModel(SENTENCES);
 
         // create dictionary
         SemanticStringMap<Integer> integerSemanticStringMap = new SemanticStringMap<>(paragraphVectors);
-        for(int i=0;i<SENTENCES.length;i++)
+        for (int i = 0; i < SENTENCES.length; i++)
             integerSemanticStringMap.put(SENTENCES[i], i);
 
-        Assert.assertTrue(isMatch(SENTENCES[0],"what is the difference between iText and JasperReports", integerSemanticStringMap));
+        Assert.assertTrue(isMatch(SENTENCES[0], "what is the difference between iText and JasperReports", integerSemanticStringMap));
 
         Assert.assertTrue(isMatch(SENTENCES[1], "where can I find the origin of a PDF page", integerSemanticStringMap));
     }
 
-    private boolean isMatch(String s0, String s1, SemanticStringMap<Integer> integerSemanticStringMap){
+    private boolean isMatch(String s0, String s1, SemanticStringMap<Integer> integerSemanticStringMap) {
         Integer i0 = integerSemanticStringMap.get(s0, 1).iterator().next();
-        for(Integer i1 : integerSemanticStringMap.get(s1, 20)){
+        for (Integer i1 : integerSemanticStringMap.get(s1, 20)) {
             if (i0 == i1)
                 return true;
         }

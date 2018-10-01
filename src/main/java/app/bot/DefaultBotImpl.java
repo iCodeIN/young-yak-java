@@ -18,6 +18,7 @@ public class DefaultBotImpl implements IBot {
 
     /**
      * Add an ISkill to this IBot
+     *
      * @param skill the ISkill to be added
      * @return this object
      */
@@ -28,6 +29,7 @@ public class DefaultBotImpl implements IBot {
 
     /**
      * Removes an ISkill from this IBot
+     *
      * @param skill the ISkill to be removed
      * @return this object
      */
@@ -38,6 +40,7 @@ public class DefaultBotImpl implements IBot {
 
     /**
      * Get all the ISkills registered for this IBot
+     *
      * @return a collection of ISkill objects registered to this IBot
      */
     public Collection<ISkill> getSkills() {
@@ -50,15 +53,15 @@ public class DefaultBotImpl implements IBot {
          * we explictly count the number of StackTraceElements that match the current method
          */
         int d = 0;
-        for(StackTraceElement el : Thread.currentThread().getStackTrace()){
-            if(el.getClassName().equals(DefaultBotImpl.class.getName()) && el.getMethodName().equals("respond"))
+        for (StackTraceElement el : Thread.currentThread().getStackTrace()) {
+            if (el.getClassName().equals(DefaultBotImpl.class.getName()) && el.getMethodName().equals("respond"))
                 d++;
         }
         // recursion
         return respond(input, 16 - d);
     }
 
-    public Optional<IHandlerResponse> respond(IHandlerInput input, int maxDepth){
+    public Optional<IHandlerResponse> respond(IHandlerInput input, int maxDepth) {
 
         List<ResponseStackElement> tmp = new ArrayList<>();
         tmp.add(new ResponseStackElement(input.getContent().toString(), ""));
@@ -70,8 +73,9 @@ public class DefaultBotImpl implements IBot {
 
     /**
      * Recursive method that iteratively looks through the graph of all applicable reductions
-     * @param stk the stack of reductions so far
-     * @param userID the userID that invoked the response
+     *
+     * @param stk      the stack of reductions so far
+     * @param userID   the userID that invoked the response
      * @param maxDepth the maximal depth to look for through the graph
      * @return
      */
@@ -122,7 +126,7 @@ public class DefaultBotImpl implements IBot {
                 stk.add(new ResponseStackElement(response.getContent().toString(), skill.getClass().getName()));
                 IHandlerResponse finalResponse = respond(stk, userID, maxDepth);
                 stk.remove(stk.size() - 1);
-                if (finalResponse != null){
+                if (finalResponse != null) {
                     List<String> invokedSkills = new ArrayList<>();
                     invokedSkills.addAll(Arrays.asList(response.getInvokedSkills()));
                     invokedSkills.addAll(Arrays.asList(finalResponse.getInvokedSkills()));

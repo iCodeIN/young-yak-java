@@ -17,11 +17,11 @@ public class TypoCorrectionSkill implements ISkill {
     private final BotController botController;
     private BKTree<DialogChunk> bkTree;
 
-    public TypoCorrectionSkill(BotController botController){
+    public TypoCorrectionSkill(BotController botController) {
         this.botController = botController;
     }
 
-    private void initBKTree(){
+    private void initBKTree() {
         bkTree = new BKTree<DialogChunk>(new BKTree.Metric<DialogChunk>() {
             @Override
             public int distance(DialogChunk obj0, DialogChunk obj1) {
@@ -30,10 +30,10 @@ public class TypoCorrectionSkill implements ISkill {
                 return java.lang.Math.min(Levenshtein.distance(s0, s1, false), 10);
             }
         });
-        for(DialogChunk dc : botController.getDialogChunkRepository().findAll()){
-            if(dc.getOutput().isEmpty())
+        for (DialogChunk dc : botController.getDialogChunkRepository().findAll()) {
+            if (dc.getOutput().isEmpty())
                 continue;
-            if(dc.getInput().isEmpty())
+            if (dc.getInput().isEmpty())
                 continue;
             bkTree.add(dc);
         }
@@ -41,7 +41,7 @@ public class TypoCorrectionSkill implements ISkill {
 
     @Override
     public boolean canHandle(IHandlerInput input) {
-        if(bkTree == null)
+        if (bkTree == null)
             initBKTree();
         DialogChunk dc = new DialogChunk(input.getContent().toString(), "", null, "", 0);
         return bkTree.contains(dc, 2);
@@ -50,20 +50,26 @@ public class TypoCorrectionSkill implements ISkill {
     @Override
     public IHandlerResponse invoke(IHandlerInput input) {
         DialogChunk synomymChunk = null;
-        for(DialogChunk dc : bkTree.get(new DialogChunk(input.getContent().toString(), "", null, "", 0), 2)){
-            if(dc.getInput().equalsIgnoreCase(input.getContent().toString()))
+        for (DialogChunk dc : bkTree.get(new DialogChunk(input.getContent().toString(), "", null, "", 0), 2)) {
+            if (dc.getInput().equalsIgnoreCase(input.getContent().toString()))
                 continue;
-            if(synomymChunk == null || synomymChunk.getTimestamp() > dc.getTimestamp())
+            if (synomymChunk == null || synomymChunk.getTimestamp() > dc.getTimestamp())
                 synomymChunk = dc;
         }
-        if(synomymChunk == null)
+        if (synomymChunk == null)
             return null;
         String synonymText = synomymChunk.getInput();
         return new IHandlerResponse() {
             @Override
-            public Status getStatus() { return Status.STATUS_303_SEE_OTHER; }
+            public Status getStatus() {
+                return Status.STATUS_303_SEE_OTHER;
+            }
+
             @Override
-            public Object getContent() { return synonymText; }
+            public Object getContent() {
+                return synonymText;
+            }
+
             @Override
             public String[] getInvokedSkills() {
                 return new String[]{TypoCorrectionSkill.class.getName()};

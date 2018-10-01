@@ -47,8 +47,8 @@ public class DaySkill extends RegexSkill {
     @Override
     public IHandlerResponse invoke(IHandlerInput input) {
         return new HandlerResponseImpl(
-                            "Today is " + daysOfTheWeek[new Date().getDay()] + ".",
-                                new String[]{this.getClass().getName()}
-                                    );
+                "Today is " + daysOfTheWeek[new Date().getDay()] + ".",
+                new String[]{this.getClass().getName()}
+        );
     }
 }

@@ -30,7 +30,7 @@ public abstract class AbstractLookupSkill extends RegexSkill {
         for (Pattern p : PATTERNS) {
             Matcher m = p.matcher(txt);
             if (m.matches()) {
-                if(m.groupCount() > 0)
+                if (m.groupCount() > 0)
                     keyword = m.group(1);
                 break;
             }
@@ -48,6 +48,7 @@ public abstract class AbstractLookupSkill extends RegexSkill {
     /**
      * This method is called to generate the output.
      * The text returned in this method is wrapped in a HandlerResponseImpl object before being returned.
+     *
      * @param q the first group captured in the regular expression that was matched
      * @return
      * @throws IOException

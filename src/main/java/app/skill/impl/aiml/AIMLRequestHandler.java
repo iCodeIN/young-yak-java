@@ -35,6 +35,7 @@ class AIMLRequestHandler implements IRequestHandler {
 
     /**
      * Reads the given inputstream and parses the XML as AIML
+     *
      * @param is the inputstream representing the AIML document
      * @throws JDOMException
      * @throws IOException
@@ -57,7 +58,8 @@ class AIMLRequestHandler implements IRequestHandler {
 
     /**
      * Checks whether a given XML Element can process the given IHandlerInput
-     * @param input the IHandlerInput
+     *
+     * @param input   the IHandlerInput
      * @param element the XML Element
      * @return true if the XML Element represents an AIML pattern that matches the IHandlerInput
      */
@@ -74,7 +76,9 @@ class AIMLRequestHandler implements IRequestHandler {
             Pattern pattern = Pattern.compile(patternElement.getText(), Pattern.CASE_INSENSITIVE);
             if (!pattern.matcher(txt).matches())
                 return false;
-        }catch (PatternSyntaxException ex){ return false; }
+        } catch (PatternSyntaxException ex) {
+            return false;
+        }
 
         // must output something
         Element templateElement = child(element, "template");
@@ -83,7 +87,8 @@ class AIMLRequestHandler implements IRequestHandler {
 
     /**
      * This function fetches the first Element of an XML Element with given name
-     * @param e parent Element
+     *
+     * @param e    parent Element
      * @param name name of the child Element to fetch
      * @return
      */
@@ -139,7 +144,7 @@ class AIMLRequestHandler implements IRequestHandler {
         if (root.getName().equals("redirect") && root.getChildren().isEmpty()) {
             IHandlerInput tmpA = new HandlerInputImpl(replaceGroups(matcher, root.getText()), userID);
             Optional<IHandlerResponse> tmpB = bot.respond(tmpA);
-            if(tmpB.isPresent()) {
+            if (tmpB.isPresent()) {
                 IHandlerResponse tmpC = tmpB.get();
                 invokedSkills.addAll(Arrays.asList(tmpC.getInvokedSkills()));
                 return tmpC.getContent().toString();

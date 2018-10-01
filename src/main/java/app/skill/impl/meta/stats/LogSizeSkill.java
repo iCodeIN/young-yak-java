@@ -22,21 +22,21 @@ public class LogSizeSkill extends RegexSkill {
     };
 
     private static String[] REPLIES = {
-                                        "I currently have about %d log entries.",
-                                        "I currently have about %d logs.",
+            "I currently have about %d log entries.",
+            "I currently have about %d logs.",
 
-                                        "I currently have %d log entries.",
-                                        "I currently have %d logs.",
+            "I currently have %d log entries.",
+            "I currently have %d logs.",
 
-                                        "I have about %d log entries.",
-                                        "I have about %d logs.",
+            "I have about %d log entries.",
+            "I have about %d logs.",
 
-                                        "I have %d log entries.",
-                                        "I have %d logs.",
+            "I have %d log entries.",
+            "I have %d logs.",
 
-                                        "According to the database, there should be %d log entries.",
-                                        "According to the database, there should be %d logs."
-                                        };
+            "According to the database, there should be %d log entries.",
+            "According to the database, there should be %d logs."
+    };
 
     private BotController botController;
 

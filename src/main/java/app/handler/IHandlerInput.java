@@ -8,12 +8,14 @@ public interface IHandlerInput {
 
     /**
      * Gets the user ID of the input
+     *
      * @return the user ID
      */
     String getUserID();
 
     /**
      * Gets the user input
+     *
      * @return the user input
      */
     Object getContent();

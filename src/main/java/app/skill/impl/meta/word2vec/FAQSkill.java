@@ -27,11 +27,11 @@ import java.util.Random;
 public class FAQSkill implements ISkill {
 
     // prefix
-    private static String[] PREFIX = {  "I found some links for you.",
-                                        "Maybe this is helpful;",
-                                        "I hope this helps;",
-                                        "I think I may have found something for you.",
-                                        "These seem useful;"};
+    private static String[] PREFIX = {"I found some links for you.",
+            "Maybe this is helpful;",
+            "I hope this helps;",
+            "I think I may have found something for you.",
+            "These seem useful;"};
     private static Random RANDOM = new Random(System.currentTimeMillis());
 
     // NLP
@@ -43,22 +43,23 @@ public class FAQSkill implements ISkill {
     private String[] qs;
     private String[] as;
 
-    public FAQSkill(InputStream xmlDocument){
+    public FAQSkill(InputStream xmlDocument) {
         try {
             Element root = new SAXBuilder().build(xmlDocument).getRootElement();
             List<Element> children = root.getChildren();
             int N = children.size();
             qs = new String[N];
             as = new String[N];
-            for(int i=0;i<children.size();i++){
+            for (int i = 0; i < children.size(); i++) {
                 qs[i] = children.get(i).getChildText("q");
                 as[i] = children.get(i).getChildText("a");
             }
-        } catch (JDOMException | IOException e) { }
+        } catch (JDOMException | IOException e) {
+        }
     }
 
-    private void _buildModel(){
-        if(isBuildingModel)
+    private void _buildModel() {
+        if (isBuildingModel)
             return;
         isBuildingModel = true;
 
@@ -91,7 +92,7 @@ public class FAQSkill implements ISkill {
 
         // build map
         frequentlyAskedQuestions = new SemanticStringMap<>(paragraphVectorModel);
-        for(int i=0;i<qs.length;i++){
+        for (int i = 0; i < qs.length; i++) {
             frequentlyAskedQuestions.put(qs[i], as[i]);
         }
 
@@ -99,9 +100,9 @@ public class FAQSkill implements ISkill {
         isBuildingModel = false;
     }
 
-    private void buildModel(){
-        new Thread(){
-            public void run(){
+    private void buildModel() {
+        new Thread() {
+            public void run() {
                 _buildModel();
             }
         }.start();
@@ -109,7 +110,7 @@ public class FAQSkill implements ISkill {
 
     @Override
     public boolean canHandle(IHandlerInput input) {
-        if(frequentlyAskedQuestions == null) {
+        if (frequentlyAskedQuestions == null) {
             buildModel();
             return false;
         }
@@ -119,7 +120,7 @@ public class FAQSkill implements ISkill {
     @Override
     public IHandlerResponse invoke(IHandlerInput input) {
         Collection<String> answers = frequentlyAskedQuestions.get(input.getContent().toString(), 10);
-        if(answers.isEmpty())
+        if (answers.isEmpty())
             return null;
 
         // build answer
