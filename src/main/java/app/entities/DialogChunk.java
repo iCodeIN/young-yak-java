@@ -21,6 +21,7 @@ public class DialogChunk {
     @Lob
     private String output;
 
+    @Column(length = 2048)
     private String[] invokedSkills;
 
     private String userID;
