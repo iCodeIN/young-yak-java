@@ -4,7 +4,6 @@ import app.bot.IBot;
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.IRequestHandler;
-import app.handler.Status;
 import app.handler.impl.HandlerInputImpl;
 import app.handler.impl.HandlerResponseImpl;
 import org.jdom2.Element;

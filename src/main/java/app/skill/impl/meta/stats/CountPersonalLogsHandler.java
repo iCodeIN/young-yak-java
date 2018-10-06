@@ -4,16 +4,18 @@ import app.entities.DialogChunk;
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.impl.HandlerResponseImpl;
-import app.skill.impl.regex.RegexSkill;
+import app.skill.impl.regex.RegexRequestHandler;
 import app.web.BotController;
 
+import java.util.Arrays;
+import java.util.Optional;
 import java.util.Random;
 import java.util.regex.Pattern;
 
 /**
  * This ISkill deals with diagnostic inquiries about the number of logs being stored pertaining to the current user.
  */
-public class PersonalLogSizeSkill extends RegexSkill {
+public class CountPersonalLogsHandler extends RegexRequestHandler {
 
     private static Pattern[] PATTERNS = {
             Pattern.compile("HOW MANY LOG ENTRIES DO YOU HAVE ABOUT ME", Pattern.CASE_INSENSITIVE),
@@ -32,6 +34,8 @@ public class PersonalLogSizeSkill extends RegexSkill {
             Pattern.compile("HOWMANY LOGS DO YOU HAVE CONCERNING ME", Pattern.CASE_INSENSITIVE),
             Pattern.compile("HOWMANY LOGS DO YOU HAVE ON ME", Pattern.CASE_INSENSITIVE)
     };
+
+    private static Random RANDOM = new Random(System.currentTimeMillis());
 
     private static String[] ZERO_REPLIES = {
             "I don't have any logs about you.",
@@ -90,16 +94,16 @@ public class PersonalLogSizeSkill extends RegexSkill {
             "According to the database, there should be %d logs on you."
 
     };
-    private static Random RANDOM = new Random(System.currentTimeMillis());
+
     private BotController botController;
 
-    public PersonalLogSizeSkill(BotController botController) {
-        super(PATTERNS, MORE_THAN_ONE_REPLIES);
+    public CountPersonalLogsHandler(BotController botController) {
+        super(Arrays.asList(PATTERNS));
         this.botController = botController;
     }
 
     @Override
-    public IHandlerResponse invoke(IHandlerInput input) {
+    public Optional<IHandlerResponse> handle(IHandlerInput input) {
         int N = 0;
         for (DialogChunk dc : botController.getDialogChunkRepository().findAll()) {
             if (dc.getUserID().equals(input.getUserID())) {
@@ -115,6 +119,6 @@ public class PersonalLogSizeSkill extends RegexSkill {
             txt = MORE_THAN_ONE_REPLIES[RANDOM.nextInt(MORE_THAN_ONE_REPLIES.length)];
             txt = String.format(txt, N);
         }
-        return new HandlerResponseImpl(txt, new String[]{this.getClass().getName()});
+        return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));
     }
 }

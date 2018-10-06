@@ -11,7 +11,7 @@ import java.util.Optional;
 import java.util.Random;
 import java.util.regex.Pattern;
 
-class RegexRequestHandler implements IRequestHandler {
+public class RegexRequestHandler implements IRequestHandler {
 
     private static Random RANDOM = new Random(System.currentTimeMillis());
     private List<Pattern> patternList = new ArrayList<>();
@@ -22,6 +22,11 @@ class RegexRequestHandler implements IRequestHandler {
             patternList.add(pattern);
         for (String reply : replies)
             replyList.add(reply);
+    }
+
+    public RegexRequestHandler(Iterable<Pattern> patterns) {
+        for (Pattern pattern : patterns)
+            patternList.add(pattern);
     }
 
     @Override
@@ -35,6 +40,8 @@ class RegexRequestHandler implements IRequestHandler {
 
     @Override
     public Optional<IHandlerResponse> handle(IHandlerInput input) {
+        if (replyList.isEmpty())
+            return Optional.ofNullable(null);
         String reply = replyList.get(RANDOM.nextInt(replyList.size()));
         IHandlerResponse response = new IHandlerResponse() {
             @Override

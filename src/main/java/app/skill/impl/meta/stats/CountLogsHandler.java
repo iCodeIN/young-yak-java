@@ -3,15 +3,18 @@ package app.skill.impl.meta.stats;
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.impl.HandlerResponseImpl;
-import app.skill.impl.regex.RegexSkill;
+import app.skill.impl.regex.RegexRequestHandler;
 import app.web.BotController;
 
+import java.util.Arrays;
+import java.util.Optional;
+import java.util.Random;
 import java.util.regex.Pattern;
 
 /**
  * This ISkill deals with diagnostic inquiries about the number of logs being stored.
  */
-public class LogSizeSkill extends RegexSkill {
+public class CountLogsHandler extends RegexRequestHandler {
 
     private static Pattern[] PATTERNS = {
             Pattern.compile("HOW MANY LOG ENTRIES DO YOU HAVE", Pattern.CASE_INSENSITIVE),
@@ -20,6 +23,8 @@ public class LogSizeSkill extends RegexSkill {
             Pattern.compile("HOW MANY LOGS DO YOU HAVE", Pattern.CASE_INSENSITIVE),
             Pattern.compile("HOWMANY LOGS DO YOU HAVE", Pattern.CASE_INSENSITIVE)
     };
+
+    private static Random RANDOM = new Random(System.currentTimeMillis());
 
     private static String[] REPLIES = {
             "I currently have about %d log entries.",
@@ -40,15 +45,15 @@ public class LogSizeSkill extends RegexSkill {
 
     private BotController botController;
 
-    public LogSizeSkill(BotController botController) {
-        super(PATTERNS, REPLIES);
+    public CountLogsHandler(BotController botController) {
+        super(Arrays.asList(PATTERNS));
         this.botController = botController;
     }
 
     @Override
-    public IHandlerResponse invoke(IHandlerInput input) {
-        String txt = super.invoke(input).getContent().toString();
+    public Optional<IHandlerResponse> handle(IHandlerInput input) {
+        String txt = REPLIES[RANDOM.nextInt(REPLIES.length)];
         int N = (int) botController.getDialogChunkRepository().count();
-        return new HandlerResponseImpl(String.format(txt, N), new String[]{this.getClass().getName()});
+        return Optional.of(new HandlerResponseImpl(String.format(txt, N), new String[]{this.getClass().getName()}));
     }
 }
