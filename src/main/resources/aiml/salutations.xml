@@ -73,6 +73,24 @@
         </template>
     </category>
     <category>
+        <pattern>HEY BUDDY</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HEY FRIEND</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>HEY</pattern>
+        <template>
+            <redirect>HI</redirect>
+        </template>
+    </category>
+    <category>
         <pattern>HI</pattern>
         <template>
             <random>

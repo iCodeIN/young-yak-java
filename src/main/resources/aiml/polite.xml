@@ -1,5 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
+    <!-- not what you think-->
+    <category>
+        <pattern>ITS NOT WHAT IT LOOKS LIKE</pattern>
+        <template>
+            <redirect>IT IS NOT WHAT YOU THINK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IT IS NOT WHAT IT LOOKS LIKE</pattern>
+        <template>
+            <redirect>IT IS NOT WHAT YOU THINK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>ITS NOT WHAT YOU THINK</pattern>
+        <template>
+            <redirect>IT IS NOT WHAT YOU THINK</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>IT IS NOT WHAT YOU THINK</pattern>
+        <template>
+            <random>
+                <li>Is it?</li>
+                <li>Isn't it?</li>
+                <li>It's not?</li>
+                <li>What is it then?</li>
+            </random>
+        </template>
+    </category>
+    <!-- take care -->
+    <category>
+        <pattern>TAKE CARE</pattern>
+        <template>
+            <random>
+                <li>Thanks!</li>
+                <li>Thanks, you too!</li>
+                <li>You too!</li>
+            </random>
+        </template>
+    </category>
+    <!-- you got x bucks -->
+    <category>
+        <pattern>YOU GOT [012345678]+ POUNDS</pattern>
+        <template>
+            <redirect>YOU GOT \1 BUCKS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU GOT [012345678]+ DOLLARS</pattern>
+        <template>
+            <redirect>YOU GOT \1 BUCKS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU GOT [012345678]+ BUCKS</pattern>
+        <template>
+            <random>
+                <li>No sorry.</li>
+                <li>No, I'm sorry.</li>
+                <li>I don't.</li>
+                <li>I typically don't carry any cash.</li>
+            </random>
+        </template>
+    </category>
     <!-- thanks -->
     <category>
         <pattern>THANKS</pattern>
@@ -53,6 +118,31 @@
                 <li>I'm doing good thanks.</li>
                 <li>Doing good thanks.</li>
                 <li>Doing good.</li>
+            </random>
+        </template>
+    </category>
+    <!-- too much information -->
+    <category>
+        <pattern>THAT IS TOO MUCH INFORMATION</pattern>
+        <template>
+            <redirect>TOO MUCH INFORMATION</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>THATS TOO MUCH INFORMATION</pattern>
+        <template>
+            <redirect>TOO MUCH INFORMATION</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>TOO MUCH INFORMATION</pattern>
+        <template>
+            <random>
+                <li>Sorry.</li>
+                <li>Whoops.</li>
+                <li>Oops.</li>
+                <li>Sorry about that.</li>
+                <li>Sorry 'bout that.</li>
             </random>
         </template>
     </category>
