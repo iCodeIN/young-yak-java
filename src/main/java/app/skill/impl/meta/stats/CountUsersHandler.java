@@ -18,10 +18,16 @@ public class CountUsersHandler extends RegexRequestHandler {
     private static Pattern[] PATTERNS = {
             Pattern.compile("HOWMANY USERS ARE THERE", Pattern.CASE_INSENSITIVE),
             Pattern.compile("HOW MANY USERS ARE THERE", Pattern.CASE_INSENSITIVE),
+            Pattern.compile("HOWMANY PEOPLE ARE THERE", Pattern.CASE_INSENSITIVE),
+            Pattern.compile("HOW MANY PEOPLE ARE THERE", Pattern.CASE_INSENSITIVE),
 
+            Pattern.compile("HOWMANY USERS HAVE YOU TALKED TO", Pattern.CASE_INSENSITIVE),
+            Pattern.compile("HOW MANY USERS HAVE YOU TALKED TO", Pattern.CASE_INSENSITIVE),
             Pattern.compile("HOWMANY PEOPLE HAVE YOU TALKED TO", Pattern.CASE_INSENSITIVE),
             Pattern.compile("HOW MANY PEOPLE HAVE YOU TALKED TO", Pattern.CASE_INSENSITIVE),
 
+            Pattern.compile("HOWMANY USERS DO YOU TALK TO", Pattern.CASE_INSENSITIVE),
+            Pattern.compile("HOW MANY USERS DO YOU TALK TO", Pattern.CASE_INSENSITIVE),
             Pattern.compile("HOWMANY PEOPLE DO YOU TALK TO", Pattern.CASE_INSENSITIVE),
             Pattern.compile("HOW MANY PEOPLE DO YOU TALK TO", Pattern.CASE_INSENSITIVE)
     };

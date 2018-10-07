@@ -17,6 +17,7 @@ import java.util.regex.Pattern;
 public class WeatherSkill extends AbstractLookupSkill {
 
     private static String USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36";
+
     private static Pattern[] PATTERNS = {
             Pattern.compile("WHAT IS THE WEATHER IN ([A-Z ]+)", Pattern.CASE_INSENSITIVE),
             Pattern.compile("WHAT IS THE WEATHER LIKE IN ([A-Z ]+)", Pattern.CASE_INSENSITIVE),

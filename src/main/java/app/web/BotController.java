@@ -7,7 +7,8 @@ import app.entities.DialogChunkRepository;
 import app.handler.IHandlerResponse;
 import app.handler.impl.HandlerInputImpl;
 import app.skill.impl.aiml.AIMLSkill;
-import app.skill.impl.eval.math.MathSkill;
+import app.skill.impl.eval.MathSkill;
+import app.skill.impl.game.HangmanSkill;
 import app.skill.impl.iot.*;
 import app.skill.impl.meta.stats.SystemStatisticsSkill;
 import app.skill.impl.meta.typo.TypoCorrectionSkill;
@@ -39,6 +40,7 @@ public class BotController {
         bot.addSkill(new AIMLSkill(bot))
                 .addSkill(new TimeSkill())
                 .addSkill(new MathSkill())
+                .addSkill(new HangmanSkill())
 
                 // meta
                 .addSkill(new SystemStatisticsSkill(this))

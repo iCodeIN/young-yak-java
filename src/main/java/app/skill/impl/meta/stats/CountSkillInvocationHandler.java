@@ -18,6 +18,12 @@ public class CountSkillInvocationHandler extends RegexRequestHandler {
 
             Pattern.compile("HOWMANY TIMES WAS EACH SKILL USED", Pattern.CASE_INSENSITIVE),
             Pattern.compile("HOWMANY TIMES IS EACH SKILL USED", Pattern.CASE_INSENSITIVE),
+
+            Pattern.compile("HOW MANY TIMES WAS EACH SKILL INVOKED", Pattern.CASE_INSENSITIVE),
+            Pattern.compile("HOW MANY TIMES IS EACH SKILL INVOKED", Pattern.CASE_INSENSITIVE),
+
+            Pattern.compile("HOWMANY TIMES WAS EACH SKILL INVOKED", Pattern.CASE_INSENSITIVE),
+            Pattern.compile("HOWMANY TIMES IS EACH SKILL INVOKED", Pattern.CASE_INSENSITIVE),
     };
 
     private static Random RANDOM = new Random(System.currentTimeMillis());

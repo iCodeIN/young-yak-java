@@ -1,4 +1,4 @@
-package app.skill.impl.eval.math;
+package app.skill.impl.eval;
 
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
