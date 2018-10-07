@@ -89,13 +89,17 @@ public class MakeGuessHandler extends RegexRequestHandler {
         boolean goodGuess = g.word.contains(guess);
         if(goodGuess) {
             boolean wordCompleted = Arrays.asList(g.guesses.split("")).containsAll(Arrays.asList(g.word.split("")));
-            if(wordCompleted)
+            if(wordCompleted) {
+                HangmanSkill.stopGame(userID);
                 return handleWordCompleted();
+            }
             return handleGoodGuess(userID);
         }else {
-            boolean gameOver = (g.badGuesses > 10);
-            if(gameOver)
+            boolean gameOver = (g.badGuesses >= 10);
+            if(gameOver) {
+                HangmanSkill.stopGame(userID);
                 return handleGameOver();
+            }
             return handleBadGuess(userID);
         }
     }

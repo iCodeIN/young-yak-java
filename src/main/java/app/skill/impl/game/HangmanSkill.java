@@ -39,6 +39,16 @@ public class HangmanSkill extends DefaultSkillImpl {
         addRequestHandler(new MakeGuessHandler());
     }
 
+    public boolean canHandle(IHandlerInput input){
+        String userID = input.getUserID();
+
+        boolean ch = super.canHandle(input);
+        if(!ch && GAMES_IN_PROGRESS.containsKey(userID))
+            GAMES_IN_PROGRESS.remove(userID);
+
+        return ch;
+    }
+
     public static Game getGame(String userID){
         return GAMES_IN_PROGRESS.get(userID);
     }
@@ -76,5 +86,10 @@ public class HangmanSkill extends DefaultSkillImpl {
         // return
         return blanks;
     }
+
+    public static void stopGame(String userID){
+        GAMES_IN_PROGRESS.remove(userID);
+    }
+
 
 }
