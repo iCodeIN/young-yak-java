@@ -1,17 +1,11 @@
-import app.entities.DialogChunk;
-import app.entities.DialogChunkRepository;
-import app.web.BotController;
 import org.json.JSONObject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 import java.util.Scanner;
@@ -25,8 +19,8 @@ public class TestCoverage {
 
         int N = 0;
         int M = 0;
-        for(File srtFile : SRTFile.getFiles(root)){
-            for(SRTFile.SRTEntry en : new SRTFile(srtFile).getEntries()){
+        for (File srtFile : SRTFile.getFiles(root)) {
+            for (SRTFile.SRTEntry en : new SRTFile(srtFile).getEntries()) {
                 N++;
                 String x = en.getText();
                 String y = getReponse(x);
@@ -36,7 +30,7 @@ public class TestCoverage {
         }
     }
 
-    public String getReponse(String in){
+    public String getReponse(String in) {
         String out = "";
         try {
             String urlTxt = "http://localhost:8080/respond?text=" + URLEncoder.encode(in);
@@ -44,12 +38,14 @@ public class TestCoverage {
             URL url = new URL(urlTxt);
             Scanner scanner = new Scanner(url.openStream());
             String jsonOut = "";
-            while(scanner.hasNextLine()){
+            while (scanner.hasNextLine()) {
                 jsonOut += scanner.nextLine();
             }
             scanner.close();
-            out =new JSONObject(jsonOut).getString("text");
-        } catch (IOException e) { e.printStackTrace();}
+            out = new JSONObject(jsonOut).getString("text");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return out;
     }
 }

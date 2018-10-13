@@ -2,7 +2,6 @@ package app.skill.impl.game;
 
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
-import app.handler.IRequestHandler;
 import app.handler.impl.HandlerResponseImpl;
 import app.skill.impl.regex.RegexRequestHandler;
 
@@ -51,7 +50,7 @@ public class MakeGuessHandler extends RegexRequestHandler {
     };
 
     private String[] BAD_GUESS_REPLIES = {
-           "I'm afraid that letter isn't correct<br>%s",
+            "I'm afraid that letter isn't correct<br>%s",
             "Incorrect.<br>%s",
             "Nope.<br>%s"
     };
@@ -63,40 +62,45 @@ public class MakeGuessHandler extends RegexRequestHandler {
             "I'm afraid you lost."
     };
 
-    public MakeGuessHandler(){
+    public MakeGuessHandler() {
         super(Arrays.asList(MAKE_GUESS_PATTERNS));
+    }
+
+    @Override
+    public boolean canHandle(IHandlerInput input) {
+        return super.canHandle(input) && (HangmanSkill.getGame(input.getUserID()) != null);
     }
 
     @Override
     public Optional<IHandlerResponse> handle(IHandlerInput input) {
         String txt = input.getContent().toString();
-        for(Pattern p : MAKE_GUESS_PATTERNS){
+        for (Pattern p : MAKE_GUESS_PATTERNS) {
             Matcher m = p.matcher(txt);
-            if(m.matches()){
+            if (m.matches()) {
                 return handleGuess(input.getUserID(), m.group(1).toUpperCase());
             }
         }
         return Optional.empty();
     }
 
-    private Optional<IHandlerResponse> handleGuess(String userID, String guess){
+    private Optional<IHandlerResponse> handleGuess(String userID, String guess) {
         HangmanSkill.Game g = HangmanSkill.getGame(userID);
-        if(g.guesses.contains(guess))
+        if (g.guesses.contains(guess))
             return handleLetterTried();
 
         HangmanSkill.guess(userID, guess);
 
         boolean goodGuess = g.word.contains(guess);
-        if(goodGuess) {
+        if (goodGuess) {
             boolean wordCompleted = Arrays.asList(g.guesses.split("")).containsAll(Arrays.asList(g.word.split("")));
-            if(wordCompleted) {
+            if (wordCompleted) {
                 HangmanSkill.stopGame(userID);
                 return handleWordCompleted();
             }
             return handleGoodGuess(userID);
-        }else {
+        } else {
             boolean gameOver = (g.badGuesses >= 10);
-            if(gameOver) {
+            if (gameOver) {
                 HangmanSkill.stopGame(userID);
                 return handleGameOver();
             }
@@ -104,28 +108,28 @@ public class MakeGuessHandler extends RegexRequestHandler {
         }
     }
 
-    private Optional<IHandlerResponse> handleLetterTried(){
+    private Optional<IHandlerResponse> handleLetterTried() {
         String txt = LETTER_TRIED_REPLIES[RANDOM.nextInt(LETTER_TRIED_REPLIES.length)];
         return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));
     }
 
-    private Optional<IHandlerResponse> handleWordCompleted(){
+    private Optional<IHandlerResponse> handleWordCompleted() {
         String txt = WORD_COMPLETED_REPLIES[RANDOM.nextInt(WORD_COMPLETED_REPLIES.length)];
         return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));
     }
 
-    private Optional<IHandlerResponse> handleGoodGuess(String userID){
+    private Optional<IHandlerResponse> handleGoodGuess(String userID) {
         String txt = GOOD_GUESS_REPLIES[RANDOM.nextInt(GOOD_GUESS_REPLIES.length)];
         txt = String.format(txt, HangmanSkill.blanks(userID));
         return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));
     }
 
-    private Optional<IHandlerResponse> handleGameOver(){
+    private Optional<IHandlerResponse> handleGameOver() {
         String txt = GAME_OVER_REPLIES[RANDOM.nextInt(GAME_OVER_REPLIES.length)];
         return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));
     }
 
-    private Optional<IHandlerResponse> handleBadGuess(String userID){
+    private Optional<IHandlerResponse> handleBadGuess(String userID) {
         String txt = BAD_GUESS_REPLIES[RANDOM.nextInt(BAD_GUESS_REPLIES.length)];
         txt = String.format(txt, HangmanSkill.blanks(userID));
         return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));

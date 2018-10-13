@@ -1,27 +1,16 @@
 package app.skill.impl.game;
 
 import app.handler.IHandlerInput;
-import app.handler.IHandlerResponse;
-import app.handler.impl.HandlerResponseImpl;
 import app.skill.DefaultSkillImpl;
-import app.skill.ISkill;
 
-import java.util.*;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Random;
 
 public class HangmanSkill extends DefaultSkillImpl {
 
-    static class Game{
-        String word;
-        String guesses;
-        int badGuesses;
-    }
-
     private static Map<String, Game> GAMES_IN_PROGRESS = new HashMap<>();
-
     private static Random RANDOM = new Random(System.currentTimeMillis());
-
     private static String[] DICTIONARY = {
             "Awkward", "Bagpipes", "Banjo", "Bungler",
             "Croquet", "Crypt", "Dwarves", "Fervid", "Fishhook",
@@ -34,26 +23,16 @@ public class HangmanSkill extends DefaultSkillImpl {
             "Toady", "Twelfth", "Unzip", "Waxy", "Wildebeest",
             "Yacht", "Zealous", "Zigzag", "Zippy", "Zombie"};
 
-    public HangmanSkill(){
+    public HangmanSkill() {
         addRequestHandler(new StartGameHandler());
         addRequestHandler(new MakeGuessHandler());
     }
 
-    public boolean canHandle(IHandlerInput input){
-        String userID = input.getUserID();
-
-        boolean ch = super.canHandle(input);
-        if(!ch && GAMES_IN_PROGRESS.containsKey(userID))
-            GAMES_IN_PROGRESS.remove(userID);
-
-        return ch;
-    }
-
-    public static Game getGame(String userID){
+    public static Game getGame(String userID) {
         return GAMES_IN_PROGRESS.get(userID);
     }
 
-    public static void startGame(String userID){
+    public static void startGame(String userID) {
         // setup game
         Game g = new Game();
         g.guesses = "";
@@ -61,23 +40,23 @@ public class HangmanSkill extends DefaultSkillImpl {
         GAMES_IN_PROGRESS.put(userID, g);
     }
 
-    public static void guess(String userID, String letter){
+    public static void guess(String userID, String letter) {
         Game g = GAMES_IN_PROGRESS.get(userID);
         g.guesses += letter;
         g.badGuesses += g.word.contains(letter) ? 0 : 1;
         GAMES_IN_PROGRESS.put(userID, g);
     }
 
-    public static String blanks(String userID){
+    public static String blanks(String userID) {
         Game g = GAMES_IN_PROGRESS.get(userID);
 
         // create blanks
         String blanks = "";
-        for(int i=0;i<g.word.length();i++) {
-            if(g.guesses.isEmpty())
+        for (int i = 0; i < g.word.length(); i++) {
+            if (g.guesses.isEmpty())
                 blanks += "_ ";
-            else if(g.guesses.contains(g.word.substring(i,i+1)))
-                blanks += g.word.substring(i, i+1) + " ";
+            else if (g.guesses.contains(g.word.substring(i, i + 1)))
+                blanks += g.word.substring(i, i + 1) + " ";
             else
                 blanks += "_ ";
         }
@@ -87,8 +66,24 @@ public class HangmanSkill extends DefaultSkillImpl {
         return blanks;
     }
 
-    public static void stopGame(String userID){
+    public static void stopGame(String userID) {
         GAMES_IN_PROGRESS.remove(userID);
+    }
+
+    public boolean canHandle(IHandlerInput input) {
+        String userID = input.getUserID();
+
+        boolean ch = super.canHandle(input);
+        if (!ch && GAMES_IN_PROGRESS.containsKey(userID))
+            GAMES_IN_PROGRESS.remove(userID);
+
+        return ch;
+    }
+
+    static class Game {
+        String word;
+        String guesses;
+        int badGuesses;
     }
 
 

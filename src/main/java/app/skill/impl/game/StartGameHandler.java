@@ -2,7 +2,6 @@ package app.skill.impl.game;
 
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
-import app.handler.IRequestHandler;
 import app.handler.impl.HandlerResponseImpl;
 import app.skill.impl.regex.RegexRequestHandler;
 
@@ -48,7 +47,7 @@ public class StartGameHandler extends RegexRequestHandler {
             "New game started. Good luck!<br>%s"
     };
 
-    public StartGameHandler(){
+    public StartGameHandler() {
         super(Arrays.asList(START_GAME_PATTERNS));
     }
 

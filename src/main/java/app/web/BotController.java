@@ -51,6 +51,7 @@ public class BotController {
                 .addSkill(new UnsplashSkill())
                 .addSkill(new WeatherSkill())
                 .addSkill(new NewYorkTimesSkill())
+                .addSkill(new SoundCloudSkill())
 
                 // generic
                 .addSkill(new DuckDuckGoSkill())
