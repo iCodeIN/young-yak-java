@@ -42,6 +42,7 @@ public class AIMLSkill extends DefaultSkillImpl {
         addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/numbers.xml")));
 
         addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/polite.xml")));
+        addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/bad_robot.xml")));
         addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/punctuation.xml")));
 
         addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/salutations.xml")));

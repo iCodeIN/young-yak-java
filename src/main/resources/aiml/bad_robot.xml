@@ -1,0 +1,133 @@
+<aiml version="1.0">
+    <category>
+        <pattern>BAD ROBOT</pattern>
+        <template>
+            <random>
+                <li>Sorry to hear I haven't been much help.</li>
+                <li>Sorry to hear I have not been much help.</li>
+                <li>Sorry to hear that.</li>
+                <li>Sorry about that.</li>
+                <li><redirect>ROAST ME</redirect></li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>BAD BOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU ARE A BAD BOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU ARE A BAD ROBOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <!-- IDIOT ROBOT -->
+    <category>
+        <pattern>IDIOT ROBOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <!-- IDIOT -->
+    <category>
+        <pattern>IDIOT BOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU ARE AN IDIOT ROBOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU ARE AN IDIOT BOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <!-- STUPID ROBOT -->
+    <category>
+        <pattern>STUPID ROBOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>STUPID BOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU ARE A STUPID ROBOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU ARE A STUPID BOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <!-- AWFUL -->
+    <category>
+        <pattern>AWFUL ROBOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>AWFUL BOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU ARE AN AWFUL ROBOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU ARE AN AWFUL BOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <!-- DUMB -->
+    <category>
+        <pattern>DUMB ROBOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>DUMB BOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU ARE A DUMB ROBOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>YOU ARE A DUMB BOT</pattern>
+        <template>
+            <redirect>BAD ROBOT</redirect>
+        </template>
+    </category>
+</aiml>
