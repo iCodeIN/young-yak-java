@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0">
+    <!-- A -->
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/abbreviations.xml"/>
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/animals_with_letter.xml"/>
+    <!-- B -->
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/bad_robot.xml"/>
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/british_to_us.xml"/>
+    <!-- C -->
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/coinflip.xml"/>
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/countries.xml"/>
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/cup_of.xml"/>
+    <!-- D -->
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/day.xml"/>
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/diceroll.xml"/>
+    <!-- E -->
+    <!-- F -->
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/famous.xml"/>
+    <!-- G -->
+    <!-- H -->
+    <!-- I -->
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/identity.xml"/>
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/insults.xml"/>
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/is_prime.xml"/>
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/itext.xml"/>
+    <!-- J -->
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/jokes.xml"/>
+    <!-- K -->
+    <!-- L -->
+    <!-- M -->
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/math.xml"/>
+    <!-- N -->
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/nerdy.xml"/>
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/numbers.xml"/>
+    <!-- O -->
+    <!-- P -->
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/polite.xml"/>
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/punctuation.xml"/>
+    <!-- Q -->
+    <!-- R -->
+    <!-- S -->
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/salutations.xml"/>
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/swearwords.xml"/>
+    <!-- T -->
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/teenspeak.xml"/>
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/time.xml"/>
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/trivia.xml"/>
+    <!-- u -->
+    <!-- v -->
+    <!-- w -->
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/what_happened.xml"/>
+    <!-- X -->
+    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/x11colors.xml"/>
+    <!-- Y -->
+    <!-- Z -->
+</aiml>

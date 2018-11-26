@@ -12,6 +12,8 @@ import org.jdom2.input.SAXBuilder;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -42,8 +44,18 @@ class AIMLRequestHandler implements IRequestHandler {
     private void readAIML(InputStream is) throws JDOMException, IOException {
         Element root = new SAXBuilder().build(is).getRootElement();
         for (Element categoryElement : root.getChildren()) {
-            if (categoryElement.getName().equals("category"))
+            // category
+            if (categoryElement.getName().equals("category")) {
                 categories.add(categoryElement);
+            }
+            // import
+            else if(categoryElement.getName().equals("import")){
+                String url = categoryElement.getAttributeValue("src");
+                try {
+                    readAIML(new URI(url).toURL().openStream());
+                    System.out.println(String.format("Loading external AIML file : %s", url));
+                } catch (URISyntaxException e) { e.printStackTrace(); }
+            }
         }
     }
 
