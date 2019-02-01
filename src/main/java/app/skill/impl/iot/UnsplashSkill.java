@@ -94,6 +94,8 @@ public class UnsplashSkill extends AbstractLookupSkill {
             String url = imgElement.attr("src");
             if (url.contains("profile"))
                 continue;
+            if(url.isEmpty())
+                continue;
             for (String className : imgElement.classNames()) {
                 if (cssClassCount.containsKey(className))
                     cssClassCount.put(className, cssClassCount.get(className) + 1);
@@ -109,6 +111,8 @@ public class UnsplashSkill extends AbstractLookupSkill {
 
         List<String> imgURLs = new ArrayList<>();
         for (Element imgElement : doc.getElementsByTag("img")) {
+            if(imgElement.attr("src").isEmpty())
+                continue;
             if (!imgElement.classNames().contains(topEntry.getKey()))
                 continue;
             imgURLs.add(imgElement.attr("src"));
