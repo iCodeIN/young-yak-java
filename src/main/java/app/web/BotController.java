@@ -7,10 +7,10 @@ import app.entities.DialogChunkRepository;
 import app.handler.IHandlerResponse;
 import app.handler.impl.HandlerInputImpl;
 import app.skill.impl.aiml.AIMLSkill;
-import app.skill.impl.eval.MathSkill;
-import app.skill.impl.game.HangmanSkill;
+import app.skill.impl.math.MathSkill;
+import app.skill.impl.hangman.HangmanSkill;
 import app.skill.impl.iot.*;
-import app.skill.impl.meta.stats.SystemStatisticsSkill;
+import app.skill.impl.meta.stats.BotStatisticsSkill;
 import app.skill.impl.meta.typo.TypoCorrectionSkill;
 import app.skill.impl.meta.word2vec.FAQSkill;
 import app.skill.impl.meta.word2vec.SemanticMatchSkill;
@@ -40,10 +40,12 @@ public class BotController {
         bot.addSkill(new AIMLSkill(bot))
                 .addSkill(new TimeSkill())
                 .addSkill(new MathSkill())
+
+                // games
                 .addSkill(new HangmanSkill())
 
                 // meta
-                .addSkill(new SystemStatisticsSkill(this))
+                .addSkill(new BotStatisticsSkill(this))
 
                 // iot
                 .addSkill(new CocktailSkill())

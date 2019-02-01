@@ -16,8 +16,10 @@ public class AIMLSkill extends DefaultSkillImpl {
 
     public AIMLSkill(IBot bot) {
         this.bot = bot;
-        addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/root.xml")));
-        /*
+        // addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/root.xml")));
+
+        addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/i_am_feeling.xml")));
+
         addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/abbreviations.xml")));
         addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/animals_with_letter.xml")));
 
@@ -57,7 +59,7 @@ public class AIMLSkill extends DefaultSkillImpl {
         addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/what_happened.xml")));
 
         addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/x11colors.xml")));
-        */
+
     }
 
 }

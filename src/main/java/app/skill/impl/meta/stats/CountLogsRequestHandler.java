@@ -2,6 +2,7 @@ package app.skill.impl.meta.stats;
 
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
+import app.handler.IRequestHandler;
 import app.handler.impl.HandlerResponseImpl;
 import app.skill.impl.regex.RegexRequestHandler;
 import app.web.BotController;
@@ -11,10 +12,7 @@ import java.util.Optional;
 import java.util.Random;
 import java.util.regex.Pattern;
 
-/**
- * This ISkill deals with diagnostic inquiries about the number of logs being stored.
- */
-public class CountLogsHandler extends RegexRequestHandler {
+public class CountLogsRequestHandler extends RegexRequestHandler {
 
     private static Pattern[] PATTERNS = {
             Pattern.compile("HOW MANY LOG ENTRIES DO YOU HAVE", Pattern.CASE_INSENSITIVE),
@@ -45,15 +43,15 @@ public class CountLogsHandler extends RegexRequestHandler {
 
     private BotController botController;
 
-    public CountLogsHandler(BotController botController) {
+    public CountLogsRequestHandler(BotController botController){
         super(Arrays.asList(PATTERNS));
         this.botController = botController;
     }
 
     @Override
     public Optional<IHandlerResponse> handle(IHandlerInput input) {
-        String txt = REPLIES[RANDOM.nextInt(REPLIES.length)];
-        int N = (int) botController.getDialogChunkRepository().count();
-        return Optional.of(new HandlerResponseImpl(String.format(txt, N), new String[]{this.getClass().getName()}));
+        long size = botController.getDialogChunkRepository().count();
+        String txt = String.format(REPLIES[RANDOM.nextInt(REPLIES.length)], size);
+        return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));
     }
 }

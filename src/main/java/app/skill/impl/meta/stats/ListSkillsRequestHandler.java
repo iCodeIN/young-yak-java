@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 /**
  * This ISkill deals with diagnostic inquiries about the number of skills.
  */
-public class ListSkillsHandler extends RegexRequestHandler {
+public class ListSkillsRequestHandler extends RegexRequestHandler {
 
     private static Pattern[] PATTERNS = {
             Pattern.compile("WHAT SKILLS DO YOU HAVE", Pattern.CASE_INSENSITIVE),
@@ -26,7 +26,7 @@ public class ListSkillsHandler extends RegexRequestHandler {
     };
     private final BotController botController;
 
-    public ListSkillsHandler(BotController bot) {
+    public ListSkillsRequestHandler(BotController bot) {
         super(Arrays.asList(PATTERNS));
         this.botController = bot;
     }

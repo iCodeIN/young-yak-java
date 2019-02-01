@@ -10,7 +10,7 @@ import app.web.BotController;
 import java.util.*;
 import java.util.regex.Pattern;
 
-public class CountSkillInvocationHandler extends RegexRequestHandler {
+public class CountSkillInvocationRequestHandler extends RegexRequestHandler {
 
     private static Pattern[] PATTERNS = {
             Pattern.compile("HOW MANY TIMES WAS EACH SKILL USED", Pattern.CASE_INSENSITIVE),
@@ -30,7 +30,7 @@ public class CountSkillInvocationHandler extends RegexRequestHandler {
 
     private BotController botController;
 
-    public CountSkillInvocationHandler(BotController botController) {
+    public CountSkillInvocationRequestHandler(BotController botController) {
         super(Arrays.asList(PATTERNS));
         this.botController = botController;
     }

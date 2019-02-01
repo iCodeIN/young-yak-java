@@ -1,4 +1,4 @@
-package app.skill.impl.game;
+package app.skill.impl.hangman;
 
 import app.handler.IHandlerInput;
 import app.skill.DefaultSkillImpl;
@@ -33,7 +33,7 @@ public class HangmanSkill extends DefaultSkillImpl {
     }
 
     public static void startGame(String userID) {
-        // setup game
+        // setup hangman
         Game g = new Game();
         g.guesses = "";
         g.word = DICTIONARY[RANDOM.nextInt(DICTIONARY.length)].toUpperCase();

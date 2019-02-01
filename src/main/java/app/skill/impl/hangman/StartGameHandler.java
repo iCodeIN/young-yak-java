@@ -1,4 +1,4 @@
-package app.skill.impl.game;
+package app.skill.impl.hangman;
 
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
@@ -41,10 +41,10 @@ public class StartGameHandler extends RegexRequestHandler {
     };
 
     private static String[] REPLIES = {
-            "Starting up a new game.<br>%s",
-            "New game started.<br>%s",
+            "Starting up a new hangman.<br>%s",
+            "New hangman started.<br>%s",
             "Good luck!<br>%s",
-            "New game started. Good luck!<br>%s"
+            "New hangman started. Good luck!<br>%s"
     };
 
     public StartGameHandler() {

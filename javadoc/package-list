@@ -6,8 +6,8 @@ app.handler.impl
 app.skill
 app.skill.impl.aiml
 app.skill.impl.desktop
-app.skill.impl.eval.js
-app.skill.impl.eval.math
+app.skill.impl.math.js
+app.skill.impl.math.math
 app.skill.impl.iot
 app.skill.impl.meta.stats
 app.skill.impl.meta.typo

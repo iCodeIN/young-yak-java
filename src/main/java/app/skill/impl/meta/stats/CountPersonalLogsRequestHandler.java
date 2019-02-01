@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 /**
  * This ISkill deals with diagnostic inquiries about the number of logs being stored pertaining to the current user.
  */
-public class CountPersonalLogsHandler extends RegexRequestHandler {
+public class CountPersonalLogsRequestHandler extends RegexRequestHandler {
 
     private static Pattern[] PATTERNS = {
             Pattern.compile("HOW MANY LOG ENTRIES DO YOU HAVE ABOUT ME", Pattern.CASE_INSENSITIVE),
@@ -97,7 +97,7 @@ public class CountPersonalLogsHandler extends RegexRequestHandler {
 
     private BotController botController;
 
-    public CountPersonalLogsHandler(BotController botController) {
+    public CountPersonalLogsRequestHandler(BotController botController) {
         super(Arrays.asList(PATTERNS));
         this.botController = botController;
     }

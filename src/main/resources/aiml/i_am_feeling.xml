@@ -1,0 +1,1929 @@
+<aiml>
+    <category>
+        <pattern>I FEEL AGGREIVED</pattern>
+        <template>
+            <redirect>I FEEL HURT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING AGGREIVED</pattern>
+        <template>
+            <redirect>I FEEL AGGREIVED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL AFRAID</pattern>
+        <template>
+            <random>
+                <li>Lots of things make us feel afraid. Being afraid of some things – like fires – can keep you safe. Fearing failure can make you try to do well so that you won’t fail, but it can also stop you doing well if the feeling is too strong.</li>
+                <li>What you’re afraid of and how you act when you’re afraid of something can vary per person. Just knowing what makes you afraid and why can be the first step to sorting out problems with fear.</li>
+                <li>Fear and anxiety can affect all of us every now and then. It is only when it is severe and long-lasting that doctors class it as a mental health problem. If you feel anxious all the time for several weeks, or if it feels like your fears are taking over your life, then it’s a good idea to ask your doctor for help.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING AFRAID</pattern>
+        <template>
+            <redirect>I FEEL AFRAID</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL AGITATED</pattern>
+        <template>
+            <random>
+                <li>Agitation is a feeling of aggravation, annoyance, or restlessness brought on by provocation or, in some cases, little to no provocation. It can be a sign of an underlying medical or psychiatric condition.</li>
+                <li>It’s normal to feel agitated from time to time. For example, you might feel agitated in response to stress from work or school. But if you regularly experience agitation for no known reason, make an appointment with your doctor. You may have an underlying medical condition that requires treatment.</li>
+                <li>Agitation is a normal emotion experienced by most people at least once in their lives. In the majority of cases, it’s not cause for worry or concern. Common causes of agitation include: work stress, school stress, feeling ill, burnout, peer-pressure, grief.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING AGITATED</pattern>
+        <template>
+            <redirect>I FEEL AGITATED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL AGREEABLE</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING AGREEABLE</pattern>
+        <template>
+            <redirect>I FEEL AGREEABLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL AMAZED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING AMAZED</pattern>
+        <template>
+            <redirect>I FEEL AMAZED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL AMUSED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING AMUSED</pattern>
+        <template>
+            <redirect>I FEEL AMUSED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL ANGRY</pattern>
+        <template>
+            <random>
+                <li>You’ve been given a wide spectrum of emotions for a reason, so use them. Suppressing your anger is unhealthy. It can lead to ulcers and heart disease, never mind the damage it can do to your relationships and overall sense of well-being.</li>
+                <li>A healthy person is someone who expresses their feelings… Express, not repress… You know what happens to people who shut everybody out? They fester. Inside. Fester and rot.</li>
+                <li>If you attempt to hide or ignore your anger, it won’t go away. It might subside for a certain amount of time, but eventually it will manifest itself elsewhere.</li>
+                <li>Don’t apologize for or excuse your anger. You’re angry for a valid reason, and acknowledging it is the first step toward resolving what’s bothering you.</li>
+                <li>You’ll likely want to pull a Godzilla and destroy everything in your path, but it’s important to take a step back and feel the emotion before you take action on it, especially when you feel extremely angry—let the anger take its course. </li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING ANGRY</pattern>
+        <template>
+            <redirect>I FEEL ANGRY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL ANNOYED</pattern>
+        <template>
+            <redirect>I FEEL ANGRY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING ANNOYED</pattern>
+        <template>
+            <redirect>I FEEL ANNOYED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL ANXIOUS</pattern>
+        <template>
+            <random>
+                <li>Anxiety is your body’s natural response to stress. It’s a feeling of fear or apprehension about what’s to come. The first day of school, going to a job interview, or giving a speech may cause most people to feel fearful and nervous.</li>
+                <li>If your feelings of anxiety are extreme, last for longer than six months, and are interfering with your life, you may have an anxiety disorder.</li>
+                <li>It’s normal to feel anxious about moving to a new place, starting a new job, or taking a test. This type of anxiety is unpleasant, but it may motivate you to work harder and to do a better job. Ordinary anxiety is a feeling that comes and goes, but does not interfere with your everyday life.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING ANXIOUS</pattern>
+        <template>
+            <redirect>I FEEL ANXIOUS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL APATHETIC</pattern>
+        <template>
+            <random>
+                <li>Have you been having negative thoughts about yourself, or your prospects? Are you afraid to act for fear that you might fail? be rejected?</li>
+                <li>Have you become so bored, or worn down, by tedious daily routines that it seems there’s nothing to look forward to? Without quite realizing it, is there something inside you that’s simply given up on creating a more joyful, gratifying future for yourself?</li>
+                <li>Did something recently happen to you, or someone you deeply care about, that has left you not simply disappointed but demoralized, pessimistic—or downright hopeless?</li>
+                <li>Is it possible that not that long ago you actually did experience some failure or rejection—and because of old, never rectified defeatist “programming,” you haven’t been able to rebound from it?</li>
+                <li>Break the cycle. First and foremost, you must decide to break the cycle of apathy. If your thoughts continually lead you toward inactivity and powerlessness, it is time to generate different thoughts.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING APATHETIC</pattern>
+        <template>
+            <redirect>I FEEL APATHETIC</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL APPREHENSIVE</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING APPREHENSIVE</pattern>
+        <template>
+            <redirect>I FEEL APPREHENSIVE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL ARROGANT</pattern>
+        <template>
+            <random>
+                <li>People who are arrogant usually don't know that they are arrogant.</li>
+                <li> If you want to be less arrogant, don't try to be humble.  Rather, just be upfront with everyone about your skill or knowledge level in the area of conversation.</li>
+                <li> If you want to stop being arrogant, simply decide to become a lifelong learner and let go of any need to share or push what you have learned with others.  Learning is plenty.  You don't need to share it.  Really.</li>
+                <li> Listen about 10x more than you speak.  That'll probably correct the problem.  If you cannot make this shift, then something else is going on.</li>
+                <li> Stop trying so much to help people with what you've learned. Make your knowledge available to al those who wish it.  Be a spring where they dip their cup into what you've got.  It's a lot easier.  And you'll have more time to enjoy your life and your learning.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING ARROGANT</pattern>
+        <template>
+            <redirect>I FEEL ARROGANT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL ASHAMED</pattern>
+        <template>
+            <random>
+                <li>Know your own strengths. Just like everyone, you have your own unique strengths and good qualities. Self-awareness is empowering and it's worthwhile to learn as much as you can about yourself, your personality and your strengths.</li>
+                <li>Focus on the good things in your life. Stop dwelling on the negatives, the things you don't have or don't like. Work on those things you can change and accept those things you can't. Focus on the good things about yourself and your life.</li>
+                <li>Look at the bigger picture. See yourself as a whole person and love yourself in your entirety. Work, money, education, looks, talents or health don’t define who you are; and they don’t determine your worth as a person.</li>
+                <li>Stop being a perfectionist. Perfectionism causes you too focus too much on the negatives about yourself. Nobody's perfect and it's important to have reasonable expectations of who you are. It's okay and human to have imperfections, and you can't be good at everything. Don't be ashamed of your imperfections.</li>
+                <li>Learn from your mistakes. Accept that mistakes are part of learning and growing, and they're a part of life. Learn from your mistakes and give yourself permission to move on from the past.</li>
+                <li>Forget about being a clone. A world of clones is not sustainable, and we need a variety of people to keep the world going. Embrace your uniqueness because that's what makes you special. Everyone fits in and we complement each other, just like the pieces of a jigsaw puzzle. While you're not a clone, you're like other people just because you’re human. You do fit in. Be authentic.</li>
+                <li>Follow your own road. Everyone has their own unique journey in life, and there is no "right" way. Stop comparing yourself to other people and stop worrying about the things you "should" be doing. Don't be ashamed of your journey because the only path you have is your own. It's okay to live your own life and to be you.</li>
+                <li>Practice self-love. Treat yourself as you would a best friend and be kind to yourself. Learn to love and respect yourself as a whole person.</li>
+                <li>Use affirmations and positive self-talk. Challenge your inner critic and change to a more positive focus.</li>
+                <li>Stop worrying about what others think. All people have their own issues, and they probably don't notice or care as much as you think. You are probably far more critical of yourself than other people are.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING ASHAMED</pattern>
+        <template>
+            <redirect>I FEEL ASHAMED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL ASTONISHED</pattern>
+        <template>
+            <redirect>I FEEL AMAZED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING ASTONISHED</pattern>
+        <template>
+            <redirect>I FEEL ASTONISHED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL AWFUL</pattern>
+        <template>
+            <redirect>I FEEL BAD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING AWFUL</pattern>
+        <template>
+            <redirect>I FEEL AWFUL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL BAD</pattern>
+        <template>
+            <random>
+                <li>Perhaps you are procrastinating? How many unsolved problems are you leaving behind because of procrastination? Procrastination allows bad moods to increase and in the same time adds guilt to them thus resulting in ruining your overall mood.</li>
+                <li>Don’t allow your problems to accumulate, respond as fast as you can and don’t escape. Only then you will experience true happiness.</li>
+                <li>Perhaps your priorities are incorrectly set? You hate stress but your job is stressful. You dislike driving but you drive to far places to see your friends and want to be happy but many of your choices are based on getting more money and fame rather than happiness.</li>
+                <li>Perhaps you're feeling guilty? When you do something that you didn’t like you will feel guilty for a day or two but what about people who keep doing the things that they dislike everyday? That would result in a tremendous amount of accumulated guilt. Procrastination, bad habits, addiction and all other things that you do on daily basis are adding some guilt to your mood each day. </li>
+                <li>When something goes wrong with your body your mind usually sends signals of pain so that you take action. The same thing happens with emotional problems, the only difference is that the signals come in the form of bad moods, mood swings, bad dreams and insomnia. Learn how to understand these signals and to respond in quick manner so that you don’t give yourself the chance to feel bad for prolonged periods of time.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING BAD</pattern>
+        <template>
+            <redirect>I FEEL BAD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL BEREAVED</pattern>
+        <template>
+            <redirect>I FEEL SAD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING BEREAVED</pattern>
+        <template>
+            <redirect>I FEEL BEREAVED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL BEWILDERED</pattern>
+        <template>
+            <redirect>I FEEL AMAZED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING BEWILDERED</pattern>
+        <template>
+            <redirect>I FEEL BEWILDERED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL BORED</pattern>
+        <template>
+            <random>
+                <li>Boredom is similar to mental fatigue and is caused by repetition and lack of interest in the details of our tasks (e.g., tasks that require continuous attention, prisoners who are locked up, waiting at the airport). Any experience that is predictable and repetitive becomes boring. In general, too much of the same thing and too little stimulation can cause in its victim an absence of desire and a feeling of entrapment.</li>
+                <li>Boredom is linked to problems with attention. What bores us never fully engages our attention. After all, it is hard to be interested in something when you cannot concentrate on it. People with chronic attention problems, such as attention-deficit hyperactivity disorder, have a high tendency for boredom.</li>
+                <li>Some individuals are more likely to be bored than others. People with a strong need for novelty, excitement, and variety are at risk of boredom. These sensation seekers (e.g., skydivers) are likely to find that the world moves too slowly. The need for external stimulation may explain why extroverts tend to be particularly prone to boredom. Novelty seeking and risk taking is the way that these people self-medicate to cure their boredom.</li>
+                <li>Go on a walk. Challenge yourself to leave your cell phone in your purse or pocket. Admire the view. Stop and smell the roses.</li>
+                <li>Order a small set of hand weights from Amazon. The next time you get bored, grab them and tone your arms.</li>
+                <li>Organize something. Don’t tackle a huge organizational project like your closet. Instead, choose something small and manageable—your underwear drawer, your pantry, or that crowded bookshelf—so you won’t be intimidated. Get rid of things.</li>
+                <li>Do your laundry. You’ll thank me later when you have clean clothes to wear to the gym.</li>
+                <li>Roll out your yoga mat and do some stretches at home, or just sit there and practice deep breathing.</li>
+                <li>Call an old friend you haven’t talked to in forever. Catch up or leave a friendly voicemail.</li>
+                <li>Try your hand at painting. Find a paint-by-numbers print you like, put your Picasso hat on, and start painting. When you’re finished, give the painting to a family member as a gift.</li>
+                <li>Take a bubble bath. Why not? Let yourself relax!</li>
+                <li>Make something! Scour your pantry and fridge. Use the ingredients you have on hand to make a scrumptious salad. Incorporate grains, rice, herbs, greens, nuts, and cheese. Eat it for lunch tomorrow.</li>
+                <li>Research places to volunteer. The next time you start to feel bored, head to one of the places that sounded interesting and rewarding to you.</li>
+                <li>Color. That adult coloring book you got for Christmas? Break it out and channel your inner child with markers or crayons.</li>
+                <li>Listen to music. Put on Pharrell’s “Happy” and be happy.</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING BORED</pattern>
+        <template>
+            <redirect>I FEEL BORED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL BRAVE</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING BRAVE</pattern>
+        <template>
+            <redirect>I FEEL BRAVE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL CALM</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING CALM</pattern>
+        <template>
+            <redirect>I FEEL CALM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL CAREFUL</pattern>
+        <template>
+            <random>
+                <li>The fear of doing or saying whatever it is you’ve been wanting to do isn’t there by accident. It means you’re onto something big. Embrace it, see your emotions for what they are and then make a conscious decision to face your fears. Being brave begins with one step; decide to overcome what’s holding you back and say yes to the challenge.</li>
+                <li>Spend a day on your own doing things you wouldn’t normally do solo. Visit a museum by yourself. Sit down for a meal and enjoy your own company. Go to the beach on your own. Make an effort to try something new and challenge yourself to feel satisfied with spending quality time with yourself. This will boost your confidence and will inspire you the next time you need a reminder for how strong you really are.</li>
+                <li>Many times, it’s both your own opinion and the opinion’s of others that holds you back, no matter how well meaning the person. Respect their advice and then do what feels right for you and don’t second guess yourself. Really listening to yourself and focusing on what the best actions are for you is a powerful step towards courage.</li>
+                <li>Talk to a stranger. Yes, this can seem uncomfortable at first. You’re waiting in a long line for a coffee, or riding in an elevator with someone up to the 9th floor. Don’t ignore them. Look them in the eye, smile, and say hello. It’s a small gesture with very little risk, and the more you do it, the easier it becomes. You never know who you’ll meet waiting in line or riding to the top floor, so tap into your bravery and allow yourself the opportunity to brighten your day.</li>
+                <li>Use your fearless friend who is always challenging herself as inspiration or find a role model whose bravery you admire. They’ll remind you to channel that inner strength and go for it (whatever that it may be). Get into the mindset of “what would (insert person you admire here) do, or how would (insert person you admire here) handle this?</li>
+            </random>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING CAREFUL</pattern>
+        <template>
+            <redirect>I FEEL CAREFUL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL CERTAIN</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING CERTAIN</pattern>
+        <template>
+            <redirect>I FEEL CERTAIN</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL CHARGED</pattern>
+        <template>
+            <redirect>I FEEL EXCITED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING CHARGED</pattern>
+        <template>
+            <redirect>I FEEL CHARGED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL CHARMING</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING CHARMING</pattern>
+        <template>
+            <redirect>I FEEL CHARMING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL CHEERFUL</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING CHEERFUL</pattern>
+        <template>
+            <redirect>I FEEL CHEERFUL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL CHEERY</pattern>
+        <template>
+            <redirect>I FEEL CHEERFUL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING CHEERY</pattern>
+        <template>
+            <redirect>I FEEL CHEERY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL CLUMSY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING CLUMSY</pattern>
+        <template>
+            <redirect>I FEEL CLUMSY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL COMBATIVE</pattern>
+        <template>
+            <redirect>I FEEL DEFIANT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING COMBATIVE</pattern>
+        <template>
+            <redirect>I FEEL COMBATIVE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL COMFORTABLE</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING COMFORTABLE</pattern>
+        <template>
+            <redirect>I FEEL COMFORTABLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL CONDEMNED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING CONDEMNED</pattern>
+        <template>
+            <redirect>I FEEL CONDEMNED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL CONFUSED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING CONFUSED</pattern>
+        <template>
+            <redirect>I FEEL CONFUSED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL CONTENT</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING CONTENT</pattern>
+        <template>
+            <redirect>I FEEL CONTENT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL COOPERATIVE</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING COOPERATIVE</pattern>
+        <template>
+            <redirect>I FEEL COOPERATIVE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL COURAGEOUS</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING COURAGEOUS</pattern>
+        <template>
+            <redirect>I FEEL COURAGEOUS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL CRAZY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING CRAZY</pattern>
+        <template>
+            <redirect>I FEEL CRAZY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL CREEPY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING CREEPY</pattern>
+        <template>
+            <redirect>I FEEL CREEPY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL CRUEL</pattern>
+        <template>
+            <redirect>I FEEL EVIL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING CRUEL</pattern>
+        <template>
+            <redirect>I FEEL CRUEL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL DANGEROUS</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING DANGEROUS</pattern>
+        <template>
+            <redirect>I FEEL DANGEROUS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL DEFEATED</pattern>
+        <template>
+            <redirect>I FEEL SAD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING DEFEATED</pattern>
+        <template>
+            <redirect>I FEEL DEFEATED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL DEFIANT</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING DEFIANT</pattern>
+        <template>
+            <redirect>I FEEL DEFIANT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL DELIGHTFUL</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING DELIGHTFUL</pattern>
+        <template>
+            <redirect>I FEEL DELIGHTFUL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL DEPRESSED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING DEPRESSED</pattern>
+        <template>
+            <redirect>I FEEL DEPRESSED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL DETERMINED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING DETERMINED</pattern>
+        <template>
+            <redirect>I FEEL DETERMINED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL DISAPPOINTED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING DISAPPOINTED</pattern>
+        <template>
+            <redirect>I FEEL DISAPPOINTED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL DISGUSTED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING DISGUSTED</pattern>
+        <template>
+            <redirect>I FEEL DISGUSTED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL DISINTERESTED</pattern>
+        <template>
+            <redirect>I FEEL APATHETIC</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING DISINTERESTED</pattern>
+        <template>
+            <redirect>I FEEL DISINTERESTED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL DISTURBED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING DISTURBED</pattern>
+        <template>
+            <redirect>I FEEL DISTURBED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL DIZZY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING DIZZY</pattern>
+        <template>
+            <redirect>I FEEL DIZZY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL DULL</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING DULL</pattern>
+        <template>
+            <redirect>I FEEL DULL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL EAGER</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING EAGER</pattern>
+        <template>
+            <redirect>I FEEL EAGER</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL ELATED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING ELATED</pattern>
+        <template>
+            <redirect>I FEEL ELATED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL EMBARRASSED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING EMBARRASSED</pattern>
+        <template>
+            <redirect>I FEEL EMBARRASSED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL ENCHANTING</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING ENCHANTING</pattern>
+        <template>
+            <redirect>I FEEL ENCHANTING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL ENCOURAGING</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING ENCOURAGING</pattern>
+        <template>
+            <redirect>I FEEL ENCOURAGING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL ENERGETIC</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING ENERGETIC</pattern>
+        <template>
+            <redirect>I FEEL ENERGETIC</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL ENTHUSIASTIC</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING ENTHUSIASTIC</pattern>
+        <template>
+            <redirect>I FEEL ENTHUSIASTIC</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL ENVIOUS</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING ENVIOUS</pattern>
+        <template>
+            <redirect>I FEEL ENVIOUS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL EVIL</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING EVIL</pattern>
+        <template>
+            <redirect>I FEEL EVIL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL EXCITED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING EXCITED</pattern>
+        <template>
+            <redirect>I FEEL EXCITED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL EXUBERANT</pattern>
+        <template>
+            <redirect>I FEEL EXCITED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING EXUBERANT</pattern>
+        <template>
+            <redirect>I FEEL EXUBERANT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL FAIR</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING FAIR</pattern>
+        <template>
+            <redirect>I FEEL FAIR</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL FAITHFUL</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING FAITHFUL</pattern>
+        <template>
+            <redirect>I FEEL FAITHFUL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL FANTASTIC</pattern>
+        <template>
+            <redirect>I FEEL EXCITED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING FANTASTIC</pattern>
+        <template>
+            <redirect>I FEEL FANTASTIC</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL FEARFUL</pattern>
+        <template>
+            <redirect>I FEEL AFRAID</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING FEARFUL</pattern>
+        <template>
+            <redirect>I FEEL FEARFUL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL FIERCE</pattern>
+        <template>
+            <redirect>I FEEL BRAVE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING FIERCE</pattern>
+        <template>
+            <redirect>I FEEL FIERCE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL FINE</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING FINE</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL FLIPPED-OUT</pattern>
+        <template>
+            <redirect>I FEEL ANGRY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING FLIPPED-OUT</pattern>
+        <template>
+            <redirect>I FEEL FLIPPED-OUT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL FOOLISH</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING FOOLISH</pattern>
+        <template>
+            <redirect>I FEEL FOOLISH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL FORTUNATE</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING FORTUNATE</pattern>
+        <template>
+            <redirect>I FEEL FORTUNATE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL FRANTIC</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING FRANTIC</pattern>
+        <template>
+            <redirect>I FEEL FRANTIC</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL FRIENDLY</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING FRIENDLY</pattern>
+        <template>
+            <redirect>I FEEL FRIENDLY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL FRIGHTENED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING FRIGHTENED</pattern>
+        <template>
+            <redirect>I FEEL FRIGHTENED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL FRUSTRATED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING FRUSTRATED</pattern>
+        <template>
+            <redirect>I FEEL FRUSTRATED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL FUNNY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING FUNNY</pattern>
+        <template>
+            <redirect>I FEEL FUNNY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL GENEROUS</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING GENEROUS</pattern>
+        <template>
+            <redirect>I FEEL GENEROUS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL GENTLE</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING GENTLE</pattern>
+        <template>
+            <redirect>I FEEL GENTLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL GLAD</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING GLAD</pattern>
+        <template>
+            <redirect>I FEEL GLAD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL GLEEFUL</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING GLEEFUL</pattern>
+        <template>
+            <redirect>I FEEL GLEEFUL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL GLORIOUS</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING GLORIOUS</pattern>
+        <template>
+            <redirect>I FEEL GLORIOUS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL GOOD</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING GOOD</pattern>
+        <template>
+            <redirect>I FEEL GOOD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL GRIEVING</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING GRIEVING</pattern>
+        <template>
+            <redirect>I FEEL GRIEVING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL GRUMPY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING GRUMPY</pattern>
+        <template>
+            <redirect>I FEEL GRUMPY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL HAPPY</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING HAPPY</pattern>
+        <template>
+            <redirect>I FEEL HAPPY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL HEALTHY</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING HEALTHY</pattern>
+        <template>
+            <redirect>I FEEL HEALTHY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL HELPFUL</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING HELPFUL</pattern>
+        <template>
+            <redirect>I FEEL HELPFUL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL HELPLESS</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING HELPLESS</pattern>
+        <template>
+            <redirect>I FEEL HELPLESS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL HESITANT</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING HESITANT</pattern>
+        <template>
+            <redirect>I FEEL HESITANT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL HILARIOUS</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING HILARIOUS</pattern>
+        <template>
+            <redirect>I FEEL HILARIOUS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL HUNGRY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING HUNGRY</pattern>
+        <template>
+            <redirect>I FEEL HUNGRY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL HURT</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING HURT</pattern>
+        <template>
+            <redirect>I FEEL HURT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL ILL</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING ILL</pattern>
+        <template>
+            <redirect>I FEEL ILL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL INDIGNANT</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING INDIGNANT</pattern>
+        <template>
+            <redirect>I FEEL INDIGNANT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL INSPIRED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING INSPIRED</pattern>
+        <template>
+            <redirect>I FEEL INSPIRED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL INTERESTED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING INTERESTED</pattern>
+        <template>
+            <redirect>I FEEL INTERESTED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL ITCHY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING ITCHY</pattern>
+        <template>
+            <redirect>I FEEL ITCHY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL JEALOUS</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING JEALOUS</pattern>
+        <template>
+            <redirect>I FEEL JEALOUS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL JITTERY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING JITTERY</pattern>
+        <template>
+            <redirect>I FEEL JITTERY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL JOLLY</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING JOLLY</pattern>
+        <template>
+            <redirect>I FEEL JOLLY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL JOYFUL</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING JOYFUL</pattern>
+        <template>
+            <redirect>I FEEL JOYFUL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL JOYOUS</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING JOYOUS</pattern>
+        <template>
+            <redirect>I FEEL JOYOUS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL JUBILANT</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING JUBILANT</pattern>
+        <template>
+            <redirect>I FEEL JUBILANT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL KIND</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING KIND</pattern>
+        <template>
+            <redirect>I FEEL KIND</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL LAZY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING LAZY</pattern>
+        <template>
+            <redirect>I FEEL LAZY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL LIVELY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING LIVELY</pattern>
+        <template>
+            <redirect>I FEEL LIVELY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL LOVELY</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING LOVELY</pattern>
+        <template>
+            <redirect>I FEEL LOVELY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL LOVING</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING LOVING</pattern>
+        <template>
+            <redirect>I FEEL LOVING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL LOVING</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING LOVING</pattern>
+        <template>
+            <redirect>I FEEL LOVING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL LUCKY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING LUCKY</pattern>
+        <template>
+            <redirect>I FEEL LUCKY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL MAD</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING MAD</pattern>
+        <template>
+            <redirect>I FEEL MAD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL MELANCHOLY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING MELANCHOLY</pattern>
+        <template>
+            <redirect>I FEEL MELANCHOLY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL MOTIVATED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING MOTIVATED</pattern>
+        <template>
+            <redirect>I FEEL MOTIVATED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL MYSTERIOUS</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING MYSTERIOUS</pattern>
+        <template>
+            <redirect>I FEEL MYSTERIOUS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL NASTY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING NASTY</pattern>
+        <template>
+            <redirect>I FEEL NASTY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL NAUGHTY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING NAUGHTY</pattern>
+        <template>
+            <redirect>I FEEL NAUGHTY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL NERVOUS</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING NERVOUS</pattern>
+        <template>
+            <redirect>I FEEL NERVOUS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL NICE</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING NICE</pattern>
+        <template>
+            <redirect>I FEEL NICE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL NUTTY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING NUTTY</pattern>
+        <template>
+            <redirect>I FEEL NUTTY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL OBEDIENT</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING OBEDIENT</pattern>
+        <template>
+            <redirect>I FEEL OBEDIENT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL OBNOXIOUS</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING OBNOXIOUS</pattern>
+        <template>
+            <redirect>I FEEL OBNOXIOUS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL OBSTINATE</pattern>
+        <template>
+            <redirect>I FEEL DEFIANT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING OBSTINATE</pattern>
+        <template>
+            <redirect>I FEEL OBSTINATE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL OUTRAGEOUS</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING OUTRAGEOUS</pattern>
+        <template>
+            <redirect>I FEEL OUTRAGEOUS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL PANICKY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING PANICKY</pattern>
+        <template>
+            <redirect>I FEEL PANICKY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL PERFECT</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING PERFECT</pattern>
+        <template>
+            <redirect>I FEEL PERFECT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL PETULANT</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING PETULANT</pattern>
+        <template>
+            <redirect>I FEEL PETULANT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL PLEASANT</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING PLEASANT</pattern>
+        <template>
+            <redirect>I FEEL PLEASANT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL PLEASED</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING PLEASED</pattern>
+        <template>
+            <redirect>I FEEL PLEASED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL PREPARED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING PREPARED</pattern>
+        <template>
+            <redirect>I FEEL PREPARED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL PROUD</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING PROUD</pattern>
+        <template>
+            <redirect>I FEEL PROUD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL QUIET</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING QUIET</pattern>
+        <template>
+            <redirect>I FEEL QUIET</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL READY</pattern>
+        <template>
+            <redirect>I FEEL PREPARED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING READY</pattern>
+        <template>
+            <redirect>I FEEL READY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL RELIEVED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING RELIEVED</pattern>
+        <template>
+            <redirect>I FEEL RELIEVED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL RELUCTANT</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING RELUCTANT</pattern>
+        <template>
+            <redirect>I FEEL RELUCTANT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL REPULSIVE</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING REPULSIVE</pattern>
+        <template>
+            <redirect>I FEEL REPULSIVE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL RESTLESS</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING RESTLESS</pattern>
+        <template>
+            <redirect>I FEEL RESTLESS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL SAD</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING SAD</pattern>
+        <template>
+            <redirect>I FEEL SAD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL SCARED</pattern>
+        <template>
+            <redirect>I FEEL AFRAID</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING SCARED</pattern>
+        <template>
+            <redirect>I FEEL SCARED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL SCARY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING SCARY</pattern>
+        <template>
+            <redirect>I FEEL SCARY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL SELFISH</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING SELFISH</pattern>
+        <template>
+            <redirect>I FEEL SELFISH</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL SHOCKED</pattern>
+        <template>
+            <redirect>I FEEL SURPRISED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING SHOCKED</pattern>
+        <template>
+            <redirect>I FEEL SHOCKED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL SILLY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING SILLY</pattern>
+        <template>
+            <redirect>I FEEL SILLY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL SLEEPY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING SLEEPY</pattern>
+        <template>
+            <redirect>I FEEL SLEEPY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL SMILING</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING SMILING</pattern>
+        <template>
+            <redirect>I FEEL SMILING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL SOOTHING</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING SOOTHING</pattern>
+        <template>
+            <redirect>I FEEL SOOTHING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL SORE</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING SORE</pattern>
+        <template>
+            <redirect>I FEEL SORE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL SORRY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING SORRY</pattern>
+        <template>
+            <redirect>I FEEL SORRY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL SPLENDID</pattern>
+        <template>
+            <redirect>I FEEL FINE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING SPLENDID</pattern>
+        <template>
+            <redirect>I FEEL SPLENDID</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL STUNNED</pattern>
+        <template>
+            <redirect>I FEEL SURPRISED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING STUNNED</pattern>
+        <template>
+            <redirect>I FEEL STUNNED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL SUCCESSFUL</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING SUCCESSFUL</pattern>
+        <template>
+            <redirect>I FEEL SUCCESSFUL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL SURPRISED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING SURPRISED</pattern>
+        <template>
+            <redirect>I FEEL SURPRISED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL TENSE</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING TENSE</pattern>
+        <template>
+            <redirect>I FEEL TENSE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL TERRIBLE</pattern>
+        <template>
+            <redirect>I FEEL BAD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING TERRIBLE</pattern>
+        <template>
+            <redirect>I FEEL TERRIBLE</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL TESTY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING TESTY</pattern>
+        <template>
+            <redirect>I FEEL TESTY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL THANKFUL</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING THANKFUL</pattern>
+        <template>
+            <redirect>I FEEL THANKFUL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL THOUGHTFUL</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING THOUGHTFUL</pattern>
+        <template>
+            <redirect>I FEEL THOUGHTFUL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL THOUGHTLESS</pattern>
+        <template>
+            <redirect>I FEEL APATHETIC</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING THOUGHTLESS</pattern>
+        <template>
+            <redirect>I FEEL THOUGHTLESS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL TIRED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING TIRED</pattern>
+        <template>
+            <redirect>I FEEL TIRED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL TROUBLED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING TROUBLED</pattern>
+        <template>
+            <redirect>I FEEL TROUBLED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL UNHAPPY</pattern>
+        <template>
+            <redirect>I FEEL SAD</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING UNHAPPY</pattern>
+        <template>
+            <redirect>I FEEL UNHAPPY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL UNINSPIRED</pattern>
+        <template>
+            <redirect>I FEEL APATHETIC</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING UNINSPIRED</pattern>
+        <template>
+            <redirect>I FEEL UNINSPIRED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL UPSET</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING UPSET</pattern>
+        <template>
+            <redirect>I FEEL UPSET</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL UPSET</pattern>
+        <template>
+            <redirect>I FEEL ANGRY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING UPSET</pattern>
+        <template>
+            <redirect>I FEEL UPSET</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL UPTIGHT</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING UPTIGHT</pattern>
+        <template>
+            <redirect>I FEEL UPTIGHT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL VICTORIOUS</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING VICTORIOUS</pattern>
+        <template>
+            <redirect>I FEEL VICTORIOUS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL VIGILANT</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING VIGILANT</pattern>
+        <template>
+            <redirect>I FEEL VIGILANT</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL VIVACIOUS</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING VIVACIOUS</pattern>
+        <template>
+            <redirect>I FEEL VIVACIOUS</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL WEARY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING WEARY</pattern>
+        <template>
+            <redirect>I FEEL WEARY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL WICKED</pattern>
+        <template>
+            <redirect>I FEEL EVIL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I AM FEELING WICKED</pattern>
+        <template>
+            <redirect>I FEEL WICKED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL WILLING</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING WILLING</pattern>
+        <template>
+            <redirect>I FEEL WILLING</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL WISHFUL</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING WISHFUL</pattern>
+        <template>
+            <redirect>I FEEL WISHFUL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL WITTY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING WITTY</pattern>
+        <template>
+            <redirect>I FEEL WITTY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL WONDERFUL</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING WONDERFUL</pattern>
+        <template>
+            <redirect>I FEEL WONDERFUL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL WORRIED</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING WORRIED</pattern>
+        <template>
+            <redirect>I FEEL WORRIED</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL ZANY</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING ZANY</pattern>
+        <template>
+            <redirect>I FEEL ZANY</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>I FEEL ZEALOUS</pattern>
+        <template />
+    </category>
+    <category>
+        <pattern>I AM FEELING ZEALOUS</pattern>
+        <template>
+            <redirect>I FEEL ZEALOUS</redirect>
+        </template>
+    </category>
+</aiml>

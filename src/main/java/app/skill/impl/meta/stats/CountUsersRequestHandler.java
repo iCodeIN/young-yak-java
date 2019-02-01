@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 /**
  * This ISkill deals with diagnostic inquiries about the number of users.
  */
-public class CountUsersHandler extends RegexRequestHandler {
+public class CountUsersRequestHandler extends RegexRequestHandler {
 
     private static Pattern[] PATTERNS = {
             Pattern.compile("HOWMANY USERS ARE THERE", Pattern.CASE_INSENSITIVE),
@@ -43,7 +43,7 @@ public class CountUsersHandler extends RegexRequestHandler {
 
     private final BotController botController;
 
-    public CountUsersHandler(BotController botController) {
+    public CountUsersRequestHandler(BotController botController) {
         super(Arrays.asList(PATTERNS));
         this.botController = botController;
     }

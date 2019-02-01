@@ -1,4 +1,4 @@
-package app.skill.impl.game;
+package app.skill.impl.hangman;
 
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
