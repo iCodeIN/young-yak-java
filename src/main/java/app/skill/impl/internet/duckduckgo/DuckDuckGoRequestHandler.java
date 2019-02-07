@@ -1,5 +1,6 @@
-package app.skill.impl.iot;
+package app.skill.impl.internet.duckduckgo;
 
+import app.skill.impl.internet.InternetLookupRequestHandler;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -21,7 +22,7 @@ import java.util.regex.Pattern;
  * <li>WHAT WAS [A-Z]+</li>
  * </ul>
  */
-public class DuckDuckGoSkill extends AbstractLookupSkill {
+public class DuckDuckGoRequestHandler extends InternetLookupRequestHandler {
 
     private static String USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36";
 
@@ -32,7 +33,7 @@ public class DuckDuckGoSkill extends AbstractLookupSkill {
             Pattern.compile("WHAT WAS ([A-Z ]+)", Pattern.CASE_INSENSITIVE)
     };
 
-    public DuckDuckGoSkill() {
+    public DuckDuckGoRequestHandler() {
         super(PATTERNS);
     }
 

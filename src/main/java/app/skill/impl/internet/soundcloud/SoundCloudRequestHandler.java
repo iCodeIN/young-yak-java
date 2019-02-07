@@ -1,6 +1,6 @@
-package app.skill.impl.iot;
+package app.skill.impl.internet.soundcloud;
 
-import app.skill.impl.iot.AbstractLookupSkill;
+import app.skill.impl.internet.InternetLookupRequestHandler;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -16,7 +16,7 @@ import java.net.URLEncoder;
 import java.util.Random;
 import java.util.regex.Pattern;
 
-public class SoundCloudSkill extends AbstractLookupSkill {
+public class SoundCloudRequestHandler extends InternetLookupRequestHandler {
 
     private static String USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.92 Safari/537.36";
 
@@ -52,7 +52,7 @@ public class SoundCloudSkill extends AbstractLookupSkill {
             "I got this from SoundCloud<br><a href='%s'>&#9654;</a>",
     };
 
-    public SoundCloudSkill() {
+    public SoundCloudRequestHandler() {
         super(PATTERNS);
     }
 

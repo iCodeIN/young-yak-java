@@ -1,5 +1,6 @@
-package app.skill.impl.iot;
+package app.skill.impl.internet.NYTimes;
 
+import app.skill.impl.internet.InternetLookupRequestHandler;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -17,7 +18,7 @@ import java.util.regex.Pattern;
 /**
  * This ISkill deals with current news inquiries.
  */
-public class NewYorkTimesSkill extends AbstractLookupSkill {
+public class NYTimesRequestHandler extends InternetLookupRequestHandler {
 
     private static String USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36";
 
@@ -32,7 +33,7 @@ public class NewYorkTimesSkill extends AbstractLookupSkill {
             Pattern.compile("WHAT IS IN THE PAPERS TODAY", Pattern.CASE_INSENSITIVE)
     };
 
-    public NewYorkTimesSkill() {
+    public NYTimesRequestHandler() {
         super(PATTERNS);
     }
 

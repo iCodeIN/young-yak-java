@@ -8,7 +8,7 @@ app.skill.impl.aiml
 app.skill.impl.desktop
 app.skill.impl.math.js
 app.skill.impl.math.math
-app.skill.impl.iot
+app.skill.impl.internet
 app.skill.impl.meta.stats
 app.skill.impl.meta.typo
 app.skill.impl.regex

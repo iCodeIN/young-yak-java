@@ -1,5 +1,6 @@
-package app.skill.impl.iot;
+package app.skill.impl.internet.imdb;
 
+import app.skill.impl.internet.InternetLookupRequestHandler;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -11,10 +12,7 @@ import java.io.InputStreamReader;
 import java.net.URLEncoder;
 import java.util.regex.Pattern;
 
-/**
- * This ISkill deals with movie inquiries.
- */
-public class OMDBSkill extends AbstractLookupSkill {
+public class IMDBRequestHandler extends InternetLookupRequestHandler {
 
     private static String API_KEY = "caee14d8ab9e074ae59f4e85e83662fa";
     private static String USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36";
@@ -37,7 +35,7 @@ public class OMDBSkill extends AbstractLookupSkill {
             Pattern.compile("TELL ME ABOUT THE ([A-Z ]+) MOVIE", Pattern.CASE_INSENSITIVE)
     };
 
-    public OMDBSkill() {
+    public IMDBRequestHandler() {
         super(PATTERNS);
     }
 

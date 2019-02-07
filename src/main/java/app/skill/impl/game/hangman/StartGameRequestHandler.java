@@ -1,4 +1,4 @@
-package app.skill.impl.hangman;
+package app.skill.impl.game.hangman;
 
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
@@ -10,7 +10,7 @@ import java.util.Optional;
 import java.util.Random;
 import java.util.regex.Pattern;
 
-public class StartGameHandler extends RegexRequestHandler {
+public class StartGameRequestHandler extends RegexRequestHandler {
 
     private static Random RANDOM = new Random(System.currentTimeMillis());
 
@@ -47,7 +47,7 @@ public class StartGameHandler extends RegexRequestHandler {
             "New hangman started. Good luck!<br>%s"
     };
 
-    public StartGameHandler() {
+    public StartGameRequestHandler() {
         super(Arrays.asList(START_GAME_PATTERNS));
     }
 

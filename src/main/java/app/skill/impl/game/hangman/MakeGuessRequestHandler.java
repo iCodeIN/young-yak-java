@@ -1,4 +1,4 @@
-package app.skill.impl.hangman;
+package app.skill.impl.game.hangman;
 
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
@@ -11,7 +11,7 @@ import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class MakeGuessHandler extends RegexRequestHandler {
+public class MakeGuessRequestHandler extends RegexRequestHandler {
 
     private static Pattern[] MAKE_GUESS_PATTERNS = {
             Pattern.compile("([A-Z])", Pattern.CASE_INSENSITIVE),
@@ -62,17 +62,24 @@ public class MakeGuessHandler extends RegexRequestHandler {
             "I'm afraid you lost."
     };
 
-    public MakeGuessHandler() {
+    private String[] NO_SUCH_GAME = {
+            "We aren't playing Hangman.",
+            "We aren't playing Hangman at the moment.",
+            "We're not playing Hangman.",
+            "We're not playing Hangman at the moment."
+    };
+
+    public MakeGuessRequestHandler() {
         super(Arrays.asList(MAKE_GUESS_PATTERNS));
     }
 
     @Override
-    public boolean canHandle(IHandlerInput input) {
-        return super.canHandle(input) && (HangmanSkill.getGame(input.getUserID()) != null);
-    }
-
-    @Override
     public Optional<IHandlerResponse> handle(IHandlerInput input) {
+        // check whether there is a game in progress
+        HangmanSkill.Game g = HangmanSkill.getGame(input.getUserID());
+        if(g == null)
+            return Optional.of(new HandlerResponseImpl(NO_SUCH_GAME[RANDOM.nextInt(NO_SUCH_GAME.length)], new String[]{this.getClass().getName()}));
+
         String txt = input.getContent().toString();
         for (Pattern p : MAKE_GUESS_PATTERNS) {
             Matcher m = p.matcher(txt);

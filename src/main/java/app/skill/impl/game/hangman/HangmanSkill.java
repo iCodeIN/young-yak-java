@@ -1,4 +1,4 @@
-package app.skill.impl.hangman;
+package app.skill.impl.game.hangman;
 
 import app.handler.IHandlerInput;
 import app.skill.DefaultSkillImpl;
@@ -24,8 +24,8 @@ public class HangmanSkill extends DefaultSkillImpl {
             "Yacht", "Zealous", "Zigzag", "Zippy", "Zombie"};
 
     public HangmanSkill() {
-        addRequestHandler(new StartGameHandler());
-        addRequestHandler(new MakeGuessHandler());
+        addRequestHandler(new StartGameRequestHandler());
+        addRequestHandler(new MakeGuessRequestHandler());
     }
 
     public static Game getGame(String userID) {
@@ -70,6 +70,7 @@ public class HangmanSkill extends DefaultSkillImpl {
         GAMES_IN_PROGRESS.remove(userID);
     }
 
+    @Override
     public boolean canHandle(IHandlerInput input) {
         String userID = input.getUserID();
 

@@ -1,5 +1,6 @@
-package app.skill.impl.iot;
+package app.skill.impl.internet.cocktail;
 
+import app.skill.impl.internet.InternetLookupRequestHandler;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
@@ -17,7 +18,7 @@ import java.util.regex.Pattern;
 /**
  * This ISkill deals with cocktail recipe inquiries.
  */
-public class CocktailSkill extends AbstractLookupSkill {
+public class CocktailRequestHandler extends InternetLookupRequestHandler {
 
     private static String USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36";
 
@@ -32,7 +33,7 @@ public class CocktailSkill extends AbstractLookupSkill {
             Pattern.compile("WHAT IS THE RECIPE FOR AN ([A-Z ]+)", Pattern.CASE_INSENSITIVE)
     };
 
-    public CocktailSkill() {
+    public CocktailRequestHandler() {
         super(PATTERNS);
     }
 

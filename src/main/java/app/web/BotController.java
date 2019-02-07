@@ -7,9 +7,16 @@ import app.entities.DialogChunkRepository;
 import app.handler.IHandlerResponse;
 import app.handler.impl.HandlerInputImpl;
 import app.skill.impl.aiml.AIMLSkill;
+import app.skill.impl.game.blackjack.BlackJackSkill;
+import app.skill.impl.internet.NYTimes.NYTimesSkill;
+import app.skill.impl.internet.cocktail.CocktailSkill;
+import app.skill.impl.internet.duckduckgo.DuckDuckGoSkill;
+import app.skill.impl.internet.imdb.IMDBSkill;
+import app.skill.impl.internet.soundcloud.SoundCloudSkill;
+import app.skill.impl.internet.unsplash.UnsplashSkill;
+import app.skill.impl.internet.weather.WeatherSkill;
 import app.skill.impl.math.MathSkill;
-import app.skill.impl.hangman.HangmanSkill;
-import app.skill.impl.iot.*;
+import app.skill.impl.game.hangman.HangmanSkill;
 import app.skill.impl.meta.stats.BotStatisticsSkill;
 import app.skill.impl.meta.typo.TypoCorrectionSkill;
 import app.skill.impl.meta.word2vec.FAQSkill;
@@ -42,17 +49,18 @@ public class BotController {
                 .addSkill(new MathSkill())
 
                 // games
+                .addSkill(new BlackJackSkill())
                 .addSkill(new HangmanSkill())
 
                 // meta
                 .addSkill(new BotStatisticsSkill(this))
 
-                // iot
+                // internet
                 .addSkill(new CocktailSkill())
-                .addSkill(new OMDBSkill())
+                .addSkill(new IMDBSkill())
                 .addSkill(new UnsplashSkill())
                 .addSkill(new WeatherSkill())
-                .addSkill(new NewYorkTimesSkill())
+                .addSkill(new NYTimesSkill())
                 .addSkill(new SoundCloudSkill())
 
                 // generic

@@ -51,6 +51,8 @@ public class SemanticMatchSkill implements ISkill {
 
             sentences.add(dc.getInput());
         }
+        if(sentences.isEmpty())
+            return;
 
         TokenizerFactory t = new DefaultTokenizerFactory();
         t.setTokenPreProcessor(new CommonPreprocessor());
