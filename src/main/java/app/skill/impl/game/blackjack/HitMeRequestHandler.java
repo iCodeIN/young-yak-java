@@ -31,8 +31,10 @@ public class HitMeRequestHandler extends RegexRequestHandler {
     };
 
     private String[] GAME_LOST = {
-        "You have %s, you lose.",
-            "You have %s, you lost."
+            "You have %s, you lose.",
+            "You have %s, you lost.",
+            "You lost. You have %s.",
+            "I'm afraid you lost, you have %s."
     };
 
     private String[] CARD_STATUS = {
@@ -51,7 +53,7 @@ public class HitMeRequestHandler extends RegexRequestHandler {
             return Optional.of(new HandlerResponseImpl(NO_SUCH_GAME[RANDOM.nextInt(NO_SUCH_GAME.length)], new String[]{this.getClass().getName()}));
 
         // draw card
-        BlackJackSkill.drawCard(input.getUserID());
+        BlackJackSkill.drawCardForPlayer(input.getUserID());
 
         // get game
         g = BlackJackSkill.getGame(input.getUserID());
@@ -59,11 +61,11 @@ public class HitMeRequestHandler extends RegexRequestHandler {
         // display cards
         String cards = "";
         for (int i = 0; i < g.cards.length; i++) {
-            if(g.selected[i])
+            if(g.selected[i] == 1)
                 cards += (cards.isEmpty() ? "" : ", " ) + g.cards[i];
         }
 
-        if(g.value().isEmpty()){
+        if(g.valueForPlayer().isEmpty()){
             String txt = String.format(GAME_LOST[RANDOM.nextInt(GAME_LOST.length)], cards);
             return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));
         }
@@ -71,7 +73,7 @@ public class HitMeRequestHandler extends RegexRequestHandler {
 
         // calculate value
         String value = "";
-        for (int v : g.value()) {
+        for (int v : g.valueForPlayer()) {
             value += (value.isEmpty() ? "" : " or ") + v;
         }
 

@@ -2,8 +2,6 @@ package app.skill.impl.game.blackjack;
 
 import app.handler.IHandlerInput;
 import app.skill.DefaultSkillImpl;
-import app.skill.ISkill;
-import app.skill.impl.game.hangman.HangmanSkill;
 
 import java.util.*;
 
@@ -11,12 +9,14 @@ public class BlackJackSkill extends DefaultSkillImpl {
 
     static class Game{
         String[] cards;
-        boolean[] selected;
-        public Set<Integer> value(){
+        int[] selected;
+        public Set<Integer> valueForPlayer(){ return value(1); }
+        public Set<Integer> valueForBot(){ return value(-1); }
+        private Set<Integer> value(int player){
             Set<Integer> vsA = new HashSet<>();
             Set<Integer> vsB = new HashSet<>();
             for (int i = 0; i < cards.length; i++) {
-                if(selected[i]){
+                if(selected[i] == 1){
                     // faces
                     if(cards[i].charAt(1) == 'Q' || cards[i].charAt(1) == 'K' || cards[i].charAt(1) == 'J'){
                         if(vsA.isEmpty()){
@@ -77,6 +77,7 @@ public class BlackJackSkill extends DefaultSkillImpl {
     public BlackJackSkill(){
         addRequestHandler(new StartGameRequestHandler());
         addRequestHandler(new HitMeRequestHandler());
+        addRequestHandler(new StandRequestHandler());
     }
 
     public static void startGame(String userID) {
@@ -87,25 +88,42 @@ public class BlackJackSkill extends DefaultSkillImpl {
                                 "♦A","♦K","♦Q","♦J","♦10","♦9","♦8","♦7","♦6","♦5","♦4","♦3","♦2",
                                 "♣A","♣K","♣Q","♣J","♣10","♣9","♣8","♣7","♣6","♣5","♣4","♣3","♣2"
                                 };
-        g.selected = new boolean[52];
+        g.selected = new int[52];
         GAMES_IN_PROGRESS.put(userID, g);
-        drawCard(userID);
-        drawCard(userID);
+        // draw cards for player
+        drawCardForPlayer(userID);
+        drawCardForPlayer(userID);
+        // draw cards for bot
+        drawCardForBot(userID);
+        drawCardForBot(userID);
     }
 
     public static Game getGame(String userID){
         return GAMES_IN_PROGRESS.get(userID);
     }
 
-    public static void drawCard(String userID){
+    public static void drawCardForPlayer(String userID){
         Game g = GAMES_IN_PROGRESS.get(userID);
         if(g == null)
             return;
         while(true){
             int j = RANDOM.nextInt(52);
-            if(g.selected[j])
+            if(g.selected[j] != 0)
                 continue;
-            g.selected[j] = true;
+            g.selected[j] = 1;
+            break;
+        }
+    }
+
+    public static void drawCardForBot(String userID){
+        Game g = GAMES_IN_PROGRESS.get(userID);
+        if(g == null)
+            return;
+        while(true){
+            int j = RANDOM.nextInt(52);
+            if(g.selected[j] != 0)
+                continue;
+            g.selected[j] = -1;
             break;
         }
     }
