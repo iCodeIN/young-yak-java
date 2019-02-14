@@ -139,7 +139,9 @@
     </category>
     <category>
         <pattern>I FEEL APPREHENSIVE</pattern>
-        <template />
+        <template>
+            <redirect>I FEEL ANXIOUS</redirect>
+        </template>
     </category>
     <category>
         <pattern>I AM FEELING APPREHENSIVE</pattern>
@@ -284,7 +286,18 @@
     </category>
     <category>
         <pattern>I FEEL BRAVE</pattern>
-        <template />
+        <template>
+            <random>
+                <li>Play the ukulele.</li>
+                <li>Try Roller Derby.</li>
+                <li>Trust your ideas, even the crazy ones.</li>
+                <li>Wear something ridiculous just because you like it.</li>
+                <li>Give someone a hug.</li>
+                <li>Remember, bravery is not the absence of fear.</li>
+                <li>We all have a bucket list, but usually it’s holding hands with our excuses list if we’re being honest. Be brave enough to set aside the million reasons why you can’t, say, go skydiving this weekend, and actually do it.</li>
+                <li>Try to notice those times when you're feeling strong and competent. Pause and take a few slow, deep breaths and tell yourself, "This is who I am." The more you recognize when you're being strong, the more fearless you'll become.</li>
+            </random>
+        </template>
     </category>
     <category>
         <pattern>I AM FEELING BRAVE</pattern>
@@ -310,7 +323,7 @@
                 <li>Spend a day on your own doing things you wouldn’t normally do solo. Visit a museum by yourself. Sit down for a meal and enjoy your own company. Go to the beach on your own. Make an effort to try something new and challenge yourself to feel satisfied with spending quality time with yourself. This will boost your confidence and will inspire you the next time you need a reminder for how strong you really are.</li>
                 <li>Many times, it’s both your own opinion and the opinion’s of others that holds you back, no matter how well meaning the person. Respect their advice and then do what feels right for you and don’t second guess yourself. Really listening to yourself and focusing on what the best actions are for you is a powerful step towards courage.</li>
                 <li>Talk to a stranger. Yes, this can seem uncomfortable at first. You’re waiting in a long line for a coffee, or riding in an elevator with someone up to the 9th floor. Don’t ignore them. Look them in the eye, smile, and say hello. It’s a small gesture with very little risk, and the more you do it, the easier it becomes. You never know who you’ll meet waiting in line or riding to the top floor, so tap into your bravery and allow yourself the opportunity to brighten your day.</li>
-                <li>Use your fearless friend who is always challenging herself as inspiration or find a role model whose bravery you admire. They’ll remind you to channel that inner strength and go for it (whatever that it may be). Get into the mindset of “what would (insert person you admire here) do, or how would (insert person you admire here) handle this?</li>
+                <li>Use your fearless friend who is always challenging him/herself as inspiration or find a role model whose bravery you admire. They’ll remind you to channel that inner strength and go for it (whatever that it may be). Get into the mindset of “what would (insert person you admire here) do, or how would (insert person you admire here) handle this?</li>
             </random>
         </template>
     </category>
@@ -376,7 +389,15 @@
     </category>
     <category>
         <pattern>I FEEL CLUMSY</pattern>
-        <template />
+        <template>
+            <random>
+                <li>Understand how your body’s coordination works. The human body is a very complex system, and the operations that control physical coordination have plenty of room for mix-ups. There are four major body parts responsible for coordination, and dysfunction in any one of the areas (or multiple areas) can cause clumsiness.</li>
+                <li>Understand what can cause clumsiness. There are a whole host of issues that can cause clumsiness, whether it’s temporary or a chronic problem. Some of these are serious medical issues, while others can be addressed at home.</li>
+                <li>Measure how accident-prone you are. There isn’t a lot of research about why people are chronic klutzes, but some research suggests that people who are particularly accident-prone may experience “cognitive failures,” or lapses in attentiveness.</li>
+                <li>Increase your core strength. Your core muscles, such as your abdominals, back, and pelvis muscles, help your body move with smoothness, stability, and coordination. Developing strength in these muscles will give you better control over how your body moves, which will help reduce clumsiness.</li>
+                <li>Develop your flexibility and agility. In addition to improving your core strength, you should also work on developing your flexibility to battle clumsiness. Studies show that athletes who focus only on strength training and don’t incorporate agility and flexibility exercises have a 70% chance of re-injury, as opposed to 8% for athletes who use both.</li>
+            </random>
+        </template>
     </category>
     <category>
         <pattern>I AM FEELING CLUMSY</pattern>

@@ -66,7 +66,7 @@ public class StartGameRequestHandler extends RegexRequestHandler {
 
         String cards = "";
         for (int i = 0; i < g.cards.length; i++) {
-            if(g.selected[i])
+            if(g.selected[i] == 1)
                 cards += (cards.isEmpty() ? "" : " and " ) + g.cards[i];
         }
         txt = String.format(txt, cards);
