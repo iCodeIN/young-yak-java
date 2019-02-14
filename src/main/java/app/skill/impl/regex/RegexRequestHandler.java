@@ -55,6 +55,9 @@ public class RegexRequestHandler implements IRequestHandler {
             }
 
             @Override
+            public String getContentType(){return "text";}
+
+            @Override
             public String[] getInvokedSkills() {
                 return new String[]{RegexSkill.class.getName()};
             }

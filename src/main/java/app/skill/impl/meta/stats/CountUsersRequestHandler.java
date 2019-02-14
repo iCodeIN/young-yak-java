@@ -1,11 +1,12 @@
 package app.skill.impl.meta.stats;
 
+import app.controller.IBotController;
 import app.entities.DialogChunk;
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.impl.HandlerResponseImpl;
 import app.skill.impl.regex.RegexRequestHandler;
-import app.web.BotController;
+import app.controller.web.BotController;
 
 import java.util.*;
 import java.util.regex.Pattern;
@@ -41,9 +42,9 @@ public class CountUsersRequestHandler extends RegexRequestHandler {
             "I have talked to %d users."
     };
 
-    private final BotController botController;
+    private final IBotController botController;
 
-    public CountUsersRequestHandler(BotController botController) {
+    public CountUsersRequestHandler(IBotController botController) {
         super(Arrays.asList(PATTERNS));
         this.botController = botController;
     }

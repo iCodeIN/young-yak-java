@@ -13,4 +13,4 @@ app.skill.impl.meta.stats
 app.skill.impl.meta.typo
 app.skill.impl.regex
 app.skill.impl.time
-app.web
+app.controller.web

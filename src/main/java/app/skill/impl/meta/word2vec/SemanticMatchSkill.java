@@ -1,12 +1,13 @@
 package app.skill.impl.meta.word2vec;
 
+import app.controller.IBotController;
 import app.entities.DialogChunk;
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.Status;
 import app.skill.ISkill;
 import app.skill.impl.meta.typo.TypoCorrectionSkill;
-import app.web.BotController;
+import app.controller.web.BotController;
 import org.deeplearning4j.models.paragraphvectors.ParagraphVectors;
 import org.deeplearning4j.models.word2vec.VocabWord;
 import org.deeplearning4j.models.word2vec.wordstore.inmemory.AbstractCache;
@@ -22,13 +23,13 @@ import java.util.*;
 public class SemanticMatchSkill implements ISkill {
 
     private static Random RANDOM = new Random(System.currentTimeMillis());
-    private BotController botController;
+    private IBotController botController;
 
     // model
     private boolean isBuildingModel = false;
     private SemanticStringMap<Set<String>> synonymMap;
 
-    public SemanticMatchSkill(BotController botController) {
+    public SemanticMatchSkill(IBotController botController) {
         this.botController = botController;
     }
 
@@ -130,6 +131,9 @@ public class SemanticMatchSkill implements ISkill {
             public Object getContent() {
                 return out;
             }
+
+            @Override
+            public String getContentType(){return "text";}
 
             @Override
             public String[] getInvokedSkills() {

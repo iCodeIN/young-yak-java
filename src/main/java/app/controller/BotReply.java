@@ -1,4 +1,4 @@
-package app.web;
+package app.controller;
 
 /**
  * This class is turned into JSON and presented as output of the API.

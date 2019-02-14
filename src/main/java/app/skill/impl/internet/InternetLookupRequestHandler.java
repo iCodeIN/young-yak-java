@@ -44,7 +44,7 @@ public abstract class InternetLookupRequestHandler extends RegexRequestHandler {
             String reply = lookup(keyword);
             return (reply == null || reply.isEmpty())
                     ? Optional.empty()
-                    : Optional.of(new HandlerResponseImpl(reply, new String[]{this.getClass().getName()}));
+                    : Optional.of(new HandlerResponseImpl(reply, new String[]{this.getClass().getName()}).setContentType("html"));
         } catch (Exception e) {
             return Optional.empty();
         }

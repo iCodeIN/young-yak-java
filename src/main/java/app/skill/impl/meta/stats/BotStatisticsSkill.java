@@ -1,11 +1,12 @@
 package app.skill.impl.meta.stats;
 
+import app.controller.IBotController;
 import app.skill.DefaultSkillImpl;
-import app.web.BotController;
+import app.controller.web.BotController;
 
 public class BotStatisticsSkill extends DefaultSkillImpl {
 
-    public BotStatisticsSkill(BotController botController) {
+    public BotStatisticsSkill(IBotController botController) {
         addRequestHandler(new CountUsersRequestHandler(botController));
         addRequestHandler(new ListSkillsRequestHandler(botController));
         addRequestHandler(new CountLogsRequestHandler(botController));

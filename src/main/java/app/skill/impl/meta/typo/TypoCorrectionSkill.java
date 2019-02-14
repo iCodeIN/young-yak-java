@@ -1,11 +1,12 @@
 package app.skill.impl.meta.typo;
 
+import app.controller.IBotController;
 import app.entities.DialogChunk;
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.Status;
 import app.skill.ISkill;
-import app.web.BotController;
+import app.controller.web.BotController;
 
 /**
  * This ISkill uses the DialogChunkRepository to correct spelling mistakes.<br>
@@ -14,10 +15,10 @@ import app.web.BotController;
  */
 public class TypoCorrectionSkill implements ISkill {
 
-    private final BotController botController;
+    private final IBotController botController;
     private BKTree<DialogChunk> bkTree;
 
-    public TypoCorrectionSkill(BotController botController) {
+    public TypoCorrectionSkill(IBotController botController) {
         this.botController = botController;
     }
 
@@ -69,6 +70,9 @@ public class TypoCorrectionSkill implements ISkill {
             public Object getContent() {
                 return synonymText;
             }
+
+            @Override
+            public String getContentType(){return "text";}
 
             @Override
             public String[] getInvokedSkills() {

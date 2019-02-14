@@ -1,11 +1,12 @@
 package app.skill.impl.meta.stats;
 
+import app.controller.IBotController;
 import app.entities.DialogChunk;
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.impl.HandlerResponseImpl;
 import app.skill.impl.regex.RegexRequestHandler;
-import app.web.BotController;
+import app.controller.web.BotController;
 
 import java.util.Arrays;
 import java.util.Optional;
@@ -95,9 +96,9 @@ public class CountPersonalLogsRequestHandler extends RegexRequestHandler {
 
     };
 
-    private BotController botController;
+    private IBotController botController;
 
-    public CountPersonalLogsRequestHandler(BotController botController) {
+    public CountPersonalLogsRequestHandler(IBotController botController) {
         super(Arrays.asList(PATTERNS));
         this.botController = botController;
     }

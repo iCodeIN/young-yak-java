@@ -21,5 +21,14 @@ public interface IHandlerResponse {
      */
     Object getContent();
 
+    /**
+     * Get the content type
+     */
+    String getContentType();
+
+    /**
+     * Get the skills (names) invoked in generating this output
+     * @return
+     */
     String[] getInvokedSkills();
 }

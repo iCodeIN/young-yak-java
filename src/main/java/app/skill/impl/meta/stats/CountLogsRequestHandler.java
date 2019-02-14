@@ -1,11 +1,11 @@
 package app.skill.impl.meta.stats;
 
+import app.controller.IBotController;
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
-import app.handler.IRequestHandler;
 import app.handler.impl.HandlerResponseImpl;
 import app.skill.impl.regex.RegexRequestHandler;
-import app.web.BotController;
+import app.controller.web.BotController;
 
 import java.util.Arrays;
 import java.util.Optional;
@@ -41,9 +41,9 @@ public class CountLogsRequestHandler extends RegexRequestHandler {
             "According to the database, there should be %d logs."
     };
 
-    private BotController botController;
+    private IBotController botController;
 
-    public CountLogsRequestHandler(BotController botController){
+    public CountLogsRequestHandler(IBotController botController){
         super(Arrays.asList(PATTERNS));
         this.botController = botController;
     }

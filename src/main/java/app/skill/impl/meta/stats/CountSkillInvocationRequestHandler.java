@@ -1,11 +1,12 @@
 package app.skill.impl.meta.stats;
 
+import app.controller.IBotController;
 import app.entities.DialogChunk;
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.impl.HandlerResponseImpl;
 import app.skill.impl.regex.RegexRequestHandler;
-import app.web.BotController;
+import app.controller.web.BotController;
 
 import java.util.*;
 import java.util.regex.Pattern;
@@ -28,9 +29,9 @@ public class CountSkillInvocationRequestHandler extends RegexRequestHandler {
 
     private static Random RANDOM = new Random(System.currentTimeMillis());
 
-    private BotController botController;
+    private IBotController botController;
 
-    public CountSkillInvocationRequestHandler(BotController botController) {
+    public CountSkillInvocationRequestHandler(IBotController botController) {
         super(Arrays.asList(PATTERNS));
         this.botController = botController;
     }

@@ -1,7 +1,9 @@
-package app.web;
+package app.controller.web;
 
 import app.bot.DefaultBotImpl;
 import app.bot.IBot;
+import app.controller.BotReply;
+import app.controller.IBotController;
 import app.entities.DialogChunk;
 import app.entities.DialogChunkRepository;
 import app.handler.IHandlerResponse;
@@ -34,7 +36,7 @@ import java.util.Optional;
  * REST controller that provides the main API for interacting with the chatbot.
  */
 @RestController
-public class BotController {
+public class BotController implements IBotController {
 
     @Autowired
     private DialogChunkRepository dialogChunkRepository;
