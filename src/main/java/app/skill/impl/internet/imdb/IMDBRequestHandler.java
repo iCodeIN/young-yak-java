@@ -63,22 +63,8 @@ public class IMDBRequestHandler extends InternetLookupRequestHandler {
         String year = object.getString("release_date");
         String title = object.getString("original_title");
 
-        return "<table>" +
-                "   <tr>" +
-                "       <td>Title</td>" +
-                "       <td>" + title + "</td>" +
-                "   </tr>" +
+        return "<b>" + title + "</b>\n<i>" + year + "</i>\n\n" + plot;
 
-                "   <tr>" +
-                "       <td>Year</td>" +
-                "       <td>" + year + "</td>" +
-                "   </tr>" +
-
-                "   <tr>" +
-                "       <td>Plot</td>" +
-                "       <td>" + plot + "</td>" +
-                "   </tr>" +
-                "</table>";
     }
 
 }

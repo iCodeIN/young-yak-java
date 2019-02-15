@@ -69,10 +69,11 @@ public class CocktailRequestHandler extends InternetLookupRequestHandler {
             ingredients.add(new String[]{t0, t1});
         }
 
-        String out = "<ul>";
+        String out = "<b>Ingredients</b>\n";
         for (int i = 0; i < ingredients.size(); i++)
-            out += ("<li>" + ingredients.get(i)[0] + " (" + ingredients.get(i)[1].trim() + ")</li>");
-        out += "</ul>";
+            out += ("• " + ingredients.get(i)[0] + " (" + ingredients.get(i)[1].trim() + ")\n");
+        out += "\n";
+        out += "<b>Method</b>\n";
         out += drinkObject.getString("strInstructions");
         return out;
 

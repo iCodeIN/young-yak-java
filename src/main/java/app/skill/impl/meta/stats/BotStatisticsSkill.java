@@ -2,7 +2,6 @@ package app.skill.impl.meta.stats;
 
 import app.controller.IBotController;
 import app.skill.DefaultSkillImpl;
-import app.controller.web.BotController;
 
 public class BotStatisticsSkill extends DefaultSkillImpl {
 

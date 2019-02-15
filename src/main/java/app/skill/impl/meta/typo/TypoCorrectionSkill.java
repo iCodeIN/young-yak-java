@@ -6,7 +6,6 @@ import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.Status;
 import app.skill.ISkill;
-import app.controller.web.BotController;
 
 /**
  * This ISkill uses the DialogChunkRepository to correct spelling mistakes.<br>

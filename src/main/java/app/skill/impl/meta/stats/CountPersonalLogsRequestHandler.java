@@ -6,7 +6,6 @@ import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.impl.HandlerResponseImpl;
 import app.skill.impl.regex.RegexRequestHandler;
-import app.controller.web.BotController;
 
 import java.util.Arrays;
 import java.util.Optional;

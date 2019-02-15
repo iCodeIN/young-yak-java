@@ -62,35 +62,23 @@ public class WeatherRequestHandler extends InternetLookupRequestHandler {
         int humidity = object.getJSONObject("main").getInt("humidity");
         int pressure = object.getJSONObject("main").getInt("pressure");
 
-        return "<table>" +
-                "   <tr>" +
-                "       <td>Temp. (C)</td>" +
-                "       <td>" + celcius(avgTemp) + "</td>" +
-                "   </tr>" +
+        return "<b>Temp. (C)</b>\n"
+                + centigrade(avgTemp) + "\n\n" +
 
-                "   <tr>" +
-                "       <td>Min. Temp. (C)</td>" +
-                "       <td>" + celcius(minTemp) + "</td>" +
-                "   </tr>" +
+                "<b>Min. Temp. (C)</b>\n" +
+                + centigrade(minTemp) + "\n\n" +
 
-                "   <tr>" +
-                "       <td>Max. Temp. (C)</td>" +
-                "       <td>" + celcius(maxTemp) + "</td>" +
-                "   </tr>" +
+                "<b>Max. Temp. (C)</b>\n" +
+                + centigrade(maxTemp) + "\n\n" +
 
-                "   <tr>" +
-                "       <td>Humidity (%)</td>" +
-                "       <td>" + humidity + "</td>" +
-                "   </tr>" +
+                "<b>Humidity (%)</b>\n" +
+                + humidity + "\n\n" +
 
-                "   <tr>" +
-                "       <td>Pressure (mb)</td>" +
-                "       <td>" + pressure + "</td>" +
-                "   </tr>" +
-                "</table>";
+                "<b>Pressure (mb)</b>\n" +
+                + pressure;
     }
 
-    private double celcius(double kelvin) {
+    private double centigrade(double kelvin) {
         return java.lang.Math.round((kelvin - 273.15) * 10.0) / 10.0;
     }
 }

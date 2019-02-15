@@ -36,14 +36,15 @@ import java.util.Optional;
  * REST controller that provides the main API for interacting with the chatbot.
  */
 @RestController
-public class BotController implements IBotController {
+@RequestMapping("api")
+public class WebBotController implements IBotController {
 
     @Autowired
     private DialogChunkRepository dialogChunkRepository;
 
     private DefaultBotImpl bot;
 
-    public BotController() {
+    public WebBotController() {
         bot = new DefaultBotImpl();
 
         bot.addSkill(new AIMLSkill(bot))
@@ -82,21 +83,16 @@ public class BotController implements IBotController {
         return dialogChunkRepository;
     }
 
-    @CrossOrigin()
-    @RequestMapping("/respond")
-    public BotReply respond(@RequestParam(value = "text", defaultValue = "") String text, @RequestParam(value = "userid", defaultValue = "") String userID) {
-        Optional<IHandlerResponse> tmpA = bot.respond(new HandlerInputImpl(text, userID));
+    public Optional<IHandlerResponse> getResponse(String input, String userID){
+        Optional<IHandlerResponse> tmpA = getBot().respond(new HandlerInputImpl(input, userID));
 
         // store
-        storeDialogChunk(text,
+        storeDialogChunk(input,
                 tmpA.isPresent() ? tmpA.get().getContent().toString() : "",
                 tmpA.isPresent() ? tmpA.get().getInvokedSkills() : new String[]{},
                 userID);
 
-        // return
-        return new BotReply(userID,
-                tmpA.isPresent() ? tmpA.get().getContent().toString() : ""
-        );
+        return tmpA;
     }
 
     private void storeDialogChunk(String in, String out, String[] invokedSkills, String user) {
@@ -110,6 +106,15 @@ public class BotController implements IBotController {
             dialogChunkRepository.save(dialogChunk);
         } catch (Throwable ex) {
         }
+    }
+
+    @CrossOrigin()
+    @RequestMapping("/respond")
+    public BotReply respond(@RequestParam(value = "text", defaultValue = "") String text, @RequestParam(value = "userid", defaultValue = "") String userID) {
+        // get response
+        Optional<IHandlerResponse> tmpA = getResponse(text, userID);
+        // return
+        return new BotReply(userID, tmpA.isPresent() ? tmpA.get().getContent().toString() : "");
     }
 
 }

@@ -1,72 +1,68 @@
 package app.controller.telegram;
 
-import app.bot.DefaultBotImpl;
-import app.bot.IBot;
-import app.controller.IBotController;
-import app.entities.DialogChunkRepository;
-import app.skill.impl.aiml.AIMLSkill;
-import app.skill.impl.game.blackjack.BlackJackSkill;
-import app.skill.impl.game.hangman.HangmanSkill;
-import app.skill.impl.internet.NYTimes.NYTimesSkill;
-import app.skill.impl.internet.cocktail.CocktailSkill;
-import app.skill.impl.internet.duckduckgo.DuckDuckGoSkill;
-import app.skill.impl.internet.imdb.IMDBSkill;
-import app.skill.impl.internet.soundcloud.SoundCloudSkill;
-import app.skill.impl.internet.unsplash.UnsplashSkill;
-import app.skill.impl.internet.weather.WeatherSkill;
-import app.skill.impl.math.MathSkill;
-import app.skill.impl.meta.stats.BotStatisticsSkill;
-import app.skill.impl.meta.typo.TypoCorrectionSkill;
-import app.skill.impl.meta.word2vec.FAQSkill;
-import app.skill.impl.meta.word2vec.SemanticMatchSkill;
-import app.skill.impl.time.TimeSkill;
-import org.springframework.beans.factory.annotation.Autowired;
+import app.controller.web.WebBotController;
 
-public class TelegramBotController implements IBotController {
+import app.handler.IHandlerResponse;
+import com.pengrad.telegrambot.TelegramBot;
+import com.pengrad.telegrambot.UpdatesListener;
+import com.pengrad.telegrambot.model.Message;
+import com.pengrad.telegrambot.model.Update;
+import com.pengrad.telegrambot.model.request.ParseMode;
+import com.pengrad.telegrambot.request.SendMessage;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-    @Autowired
-    private DialogChunkRepository dialogChunkRepository;
+import java.util.List;
+import java.util.Optional;
+import java.util.Random;
 
-    private DefaultBotImpl bot;
+@RestController
+@RequestMapping("telegram")
+public class TelegramBotController extends WebBotController {
+
+    private static Random RANDOM = new Random(System.currentTimeMillis());
 
     public TelegramBotController() {
+        // Create your bot passing the token received from @BotFather
+        TelegramBot bot = new TelegramBot("741085051:AAFV1TKYCo-Ov8GMlaTyFhuChLDCr36M5GE");
 
-        bot = new DefaultBotImpl();
-
-        bot.addSkill(new AIMLSkill(bot))
-                .addSkill(new TimeSkill())
-                .addSkill(new MathSkill())
-
-                // games
-                .addSkill(new BlackJackSkill())
-                .addSkill(new HangmanSkill())
-
-                // meta
-                .addSkill(new BotStatisticsSkill(this))
-
-                // internet
-                .addSkill(new CocktailSkill())
-                .addSkill(new IMDBSkill())
-                .addSkill(new UnsplashSkill())
-                .addSkill(new WeatherSkill())
-                .addSkill(new NYTimesSkill())
-                .addSkill(new SoundCloudSkill())
-
-                // generic
-                .addSkill(new DuckDuckGoSkill())
-
-                // input mods
-                .addSkill(new TypoCorrectionSkill(this))
-                .addSkill(new SemanticMatchSkill(this))
-                .addSkill(new FAQSkill(this.getClass().getClassLoader().getResourceAsStream("faq/faq.xml")));
+        // Register for updates
+        bot.setUpdatesListener(new UpdatesListener() {
+            @Override
+            public int process(List<Update> list) {
+                for(Update u : list){ reply(bot, u.message()); }
+                return UpdatesListener.CONFIRMED_UPDATES_ALL;
+            }
+        });
     }
 
-    public IBot getBot() {
-        return bot;
+    private long realisticDelayInMs(String text){
+        int numberOfWords = text.toUpperCase().split("[^A-Z]").length + 1;           // rough count of the number of words
+        double numberOfMinutes = numberOfWords / 37.0;                                      // average (female) typing speed
+        return (long) (numberOfMinutes * 60 * 1000) + RANDOM.nextInt(1000 * 5);
     }
 
-    public DialogChunkRepository getDialogChunkRepository() {
-        return dialogChunkRepository;
+    private void reply(TelegramBot bot, Message message){
+        String userID = message.from().firstName() + " " + message.from().lastName() + "[" + message.from().id()+"]";
+
+        // call super, ensuring this data gets stored
+        Optional<IHandlerResponse> response = getResponse(message.text(), userID);
+
+        if(response.isPresent()) {
+            new Thread() {
+                public void run() {
+                    // extract text for response
+                    String txt = response.get().getContent().toString();
+
+                    // sleep
+                    try { Thread.sleep(realisticDelayInMs(txt)); } catch (InterruptedException e) { e.printStackTrace(); }
+
+                    // send
+                    SendMessage sendMessage = new SendMessage(message.chat().id(), txt).parseMode(ParseMode.HTML);
+                    bot.execute(sendMessage);
+                }
+            }.start();
+        }
     }
 
 }

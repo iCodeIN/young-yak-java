@@ -7,7 +7,6 @@ import app.handler.IHandlerResponse;
 import app.handler.Status;
 import app.skill.ISkill;
 import app.skill.impl.meta.typo.TypoCorrectionSkill;
-import app.controller.web.BotController;
 import org.deeplearning4j.models.paragraphvectors.ParagraphVectors;
 import org.deeplearning4j.models.word2vec.VocabWord;
 import org.deeplearning4j.models.word2vec.wordstore.inmemory.AbstractCache;

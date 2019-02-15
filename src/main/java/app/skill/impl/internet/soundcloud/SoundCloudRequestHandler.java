@@ -46,10 +46,10 @@ public class SoundCloudRequestHandler extends InternetLookupRequestHandler {
     private static Random RANDOM = new Random(System.currentTimeMillis());
 
     private static String[] REPLIES = {
-            "I found this on SoundCloud<br><a href='%s'>&#9654;</a>",
-            "I may have found something on SoundCloud<br><a href='%s'>&#9654;</a>",
-            "Found this on SoundCloud<br><a href='%s'>&#9654;</a>",
-            "I got this from SoundCloud<br><a href='%s'>&#9654;</a>",
+            "I found this on SoundCloud.\n<a href='%s'>&#9654;</a>",
+            "I may have found something on SoundCloud.\n<a href='%s'>&#9654;</a>",
+            "Found this on SoundCloud.\n<a href='%s'>&#9654;</a>",
+            "I got this from SoundCloud.\n<a href='%s'>&#9654;</a>",
     };
 
     public SoundCloudRequestHandler() {

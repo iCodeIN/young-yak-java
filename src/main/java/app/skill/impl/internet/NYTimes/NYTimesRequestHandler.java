@@ -70,10 +70,9 @@ public class NYTimesRequestHandler extends InternetLookupRequestHandler {
             }
         }
 
-        String out = "<ul>";
+        String out = "<b>NY Times</b>\n";
         for (int i = 0; i < java.lang.Math.min(10, headlines.size()); i++)
-            out += ("<li>" + headlines.get(i) + "</li>");
-        out += "</ul>";
+            out += ("• " + headlines.get(i) + "\n");
         return out;
     }
 
