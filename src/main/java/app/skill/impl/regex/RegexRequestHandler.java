@@ -4,6 +4,7 @@ import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.IRequestHandler;
 import app.handler.Status;
+import app.handler.impl.HandlerResponseImpl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,27 +42,8 @@ public class RegexRequestHandler implements IRequestHandler {
     @Override
     public Optional<IHandlerResponse> handle(IHandlerInput input) {
         if (replyList.isEmpty())
-            return Optional.ofNullable(null);
+            return Optional.empty();
         String reply = replyList.get(RANDOM.nextInt(replyList.size()));
-        IHandlerResponse response = new IHandlerResponse() {
-            @Override
-            public Status getStatus() {
-                return Status.STATUS_200_OK;
-            }
-
-            @Override
-            public Object getContent() {
-                return reply;
-            }
-
-            @Override
-            public String getContentType(){return "text";}
-
-            @Override
-            public String[] getInvokedSkills() {
-                return new String[]{RegexSkill.class.getName()};
-            }
-        };
-        return Optional.ofNullable(response);
+        return Optional.of(new HandlerResponseImpl(reply, new String[]{RegexSkill.class.getName()}));
     }
 }

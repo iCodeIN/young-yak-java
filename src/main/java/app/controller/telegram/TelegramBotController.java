@@ -8,7 +8,10 @@ import com.pengrad.telegrambot.UpdatesListener;
 import com.pengrad.telegrambot.model.Message;
 import com.pengrad.telegrambot.model.Update;
 import com.pengrad.telegrambot.model.request.ParseMode;
+import com.pengrad.telegrambot.request.BaseRequest;
 import com.pengrad.telegrambot.request.SendMessage;
+import com.pengrad.telegrambot.request.SendPhoto;
+import org.jsoup.Jsoup;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -30,7 +33,11 @@ public class TelegramBotController extends WebBotController {
         bot.setUpdatesListener(new UpdatesListener() {
             @Override
             public int process(List<Update> list) {
-                for(Update u : list){ reply(bot, u.message()); }
+                for(Update u : list){
+                    if(u.message().from().id() == 200652953)
+                        continue;
+                    reply(bot, u.message());
+                }
                 return UpdatesListener.CONFIRMED_UPDATES_ALL;
             }
         });
@@ -38,7 +45,7 @@ public class TelegramBotController extends WebBotController {
 
     private long realisticDelayInMs(String text){
         int numberOfWords = text.toUpperCase().split("[^A-Z]").length + 1;           // rough count of the number of words
-        double numberOfMinutes = numberOfWords / 37.0;                                      // average (female) typing speed
+        double numberOfMinutes = numberOfWords / 50.0;                                      // slightly faster than average typing speed
         return (long) (numberOfMinutes * 60 * 1000) + RANDOM.nextInt(1000 * 5);
     }
 
@@ -57,8 +64,16 @@ public class TelegramBotController extends WebBotController {
                     // sleep
                     try { Thread.sleep(realisticDelayInMs(txt)); } catch (InterruptedException e) { e.printStackTrace(); }
 
-                    // send
-                    SendMessage sendMessage = new SendMessage(message.chat().id(), txt).parseMode(ParseMode.HTML);
+                    // images
+                    BaseRequest sendMessage;
+                    if(txt.matches("<img src=.*>")) {
+                        String imgSrc = Jsoup.parse(txt).getElementsByTag("img").get(0).attr("src");
+                        sendMessage = new SendPhoto(message.chat().id(), imgSrc);
+                    }
+                    // regular text
+                    else {
+                        sendMessage = new SendMessage(message.chat().id(), txt).parseMode(ParseMode.HTML);
+                    }
                     bot.execute(sendMessage);
                 }
             }.start();

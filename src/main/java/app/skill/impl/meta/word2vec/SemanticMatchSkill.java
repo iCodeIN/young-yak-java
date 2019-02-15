@@ -5,6 +5,7 @@ import app.entities.DialogChunk;
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.Status;
+import app.handler.impl.HandlerResponseImpl;
 import app.skill.ISkill;
 import app.skill.impl.meta.typo.TypoCorrectionSkill;
 import org.deeplearning4j.models.paragraphvectors.ParagraphVectors;
@@ -120,24 +121,6 @@ public class SemanticMatchSkill implements ISkill {
         List<String> syns = new ArrayList<>(tmp.iterator().next());
         String out = syns.get(RANDOM.nextInt(syns.size()));
 
-        return new IHandlerResponse() {
-            @Override
-            public Status getStatus() {
-                return Status.STATUS_303_SEE_OTHER;
-            }
-
-            @Override
-            public Object getContent() {
-                return out;
-            }
-
-            @Override
-            public String getContentType(){return "text";}
-
-            @Override
-            public String[] getInvokedSkills() {
-                return new String[]{SemanticMatchSkill.class.getName()};
-            }
-        };
+        return new HandlerResponseImpl(out, new String[]{SemanticMatchSkill.class.getName()}).setStatus(Status.STATUS_303_SEE_OTHER);
     }
 }

@@ -6,6 +6,12 @@ package app.handler;
  */
 public interface IHandlerResponse {
 
+    enum ContentType {
+        HTML,
+        TEXT,
+        IMAGE
+    }
+
     /**
      * Get the status of the response
      * <br> The status indicates how the reply was obtained
@@ -24,7 +30,7 @@ public interface IHandlerResponse {
     /**
      * Get the content type
      */
-    String getContentType();
+    ContentType getContentType();
 
     /**
      * Get the skills (names) invoked in generating this output

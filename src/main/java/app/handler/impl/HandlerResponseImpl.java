@@ -10,13 +10,13 @@ import app.handler.Status;
 public class HandlerResponseImpl implements IHandlerResponse {
 
     private String text;
-    private String contentType;
+    private ContentType contentType;
     private String[] invokedSkills;
     private Status status;
 
     public HandlerResponseImpl(String text, String[] invokedSkills) {
         this.text = text;
-        this.contentType = "text";
+        this.contentType = ContentType.TEXT;
         this.invokedSkills = invokedSkills;
         this.status = Status.STATUS_200_OK;
     }
@@ -25,6 +25,7 @@ public class HandlerResponseImpl implements IHandlerResponse {
     public Status getStatus() {
         return status;
     }
+    public HandlerResponseImpl setStatus(Status status){this.status = status; return this;}
 
     @Override
     public Object getContent() {
@@ -32,8 +33,8 @@ public class HandlerResponseImpl implements IHandlerResponse {
     }
 
     @Override
-    public String getContentType(){return contentType;}
-    public HandlerResponseImpl setContentType(String contentType){this.contentType=contentType;return this;}
+    public ContentType getContentType(){return contentType;}
+    public HandlerResponseImpl setContentType(ContentType contentType){this.contentType=contentType;return this;}
 
     @Override
     public String[] getInvokedSkills() {

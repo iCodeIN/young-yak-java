@@ -5,6 +5,7 @@ import app.entities.DialogChunk;
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.Status;
+import app.handler.impl.HandlerResponseImpl;
 import app.skill.ISkill;
 
 /**
@@ -59,25 +60,7 @@ public class TypoCorrectionSkill implements ISkill {
         if (synomymChunk == null)
             return null;
         String synonymText = synomymChunk.getInput();
-        return new IHandlerResponse() {
-            @Override
-            public Status getStatus() {
-                return Status.STATUS_303_SEE_OTHER;
-            }
-
-            @Override
-            public Object getContent() {
-                return synonymText;
-            }
-
-            @Override
-            public String getContentType(){return "text";}
-
-            @Override
-            public String[] getInvokedSkills() {
-                return new String[]{TypoCorrectionSkill.class.getName()};
-            }
-        };
+        return new HandlerResponseImpl(synonymText, new String[]{TypoCorrectionSkill.class.getName()}).setStatus(Status.STATUS_303_SEE_OTHER);
     }
 
 }
