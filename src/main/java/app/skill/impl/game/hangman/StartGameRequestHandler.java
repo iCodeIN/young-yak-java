@@ -41,10 +41,10 @@ public class StartGameRequestHandler extends RegexRequestHandler {
     };
 
     private static String[] REPLIES = {
-            "Starting up a new hangman.<br>%s",
-            "New hangman started.<br>%s",
-            "Good luck!<br>%s",
-            "New hangman started. Good luck!<br>%s"
+            "Starting up a new hangman.\n%s",
+            "New hangman started.\n%s",
+            "Good luck!\n%s",
+            "New hangman started. Good luck!\n%s"
     };
 
     public StartGameRequestHandler() {

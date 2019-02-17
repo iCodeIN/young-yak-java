@@ -42,10 +42,10 @@ public class StartGameRequestHandler extends RegexRequestHandler {
     };
 
     private static String[] REPLIES = {
-            "Starting up a new game of blackjack.<br>%s",
-            "New blackjack game started.<br>%s",
-            "Good luck!<br>%s",
-            "New game started. Good luck!<br>%s"
+            "Starting up a new game of blackjack.\n%s",
+            "New blackjack game started.\n%s",
+            "Good luck!\n%s",
+            "New game started. Good luck!\n%s"
     };
 
     public StartGameRequestHandler() {

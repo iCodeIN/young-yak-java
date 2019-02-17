@@ -27,15 +27,14 @@ public class TelegramBotController extends WebBotController {
 
     public TelegramBotController() {
         // Create your bot passing the token received from @BotFather
-        TelegramBot bot = new TelegramBot("741085051:AAFV1TKYCo-Ov8GMlaTyFhuChLDCr36M5GE");
+        TelegramBot bot = new TelegramBot(System.getProperty("TELEGRAM_ID"));
+        //TelegramBot bot = new TelegramBot("745707375:AAFO1KkYsuOFvR79o1jdTGZMwZP_1yoOnTg");
 
         // Register for updates
         bot.setUpdatesListener(new UpdatesListener() {
             @Override
             public int process(List<Update> list) {
                 for(Update u : list){
-                    if(u.message().from().id() == 200652953)
-                        continue;
                     reply(bot, u.message());
                 }
                 return UpdatesListener.CONFIRMED_UPDATES_ALL;

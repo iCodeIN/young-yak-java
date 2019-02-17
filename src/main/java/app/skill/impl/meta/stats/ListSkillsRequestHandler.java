@@ -33,10 +33,9 @@ public class ListSkillsRequestHandler extends RegexRequestHandler {
 
     @Override
     public Optional<IHandlerResponse> handle(IHandlerInput input) {
-        String out = "<ul>";
+        String out = "";
         for (ISkill s : ((DefaultBotImpl) botController.getBot()).getSkills())
-            out += ("<li>" + s.getClass().getSimpleName() + "</li>");
-        out += "</ul>";
+            out += ("• " + s.getClass().getSimpleName() + "\n");
         return Optional.of(new HandlerResponseImpl(out, new String[]{this.getClass().getName()}));
     }
 }

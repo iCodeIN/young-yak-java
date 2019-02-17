@@ -34,12 +34,12 @@ public class MakeGuessRequestHandler extends RegexRequestHandler {
     };
 
     private String[] GOOD_GUESS_REPLIES = {
-            "Great guess!<br>%s",
-            "Good job!<br>%s",
-            "Well done!<br>%s",
-            "Great guess.<br>%s",
-            "Good job.<br>%s",
-            "Well done.<br>%s"
+            "Great guess!\n%s",
+            "Good job!\n%s",
+            "Well done!\n%s",
+            "Great guess.\n%s",
+            "Good job.\n%s",
+            "Well done.\n%s"
     };
 
     private String[] WORD_COMPLETED_REPLIES = {
@@ -50,9 +50,9 @@ public class MakeGuessRequestHandler extends RegexRequestHandler {
     };
 
     private String[] BAD_GUESS_REPLIES = {
-            "I'm afraid that letter isn't correct<br>%s",
-            "Incorrect.<br>%s",
-            "Nope.<br>%s"
+            "I'm afraid that letter isn't correct.\n%s",
+            "Incorrect.\n%s",
+            "Nope.\n%s"
     };
 
     private String[] GAME_OVER_REPLIES = {
