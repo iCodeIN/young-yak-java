@@ -44,9 +44,9 @@ public class TelegramBotController extends WebBotController {
     }
 
     private long realisticDelayInMs(String text){
-        int numberOfWords = text.toUpperCase().split("[^A-Z]").length + 1;           // rough count of the number of words
-        double numberOfMinutes = numberOfWords / 50.0;                                      // slightly faster than average typing speed
-        return (long) (numberOfMinutes * 60 * 1000) + RANDOM.nextInt(1000 * 5);
+        int numberOfWords = text.toUpperCase().split("[^A-Z]").length + 1;              // rough count of the number of words
+        double numberOfMinutes = numberOfWords / 80.0;                                      // slightly faster than average typing speed
+        return (long) (numberOfMinutes * 60 * 1000) + RANDOM.nextInt(1000 * 2);
     }
 
     private void reply(TelegramBot bot, Message message){
