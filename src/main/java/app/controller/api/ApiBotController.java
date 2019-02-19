@@ -1,4 +1,4 @@
-package app.controller.web;
+package app.controller.api;
 
 import app.bot.DefaultBotImpl;
 import app.bot.IBot;
@@ -17,6 +17,7 @@ import app.skill.impl.internet.imdb.IMDBSkill;
 import app.skill.impl.internet.soundcloud.SoundCloudSkill;
 import app.skill.impl.internet.unsplash.UnsplashSkill;
 import app.skill.impl.internet.weather.WeatherSkill;
+import app.skill.impl.internet.xkcd.XkcdSkill;
 import app.skill.impl.math.MathSkill;
 import app.skill.impl.game.hangman.HangmanSkill;
 import app.skill.impl.meta.stats.BotStatisticsSkill;
@@ -37,14 +38,14 @@ import java.util.Optional;
  */
 @RestController
 @RequestMapping("api")
-public class WebBotController implements IBotController {
+public class ApiBotController implements IBotController {
 
     @Autowired
     private DialogChunkRepository dialogChunkRepository;
 
     private DefaultBotImpl bot;
 
-    public WebBotController() {
+    public ApiBotController() {
         bot = new DefaultBotImpl();
 
         bot.addSkill(new AIMLSkill(bot))
@@ -65,6 +66,7 @@ public class WebBotController implements IBotController {
                 .addSkill(new WeatherSkill())
                 .addSkill(new NYTimesSkill())
                 .addSkill(new SoundCloudSkill())
+                .addSkill(new XkcdSkill())
 
                 // generic
                 .addSkill(new DuckDuckGoSkill())

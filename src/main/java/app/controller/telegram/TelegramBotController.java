@@ -1,6 +1,6 @@
 package app.controller.telegram;
 
-import app.controller.web.WebBotController;
+import app.controller.api.ApiBotController;
 
 import app.handler.IHandlerResponse;
 import com.pengrad.telegrambot.TelegramBot;
@@ -21,14 +21,20 @@ import java.util.Random;
 
 @RestController
 @RequestMapping("telegram")
-public class TelegramBotController extends WebBotController {
+public class TelegramBotController extends ApiBotController {
 
     private static Random RANDOM = new Random(System.currentTimeMillis());
 
+    private static String getTelegramID(){
+        String id = null;
+        id = (id == null || id.isEmpty()) ? System.getProperty("TELEGRAM_ID") : id;
+        id = (id == null || id.isEmpty()) ? System.getenv("TELEGRAM_ID") : id;
+        return id;
+    }
+
     public TelegramBotController() {
         // Create your bot passing the token received from @BotFather
-        TelegramBot bot = new TelegramBot(System.getProperty("TELEGRAM_ID"));
-        //TelegramBot bot = new TelegramBot("745707375:AAFO1KkYsuOFvR79o1jdTGZMwZP_1yoOnTg");
+        TelegramBot bot = new TelegramBot(getTelegramID());
 
         // Register for updates
         bot.setUpdatesListener(new UpdatesListener() {
