@@ -10,6 +10,7 @@ import app.handler.IHandlerResponse;
 import app.handler.impl.HandlerInputImpl;
 import app.skill.impl.aiml.AIMLSkill;
 import app.skill.impl.game.blackjack.BlackJackSkill;
+import app.skill.impl.game.tictactoe.TicTacToeSkill;
 import app.skill.impl.internet.NYTimes.NYTimesSkill;
 import app.skill.impl.internet.cocktail.CocktailSkill;
 import app.skill.impl.internet.duckduckgo.DuckDuckGoSkill;
@@ -55,6 +56,7 @@ public class ApiBotController implements IBotController {
                 // games
                 .addSkill(new BlackJackSkill())
                 .addSkill(new HangmanSkill())
+                .addSkill(new TicTacToeSkill())
 
                 // meta
                 .addSkill(new BotStatisticsSkill(this))

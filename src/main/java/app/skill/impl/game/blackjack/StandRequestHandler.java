@@ -61,9 +61,14 @@ public class StandRequestHandler extends RegexRequestHandler {
 
         // not possible to stand
         if(maxValue < 17)
-            return Optional.of(new HandlerResponseImpl(STAND_ACCEPTED[RANDOM.nextInt(STAND_ACCEPTED.length)], new String[]{this.getClass().getName()}));
+            return Optional.of(new HandlerResponseImpl(NOT_POSSIBLE_TO_STAND[RANDOM.nextInt(NOT_POSSIBLE_TO_STAND.length)], new String[]{this.getClass().getName()}));
 
-        // default
-        return Optional.of(new HandlerResponseImpl(NOT_POSSIBLE_TO_STAND[RANDOM.nextInt(NOT_POSSIBLE_TO_STAND.length)], new String[]{this.getClass().getName()}));
+        // build answer
+        String txt = STAND_ACCEPTED[RANDOM.nextInt(STAND_ACCEPTED.length)];
+
+        // play game for dealer
+
+        // return
+        return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));
     }
 }
