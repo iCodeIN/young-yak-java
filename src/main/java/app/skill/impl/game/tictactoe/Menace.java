@@ -52,8 +52,9 @@ public class Menace {
         else{
             // populate memory
             memory.put(h, new HashMap<>());
+            int k = 10 - empty(board).size();
             for(int[] opt : empty(board)){
-                memory.get(h).put(new HashableArrayWrapper(opt), 1);
+                memory.get(h).put(new HashableArrayWrapper(opt), k);
             }
             // recurse
             return getNextPosition(board);
@@ -142,9 +143,9 @@ public class Menace {
 
             HashableArrayWrapper move = new HashableArrayWrapper(diff(hA, hB));
             if(memory.get(hA).containsKey(move))
-                memory.get(hA).put(move, memory.get(hA).get(move) + 1);
+                memory.get(hA).put(move, memory.get(hA).get(move) + 3);
             else
-                memory.get(hA).put(move, 1);
+                memory.get(hA).put(move, 3);
         }
     }
 

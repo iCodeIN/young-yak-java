@@ -15,21 +15,29 @@ import org.jsoup.Jsoup;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-import java.util.Optional;
-import java.util.Random;
+import java.util.*;
 
 @RestController
 @RequestMapping("telegram")
 public class TelegramBotController extends ApiBotController {
 
     private static Random RANDOM = new Random(System.currentTimeMillis());
+    private static Set<String> INSTANTLY_SERVED_USERS = getInstantlyServedUsers();
 
     private static String getTelegramID(){
         String id = null;
         id = (id == null || id.isEmpty()) ? System.getProperty("TELEGRAM_ID") : id;
         id = (id == null || id.isEmpty()) ? System.getenv("TELEGRAM_ID") : id;
         return id;
+    }
+
+    private static Set<String> getInstantlyServedUsers(){
+        String tmp = null;
+        tmp = (tmp == null || tmp.isEmpty()) ? System.getProperty("INSTANTLY_SERVED_USERS") : tmp;
+        tmp = (tmp == null || tmp.isEmpty()) ? System.getenv("INSTANTLY_SERVED_USERS") : tmp;
+        if(tmp == null)
+            return new HashSet<>();
+        return new HashSet<String>(Arrays.asList(tmp.split(",")));
     }
 
     public TelegramBotController() {
@@ -67,7 +75,9 @@ public class TelegramBotController extends ApiBotController {
                     String txt = response.get().getContent().toString();
 
                     // sleep
-                    try { Thread.sleep(realisticDelayInMs(txt)); } catch (InterruptedException e) { e.printStackTrace(); }
+                    if(!INSTANTLY_SERVED_USERS.contains(message.from().id()+"")) {
+                        try { Thread.sleep(realisticDelayInMs(txt)); } catch (InterruptedException e) { e.printStackTrace(); }
+                    }
 
                     // images
                     BaseRequest sendMessage;
