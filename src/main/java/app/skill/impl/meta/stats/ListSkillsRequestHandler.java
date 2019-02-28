@@ -8,8 +8,7 @@ import app.handler.impl.HandlerResponseImpl;
 import app.skill.ISkill;
 import app.skill.impl.regex.RegexRequestHandler;
 
-import java.util.Arrays;
-import java.util.Optional;
+import java.util.*;
 import java.util.regex.Pattern;
 
 /**
@@ -34,7 +33,12 @@ public class ListSkillsRequestHandler extends RegexRequestHandler {
     @Override
     public Optional<IHandlerResponse> handle(IHandlerInput input) {
         String out = "";
-        for (ISkill s : ((DefaultBotImpl) botController.getBot()).getSkills())
+        List<ISkill> installedSkills = new ArrayList<ISkill>(((DefaultBotImpl) botController.getBot()).getSkills());
+        java.util.Collections.sort(installedSkills, new Comparator<ISkill>() {
+            @Override
+            public int compare(ISkill o1, ISkill o2) { return o1.getClass().getSimpleName().compareTo(o2.getClass().getSimpleName()); }
+        });
+        for (ISkill s : installedSkills)
             out += ("• " + s.getClass().getSimpleName() + "\n");
         return Optional.of(new HandlerResponseImpl(out, new String[]{this.getClass().getName()}));
     }
