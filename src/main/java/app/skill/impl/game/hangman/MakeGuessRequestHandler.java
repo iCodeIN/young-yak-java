@@ -78,7 +78,8 @@ public class MakeGuessRequestHandler extends RegexRequestHandler {
         // check whether there is a game in progress
         HangmanSkill.Game g = HangmanSkill.getGame(input.getUserID());
         if(g == null)
-            return Optional.of(new HandlerResponseImpl(NO_SUCH_GAME[RANDOM.nextInt(NO_SUCH_GAME.length)], new String[]{this.getClass().getName()}));
+            return Optional.empty();
+            // return Optional.of(new HandlerResponseImpl(NO_SUCH_GAME[RANDOM.nextInt(NO_SUCH_GAME.length)], new String[]{this.getClass().getName()}));
 
         String txt = input.getContent().toString();
         for (Pattern p : MAKE_GUESS_PATTERNS) {

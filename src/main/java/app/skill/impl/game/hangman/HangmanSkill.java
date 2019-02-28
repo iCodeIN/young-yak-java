@@ -12,9 +12,9 @@ public class HangmanSkill extends DefaultSkillImpl {
     private static Map<String, Game> GAMES_IN_PROGRESS = new HashMap<>();
     private static Random RANDOM = new Random(System.currentTimeMillis());
     private static String[] DICTIONARY = {
-            "Awkward", "Bagpipes", "Banjo", "Bungler",
-            "Croquet", "Crypt", "Dwarves", "Fervid", "Fishhook",
-            "Fjord", "Gazebo", "Gypsy", "Haiku", "Haphazard",
+            "Awkward", "Abyss", "Bagpipes", "Banjo", "Bayou", "Bungler",
+            "Croquet", "Crypt", "Dwarves","Embezzle", "Fervid", "Fishhook",
+            "Fjord", "Gazebo", "Glyph","Gypsy", "Haiku", "Haphazard",
             "Hyphen", "Ivory", "Jazzy", "Jiffy", "Jinx",
             "Jukebox", "Kayak", "Kiosk", "Klutz", "Memento",
             "Mystify", "Numbskull", "Ostracize", "Oxygen", "Pajama",

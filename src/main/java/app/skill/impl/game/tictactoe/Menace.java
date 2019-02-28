@@ -1,6 +1,7 @@
 package app.skill.impl.game.tictactoe;
 
 import java.util.*;
+import java.util.logging.Logger;
 
 public class Menace {
 
@@ -25,6 +26,7 @@ public class Menace {
 
     private static Random RANDOM = new Random(System.currentTimeMillis());
     private Map<Long, Map<HashableArrayWrapper, Integer>> memory = new HashMap<>();
+    private static Logger logger = Logger.getLogger(Menace.class.getSimpleName());
 
     public int[] getNextPosition(int[][] board){
         long h = boardToHash(board);
@@ -108,7 +110,7 @@ public class Menace {
         return hash;
     }
 
-    public int[][] hashToBoard(long h){
+    public static int[][] hashToBoard(long h){
         int[][] board = new int[3][3];
         int[] primesA = {2, 7,17, 29,41,53, 67,79, 97};
         int[] primesB = {3,11,19, 31,43,59, 71,83,101};
@@ -129,6 +131,7 @@ public class Menace {
     }
 
     public void markWin(List<Long> boards){
+        logger.info("Learning from win.");
         if(!boards.get(0).equals(29349960207117L))
             boards.add(0, 29349960207117L);
         for (int i = 0; i < boards.size() - 1; i++) {
@@ -146,6 +149,7 @@ public class Menace {
     }
 
     public void markLoss(List<Long> boards){
+        logger.info("Learning from loss.");
         if(!boards.get(0).equals(29349960207117L))
             boards.add(0, 29349960207117L);
         for (int i = 0; i < boards.size() - 1; i++) {

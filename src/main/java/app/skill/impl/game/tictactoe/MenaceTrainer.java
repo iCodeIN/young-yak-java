@@ -5,14 +5,14 @@ import java.util.List;
 
 public class MenaceTrainer {
 
-    public static void main(String[] args) {
+    public static Menace[] train(int numberOfIterations) {
 
         int[][] board = new int[3][3];
 
         Menace playerA = new Menace();
         Menace playerB = new Menace();
 
-        for (int i = 0; i < 10000; i++) {
+        for (int i = 0; i < numberOfIterations; i++) {
             // play until winner
             int turn = 1;
             List<Long> boards = new ArrayList<>();
@@ -44,6 +44,7 @@ public class MenaceTrainer {
             boards.clear();
             board = new int[3][3];
         }
-
+        // return
+        return new Menace[]{playerA, playerB};
     }
 }
