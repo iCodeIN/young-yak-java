@@ -109,8 +109,11 @@ public class PlaceStoneRequestHandler extends RegexRequestHandler {
         if(!posValid)
             return Optional.of(new HandlerResponseImpl(INVALID_MOVE[RANDOM.nextInt(INVALID_MOVE.length)], new String[]{this.getClass().getName()}));
 
-        // check win/loss
+        // mark position
         g[pos[0]][pos[1]] = 1;
+        TicTacToeSkill.setGame(input.getUserID(), g);
+
+        // check win/loss
         if(Menace.winner(g) == 1) {
             TicTacToeSkill.userWon(input.getUserID());
             return Optional.of(new HandlerResponseImpl(YOU_WIN[RANDOM.nextInt(YOU_WIN.length)], new String[]{this.getClass().getName()}));

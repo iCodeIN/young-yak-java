@@ -63,6 +63,9 @@ public class TelegramBotController extends ApiBotController {
     }
 
     private void reply(TelegramBot bot, Message message){
+        if(message == null)
+            return;
+
         String userID = message.from().firstName() + " " + message.from().lastName() + "[" + message.from().id()+"]";
 
         // call super, ensuring this data gets stored

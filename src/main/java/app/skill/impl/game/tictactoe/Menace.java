@@ -54,7 +54,7 @@ public class Menace {
         else{
             // populate memory
             memory.put(h, new HashMap<>());
-            int k = 10 - empty(board).size();
+            int k = (int) Math.max(Math.floor(empty(board).size() / 2), 1);
             for(int[] opt : empty(board)){
                 memory.get(h).put(new HashableArrayWrapper(opt), k);
             }
@@ -133,11 +133,15 @@ public class Menace {
         return board;
     }
 
-    public void markWin(List<Long> boards){
+    public void markWin(List<Long> boards, boolean menaceBegins){
         logger.info("Learning from win.");
         if(!boards.get(0).equals(29349960207117L))
             boards.add(0, 29349960207117L);
         for (int i = 0; i < boards.size() - 1; i++) {
+            if(menaceBegins && i % 2 == 1)
+                continue;
+            if(!menaceBegins && i % 2 == 0)
+                continue;
             long hA = boards.get(i);
             long hB = boards.get(i + 1);
             if(!memory.containsKey(hA))
@@ -169,11 +173,15 @@ public class Menace {
         }
     }
 
-    public void markLoss(List<Long> boards){
+    public void markLoss(List<Long> boards, boolean menaceBegins){
         logger.info("Learning from loss.");
         if(!boards.get(0).equals(29349960207117L))
             boards.add(0, 29349960207117L);
         for (int i = 0; i < boards.size() - 1; i++) {
+            if(menaceBegins && i % 2 == 1)
+                continue;
+            if(!menaceBegins && i % 2 == 0)
+                continue;
             long hA = boards.get(i);
             long hB = boards.get(i + 1);
             if(!memory.containsKey(hA))

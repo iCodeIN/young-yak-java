@@ -44,11 +44,11 @@ public class MenaceTrainer {
                 playerB.markDraw(boards);
             }
             else if(winner == 1){
-                    playerA.markWin(boards);
-                    playerB.markLoss(boards);
+                    playerA.markWin(boards, true);
+                    playerB.markLoss(boards, false);
             }else{
-                    playerA.markLoss(boards);
-                    playerB.markWin(boards);
+                    playerA.markLoss(boards, true);
+                    playerB.markWin(boards, false);
             }
 
 
