@@ -131,7 +131,8 @@ public class PlaceStoneRequestHandler extends RegexRequestHandler {
         // check win/loss
         if(Menace.winner(g) == -1) {
             TicTacToeSkill.userLost(input.getUserID());
-            return Optional.of(new HandlerResponseImpl(I_WIN[RANDOM.nextInt(I_WIN.length)], new String[]{this.getClass().getName()}));
+            String txt = I_WIN[RANDOM.nextInt(I_WIN.length)] + "\n" + TicTacToeSkill.boardToString(g);
+            return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));
         }
 
         // default

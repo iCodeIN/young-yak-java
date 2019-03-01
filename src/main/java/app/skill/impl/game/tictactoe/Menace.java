@@ -36,6 +36,8 @@ public class Menace {
             for(Map.Entry<HashableArrayWrapper, Integer> en : memory.get(h).entrySet()){
                 n += en.getValue();
             }
+            if(n == 0)
+                return null;
             int[] selected = null;
             while(selected == null) {
                 for (Map.Entry<HashableArrayWrapper, Integer> en : memory.get(h).entrySet()){
@@ -71,7 +73,7 @@ public class Menace {
         if(board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[0][0] != 0)
             return board[0][0];
         if(board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[0][2] != 0)
-            return board[0][0];
+            return board[0][2];
         return 0;
     }
 
@@ -149,6 +151,24 @@ public class Menace {
         }
     }
 
+    public void markDraw(List<Long> boards){
+        logger.info("Learning from loss.");
+        if(!boards.get(0).equals(29349960207117L))
+            boards.add(0, 29349960207117L);
+        for (int i = 0; i < boards.size() - 1; i++) {
+            long hA = boards.get(i);
+            long hB = boards.get(i + 1);
+            if(!memory.containsKey(hA))
+                continue;
+
+            HashableArrayWrapper move = new HashableArrayWrapper(diff(hA, hB));
+            if(memory.get(hA).containsKey(move))
+                memory.get(hA).put(move, memory.get(hA).get(move) + 1);
+            else
+                memory.get(hA).put(move, 1);
+        }
+    }
+
     public void markLoss(List<Long> boards){
         logger.info("Learning from loss.");
         if(!boards.get(0).equals(29349960207117L))
@@ -160,14 +180,16 @@ public class Menace {
                 continue;
 
             HashableArrayWrapper move = new HashableArrayWrapper(diff(hA, hB));
-            if(memory.get(hA).containsKey(move) && memory.get(hA).get(move) > 1) {
-                memory.get(hA).put(move, memory.get(hA).get(move) - 1);
-            }else {
-                for (Map.Entry<HashableArrayWrapper, Integer> en : memory.get(hA).entrySet()) {
-                    if(!en.getKey().equals(move)) {
-                        memory.get(hA).put(en.getKey(), en.getValue() + 1);
-                    }
+            if(hA == 29349960207117L){
+                int N = 0;
+                for(Integer f : memory.get(hA).values())
+                    N += f;
+                if(N != 1){
+                    memory.get(hA).put(move, memory.get(hA).get(move) - 1);
                 }
+            }
+            if(memory.get(hA).containsKey(move)) {
+                memory.get(hA).put(move, memory.get(hA).get(move) - 1);
             }
         }
     }
