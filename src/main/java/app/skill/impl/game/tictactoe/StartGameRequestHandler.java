@@ -61,7 +61,7 @@ public class StartGameRequestHandler extends RegexRequestHandler {
         // init game
         TicTacToeSkill.startGame(userID);
 
-        txt = String.format(txt, TicTacToeSkill.boardToString(TicTacToeSkill.getGame(userID)));
+        txt = String.format(txt, TicTacToeSkill.getGame(userID).lastBoardToString());
 
         // return
         return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));

@@ -3,7 +3,6 @@ package app.skill.impl.game.blackjack;
 import app.handler.IHandlerInput;
 import app.handler.IHandlerResponse;
 import app.handler.impl.HandlerResponseImpl;
-import app.skill.impl.game.hangman.HangmanSkill;
 import app.skill.impl.regex.RegexRequestHandler;
 
 import java.util.Arrays;
@@ -62,7 +61,7 @@ public class StartGameRequestHandler extends RegexRequestHandler {
         BlackJackSkill.startGame(userID);
 
         // get game
-        BlackJackSkill.Game g = BlackJackSkill.getGame(userID);
+        Game g = BlackJackSkill.getGame(userID);
 
         String cards = "";
         for (int i = 0; i < g.cards.length; i++) {

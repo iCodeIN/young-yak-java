@@ -70,7 +70,7 @@ public class PlaceStoneRequestHandler extends RegexRequestHandler {
     @Override
     public Optional<IHandlerResponse> handle(IHandlerInput input) {
         // check whether there is a game in progress
-        int[][] g = TicTacToeSkill.getGame(input.getUserID());
+        Game g = TicTacToeSkill.getGame(input.getUserID());
         if (g == null)
             return Optional.empty();
             // return Optional.of(new HandlerResponseImpl(NO_SUCH_GAME[RANDOM.nextInt(NO_SUCH_GAME.length)], new String[]{this.getClass().getName()}));
@@ -100,7 +100,7 @@ public class PlaceStoneRequestHandler extends RegexRequestHandler {
 
         // check validity
         boolean posValid = false;
-        for(int[] empty : Menace.empty(g)){
+        for(int[] empty : Menace.empty(g.getLastBoard())){
             if(empty[0] == pos[0] && empty[1] == pos[1]) {
                 posValid = true;
                 break;
@@ -110,36 +110,34 @@ public class PlaceStoneRequestHandler extends RegexRequestHandler {
             return Optional.of(new HandlerResponseImpl(INVALID_MOVE[RANDOM.nextInt(INVALID_MOVE.length)], new String[]{this.getClass().getName()}));
 
         // mark position
-        g[pos[0]][pos[1]] = 1;
-        TicTacToeSkill.setGame(input.getUserID(), g);
+        g.placeStone(pos[0], pos[1]);
 
         // check win/loss
-        if(Menace.winner(g) == 1) {
+        if(Menace.winner(g.getLastBoard()) == 1) {
             TicTacToeSkill.userWon(input.getUserID());
             return Optional.of(new HandlerResponseImpl(YOU_WIN[RANDOM.nextInt(YOU_WIN.length)], new String[]{this.getClass().getName()}));
         }
-        if(Menace.winner(g) == -1) {
+        if(Menace.winner(g.getLastBoard()) == -1) {
             TicTacToeSkill.userLost(input.getUserID());
             return Optional.of(new HandlerResponseImpl(I_WIN[RANDOM.nextInt(I_WIN.length)], new String[]{this.getClass().getName()}));
         }
         // check board full
-        if(Menace.empty(g).isEmpty())
+        if(Menace.empty(g.getLastBoard()).isEmpty())
             return Optional.of(new HandlerResponseImpl(DRAW[RANDOM.nextInt(DRAW.length)], new String[]{this.getClass().getName()}));
 
         // play
-        pos = TicTacToeSkill.getPlayerB().getNextPosition(g);
-        g[pos[0]][pos[1]] = -1;
-        TicTacToeSkill.setGame(input.getUserID(), g);
+        pos = TicTacToeSkill.getPlayerB().getNextPosition(g.getLastBoard());
+        g.placeStone(pos[0], pos[1]);
 
         // check win/loss
-        if(Menace.winner(g) == -1) {
+        if(Menace.winner(g.getLastBoard()) == -1) {
             TicTacToeSkill.userLost(input.getUserID());
-            String txt = I_WIN[RANDOM.nextInt(I_WIN.length)] + "\n" + TicTacToeSkill.boardToString(g);
+            String txt = I_WIN[RANDOM.nextInt(I_WIN.length)] + "\n" + g.lastBoardToString();
             return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));
         }
 
         // default
-        return Optional.of(new HandlerResponseImpl(TicTacToeSkill.boardToString(g), new String[]{this.getClass().getName()}));
+        return Optional.of(new HandlerResponseImpl(g.lastBoardToString(), new String[]{this.getClass().getName()}));
     }
 
 }

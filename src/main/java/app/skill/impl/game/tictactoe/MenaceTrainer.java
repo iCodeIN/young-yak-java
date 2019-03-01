@@ -40,15 +40,15 @@ public class MenaceTrainer {
             // handle win/loss
             winner = winner == 0 ? Menace.winner(board) : winner;
             if(winner == 0){
-                playerA.markDraw(boards);
-                playerB.markDraw(boards);
+                playerA.learnFromDraw(boards);
+                playerB.learnFromDraw(boards);
             }
             else if(winner == 1){
-                    playerA.markWin(boards, true);
-                    playerB.markLoss(boards, false);
+                    playerA.learnFromWin(boards, true);
+                    playerB.learnFromLoss(boards, false);
             }else{
-                    playerA.markLoss(boards, true);
-                    playerB.markWin(boards, false);
+                    playerA.learnFromLoss(boards, true);
+                    playerB.learnFromWin(boards, false);
             }
 
 

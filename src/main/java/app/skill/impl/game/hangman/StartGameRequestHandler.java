@@ -57,8 +57,8 @@ public class StartGameRequestHandler extends RegexRequestHandler {
         String txt = REPLIES[RANDOM.nextInt(REPLIES.length)];
         String userID = input.getUserID();
 
-        HangmanSkill.startGame(userID);
-        txt = String.format(txt, HangmanSkill.blanks(userID));
+        Game g = HangmanSkill.startGame(userID);
+        txt = String.format(txt, g.blanks());
         return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));
     }
 

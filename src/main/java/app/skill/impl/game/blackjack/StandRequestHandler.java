@@ -51,7 +51,7 @@ public class StandRequestHandler extends RegexRequestHandler {
 
     public Optional<IHandlerResponse> handle(IHandlerInput input){
         // check whether there is a game in progress
-        BlackJackSkill.Game g = BlackJackSkill.getGame(input.getUserID());
+        Game g = BlackJackSkill.getGame(input.getUserID());
         if(g == null)
             return Optional.of(new HandlerResponseImpl(NO_SUCH_GAME[RANDOM.nextInt(NO_SUCH_GAME.length)], new String[]{this.getClass().getName()}));
 

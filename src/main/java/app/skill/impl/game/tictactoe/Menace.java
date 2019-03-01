@@ -133,7 +133,7 @@ public class Menace {
         return board;
     }
 
-    public void markWin(List<Long> boards, boolean menaceBegins){
+    public void learnFromWin(List<Long> boards, boolean menaceBegins){
         logger.info("Learning from win.");
         if(!boards.get(0).equals(29349960207117L))
             boards.add(0, 29349960207117L);
@@ -155,7 +155,7 @@ public class Menace {
         }
     }
 
-    public void markDraw(List<Long> boards){
+    public void learnFromDraw(List<Long> boards){
         logger.info("Learning from loss.");
         if(!boards.get(0).equals(29349960207117L))
             boards.add(0, 29349960207117L);
@@ -173,7 +173,7 @@ public class Menace {
         }
     }
 
-    public void markLoss(List<Long> boards, boolean menaceBegins){
+    public void learnFromLoss(List<Long> boards, boolean menaceBegins){
         logger.info("Learning from loss.");
         if(!boards.get(0).equals(29349960207117L))
             boards.add(0, 29349960207117L);

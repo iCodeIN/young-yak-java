@@ -76,7 +76,7 @@ public class MakeGuessRequestHandler extends RegexRequestHandler {
     @Override
     public Optional<IHandlerResponse> handle(IHandlerInput input) {
         // check whether there is a game in progress
-        HangmanSkill.Game g = HangmanSkill.getGame(input.getUserID());
+        Game g = HangmanSkill.getGame(input.getUserID());
         if(g == null)
             return Optional.empty();
             // return Optional.of(new HandlerResponseImpl(NO_SUCH_GAME[RANDOM.nextInt(NO_SUCH_GAME.length)], new String[]{this.getClass().getName()}));
@@ -92,7 +92,7 @@ public class MakeGuessRequestHandler extends RegexRequestHandler {
     }
 
     private Optional<IHandlerResponse> handleGuess(String userID, String guess) {
-        HangmanSkill.Game g = HangmanSkill.getGame(userID);
+        Game g = HangmanSkill.getGame(userID);
         if (g.guesses.contains(guess))
             return handleLetterTried();
 
@@ -100,19 +100,17 @@ public class MakeGuessRequestHandler extends RegexRequestHandler {
 
         boolean goodGuess = g.word.contains(guess);
         if (goodGuess) {
-            boolean wordCompleted = Arrays.asList(g.guesses.split("")).containsAll(Arrays.asList(g.word.split("")));
-            if (wordCompleted) {
+            if (g.isWordCompletelyGuessed()) {
                 HangmanSkill.stopGame(userID);
                 return handleWordCompleted();
             }
-            return handleGoodGuess(userID);
+            return handleGoodGuess(g);
         } else {
-            boolean gameOver = (g.badGuesses >= 10);
-            if (gameOver) {
+            if (g.isGameOver()) {
                 HangmanSkill.stopGame(userID);
                 return handleGameOver();
             }
-            return handleBadGuess(userID);
+            return handleBadGuess(g);
         }
     }
 
@@ -126,9 +124,9 @@ public class MakeGuessRequestHandler extends RegexRequestHandler {
         return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));
     }
 
-    private Optional<IHandlerResponse> handleGoodGuess(String userID) {
+    private Optional<IHandlerResponse> handleGoodGuess(Game game) {
         String txt = GOOD_GUESS_REPLIES[RANDOM.nextInt(GOOD_GUESS_REPLIES.length)];
-        txt = String.format(txt, HangmanSkill.blanks(userID));
+        txt = String.format(txt, game.blanks());
         return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));
     }
 
@@ -137,9 +135,9 @@ public class MakeGuessRequestHandler extends RegexRequestHandler {
         return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));
     }
 
-    private Optional<IHandlerResponse> handleBadGuess(String userID) {
+    private Optional<IHandlerResponse> handleBadGuess(Game game) {
         String txt = BAD_GUESS_REPLIES[RANDOM.nextInt(BAD_GUESS_REPLIES.length)];
-        txt = String.format(txt, HangmanSkill.blanks(userID));
+        txt = String.format(txt, game.blanks());
         return Optional.of(new HandlerResponseImpl(txt, new String[]{this.getClass().getName()}));
     }
 
