@@ -28,7 +28,60 @@ public class Menace {
     private Map<Long, Map<HashableArrayWrapper, Integer>> memory = new HashMap<>();
     private static Logger logger = Logger.getLogger(Menace.class.getSimpleName());
 
-    public int[] getNextPosition(int[][] board){
+    public int[] getNextInvariantPosition(int[][] board){
+        // check base
+        long h = boardToHash(board);
+        if(memory.containsKey(h))
+            return getNextPosition(board);
+
+        // check invariants
+        int[][] rotatedBoard = board;
+        for(int i=0;i<4;i++){
+            rotatedBoard = rotateBoardClockwise(rotatedBoard);
+            h = boardToHash(rotatedBoard);
+            if(memory.containsKey(h)){
+                // decide best response
+                int[] response = getNextPosition(rotatedBoard);
+
+                // rotate coordinates
+                int[] rotatedResponse = response;
+                for (int j = 0; j <= i; j++) { rotatedResponse = rotatePositionCounterClockwise(rotatedResponse); }
+
+                // return
+                return rotatedResponse;
+            }
+        }
+
+        // default
+        return getNextPosition(board);
+    }
+
+    private int[] rotatePositionCounterClockwise(int[] pos){
+        if(pos[0] == 0 && pos[1] == 0) return new int[]{2,0};
+        if(pos[0] == 0 && pos[1] == 1) return new int[]{1,0};
+        if(pos[0] == 0 && pos[1] == 2) return new int[]{0,0};
+
+        if(pos[0] == 1 && pos[1] == 0) return new int[]{2,1};
+        if(pos[0] == 1 && pos[1] == 1) return new int[]{1,1};
+        if(pos[0] == 1 && pos[1] == 2) return new int[]{0,1};
+
+        if(pos[0] == 2 && pos[1] == 0) return new int[]{2,2};
+        if(pos[0] == 2 && pos[1] == 1) return new int[]{1,2};
+        if(pos[0] == 2 && pos[1] == 2) return new int[]{0,2};
+
+        return null;
+    }
+
+    private int[][] rotateBoardClockwise(int[][] board){
+        // 1 2 3       7 4 1
+        // 4 5 6   =>  8 5 2
+        // 7 8 9       9 6 3
+        return new int[][]{ new int[]{board[2][0], board[1][0], board[0][0]},
+                            new int[]{board[2][1], board[1][1], board[0][1]},
+                            new int[]{board[2][2], board[1][2], board[0][2]}};
+    }
+
+    private int[] getNextPosition(int[][] board){
         long h = boardToHash(board);
         // known entry
         if(memory.containsKey(h)){
@@ -156,7 +209,7 @@ public class Menace {
     }
 
     public void learnFromDraw(List<Long> boards){
-        logger.info("Learning from loss.");
+        logger.info("Learning from draw.");
         if(!boards.get(0).equals(29349960207117L))
             boards.add(0, 29349960207117L);
         for (int i = 0; i < boards.size() - 1; i++) {

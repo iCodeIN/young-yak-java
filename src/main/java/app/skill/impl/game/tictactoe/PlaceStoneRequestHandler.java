@@ -126,7 +126,7 @@ public class PlaceStoneRequestHandler extends RegexRequestHandler {
             return Optional.of(new HandlerResponseImpl(DRAW[RANDOM.nextInt(DRAW.length)], new String[]{this.getClass().getName()}));
 
         // play
-        pos = TicTacToeSkill.getPlayerB().getNextPosition(g.getLastBoard());
+        pos = TicTacToeSkill.getPlayerB().getNextInvariantPosition(g.getLastBoard());
         g.placeStone(pos[0], pos[1]);
 
         // check win/loss

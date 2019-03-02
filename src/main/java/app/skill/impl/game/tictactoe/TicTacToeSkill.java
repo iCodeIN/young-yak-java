@@ -7,7 +7,7 @@ import java.util.Map;
 
 public class TicTacToeSkill extends DefaultSkillImpl {
 
-    private static Menace playerB = new Menace();
+    private static Menace playerB = new Menace(); // MenaceTrainer.train(0.95)[1];
     private static Map<String, Game> GAMES_IN_PROGRESS = new HashMap<>();
 
     public TicTacToeSkill(){
