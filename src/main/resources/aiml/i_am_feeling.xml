@@ -221,6 +221,9 @@
                 <li>Perhaps your priorities are incorrectly set? You hate stress but your job is stressful. You dislike driving but you drive to far places to see your friends and want to be happy but many of your choices are based on getting more money and fame rather than happiness.</li>
                 <li>Perhaps you're feeling guilty? When you do something that you didn’t like you will feel guilty for a day or two but what about people who keep doing the things that they dislike everyday? That would result in a tremendous amount of accumulated guilt. Procrastination, bad habits, addiction and all other things that you do on daily basis are adding some guilt to your mood each day. </li>
                 <li>When something goes wrong with your body your mind usually sends signals of pain so that you take action. The same thing happens with emotional problems, the only difference is that the signals come in the form of bad moods, mood swings, bad dreams and insomnia. Learn how to understand these signals and to respond in quick manner so that you don’t give yourself the chance to feel bad for prolonged periods of time.</li>
+                <li>Crank the tunes. Try NOT smiling while blasting your fave feel good song (or 5).</li>
+                <li>Walk it out. A 20-minute brisk walk gets the heart pumping and will decrease stress.</li>
+                <li>Be a good listener. Seeking out meaningful conversation is proven to improve your sense of well-being.</li>
             </random>
         </template>
     </category>
@@ -376,7 +379,15 @@
     </category>
     <category>
         <pattern>I FEEL CLUMSY</pattern>
-        <template />
+        <template>
+            <random>
+                <li>Understand how your body’s coordination works. The human body is a very complex system, and the operations that control physical coordination have plenty of room for mix-ups. There are four major body parts responsible for coordination, and dysfunction in any one of the areas (or multiple areas) can cause clumsiness.</li>
+                <li>Understand what can cause clumsiness. There are a whole host of issues that can cause clumsiness, whether it’s temporary or a chronic problem. Some of these are serious medical issues, while others can be addressed at home.</li>
+                <li>Measure how accident-prone you are. There isn’t a lot of research about why people are chronic klutzes, but some research suggests that people who are particularly accident-prone may experience “cognitive failures,” or lapses in attentiveness.</li>
+                <li>Increase your core strength. Your core muscles, such as your abdominals, back, and pelvis muscles, help your body move with smoothness, stability, and coordination. Developing strength in these muscles will give you better control over how your body moves, which will help reduce clumsiness.</li>
+                <li>Develop your flexibility and agility. In addition to improving your core strength, you should also work on developing your flexibility to battle clumsiness. Studies show that athletes who focus only on strength training and don’t incorporate agility and flexibility exercises have a 70% chance of re-injury, as opposed to 8% for athletes who use both.</li>
+            </random>
+        </template>
     </category>
     <category>
         <pattern>I AM FEELING CLUMSY</pattern>
@@ -408,7 +419,7 @@
     </category>
     <category>
         <pattern>I FEEL CONDEMNED</pattern>
-        <template />
+        <template><redirect>I FEEL BAD</redirect></template>
     </category>
     <category>
         <pattern>I AM FEELING CONDEMNED</pattern>
@@ -448,7 +459,7 @@
     </category>
     <category>
         <pattern>I FEEL COURAGEOUS</pattern>
-        <template />
+        <template><redirect>I FEEL BRAVE</redirect></template>
     </category>
     <category>
         <pattern>I AM FEELING COURAGEOUS</pattern>

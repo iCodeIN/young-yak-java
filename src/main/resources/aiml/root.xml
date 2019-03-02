@@ -23,7 +23,6 @@
     <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/identity.xml"/>
     <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/insults.xml"/>
     <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/is_prime.xml"/>
-    <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/itext.xml"/>
     <!-- J -->
     <import src="https://s3.us-east-2.amazonaws.com/placid-platypus-aiml/jokes.xml"/>
     <!-- K -->
