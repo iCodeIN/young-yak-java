@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+    <!-- WELL DONE -->
+    <category>
+        <pattern>💮</pattern>
+        <template><redirect>👍</redirect></template>
+    </category>
+    <category>
+        <pattern>🙇‍‍</pattern>
+        <template><redirect>👍</redirect></template>
+    </category>
+    <category>
+        <pattern>👍</pattern>
+        <template>
+            <random>
+                <li>Thanks.</li>
+                <li>Thank you.</li>
+                <li>Thanks a lot.</li>
+                <li>Thanks!</li>
+                <li>Thank you!</li>
+                <li>Thanks a lot!</li>
+            </random>
+        </template>
+    </category>
+    <!-- SMILEYS -->
+    <category>
+        <pattern>😊</pattern>
+        <template><redirect>☺️</redirect></template>
+    </category>
+    <!-- OK -->
+    <category>
+        <pattern>✅</pattern>
+        <template><redirect>OK</redirect></template>
+    </category>
+    <category>
+        <pattern>☑️</pattern>
+        <template><redirect>OK</redirect></template>
+    </category>
+    <category>
+        <pattern>✔️</pattern>
+        <template><redirect>OK</redirect></template>
+    </category>
+    <category>
+        <pattern>👌</pattern>
+        <template><redirect>OK</redirect></template>
+    </category>
+    <category>
+        <pattern>🆗</pattern>
+        <template><redirect>OK</redirect></template>
+    </category>
+</aiml>
