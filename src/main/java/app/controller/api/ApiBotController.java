@@ -63,20 +63,18 @@ public class ApiBotController implements IBotController {
 
                 // internet
                 .addSkill(new CocktailSkill())
+                .addSkill(new DuckDuckGoSkill())
                 .addSkill(new IMDBSkill())
-                .addSkill(new UnsplashSkill())
-                .addSkill(new WeatherSkill())
                 .addSkill(new NYTimesSkill())
                 .addSkill(new SoundCloudSkill())
+                .addSkill(new UnsplashSkill())
+                .addSkill(new WeatherSkill())
                 .addSkill(new XkcdSkill())
-
-                // generic
-                .addSkill(new DuckDuckGoSkill())
 
                 // input mods
                 .addSkill(new TypoCorrectionSkill(this))
-                .addSkill(new SemanticMatchSkill(this))
-                .addSkill(new FAQSkill(this.getClass().getClassLoader().getResourceAsStream("faq/faq.xml")));
+                .addSkill(new SemanticMatchSkill(this));
+                //.addSkill(new FAQSkill(this.getClass().getClassLoader().getResourceAsStream("faq/faq.xml")));
     }
 
     public IBot getBot() {
