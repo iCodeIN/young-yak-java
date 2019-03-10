@@ -5,7 +5,6 @@ import app.handler.IHandlerResponse;
 import app.handler.impl.HandlerResponseImpl;
 import app.skill.impl.regex.RegexRequestHandler;
 
-import javax.swing.text.html.Option;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Optional;

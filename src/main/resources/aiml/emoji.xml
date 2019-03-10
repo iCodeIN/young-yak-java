@@ -25,7 +25,7 @@
     <!-- SMILEYS -->
     <category>
         <pattern>😊</pattern>
-        <template><redirect>☺️</redirect></template>
+        <template><redirect>☺</redirect></template>
     </category>
     <!-- OK -->
     <category>
@@ -33,11 +33,11 @@
         <template><redirect>OK</redirect></template>
     </category>
     <category>
-        <pattern>☑️</pattern>
+        <pattern>☑</pattern>
         <template><redirect>OK</redirect></template>
     </category>
     <category>
-        <pattern>✔️</pattern>
+        <pattern>✔</pattern>
         <template><redirect>OK</redirect></template>
     </category>
     <category>

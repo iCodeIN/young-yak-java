@@ -32,6 +32,8 @@ public class AIMLSkill extends DefaultSkillImpl {
         addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/day.xml")));
         addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/diceroll.xml")));
 
+        addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/emoji.xml")));
+
         addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/famous.xml")));
 
         addRequestHandler(new AIMLRequestHandler(bot, AIMLSkill.class.getClassLoader().getResourceAsStream("aiml/identity.xml")));
