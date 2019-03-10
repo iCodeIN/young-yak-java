@@ -61,21 +61,15 @@ public class WeatherRequestHandler extends InternetLookupRequestHandler {
         double maxTemp = object.getJSONObject("main").getDouble("temp_max");
         int humidity = object.getJSONObject("main").getInt("humidity");
         int pressure = object.getJSONObject("main").getInt("pressure");
+        //String description = object.getJSONObject("weather").getString("description");
 
-        return "<b>Temp. (C)</b>\n"
-                + centigrade(avgTemp) + "\n\n" +
+        return "<pre>\uD83C\uDF21️\tavg  : " + centigrade(avgTemp) + "\n"
+                + "  \tmin  : " + centigrade(minTemp) + "\n"
+                + "  \tmax  : " + centigrade(maxTemp) + "\n\n"
+                + "\uD83C\uDF27️\t(%)  : " + humidity + "\n\n"
+                + "\uD83C\uDF2A️\t(mb) : " + pressure
+                + "</pre>";
 
-                "<b>Min. Temp. (C)</b>\n" +
-                + centigrade(minTemp) + "\n\n" +
-
-                "<b>Max. Temp. (C)</b>\n" +
-                + centigrade(maxTemp) + "\n\n" +
-
-                "<b>Humidity (%)</b>\n" +
-                + humidity + "\n\n" +
-
-                "<b>Pressure (mb)</b>\n" +
-                + pressure;
     }
 
     private double centigrade(double kelvin) {
