@@ -9,20 +9,6 @@ public class MenaceTrainer {
         MenaceTrainer.train(0.9);
     }
 
-    private static String printBoard(int[][] board){
-        String[] stones = {"X","O"};
-        return  ""
-                + (board[0][0] == 0 ? "." : board[0][0] == 1 ? stones[0] : stones[1])
-                + (board[0][1] == 0 ? "." : board[0][1] == 1 ? stones[0] : stones[1])
-                + (board[0][2] == 0 ? "." : board[0][2] == 1 ? stones[0] : stones[1]) + "\n"
-                + (board[1][0] == 0 ? "." : board[1][0] == 1 ? stones[0] : stones[1])
-                + (board[1][1] == 0 ? "." : board[1][1] == 1 ? stones[0] : stones[1])
-                + (board[1][2] == 0 ? "." : board[1][2] == 1 ? stones[0] : stones[1]) + "\n"
-                + (board[2][0] == 0 ? "." : board[2][0] == 1 ? stones[0] : stones[1])
-                + (board[2][1] == 0 ? "." : board[2][1] == 1 ? stones[0] : stones[1])
-                + (board[2][2] == 0 ? "." : board[2][2] == 1 ? stones[0] : stones[1]);
-    }
-
     public static Menace[] train(double desiredDrawPercentage) {
 
         int[][] board = new int[3][3];

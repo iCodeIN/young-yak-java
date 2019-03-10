@@ -10,7 +10,9 @@ public class Game {
         FLOWERS,
         ANIMALS,
         SPORTS,
-        FRUIT
+        FRUIT,
+        MOO,
+        BIRDS
     }
 
     private List<Long> boardHashes = new ArrayList<>();
@@ -71,19 +73,51 @@ public class Game {
             stones = new String[]{"\uD83C\uDF3A", "\uD83C\uDF40"};
         else if(lookAndFeel == LookAndFeel.SPORTS)
             stones = new String[]{"\uD83C\uDFC0","\uD83C\uDFD0"};
-        else
+        else if(lookAndFeel == LookAndFeel.FRUIT)
             stones = new String[]{"\uD83C\uDF4E","\uD83C\uDF4F"};
+        else if(lookAndFeel == LookAndFeel.MOO)
+            stones = new String[]{"\uD83D\uDC04","\uD83D\uDCA9"};
+        else
+            stones = new String[]{"\uD83E\uDD9A","\uD83E\uDDA2"};
 
-        return  "<pre>"
-                + (board[0][0] == 0 ? " A " : board[0][0] == 1 ? stones[0] : stones[1])
-                + (board[0][1] == 0 ? " B " : board[0][1] == 1 ? stones[0] : stones[1])
-                + (board[0][2] == 0 ? " C " : board[0][2] == 1 ? stones[0] : stones[1]) + "\n"
-                + (board[1][0] == 0 ? " D " : board[1][0] == 1 ? stones[0] : stones[1])
-                + (board[1][1] == 0 ? " E " : board[1][1] == 1 ? stones[0] : stones[1])
-                + (board[1][2] == 0 ? " F " : board[1][2] == 1 ? stones[0] : stones[1]) + "\n"
-                + (board[2][0] == 0 ? " G " : board[2][0] == 1 ? stones[0] : stones[1])
-                + (board[2][1] == 0 ? " H " : board[2][1] == 1 ? stones[0] : stones[1])
-                + (board[2][2] == 0 ? " I " : board[2][2] == 1 ? stones[0] : stones[1]) + "\n" +
-                "</pre>";
+        // build grid
+        String[][] tmpA = {{"A","B","C"},{"D","E","F"},{"G","H","I"}};
+        String[][] tmpB = new String[3][3];
+        int[] colWidth = {1,1,1};
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if(board[i][j] == 0) {
+                    tmpB[i][j] = tmpA[i][j];
+                }
+                if(board[i][j] == 1) {
+                    tmpB[i][j] = stones[0];
+                    colWidth[j] = 2;
+                }
+                if(board[i][j] == -1) {
+                    tmpB[i][j] = stones[1];
+                    colWidth[j] = 2;
+                }
+            }
+        }
+
+        // build final string
+        String out = "";
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                String c = tmpB[i][j];
+                out += spaces(colWidth[j] - c.length()) + c + "\t";
+            }
+            out += "\n";
+        }
+
+        // return
+        return "<pre>" + out + "</pre>";
+    }
+
+    private String spaces(int l){
+        String s = "";
+        while(s.length()  < l)
+            s += " ";
+        return s;
     }
 }
