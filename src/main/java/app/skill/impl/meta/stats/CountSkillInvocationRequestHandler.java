@@ -40,6 +40,8 @@ public class CountSkillInvocationRequestHandler extends RegexRequestHandler {
         Map<String, Integer> skillInvocationCount = new HashMap<>();
         for (DialogChunk dc : botController.getDialogChunkRepository().findAll()) {
             for (String skillName : dc.getInvokedSkills()) {
+                String[] parts = skillName.split("\\.");
+                skillName = parts[parts.length - 1];
                 if (skillInvocationCount.containsKey(skillName))
                     skillInvocationCount.put(skillName, skillInvocationCount.get(skillName) + 1);
                 else
@@ -48,7 +50,7 @@ public class CountSkillInvocationRequestHandler extends RegexRequestHandler {
         }
         String out = "<pre>";
         for (Map.Entry<String, Integer> en : skillInvocationCount.entrySet()) {
-            out +=  padLeft(en.getKey(),64) + " : " + en.getValue() + "\n";
+            out +=  padLeft(en.getKey(),32) + " : " + en.getValue() + "\n";
         }
         out += "</pre>";
         return Optional.of(new HandlerResponseImpl(out, new String[]{this.getClass().getName()}));
