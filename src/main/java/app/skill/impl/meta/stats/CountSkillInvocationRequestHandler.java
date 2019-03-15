@@ -46,12 +46,17 @@ public class CountSkillInvocationRequestHandler extends RegexRequestHandler {
                     skillInvocationCount.put(skillName, 1);
             }
         }
-        String out = "<table>";
+        String out = "<pre>";
         for (Map.Entry<String, Integer> en : skillInvocationCount.entrySet()) {
-            out += "<tr><td>" + en.getKey() + "</td><td>" + en.getValue() + "</td></tr>";
+            out +=  padLeft(en.getKey(),64) + " : " + en.getValue() + "\n";
         }
-        out += "</table>";
+        out += "</pre>";
         return Optional.of(new HandlerResponseImpl(out, new String[]{this.getClass().getName()}));
     }
 
+    private static String padLeft(String s, int len){
+        while(s.length() < len)
+            s += " ";
+        return s;
+    }
 }

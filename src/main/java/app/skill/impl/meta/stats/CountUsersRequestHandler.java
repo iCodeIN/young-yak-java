@@ -34,7 +34,16 @@ public class CountUsersRequestHandler extends RegexRequestHandler {
 
     private static Random RANDOM = new Random(System.currentTimeMillis());
 
-    private static String[] REPLIES = {
+    private static String[] ONE_PERSON_REPLY = {
+            "I've talked to 1 person. You.",
+            "I'm only talking to you at the moment.",
+            "At the moment, just you.",
+            "Just you.",
+            "Only you.",
+            "Just the one person. You."
+    };
+
+    private static String[] MORE_THAN_ONE_PERSON_REPLY = {
             "I've talked to %d people.",
             "I have talked to %d people.",
             "I've talked to %d users.",
@@ -50,12 +59,19 @@ public class CountUsersRequestHandler extends RegexRequestHandler {
 
     @Override
     public Optional<IHandlerResponse> handle(IHandlerInput input) {
-        String txt = REPLIES[RANDOM.nextInt(REPLIES.length)];
         Set<String> userIDs = new HashSet<>();
         for (DialogChunk dc : botController.getDialogChunkRepository().findAll()) {
             userIDs.add(dc.getUserID());
         }
         int N = userIDs.size();
+
+
+        String txt = "";
+        if(N == 1)
+            txt = ONE_PERSON_REPLY[RANDOM.nextInt(ONE_PERSON_REPLY.length)];
+        else
+            txt = MORE_THAN_ONE_PERSON_REPLY[RANDOM.nextInt(MORE_THAN_ONE_PERSON_REPLY.length)];
+
         return Optional.of(new HandlerResponseImpl(String.format(txt, N), new String[]{this.getClass().getName()}));
     }
 }
