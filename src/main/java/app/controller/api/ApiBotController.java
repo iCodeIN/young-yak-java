@@ -15,6 +15,7 @@ import app.skill.impl.internet.NYTimes.NYTimesSkill;
 import app.skill.impl.internet.cocktail.CocktailSkill;
 import app.skill.impl.internet.duckduckgo.DuckDuckGoSkill;
 import app.skill.impl.internet.imdb.IMDBSkill;
+import app.skill.impl.internet.quote.QuoteSkill;
 import app.skill.impl.internet.soundcloud.SoundCloudSkill;
 import app.skill.impl.internet.unsplash.UnsplashSkill;
 import app.skill.impl.internet.weather.WeatherSkill;
@@ -66,6 +67,7 @@ public class ApiBotController implements IBotController {
                 .addSkill(new DuckDuckGoSkill())
                 .addSkill(new IMDBSkill())
                 .addSkill(new NYTimesSkill())
+                .addSkill(new QuoteSkill())
                 .addSkill(new SoundCloudSkill())
                 .addSkill(new UnsplashSkill())
                 .addSkill(new WeatherSkill())
