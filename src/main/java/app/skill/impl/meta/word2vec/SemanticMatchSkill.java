@@ -109,12 +109,12 @@ public class SemanticMatchSkill implements ISkill {
             buildModel();
             return false;
         }
-        return synonymMap.containsKey(input.getContent().toString(), 10);
+        return synonymMap.containsKey(input.getContent().toString(), 1);
     }
 
     @Override
     public IHandlerResponse invoke(IHandlerInput input) {
-        Collection<Set<String>> tmp = synonymMap.get(input.getContent().toString(), 10);
+        Collection<Set<String>> tmp = synonymMap.get(input.getContent().toString(), 1);
         if (tmp.isEmpty())
             return null;
 

@@ -69,13 +69,18 @@ public class TelegramBotController extends ApiBotController {
         String userID = message.from().firstName() + " " + message.from().lastName() + "[" + message.from().id()+"]";
 
         // call super, ensuring this data gets stored
-        Optional<IHandlerResponse> response = getResponse(message.text(), userID);
+        Optional<IHandlerResponse> response = Optional.empty();
+        if(message.text() != null && !message.text().isEmpty())
+            response = getResponse(message.text(), userID);
+        if((message.text() == null || message.text().isEmpty()) && message.sticker() != null)
+            response = getResponse(message.sticker().emoji(), userID);
 
         if(response.isPresent()) {
+            Optional<IHandlerResponse> finalResponse = response;
             new Thread() {
                 public void run() {
                     // extract text for response
-                    String txt = response.get().getContent().toString();
+                    String txt = finalResponse.get().getContent().toString();
 
                     // sleep
                     if(!INSTANTLY_SERVED_USERS.contains(message.from().id()+"")) {
