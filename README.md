@@ -11,6 +11,9 @@ First, get the code on your system!  The simplest method is via git:
 
 ## core concepts
 
+- skill : A piece of code that is capable of handling a particular input (or a particular set of inputs). A skill can provide immediate output, or choose to manipulate the input (potentially allowing other skills to provide output).
+- utterance : A piece of text that triggers the execution of a skill.
+
 ## differences with Alexa / Google Home / etc
 
 Most (if not all) existing (conversational) AI platforms follow the same approach.
