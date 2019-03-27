@@ -2,6 +2,13 @@
 ![](https://img.shields.io/badge/build-passing-brightgreen.svg)  ![](https://img.shields.io/badge/deployed-true-brightgreen.svg)  
 PlacidPlatypus is an open source text-based assistant, that can be installed on Linux, Raspberry Pi and other platforms. Our opensource skills are written in Java. Come join us!
 
+## getting started
+
+First, get the code on your system!  The simplest method is via git:
+- `cd ~/`
+- `git clone https://github.com/jorisschellekens/placid-platypus.git`
+- `cd placid-platypus`
+
 ## core concepts
 
 ## differences with Alexa / Google Home / etc
@@ -43,8 +50,12 @@ But those can be observed from the code.
 | Time | This skill allows the bot to provide answers to date/time queries. | 'What time is it?' |
 | TypoCorrection | This skill learns from past input/outputs pairs, allowing new input to still be matched correctly despite typos. | 'Who is Mihaek Jackson?' |
 | Unsplash | This skill allows the user to search for images on Unsplash. | 'Do you have a picture of a cat?' |
-| Weather | |
-| Xkcd | |
+| Weather | This skill allows the user to query the bot for weather information. | 'What's the weather like in Antwerp?' |
+| Xkcd | This skill allows the user to check the latest (and other) XKCD comments. Which is awesome. | 'Show XKCD nr 666'
 
-## contribute
+## getting involved
+
+This is an open source project and we would love your help.
+
+If this is your first PR or you're not sure where to get started, say hi and a team member would be happy to mentor you.
 
