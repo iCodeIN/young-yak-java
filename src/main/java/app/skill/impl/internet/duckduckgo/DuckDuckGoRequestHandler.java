@@ -54,7 +54,12 @@ public class DuckDuckGoRequestHandler extends InternetLookupRequestHandler {
         }
 
         JSONObject object = new JSONObject(result.toString());
-        return object.has("Abstract") ? object.getString("Abstract") : "";
+        if (object.has("Abstract") && !object.getString("Abstract").isEmpty())
+            return object.getString("Abstract");
+        if(object.has("RelatedTopics"))
+            return object.getJSONArray("RelatedTopics").getJSONObject(0).getString("Text");
+        // default
+        return "";
     }
 
 }
