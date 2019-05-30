@@ -1401,7 +1401,7 @@
     </category>
     <category>
         <pattern>I FEEL PETULANT</pattern>
-        <template />
+        <template><redirect>I FEEL GRUMPY</redirect></template>
     </category>
     <category>
         <pattern>I AM FEELING PETULANT</pattern>
@@ -1581,7 +1581,7 @@
     </category>
     <category>
         <pattern>I FEEL SLEEPY</pattern>
-        <template />
+        <template><redirect>I FEEL TIRED</redirect></template>
     </category>
     <category>
         <pattern>I AM FEELING SLEEPY</pattern>
@@ -1847,7 +1847,7 @@
     </category>
     <category>
         <pattern>I FEEL WEARY</pattern>
-        <template />
+        <template><redirect>I FEEL TIRED</redirect></template>
     </category>
     <category>
         <pattern>I AM FEELING WEARY</pattern>

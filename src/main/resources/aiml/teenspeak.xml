@@ -100,6 +100,35 @@
             <redirect>AS SOON AS POSSIBLE</redirect>
         </template>
     </category>
+    <!-- ASL -->
+    <category>
+        <pattern>ASL</pattern>
+        <template>
+            <redirect>HOW OLD ARE YOU</redirect>
+            <template> </template>
+            <redirect>ARE YOU A GIRL</redirect>
+            <template> </template>
+            <redirect>WHERE ARE YOU FROM</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>A/S/L</pattern>
+        <template>
+            <redirect>ASL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>AL</pattern>
+        <template>
+            <redirect>ASL</redirect>
+        </template>
+    </category>
+    <category>
+        <pattern>A/L</pattern>
+        <template>
+            <redirect>ASL</redirect>
+        </template>
+    </category>
     <!-- B4 -->
     <category>
         <pattern>(.*) B4 (.*)</pattern>
